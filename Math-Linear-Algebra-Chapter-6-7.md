@@ -153,7 +153,7 @@ $$
 
 <iframe height=480 width=640 src='http://player.youku.com/embed/XMzE5NTIyNjQ4MA==' frameborder=0 'allowfullscreen'></iframe>
 代码
-```language=python
+```python
 import cv2
 import numpy as np
 from numpy import linalg

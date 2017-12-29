@@ -23,7 +23,7 @@ Gilbert Strang教授的讲授能够让大多数人入门，掌握这门课的大
 ### 关系图
 知识图：
 
-![relation](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/LinearAlgebra/LinearAlgebra.png)
+![relation](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/LinearAlgebra.png)
 
 此图由Graphviz生成，相关项目见：
 Github：[https://github.com/Tony-Tan/MachineLearningMath](https://github.com/Tony-Tan/MachineLearningMath)
