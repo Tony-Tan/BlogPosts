@@ -1,5 +1,5 @@
 ---
-title: 【OpenCV源代码分析】矩阵计算过程 1
+title: 【OpenCV源代码分析】矩阵计算过程
 categories:
   - Code
   - OpenCV代码分析
@@ -296,6 +296,8 @@ void vBinOp(const T* src1, size_t step1, const T* src2, size_t step2, T* dst, si
 ## 总结
 这个就是简单的跟踪了下加法计算的全过程，下一篇就通过这些计算找出opencv 整个Mat计算所依靠的体系（各个类的作用，和设计目的）
 我们通过下面这个表来看一下他们的调用关系，我们把MatExpr先暂时叫做计算图（类似于TensorFlow）
+
+
 |     文件名      |     类      |   函数名   | 返回值  |作用|
 |:---------------:|:-----------:|:----------:|:-------:|:-------:|
 |    matop.cpp    |   MatExpr   | operator + | MatExpr |生成计算图|
@@ -306,5 +308,7 @@ void vBinOp(const T* src1, size_t step1, const T* src2, size_t step2, T* dst, si
 |   arithm.cpp    |             | arithm_op  |  void   ||
 |   arithm.cpp    |             |   add8s    |  void   |区别输入数据类型，调用vBinOp|
 | arithm_core.hpp |             |   vBinOp   |  void   |模板函数，完成最终计算|
+
+
 
 下一篇我们深入研究各个类
