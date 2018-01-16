@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】6-1:Introduction to Eigenvalues
+title: 【线性代数】6-1:Introduction to Eigenvalues
 categories:
   - Mathematic
   - Linear Algebra

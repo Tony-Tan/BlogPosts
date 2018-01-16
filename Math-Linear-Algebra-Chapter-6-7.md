@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】6-7:Singular Value Decomposition(SVD)
+title: 【线性代数】6-7:Singular Value Decomposition(SVD)
 categories:
   - Mathematic
   - Linear Algebra

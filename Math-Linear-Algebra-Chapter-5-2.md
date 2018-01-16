@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】5-2:Permutations and Cofactors
+title: 【线性代数】5-2:Permutations and Cofactors
 categories:
   - Mathematic
   - Linear Algebra

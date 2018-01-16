@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】4-1:Orthogonality of the Four Subspace
+title: 【线性代数】4-1:Orthogonality of the Four Subspace
 categories:
   - Mathematic
   - Linear Algebra

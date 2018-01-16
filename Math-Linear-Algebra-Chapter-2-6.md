@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】2-6:$A=LU$ and $A=LDU$
+title: 【线性代数】2-6:$A=LU$ and $A=LDU$
 toc: true
 categories:
   - Mathematic

@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】4-3:Least Squares Approximations
+title: 【线性代数】4-3:Least Squares Approximations
 categories:
   - Mathematic
   - Linear Algebra

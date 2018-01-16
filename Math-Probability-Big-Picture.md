@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之概率论】Probability Big Picture
+title: 【概率论】Probability Big Picture
 categories:
   - Mathematic
   - Probability

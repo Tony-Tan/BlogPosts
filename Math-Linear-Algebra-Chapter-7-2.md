@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】7-2:The Matrix of a Linear Transformation
+title: 【线性代数】7-2:The Matrix of a Linear Transformation
 categories:
   - Mathematic
   - Linear Algebra

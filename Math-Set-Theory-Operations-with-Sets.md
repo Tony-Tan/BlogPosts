@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之集合论】Set Theory:Operation with sets
+title: 【集合论】2 Set Theory:Operation with sets
 categories:
   - Mathematic
   - Set Theory

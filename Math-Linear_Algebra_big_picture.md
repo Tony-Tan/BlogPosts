@@ -1,11 +1,10 @@
 ---
-title: -置顶-【机器学习基础之线性代数】Linear Algebra Big Picture
+title: 【线性代数】Linear Algebra Big Picture
 toc: true
-sticky: 10
 categories:
   - Mathematic
   - Linear Algebra
-date: 9999-12-1 16:28:36
+date: 2017-08-18 16:28:36
 tags:
   - big picture
 ---

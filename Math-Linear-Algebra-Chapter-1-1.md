@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】1-1:Linear Combinations
+title: 【线性代数】1-1:Linear Combinations
 toc: true
 categories:
   - Mathematic

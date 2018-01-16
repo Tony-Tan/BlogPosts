@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】3-6:Dimensions of the Four Subspaces
+title: 【线性代数】3-6:Dimensions of the Four Subspaces
 categories:
   - Mathematic
   - Linear Algebra

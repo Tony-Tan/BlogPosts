@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】5-3:Cramer's Rule,Inverses,and Volumes
+title: 【线性代数】5-3:Cramer's Rule,Inverses,and Volumes
 categories:
   - Mathematic
   - Linear Algebra

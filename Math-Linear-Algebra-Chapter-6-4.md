@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】6-4:Symmetric Matrices
+title: 【线性代数】6-4:Symmetric Matrices
 categories:
   - Mathematic
   - Linear Algebra

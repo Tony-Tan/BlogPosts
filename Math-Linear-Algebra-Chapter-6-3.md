@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】6-3:Applications to Differential Equations
+title: 【线性代数】6-3:Applications to Differential Equations
 categories:
   - Mathematic
   - Linear Algebra

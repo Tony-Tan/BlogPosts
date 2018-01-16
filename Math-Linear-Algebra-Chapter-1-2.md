@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】1-2:Dot Products and Length
+title: 【线性代数】1-2:Dot Products and Length
 toc: true
 categories:
   - Mathematic

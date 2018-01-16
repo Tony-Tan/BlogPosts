@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】2-4:Matrix Operations
+title: 【线性代数】2-4:Matrix Operations
 toc: true
 categories:
   - Mathematic

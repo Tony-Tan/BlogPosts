@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】3-5:Independence,Basis and Dimension
+title: 【线性代数】3-5:Independence,Basis and Dimension
 categories:
   - Mathematic
   - Linear Algebra

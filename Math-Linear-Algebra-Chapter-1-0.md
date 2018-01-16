@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】1-0:Vector
+title: 【线性代数】1-0:Vector
 toc: true
 categories:
   - Mathematic

@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】4-2:Porjections
+title: 【线性代数】4-2:Porjections
 categories:
   - Mathematic
   - Linear Algebra

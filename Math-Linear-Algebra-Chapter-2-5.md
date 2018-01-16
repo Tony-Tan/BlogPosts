@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】2-5:Inverse
+title: 【线性代数】2-5:Inverse
 toc: true
 categories:
   - Mathematic

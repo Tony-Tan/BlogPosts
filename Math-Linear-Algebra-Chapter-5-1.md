@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】5-1:The Properties of Determinants
+title: 【线性代数】5-1:The Properties of Determinants
 categories:
   - Mathematic
   - Linear Algebra

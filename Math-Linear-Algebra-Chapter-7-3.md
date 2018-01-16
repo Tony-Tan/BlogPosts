@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】7-3:Diagonalization and the Pseudoinverse
+title: 【线性代数】7-3:Diagonalization and the Pseudoinverse
 categories:
   - Mathematic
   - Linear Algebra

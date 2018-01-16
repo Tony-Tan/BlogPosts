@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】3-2:Nullspace
+title: 【线性代数】3-2:Nullspace
 categories:
   - Mathematic
   - Linear Algebra

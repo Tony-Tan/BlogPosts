@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】3-3:Rank
+title: 【线性代数】3-3:Rank
 categories:
   - Mathematic
   - Linear Algebra

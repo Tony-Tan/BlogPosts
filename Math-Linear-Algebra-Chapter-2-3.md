@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】2-3:Elimination & Matrix
+title: 【线性代数】2-3:Elimination & Matrix
 toc: true
 categories:
   - Mathematic

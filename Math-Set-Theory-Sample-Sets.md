@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之集合论】Set Theory:Sample sets
+title: 【集合论】1 Set Theory:Sample sets
 categories:
   - Mathematic
   - Set Theory

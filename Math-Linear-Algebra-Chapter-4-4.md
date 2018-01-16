@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】4-4:Orthogonal Bases and Gram-Schmidt
+title: 【线性代数】4-4:Orthogonal Bases and Gram-Schmidt
 categories:
   - Mathematic
   - Linear Algebra

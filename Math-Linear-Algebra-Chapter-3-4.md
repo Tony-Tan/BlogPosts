@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】3-4:$Ax=b$
+title: 【线性代数】3-4:$Ax=b$
 categories:
   - Mathematic
   - Linear Algebra

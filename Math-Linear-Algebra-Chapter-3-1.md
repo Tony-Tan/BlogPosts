@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】3-1:Space of Vectors
+title: 【线性代数】3-1:Space of Vectors
 categories:
   - Mathematic
   - Linear Algebra

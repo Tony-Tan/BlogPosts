@@ -1,5 +1,5 @@
 ---
-title: 【机器学习基础之线性代数】2-2:Eliminate
+title: 【线性代数】2-2:Eliminate
 toc: true
 categories:
   - Mathematic
