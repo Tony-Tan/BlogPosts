@@ -26,8 +26,6 @@ date: 9999-12-31 23:59:59
     - [2 集合操作](http://tony4ai.com/2017/11/16/Math-Set-Theory-Operations-with-Sets/)
   - 分析
     - 微积分
-      - 《普林斯顿微积分读本》
-        - [单变量微积分Big Picture](http://tony4ai.com/2018/01/16/Math-Calculus-CL-Big-Picture/)
     - 数学分析
     - 实分析
     - 复分析
@@ -73,6 +71,10 @@ date: 9999-12-31 23:59:59
   - 拓扑学
   - 概率论
     - [概率论BigPicture](http://tony4ai.com/2017/11/13/Math-Probability-Big-Picture/)
+    - [1.0 概率介绍、试验、事件、公理化的概率](http://tony4ai.com/2018/01/23/Math-Probability-1-0-Introduction/)
+    - [1.1 样本空间、柯氏公理、概率的性质](http://tony4ai.com/2018/01/24/Math-Probability-1-1-Definition-of-Probability/)
+    - [1.2 古典概率、乘法原理、排列](http://tony4ai.com/2018/01/25/Math-Probability-1-2-Counting-Methods/)
+    - [1.3 组合、二项式定理、多项式定理](http://tony4ai.com/2018/01/26/Math-Probability-1-3-Combinatorial-Methods/)
   - 数理统计
   - 随机过程
   - 信息论

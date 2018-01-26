@@ -21,15 +21,30 @@ date: 2017-11-13 15:57:45
 概率论不是数理统计，这两个有明显的区别，概率论是已经知道了内部机制，推算结果，数理统计是通过观察结果反推内部机制，机器学习更倾向于后者，但是概率论是数理统计的基础，所以概率论在我们的big big picture里面是五星的，与微积分线性代数同样重要。
 ![Probability](Math-Probability-Big-Picture/Mathematic.png)
 与线性代数和微积分不同，微积分更注重计算，也就是当我们有一个算式的时候可以用各种技巧得出最后的答案，这里的微积分是说初级的，高级的到了分析层面就是另一回事了，那个就是探索真理了，线性代数背后有一套完整的理论体系，而且包含了一些可以应用在实际场景的模型，所以线性代数属于基础与实践的边缘部分，故而在工程里显得尤为有用处。
-概率论则更加偏向应用，因为其提出就是为了赌博，哈哈，概率论的公式都比较复杂，但是每一个公式背后都有非常明显的事物关系，也就是说概率论中的公式能清楚的反应一些事物的本来面目。
+概率论则更加偏向应用，因为其提出就是为了赌博，概率论的公式都比较复杂，但是每一个公式背后都有非常明显的事物关系，也就是说概率论中的公式能清楚的反应一些事物的本来面目。
 ## 教材
-我用的陈希孺老先生的书，书中例子非常多，能很清楚的解释公式背后的理论和应用，目前读了前三章关于概率论的部分，决定将概率论和数理统计分开来看，刚又买了一本《Probability and Statistics(Fourth Edition)》(Morris H. DeGroot)据说这本书也很适合入门，美国教材和中国教材以及俄罗斯前苏联的教材风格迥异，感觉美利坚的教材能让你更有自信，苏联教材能让你怀疑人生，而大部分中国教材能让你考上研究生，哈哈，不黑了，辅助教材还有
-《初等概率论》 钟开莱
-《概率论教程》钟开莱
-《概率导论》 Dimitri P. Bertsekas
+![Probability](Math-Probability-Big-Picture/probability_book.jpeg)
+### 《Probability and Statistics》 M.H.DeGroot
+《Probability and Statistics(Fourth Edition)》(Morris H. DeGroot)这本书也很适合入门，书中有大量的例题和课后习题，语言也比较清晰明确，美国教材和中国教材以及俄罗斯前苏联的教材风格迥异，感觉美利坚的教材能让你更有自信，苏联教材能让你怀疑人生，而大部分中国教材能让你考上研究生，哈哈，不黑了
+### 《概率论与数理统计》陈希孺
+条理非常清晰，能很清楚的解释公式背后的理论和应用，作为DeGroot的辅助，来完善整体知识结构。
+### 《初等概率论》 钟开莱
+钟开莱是概率论开天辟地的人之一，而其写的书也是很简单明了，利于入门学习，还有一本《概率论教程》更适合进阶，涉及到了测度论等高级的分析工具。
+### 《概率导论》 Dimitri P. Bertsekas
+MIT的教材，比较简单，适合入门，也是作为补充，来辅助我们入门
+## 博客章节目录
+- Introduction
+- Conditional Probability
+- Random Variables and Distributions
+- Expectation
+- Speacial Distributions
+- Large Random Samples
 ## 总结
 先放个图
-![Probability](Math-Probability-Big-Picture/Probability.png)
-这个是根据陈希孺先生的教材总结出的基本框架，概率论相关博客可能会近期开始写作，但是可能没有线性代数更新的那么快，说实话，线性代数学完感觉豁然开朗，但是目前概率还没有很开朗，待到我拨云见日之日就是概率论开播之时。
+![Probability](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/Probability.png)
+这个是根据DeGroot的教材总结出的基本知识重点框架。
 机器学习相关数学知识可以参考项目,以上图片皆出自此项目：
 [https://github.com/Tony-Tan/MachineLearningMath](https://github.com/Tony-Tan/MachineLearningMath)
+
+
+***注意：本系列的博客所有定义均来自 DeGroot's book ***
