@@ -1,5 +1,5 @@
 ---
-title: 【概率论】 1-1：Definition of Probability
+title: 【概率论】1-1：Definition of Probability
 categories:
   - Mathematic
   - Probability
@@ -156,7 +156,7 @@ $$
 Q.E.D
 
 ### T2: $Pr(\bigcup^n_{i=1}A_i)=\sum^n_{i=1}Pr(A_i)$
-T2是对公理3的一个退化版本，无限个事件退化成有限个
+T2是对公理3的一个退化版本，也可以叫加法原理，无限个不相交事件退化成有限个
 证明:
 我们可以假设当$m>n$ 时，$A_m=\emptyset$ 所以：
 $$

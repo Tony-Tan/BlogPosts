@@ -1,5 +1,5 @@
 ---
-title: 【概率论】 1-0：Introduction
+title: 【概率论】1-0：Introduction
 categories:
   - Mathematic
   - Probability

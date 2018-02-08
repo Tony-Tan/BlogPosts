@@ -1,5 +1,5 @@
 ---
-title: 【概率论】 1-2：Counting Methods
+title: 【概率论】1-2：Counting Methods
 categories:
   - Mathematic
   - Probability
@@ -15,7 +15,7 @@ date: 2018-01-25 10:35:46
 ---
 
 **Abstract:** 本文主要介绍有限样本空间下的古典概率问题，以及其中包含的计数方法，排列的基本思想
-**Keywords:** Counting Methods，Combinatorial Methods，Multiplication，Permutations，Stirling's Formula 
+**Keywords:** Counting Methods，Combinatorial Methods，Multiplication，Permutations，Stirling's Formula
 <!--more-->
 ## 开篇废话
 其实有时候天天写博客没有什么废话可以说了，因为前一天说的已经差不多了，但是废话这个传统不能断，因为一旦断了，就没办法接上了。

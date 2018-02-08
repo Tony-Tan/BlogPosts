@@ -75,6 +75,14 @@ date: 9999-12-31 23:59:59
     - [1.1 样本空间、柯氏公理、概率的性质](http://tony4ai.com/2018/01/24/Math-Probability-1-1-Definition-of-Probability/)
     - [1.2 古典概率、乘法原理、排列](http://tony4ai.com/2018/01/25/Math-Probability-1-2-Counting-Methods/)
     - [1.3 组合、二项式定理、多项式定理](http://tony4ai.com/2018/01/26/Math-Probability-1-3-Combinatorial-Methods/)
+    - [1.4 有限事件并的概率、概率欺骗了你](http://tony4ai.com/2018/01/30/Math-Probability-1-4-Union-of-Event/)
+    - [2.1 条件概率、全概率公式](http://tony4ai.com/2018/01/31/Math-Probability-1-5-Conditional-Probability/)
+    - [2.2 事件独立、条件独立](http://tony4ai.com/2018/02/01/Math-Probability-2-2-Independent-Events/)
+    - [2.3 Bayes’ Theorem](http://tony4ai.com/2018/02/02/Math-Probability-2-3-Bayes-Teorem/)
+    - [3.1 Random Variables and Discrete Distributions](http://tony4ai.com/2018/02/03/Math-Probability-3-1-Random-Variables-and-Discrete-Distributions/)
+    - [3.2 Continuous Distributions](http://tony4ai.com/2018/02/05/Math-Probability-3-2-Continuous-Distribution/)
+    - [3.3 Cumulative Distribution Function](http://tony4ai.com/2018/02/06/Math-Probability-3-3-Cumulative-Distribution-Function/)
+    - [3.4 Bivariate Distribution ](http://tony4ai.com/2018/02/07/Math-Probability-3-4-Bivariate-Distribution/)
   - 数理统计
   - 随机过程
   - 信息论
