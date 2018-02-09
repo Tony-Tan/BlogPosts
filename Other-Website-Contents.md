@@ -83,6 +83,7 @@ date: 9999-12-31 23:59:59
     - [3.2 Continuous Distributions](http://tony4ai.com/2018/02/05/Math-Probability-3-2-Continuous-Distribution/)
     - [3.3 Cumulative Distribution Function](http://tony4ai.com/2018/02/06/Math-Probability-3-3-Cumulative-Distribution-Function/)
     - [3.4 Bivariate Distribution ](http://tony4ai.com/2018/02/07/Math-Probability-3-4-Bivariate-Distribution/)
+    - [3.5 Marginal Distribution & Independent random Variables](http://tony4ai.com/2018/02/09/Math-Probability-3-5-Marginal-Distributions/)
   - 数理统计
   - 随机过程
   - 信息论
