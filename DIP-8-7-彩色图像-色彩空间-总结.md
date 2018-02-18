@@ -1,0 +1,21 @@
+---
+title: 【数字图像处理】8.7:彩色图像-色彩空间 总结
+date: 2015-03-15 17:33
+categories:
+  - 数字图像处理
+tags:
+  - 色彩空间
+toc: true
+---
+## 色彩空间总结
+现在把色彩空间进行简单总结，首先推荐一个博客
+[http://blog.ibireme.com/2013/08/12/color-model/](http://blog.ibireme.com/2013/08/12/color-model/)
+这篇博客对整个色彩空间总结的相当全面，而且有GIF图，直观。
+下面这个视频连接可以简单的向你介绍颜色的实质：
+[http://v.youku.com/v_show/id_XNTQ5NzAxMTQ0.html](http://v.youku.com/v_show/id_XNTQ5NzAxMTQ0.html)
+总结起来一张图可以简单的概括下：
+![这里写图片描述](http://img.blog.csdn.net/20150315173127912)
+
+色彩空间简单进行介绍，在后面用到相关知识的时候再进行补充。
+下篇开始新的内容。
+待续。。。

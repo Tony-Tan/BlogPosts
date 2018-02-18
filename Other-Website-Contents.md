@@ -111,6 +111,11 @@ date: 9999-12-31 23:59:59
   - C++
   - Python
   - CUDA
+    - [0.0 腾讯云CUDA环境搭建](http://tony4ai.com/2018/02/13/CUDA-F-0-0-Tencent-GPU-Cloud/)
+    - [1.0 并行计算与计算机架构](http://tony4ai.com/2018/02/14/CUDA-F-1-0-并行计算与计算机架构/)
+    - [1.1 异构计算与CUDA](http://tony4ai.com/2018/02/15/CUDA-F-1-1-异构计算-CUDA/)
+    - [2.0 CUDA编程模型概述(一)](http://tony4ai.com/2018/02/15/CUDA-F-2-0-CUDA编程模型概述1/)
+    - [2.1 CUDA编程模型概述(二)](http://tony4ai.com/2018/02/16/CUDA-F-2-1-CUDA编程模型概述2/)
 - 框架
   - OpenCV
     - [OpenCV矩阵计算分析](http://tony4ai.com/2017/12/29/Code-OpenCV-Mat过程分析/)

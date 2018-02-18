@@ -1,8 +1,7 @@
 ---
 title: 【OpenCV源代码分析】矩阵计算过程
 categories:
-  - Code
-  - OpenCV代码分析
+  - Other
 tags:
   - OpenCV
   - 矩阵计算
