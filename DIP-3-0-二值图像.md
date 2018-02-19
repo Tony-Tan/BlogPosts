@@ -9,6 +9,9 @@ tags:
   - 邻域
 toc: true
 ---
+**Abstract:** 数字图像处理：第8天
+**Keywords:** 二值图像，形态学，邻域
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 ## 二值图像

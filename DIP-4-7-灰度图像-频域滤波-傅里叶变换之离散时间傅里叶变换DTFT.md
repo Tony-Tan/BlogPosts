@@ -4,10 +4,12 @@ date: 2015-01-15 20:38
 categories:
   - 数字图像处理
 tags:
-  - 傅里叶变换
-  - 傅里叶级数
+  - 离散时间傅里叶变换
 toc: true
 ---
+**Abstract:** 数字图像处理：第20天
+**Keywords:** 离散时间傅里叶变换
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 

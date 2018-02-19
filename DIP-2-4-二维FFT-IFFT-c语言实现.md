@@ -11,6 +11,9 @@ tags:
   - 图像快速傅里叶
 toc: true
 ---
+**Abstract:** 数字图像处理：第6天
+**Keywords:** 二维FFT，二维IFFT，图像快速傅里叶
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 网上关于FFT的实例有很多，具体也可以参照上一篇，其实Matlab，OpenCV都可以很轻松的实现相关操作，但是对于学习其原理，还是自己操作下比较好。
@@ -19,8 +22,6 @@ toc: true
 二维IFFT网上很少见到，操作过程是：上述的傅里叶变换结果，先对每列做一维IFFT，结果放在该列，取复数矩阵其共轭，然后再按照每行做一维IFFT，其结果放在该行，即为最终结果。上代码：
 一维情况下：
 ```c++
-
-//
 //  1D.c
 //  Fourer
 //
@@ -487,4 +488,4 @@ int IFFT2D(Complex *src,Complex *dst,int size_w,int size_h){
 
 
 [Center]: DIP-2-4-二维FFT-IFFT-c语言实现/20141125193401542.png
-[Center 1]: DIP-2-4-二维FFT-IFFT-c语言实现//20141125193557185.png
+[Center 1]: DIP-2-4-二维FFT-IFFT-c语言实现/20141125193557185.png

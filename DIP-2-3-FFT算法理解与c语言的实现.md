@@ -9,6 +9,9 @@ tags:
   - 快速傅里叶算法
 toc: true
 ---
+**Abstract:** 数字图像处理：第5天
+**Keywords:** FFT,快速傅里叶变换
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 ## 为什么需要FFT

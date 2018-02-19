@@ -4,9 +4,12 @@ date: 2014-12-31 10:58
 categories:
   - 数字图像处理
 tags:
-  - 灰度图像处理
+  - 灰度图像
 toc: true
 ---
+**Abstract:** 数字图像处理：第13天
+**Keywords:** 灰度图像
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 ## 开篇废话

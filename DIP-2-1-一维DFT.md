@@ -8,11 +8,15 @@ tags:
   - 离散傅里叶变换
 toc: true
 ---
+**Abstract:** 数字图像处理：第3天
+**Keywords:** DFT, 离散傅里叶变换
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 傅里叶变换是一个很大的话题，今天实现了下一维的DFT，后续将完成其他傅里叶系的算法实现和实验；
 DFT公式：
-$$                      \hat{x}[k]=\sum_{n=0}^{N-1} e^{-i\frac{2\pi}{N}nk}x[n] \qquad k = 0,1,\ldots,N-1
+$$                      
+\hat{x}[k]=\sum_{n=0}^{N-1}e^{-i\frac{2\pi}{N}nk}x[n] \qquad k = 0,1,\ldots,N-1
 $$
 其中e是自然对数的底数，i是虚数单位。通常以符号 $\mathcal{F}$ 表示这一变换，即
 
@@ -23,7 +27,9 @@ $$
 
 
 IDFT公式：
-$$                                 x\left[n\right]={1 \over N}\sum_{k=0}^{N-1} e^{ i\frac{2\pi}{N}nk}\hat{x}[k] \qquad n = 0,1,\ldots,N-1.
+$$                                
+x\left[n\right]={1 \over N}\sum_{k=0}^{N-1}
+e^{ i\frac{2\pi}{N}nk}\hat{x}[k] \qquad n = 0,1,\ldots,N-1.
 $$
 记为：
 $$                            x=\mathcal{F}^{-1}\hat{x}

@@ -8,6 +8,9 @@ tags:
   - 奈奎斯特采样定理
 toc: true
 ---
+**Abstract:** 数字图像处理：第19天
+**Keywords:** 采样定理，奈奎斯特采样定理
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 

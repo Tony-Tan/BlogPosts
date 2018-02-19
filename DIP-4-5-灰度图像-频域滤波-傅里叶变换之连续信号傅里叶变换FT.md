@@ -4,11 +4,12 @@ date: 2015-01-13 15:41
 categories:
   - 数字图像处理
 tags:
-  - 傅里叶级数
-  - 傅里叶变换
   - 连续信号傅里叶变换
 toc: true
 ---
+**Abstract:** 数字图像处理：第18天
+**Keywords:** 连续信号傅里叶变换
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
 ## 开篇废话

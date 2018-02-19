@@ -5,12 +5,15 @@ categories:
   - 数字图像处理
 tags:
   - 色彩空间
-  - 彩色图像处理
   - YIQ
   - YUV
   - YCbCr
 toc: true
 ---
+**Abstract:** 数字图像处理：第64天
+**Keywords:** 色彩空间,YIQ,YUV,YCbCr
+<!--more-->
+<font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 ## 开篇废话
 背后有人，今天不说废话。。。。
 ## YIQ
@@ -18,8 +21,8 @@ NTSC电视系统指定的色彩空间，为了压缩RGB的传输带宽提高传�
 YIQ中Y代表亮度信号（Luminance），IQ作为附加信息，I表示相位（In-phase）色彩从橙色到青色，Q表示正交（Quadrature-phase）色彩从紫色到黄绿色，故YIQ也叫做色差信号（Chrominance signal）。
 YIQ中Y信号可以直接用于黑白电视作为灰度信号，进行显示，彩色电视则加入IQ分量与Y一起产生颜色。
 转换公式：
-![这里写图片描述](http://img.blog.csdn.net/20150313143318884)
-![这里写图片描述](http://img.blog.csdn.net/20150313143634049)
+![这里写图片描述](DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313143318884.png)
+![这里写图片描述](DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313143634049.png)
 
 ## YUV
 YUV在德国和法国发展的彩色电视系统PAL和SECAM中使用。
@@ -29,8 +32,8 @@ Y分量与YIQ中Y相同。
 1. 紧缩格式（packed formats）：将Y、U、V值储存成Macro Pixels阵列，和RGB的存放方式类似。
 2. 平面格式（planar formats）：将Y、U、V的三个分量分别存放在不同的矩阵中。
 
-![这里写图片描述](http://img.blog.csdn.net/20150313144329727)
-![这里写图片描述](http://img.blog.csdn.net/20150313144316280)
+![这里写图片描述](DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313144329727.png)
+![这里写图片描述](DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313144316280.png)
 
 YIQ和YUV非常适合压缩，因为亮度和色度可以使用不同的比特来编码。
 文献中U表示红-蓝色差，V对应绿-品红色差。
@@ -97,7 +100,7 @@ YCbCr 4:2:0 并不是没有Cr分量，而是采取上下左右分别抽样的方
  $$[Y0 U0 V5] [Y1 U0 V5] [Y2 U2 V7] [Y3 U2 V7]\\
    [Y5 U0 V5] [Y6 U0 V5] [Y7U2 V7] [Y8 U2 V7]$$
 
-![这里写图片描述](http://img.blog.csdn.net/20150313151447503)
+![这里写图片描述](DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313151447503.png)
 
 ## YC1C2
 YC1C2与YCbCr相近，知识YC1C2更接近胶片色阶，而YCbCr更接近荧光粉的色阶。

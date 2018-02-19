@@ -1,11 +1,15 @@
 ---
-title: "灰度图像-图像分割 Robert算子"
-list_number: false
+title: 【数字图像处理】6.3:灰度图像-图像分割 Robert算子
 date: 2015-02-09 15:07
-categories: 数字图像处理
-tags: [Robert算子, 算法, 图像分割, 边缘检测]
-description: "学习DIP第43天  "
+categories:
+  - 数字图像处理
+tags:
+  - Robert算子
+  - 边缘检测
 ---
+**Abstract:** 数字图像处理：第41天
+**Keywords:** Robert算子,边缘检测
+<!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 ## 开篇废话
 废话开始，Robert算子，之前被用到了图像增强中的锐化，原因是作为一阶微分算子，Robert简单，计算量小，对细节反应敏感，之前说过算子对边缘检测的贡献是提供边缘候选点，Robert算子相比于其他3x3算子，在不经过后处理时，可以给出相对较细的边缘，有看一个博客，博主说Robert给出的边缘较粗，但根据我的测试结果，一阶微分中Robert给出的候选点是最细的，相关Robert基础知识参考前面博文“[灰度图像--图像增强 Robert算子、Sobel算子]”。这里我们不在介绍重复知识。
