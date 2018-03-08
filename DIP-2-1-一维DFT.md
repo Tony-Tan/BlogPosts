@@ -5,7 +5,6 @@ categories:
   - 数字图像处理
 tags:
   - DFT
-  - 离散傅里叶变换
 toc: true
 ---
 **Abstract:** 数字图像处理：第3天

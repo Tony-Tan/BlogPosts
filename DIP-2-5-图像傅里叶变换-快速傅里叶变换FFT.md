@@ -10,7 +10,7 @@ tags:
   - 二维傅里叶变换
 toc: true
 ---
-**Abstract:** 数字图像处理：第6天
+**Abstract:** 数字图像处理：第7天
 **Keywords:** 傅里叶变换，图像傅里叶谱，二维傅里叶变换
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>

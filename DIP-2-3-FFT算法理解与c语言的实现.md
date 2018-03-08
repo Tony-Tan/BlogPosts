@@ -5,8 +5,6 @@ categories:
   - 数字图像处理
 tags:
   - FFT
-  - 快速离散傅里叶变换
-  - 快速傅里叶算法
 toc: true
 ---
 **Abstract:** 数字图像处理：第5天

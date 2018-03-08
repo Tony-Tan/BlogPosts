@@ -8,7 +8,6 @@ tags:
   - FFT
   - 二维FFT
   - 二维IFFT
-  - 图像快速傅里叶
 toc: true
 ---
 **Abstract:** 数字图像处理：第6天
