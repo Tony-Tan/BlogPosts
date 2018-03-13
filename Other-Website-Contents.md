@@ -25,6 +25,8 @@ date: 9999-12-31 23:59:59
   - 分析
     - 微积分
     - 数学分析
+      - 《陶哲轩实分析》
+        - [1.0 数学分析介绍](http://tony4ai.com/2018/03/09/Math-Analysis-0-0-Introduction/)
     - 实分析
     - 复分析
     - 泛函分析
@@ -83,6 +85,7 @@ date: 9999-12-31 23:59:59
     - [3.4 Bivariate Distribution ](http://tony4ai.com/2018/02/07/Math-Probability-3-4-Bivariate-Distribution/)
     - [3.5 Marginal Distribution & Independent random Variables](http://tony4ai.com/2018/02/09/Math-Probability-3-5-Marginal-Distributions/)
     - [3.6 Conditional Distributions (Part I)](http://tony4ai.com/2018/03/08/Math-Probability-3-6-Conditional-Distributions-P1/)
+    - [3.6 Conditional Distributions (Part II)](http://tony4ai.com/2018/03/12/Math-Probability-3-6-Conditional-Distributions-P2/)
   - 数理统计
   - 随机过程
   - 信息论
@@ -198,6 +201,9 @@ date: 9999-12-31 23:59:59
     - [2.0 CUDA编程模型概述(一)](http://tony4ai.com/2018/02/15/CUDA-F-2-0-CUDA编程模型概述1/)
     - [2.1 CUDA编程模型概述(二)](http://tony4ai.com/2018/02/16/CUDA-F-2-1-CUDA编程模型概述2/)
     - [2.2 给核函数计时](http://tony4ai.com/2018/03/08/CUDA-F-2-2-核函数计时/)
+    - [2.3 组织并行线程](http://tony4ai.com/2018/03/09/CUDA-F-2-3-组织并行线程/)
+    - [2.4 设备信息查询](http://tony4ai.com/2018/03/10/CUDA-F-2-4-设备信息/)
+    - [3.1 CUDA执行模型概述](http://tony4ai.com/2018/03/12/CUDA-F-3-1-CUDA执行模型概述/)
 - 框架
   - OpenCV
     - [OpenCV矩阵计算分析](http://tony4ai.com/2017/12/29/Code-OpenCV-Mat过程分析/)
