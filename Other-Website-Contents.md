@@ -27,6 +27,7 @@ date: 9999-12-31 23:59:59
     - 数学分析
       - 《陶哲轩实分析》
         - [1.0 数学分析介绍](http://tony4ai.com/2018/03/09/Math-Analysis-0-0-Introduction/)
+        - [2.0 自然数概述](http://tony4ai.com/2018/03/16/Math-Analysis-2-0-The-Natural-Numbers/)
     - 实分析
     - 复分析
     - 泛函分析
@@ -86,6 +87,10 @@ date: 9999-12-31 23:59:59
     - [3.5 Marginal Distribution & Independent random Variables](http://tony4ai.com/2018/02/09/Math-Probability-3-5-Marginal-Distributions/)
     - [3.6 Conditional Distributions (Part I)](http://tony4ai.com/2018/03/08/Math-Probability-3-6-Conditional-Distributions-P1/)
     - [3.6 Conditional Distributions (Part II)](http://tony4ai.com/2018/03/12/Math-Probability-3-6-Conditional-Distributions-P2/)
+    - [3.7 Multivariate Distributions（Part I）](http://tony4ai.co/2018/03/14/Math-Probability-3-7-Multivariate-Distributions-P1/)
+    - [3.7 Multivariate Distributions（Part II）](http://tony4ai.com/2018/03/15/Math-Probability-3-7-Multivariate-Distributions-P2/)
+    - [3.8 Functions of a Random Variable](http://tony4ai.com/2018/03/16/Math-Probability-3-8-Fuctions-of-a-Random-Variable/ )
+    - [3.9 Functions of Two or More Random Variables](http://tony4ai.com/2018/03/19/Math-Probability-3-9-Functions-of-Two-or-More-Random-Variables/)
   - 数理统计
   - 随机过程
   - 信息论
@@ -204,6 +209,8 @@ date: 9999-12-31 23:59:59
     - [2.3 组织并行线程](http://tony4ai.com/2018/03/09/CUDA-F-2-3-组织并行线程/)
     - [2.4 设备信息查询](http://tony4ai.com/2018/03/10/CUDA-F-2-4-设备信息/)
     - [3.1 CUDA执行模型概述](http://tony4ai.com/2018/03/12/CUDA-F-3-1-CUDA执行模型概述/)
+    - [3.2 理解线程束执行的本质（Part I）](http://tony4ai.com/2018/03/14/CUDA-F-3-2-理解线程束执行的本质-P1/)
+    - [3.2 理解线程束执行的本质（Part II）](http://tony4ai.com/2018/03/15/CUDA-F-3-2-理解线程束执行的本质-P2/)
 - 框架
   - OpenCV
     - [OpenCV矩阵计算分析](http://tony4ai.com/2017/12/29/Code-OpenCV-Mat过程分析/)

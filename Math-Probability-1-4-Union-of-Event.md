@@ -1,5 +1,5 @@
 ---
-title: 【概率论】1-4:Union of Events & Statical Swindles
+title: 【概率论】1-4:Union of Events and Statical Swindles
 categories:
   - Mathematic
   - Probability
