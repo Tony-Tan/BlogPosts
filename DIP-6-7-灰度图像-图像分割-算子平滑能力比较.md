@@ -2,7 +2,7 @@
 title: 【数字图像处理】6.7:灰度图像-图像分割 Sobel算子，Prewitt算子和Scharr算子平滑能力比较
 date: 2015-02-13 11:49
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - Sobel算子
   - Scharr算子

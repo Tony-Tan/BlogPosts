@@ -2,7 +2,7 @@
 title: 【数字图像处理】5.7:灰度图像-图像增强 非锐化掩蔽 （Unsharpening Mask）
 date: 2015-01-31 19:53
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 非锐化掩蔽(USM)
 toc: true

@@ -2,7 +2,7 @@
 title: 【数字图像处理】7.5:灰度图像-图像分割 阈值处理之OTSU阈值
 date: 2015-03-08 12:35
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - OTSU算法
 toc: true

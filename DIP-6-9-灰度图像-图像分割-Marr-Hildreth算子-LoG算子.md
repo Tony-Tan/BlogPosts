@@ -2,7 +2,7 @@
 title: 【数字图像处理】6.9:灰度图像-图像分割 Marr-Hildreth算子（LoG算子）
 date: 2015-02-13 14:54
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 边缘检测
   - LoG算子

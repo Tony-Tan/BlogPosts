@@ -2,7 +2,7 @@
 title: 【数字图像处理】8.0:彩色模型，CIE XYZ，CIE RGB
 date: 2015-03-11 14:03
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 颜色空间
   - CIE XYZ

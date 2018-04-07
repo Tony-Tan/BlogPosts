@@ -2,7 +2,7 @@
 title: 【数字图像处理】6.6:灰度图像-图像分割 Scharr算子
 date: 2015-02-11 19:00
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 边缘检测
   - scharr算子

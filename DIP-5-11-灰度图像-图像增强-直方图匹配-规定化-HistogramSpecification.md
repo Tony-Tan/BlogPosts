@@ -2,7 +2,7 @@
 title: 【数字图像处理】5.11:灰度图像-图像增强 直方图匹配（规定化）Histogram Specification"
 date: 2015-02-04 10:16
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 直方图匹配
   - 直方图规定化

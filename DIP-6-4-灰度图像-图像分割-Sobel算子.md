@@ -2,7 +2,7 @@
 title: 【数字图像处理】6.4:灰度图像-图像分割 Sobel算子
 date: 2015-02-10 11:54
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - Sobel算子
   - 边缘检测

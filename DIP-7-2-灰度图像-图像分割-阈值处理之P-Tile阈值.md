@@ -2,7 +2,7 @@
 title: 【数字图像处理】7.2:灰度图像-图像分割 阈值处理之P-Tile阈值
 date: 2015-03-06 17:00
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 阈值处理
   - p-tile

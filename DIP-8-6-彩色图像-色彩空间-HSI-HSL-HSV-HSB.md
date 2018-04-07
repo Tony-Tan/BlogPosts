@@ -2,7 +2,7 @@
 title: 【数字图像处理】8.6:彩色图像-色彩空间 HSI(HSL)、HSV(HSB)
 date: 2015-03-15 14:57
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 色彩空间
   - HSI

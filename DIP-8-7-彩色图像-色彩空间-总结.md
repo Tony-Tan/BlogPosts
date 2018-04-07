@@ -2,7 +2,7 @@
 title: 【数字图像处理】8.7:彩色图像-色彩空间 总结
 date: 2015-03-15 17:33
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 色彩空间
 toc: true

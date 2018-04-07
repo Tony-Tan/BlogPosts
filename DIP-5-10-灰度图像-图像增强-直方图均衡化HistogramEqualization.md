@@ -2,7 +2,7 @@
 title: 【数字图像处理】5.10:灰度图像--图像增强 直方图均衡化（Histogram Equalization)
 date: 2015-02-03 15:12
 categories:
-  - 数字图像处理
+  - DIP
 tags:
   - 直方图均衡
 toc: true
