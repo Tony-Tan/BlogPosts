@@ -1,5 +1,5 @@
 ---
-title: 【概率论】3-8:Functions of a Random Variable
+title: 【概率论】3-8:随机变量函数(Functions of a Random Variable)
 categories:
   - Mathematic
   - Probability
@@ -108,7 +108,7 @@ $$
 证明过程如下：
 1. $F$ 是单随机变量 $X$ 的c.d.f. 那么其定义域可以是 $\mathbb{R}$ 但是其值域为 $[0,1]$
 2. 因为 $Y=F(X)$ 所以 $Y\in [0,1]$ 并且 $Pr(Y>1)=Pr(Y<0)=0$
-3. 那么如果我们想找到 $X$ 中的某个点 $x_0$ 和 $Y$ 中的 $y_0$ 对应相当于[3.3中关于分位数的计算](https://tony4ai.com/2018/02/06/Math-Probability-3-3-Cumulative-Distribution-Function/)中，$X$ 的 $y_0$ 分位数，并且每个分位数和对应的分位是一一对应的
+3. 那么如果我们想找到 $X$ 中的某个点 $x_0$ 和 $Y$ 中的 $y_0$ 对应相当于[3.3中关于分位数的计算](https://tony4ai.com/Math-Probability-3-3-Cumulative-Distribution-Function/)中，$X$ 的 $y_0$ 分位数，并且每个分位数和对应的分位是一一对应的
 4. 这样的话，根据意义对应的关系，如果要保证 $Y\leq y_0$ 的充分必要条件是 $X\leq F^{-1}(y_0)=x_0$
 5. 那么对应的概率关系就是 $G(y)=Pr(Y\leq y)=Pr(X\leq x_0)=F(x_0)=y$
 Q.E.D

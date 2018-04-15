@@ -1,5 +1,5 @@
 ---
-title: 【概率论】4-4:Moments
+title: 【概率论】4-4:距(Moments)
 categories:
     - Mathematic
     - Probability

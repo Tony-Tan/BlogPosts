@@ -1,5 +1,5 @@
 ---
-title: 【概率论】2-3:Bayes' Theorem
+title: 【概率论】2-3:贝叶斯定理(Bayes' Theorem)
 categories:
   - Mathematic
   - Probability

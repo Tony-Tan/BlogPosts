@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】3-1:Space of Vectors
+title: 【线性代数】3-1:向量空间(Space of Vectors)
 categories:
   - Mathematic
   - Linear Algebra
@@ -123,7 +123,7 @@ FMZP这几个家伙就都满足，不信你就自己试试，我试过，没问�
 (ii) $ cv$is in the subspace
 
 以上(i)(ii)是判断子空间的重要标准，这个也是我们之前提到的，线性代数最最最最最基础的最关键的两种计算。
-[Linear combination](http://tony4ai.com/2017/08/28/Math-Linear-Algebra-Chapter-1-1/)中详细的描述了这两种计算。子空间主要强调closed，在加法和乘法上封闭，你不能两个空间内的向量，加乘出了空间，飞翔到外太空，这样就不能称为子空间了，概括一下子空间就是包含在某个空间内，自身对于加法和scalar封闭的这么一个空间。
+[Linear combination](http://tony4ai.com/Math-Linear-Algebra-Chapter-1-1/)中详细的描述了这两种计算。子空间主要强调closed，在加法和乘法上封闭，你不能两个空间内的向量，加乘出了空间，飞翔到外太空，这样就不能称为子空间了，概括一下子空间就是包含在某个空间内，自身对于加法和scalar封闭的这么一个空间。
 ### Some Facts：
 1：当(ii)中c为0的时候0向量在空间内，也就是说子空间必须包括0向量
 2：如果向量v,w在子空间内，那么其线性组合$cv+dw$一定也在子空间内
@@ -132,7 +132,7 @@ FMZP这几个家伙就都满足，不信你就自己试试，我试过，没问�
 
 子空间是个相当有用知识，在《线性代数应该这样学》中就是从空间这个切入点来建立整个线性代数体系的。书上主要通过二维和三维的例子来介绍子空间的，比较容易理解。
 ## Column space of A（矩阵A的列空间）
-A是个矩阵，有m行，n列，每行有n个元素，每列有m个元素，刚开始学数字图像处理的时候，总是分不清行和列，高和宽是啥。哈哈哈，还记得我们的矩阵乘法么？我们首先研究的是[$Ax=b$](http://tony4ai.com/2017/08/31/Math-Linear-Algebra-Chapter-2-1/)里面的"Column Picture"就是列空间的一种体现，也就是把A中的每一列当做空间内的一个向量，通过(ii)的方式组合出的新向量 $\textbf{b}$一定也是在A的所有列所在的空间内，这就是列空间。
+A是个矩阵，有m行，n列，每行有n个元素，每列有m个元素，刚开始学数字图像处理的时候，总是分不清行和列，高和宽是啥。哈哈哈，还记得我们的矩阵乘法么？我们首先研究的是[$Ax=b$](http://tony4ai.com/Math-Linear-Algebra-Chapter-2-1/)里面的"Column Picture"就是列空间的一种体现，也就是把A中的每一列当做空间内的一个向量，通过(ii)的方式组合出的新向量 $\textbf{b}$一定也是在A的所有列所在的空间内，这就是列空间。
 >The column space consists of all linear combinations of the columns.The combination are all possible vectors $Ax$.They fill the column space C(A)
 
 所以Ax=b如果关注x就是解方程组，如果关注b就是列向量空间，当然，这两个的主要决定因素还是A，如果b在A的列向量空间内，也就是某个$x_1$线性组合A的列，得到$b_1$，那么这个$Ax=b_1$的解存在（唯一不唯一不一定），而且$x_1$是一个解；这又引出了另一个大课题，$Ax=b$到底特么的有多少个解？！

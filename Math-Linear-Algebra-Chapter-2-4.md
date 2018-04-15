@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-4:Matrix Operations
+title: 【线性代数】2-4:矩阵操作(Matrix Operations)
 toc: true
 categories:
   - Mathematic

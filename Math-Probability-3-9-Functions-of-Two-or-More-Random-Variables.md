@@ -1,5 +1,5 @@
 ---
-title: 【概率论】3-9:Functions of Two or More Random Variables
+title: 【概率论】3-9:多随机变量函数(Functions of Two or More Random Variables)
 categories:
     - Mathematic
     - Probability

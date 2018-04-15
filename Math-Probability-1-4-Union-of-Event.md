@@ -1,5 +1,5 @@
 ---
-title: 【概率论】1-4:Union of Events and Statical Swindles
+title: 【概率论】1-4:事件的的并集(Union of Events and Statical Swindles)
 categories:
   - Mathematic
   - Probability
@@ -19,7 +19,7 @@ date: 2018-01-30 09:22:40
 废话还是说说数学吧，学数学真的看不到立竿见影的事，相比学个C++、TensorFlow，这些更有成就感，毕竟写了就有结果可以看，数学学习的结果就是，你可能只会做两道题，没办法直接让你升值加薪，但是凡事都有因果，通过这几个月简单的学习，我发现身边的很多事都能用数学解释，比如今天要写的，如果我早些学习可能可以避免很多不必要的损失，而且通过学数学分析，可以通过一个人的语言来判断这个人的逻辑，进而判断这个人的性格，这是心理学的内容了，我不懂心理学，但是很感兴趣，如果有机会去研究下心理学，毕竟也跟人工智能强相关。
 本篇介绍两个小知识点，关于事件的并集的概率求法，以及一些概率的日常应用
 ## Union of Two Events（两个事件的并）
-在前面[1-1概率定义](http://tony4ai.com/2018/01/24/Math-Probability-1-1-Definition-of-Probability/)中的T7给出了两个相交的事件的并集的概率计算方法：
+在前面[1-1概率定义](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中的T7给出了两个相交的事件的并集的概率计算方法：
 $$Pr(A\cup B)=Pr(A)+Pr(B)-Pr(A\cap B)$$
 详细的证明在1-1中也有给出，这个公式在本文中将会进一步展开，把其延展到无数项，但是在开始之前我们还是来复习下这个定理，事件是试验结果的集合，集合的基本运算就是交，并，补，补集和概率的对应我们在1-1中的T3就是最基础的补集的概率计算，剩下就是交集和并集的计算了，T7给出了两个集合并集的概率计算公式，并给出了分析的证明方法，之前看书和上课老师都是给我们画个Venn图没然后说 $Pr(A\cup B)$ 是 $Pr(A)+Pr(B)$ 但是重复加了一遍 $Pr(A\cap B)$ 所以要减去。
 ![two_event](Math-Probability-1-4-Union-of-Event/two_events.png)

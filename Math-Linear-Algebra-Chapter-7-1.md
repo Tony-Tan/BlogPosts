@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】7-1:The Idea of a Linear Transformation
+title: 【线性代数】7-1:线性变换思想(The Idea of a Linear Transformation)
 categories:
   - Mathematic
   - Linear Algebra

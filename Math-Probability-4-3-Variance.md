@@ -1,5 +1,5 @@
 ---
-title: 【概率论】4-3:Variance
+title: 【概率论】4-3:方差(Variance)
 categories:
     - Mathematic
     - Probability

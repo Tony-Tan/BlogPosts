@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】7-3:Diagonalization and the Pseudoinverse
+title: 【线性代数】7-3:对角化和伪逆(Diagonalization and the Pseudoinverse)
 categories:
   - Mathematic
   - Linear Algebra
@@ -83,7 +83,7 @@ $$
 上面这个求解 $\Sigma$ 的过程并不是一根筋，而是两头堵，根据紫色线的方向求解的，因为U和V都是正交矩阵，所以其逆和转置一样。
 
 ## The Pseudoinverse
-伪逆就是不是真的逆，并不是所有矩阵都有逆，但是所有矩阵都有伪逆，当矩阵是可逆矩阵的时候，伪逆和逆相等，我们前面学[四个子空间](http://tony4ai.com/2017/10/17/Math-Linear-Algebra-Chapter-4-1/)的时候学过一幅图：
+伪逆就是不是真的逆，并不是所有矩阵都有逆，但是所有矩阵都有伪逆，当矩阵是可逆矩阵的时候，伪逆和逆相等，我们前面学[四个子空间](http://tony4ai.com/Math-Linear-Algebra-Chapter-4-1/)的时候学过一幅图：
 ![space](Math-Linear-Algebra-Chapter-7-3/4spaces_extra.png)
 这幅图我们当时有详细讲解，假设矩阵是 $m\times n$ 的那么他的行空间和Nullspace加起来肯定是$\Re^n$ ，文中已证明，这个也是线性代数的基本定理，那么 $\Re^n$ 中的任何向量都能被分解成rowspace和nullspace中基的线性组合，所以线性映射后得到将是列空间中的一个向量加上0，所以当nullspace不止零向量的时候不可逆，因为nullspace不能被反射，但是这里有个有趣的就是$Ax_r=b$ 可以被反射得到输入向量的rowspace的分量$x_r$，这个反射矩阵就是Pseudoinverse。
 从换基的角度，继续SVD，我们看到上图我们走的紫色路线，那么我们如果想反着走：

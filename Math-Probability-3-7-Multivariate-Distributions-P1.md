@@ -1,5 +1,5 @@
 ---
-title: 【概率论】3-7:Multivariate Distributions（Part I）
+title: 【概率论】3-7:多变量分布(Multivariate Distributions Part I）
 categories:
   - Mathematic
   - Probability
@@ -51,7 +51,7 @@ $$
 f(\vec{x})=Pr(\vec{X}=\vec{x})
 $$
 
-下面这个定理和[3.4](https://tony4ai.com/2018/02/07/Math-Probability-3-4-Bivariate-Distribution/)中双变量分布相似
+下面这个定理和[3.4](https://tony4ai.com/Math-Probability-3-4-Bivariate-Distribution/)中双变量分布相似
 > Theorem If $X$ has a joint discrete distribution with joint p.f. $f$ then for every subset $C\subset \mathbb{R}^n$ ,
 $$
 Pr(\vec{X}\in C)=\sum_{x\in C}f(x)

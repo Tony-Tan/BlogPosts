@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】6-5:Positive Definite Matrices
+title: 【线性代数】6-5:正定矩阵(Positive Definite Matrices)
 categories:
   - Mathematic
   - Linear Algebra
@@ -129,7 +129,7 @@ QED
 4. $x^TAx$ is positive except at $x=0$ This is the energy-based Definition
 5. A equal $R^TR$ for a Matrix R with independent columns
 
-上面的2我们好像没有证明，左上角的行列式的值总和左上角矩阵的pivot有关系，如果第一个行列式为正(也就是1x1的矩阵，即第一个pivot为正)那么第二个矩阵（2x2）的行列式也为正的话，可以得出第二个pivot也是正的，以此类推，就能得到第一条，所有pivot都是正数，这个可以参考行列式文章[Permutation](http://tony4ai.com/2017/11/03/Math-Linear-Algebra-Chapter-5-2/) 可以有些启发。
+上面的2我们好像没有证明，左上角的行列式的值总和左上角矩阵的pivot有关系，如果第一个行列式为正(也就是1x1的矩阵，即第一个pivot为正)那么第二个矩阵（2x2）的行列式也为正的话，可以得出第二个pivot也是正的，以此类推，就能得到第一条，所有pivot都是正数，这个可以参考行列式文章[Permutation](http://tony4ai.com/Math-Linear-Algebra-Chapter-5-2/) 可以有些启发。
 
 上面的五条基本上可以把线性代数大部分东西全包括进去了，消元，特征值，行列式，子空间，这些都要知道后，才能对上面的五条不存在疑惑，所以直接看本文的同学，不懂往回看。
 

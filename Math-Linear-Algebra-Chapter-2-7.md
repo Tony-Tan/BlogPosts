@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-7:Transposes and Permutation
+title: 【线性代数】2-7:转置与变换(Transposes and Permutation)
 toc: true
 categories:
   - Mathematic

@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】3-3:Rank
+title: 【线性代数】3-3:秩(Rank)
 categories:
   - Mathematic
   - Linear Algebra
@@ -67,7 +67,7 @@ $$
 
 Rank r还是行空间和列空间的维数，同时跟Nullspace的维度有关！
 ### Free Columns & Pivot Columns
-[3-2:Nullspace](http://tony4ai.com/2017/09/19/Math-Linear-Algebra-Chapter-3-2/)中对Free Columns和Pivot Columns有相关介绍，下面再介绍一些相关的性质，Free Columns是不包含Pivot的列，Pivot Columns则是包含Pivot的列，
+[3-2:Nullspace](http://tony4ai.com/Math-Linear-Algebra-Chapter-3-2/)中对Free Columns和Pivot Columns有相关介绍，下面再介绍一些相关的性质，Free Columns是不包含Pivot的列，Pivot Columns则是包含Pivot的列，
 对于任何一个Free Column都是其前面pivot列的线性组合。
 举个例子，我们不看具体数字就看形状
 $$

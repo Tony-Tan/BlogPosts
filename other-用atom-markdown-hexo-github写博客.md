@@ -6,7 +6,7 @@ categories:
 date: 2017-08-24 22:24:52
 tags:
   - markdown
-  - hexo
+  - Hexo
   - LaTeX
   - github
 ---

@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-6:The Normal Distributions(Part II)
+title: 【概率论】5-6:正态分布(The Normal Distributions Part II)
 categories:
     - Mathematic
     - Probability
@@ -26,7 +26,7 @@ $$
 定义对于我们来说就是个准确的命名过程。那么我们接下来要证明的是定义里说的对不对？
 > Theorem $f(x|\mu,\sigma^2)=\frac{1}{(2\pi)^{\frac{1}{2}}\sigma}e^{-\frac{1}{2}(\frac{(x-\mu)}{\sigma})^2}\text{for} -\infty < x< \infty$ is a p.d.f.
 
-思路：证明一个表达式是不是，p.d.f.，肯定要根据[p.d.f.的定义](https://tony4ai.com/2018/02/05/Math-Probability-3-2-Continuous-Distribution/)，①不能出现负数，②积分结果是1。
+思路：证明一个表达式是不是，p.d.f.，肯定要根据[p.d.f.的定义](https://tony4ai.com/Math-Probability-3-2-Continuous-Distribution/)，①不能出现负数，②积分结果是1。
 首先观察函数，发现其不可能出现负数，所以性质1符合p.d.f.的性质
 那么接下来是求积分，并确保是1，不是说不能积分么，这里怎么做呢？
 首先我们令 $y=\frac{x-\mu}{\sigma}$ 那么

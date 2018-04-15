@@ -1,5 +1,5 @@
 ---
-title: 【概率论】4-6:Covariance and Correlation
+title: 【概率论】4-6:协方差和相关性(Covariance and Correlation)
 categories:
     - Mathematic
     - Probability
@@ -27,7 +27,7 @@ date: 2018-03-26 10:44:07
 当我们将随机变量从一个扩展到多个，前面提到的期望，方差，中值等这些针对单个随机变量的数字特征就只能刻画联合分布的某一边缘分布的性质了。所以我们提出了新的数字特征，这个数字特征能描述两个随机变量之间有没有变化上的关系，比如他们经常同时变大或者变小，或者总是一个变大另一个变小，这种关联的关系。
 通过这种数字特征，我们能够在求出若干个这种变量的方差，以及通过已经得到的几个随机变量的结果来预测其他几个。如果确定了这几个随机变量之间的关联，这些似乎都是可行的。
 
->Definition Covariance. Let X and Y be random variables having finite means.Let E(X)=\mu_X and E(Y)=\mu_Y The covariance of X and Y,which is denoted by Cov(X,Y),is defined as
+>Definition Covariance. Let $X$ and $Y$ be random variables having finite means.Let $E(X)=\mu_X$ and $E(Y)=\mu_Y$ The covariance of X and Y,which is denoted by $Cov(X,Y)$ ,is defined as
 $$
 Cov(X,Y)=E[(X-\mu_X)(Y-\mu_Y)]
 $$
@@ -94,7 +94,7 @@ $$
 今天讲解两个数字特征，协方差和相关性，这两个数字特征最终目的一样都是想描述多个变量之间一致性变化的特点，比如，当 $X$ 为较大值的时候  $Y$ 有很大的可能取较大值，注意，我们前面给出的协方差的大小就是这个可能性的一种描述，但是，这个描述也有问题，他不稳定，为啥不稳定，
 比如说随机变量 $X$ 和随机变量 $Y$ 他们的协方差是 $Cov(X,Y)$  根据协方差的计算法则，当我们把随机变量变成 $2X$ 和 $Y$ 的时候 $Cov(2X,Y)=2Cov(X,Y)$ ，但他们的一致性关系应该是不变的，只是对应的随机变量的可能值变化了不少，一致性并不改变，我们需要一种数字特征能描述这种一致性，不因为随机变量伸缩而改变。
 
->Definition Correlation.Let X and Y be random variables with finite variances $\sigma^2_{X}$ and $\sigma^2_{Y}$ ,respectively. Then the correlation of X and Y ,which is denoted by $\rho(X,Y)$ ,is defined as follow:
+>Definition Correlation.Let X and Y be random variables with finite variances $\sigma^2_{X}$ and $\sigma^2_{Y}$ ,respectively. Then the correlation of $X$ and $Y$ ,which is denoted by $\rho(X,Y)$ ,is defined as follow:
 $$
 \rho(X,Y)=\frac{Cov(X,Y)}{\sigma_X^2 \sigma_Y^2}
 $$
@@ -182,7 +182,7 @@ f(x)=
 0&\text{otherwise }
 \end{cases}
 $$
-因为随机变量变化范围是个圆而不是矩形，所以很明显 X和Y不独立（参考[随机变量的独立性](https://tony4ai.com/2018/02/09/Math-Probability-3-5-Marginal-Distributions/)），但是可以计算其协方差为 $Cov(X,Y)=E[XY]-E[X]E[Y]=0-0=0$ 那么其相关性也是 0 ，于是相关的两个随机变量，其协方差，相关性也可以是0.
+因为随机变量变化范围是个圆而不是矩形，所以很明显 X和Y不独立（参考[随机变量的独立性](https://tony4ai.com/Math-Probability-3-5-Marginal-Distributions/)），但是可以计算其协方差为 $Cov(X,Y)=E[XY]-E[X]E[Y]=0-0=0$ 那么其相关性也是 0 ，于是相关的两个随机变量，其协方差，相关性也可以是0.
 ![circle](Math-Probability-4-6-Covariance-and-Correlation/circle.png)
 
 ---------

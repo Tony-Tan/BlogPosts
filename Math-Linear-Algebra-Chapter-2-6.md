@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-6:$A=LU$ and $A=LDU$
+title: 【线性代数】2-6:三角矩阵( $A=LU$ and $A=LDU$ )
 toc: true
 categories:
   - Mathematic

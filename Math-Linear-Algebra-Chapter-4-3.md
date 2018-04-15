@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】4-3:Least Squares Approximations
+title: 【线性代数】4-3:最小二乘近似(Least Squares Approximations)
 categories:
   - Mathematic
   - Linear Algebra

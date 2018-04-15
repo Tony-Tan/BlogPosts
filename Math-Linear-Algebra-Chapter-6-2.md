@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】6-2:Diagonalizing a Matrix
+title: 【线性代数】6-2:对角化(Diagonalizing a Matrix)
 categories:
   - Mathematic
   - Linear Algebra

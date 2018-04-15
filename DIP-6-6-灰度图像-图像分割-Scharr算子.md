@@ -5,7 +5,7 @@ categories:
   - DIP
 tags:
   - 边缘检测
-  - scharr算子
+  - Scharr算子
 toc: true
 ---
 **Abstract:** 数字图像处理：第44天

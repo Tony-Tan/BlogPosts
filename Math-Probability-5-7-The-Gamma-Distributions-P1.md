@@ -1,5 +1,5 @@
 ---
-title:  【概率论】5-7:The Gamma Distributions(Part I)
+title:  【概率论】5-7:Gama分布(The Gamma Distributions Part I)
 categories:
     - Mathematic
     - Probability

@@ -1,13 +1,13 @@
 ---
-title: 【概率论】3-7:Multivariate Distributions（Part II）
+title: 【概率论】3-7:多变量分布(Multivariate Distributions Part II）
 categories:
   - Mathematic
   - Probability
 tags:
   - Conditional Distributions
-  - Law of Total Probability
   - Bayes' Theorem
   - Histograms
+  - Law of total Probability
 toc: true
 date: 2018-03-15 09:20:38
 ---

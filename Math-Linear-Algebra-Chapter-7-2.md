@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】7-2:The Matrix of a Linear Transformation
+title: 【线性代数】7-2:线性变化的矩阵(The Matrix of a Linear Transformation)
 categories:
   - Mathematic
   - Linear Algebra

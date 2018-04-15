@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-4:The Poisson Distribution
+title: 【概率论】5-4:泊松分布(The Poisson Distribution)
 categories:
     - Mathematic
     - Probability

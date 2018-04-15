@@ -47,4 +47,4 @@ Normalization方式：
 ### 总结
 不同变量域最后的结果差别较大
 不同的Normalization的结果也不相同，Normalization的结果优于不normalization的结果。
-另外，Normalization也会影响收敛速度，见博文（[http://www.tcvpr.com/archives/354](http://www.tcvpr.com/archives/354)）
+另外，Normalization也会影响收敛速度

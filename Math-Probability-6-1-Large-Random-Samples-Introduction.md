@@ -1,5 +1,5 @@
 ---
-title: 【概率论】6-1:Large Random Samples Introduction
+title: 【概率论】6-1:大样本介绍(Large Random Samples Introduction)
 categories:
     - Mathematic
     - Probability

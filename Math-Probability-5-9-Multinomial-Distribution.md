@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-9:The Multinomial Distributions
+title: 【概率论】5-9:多项式分布(The Multinomial Distributions)
 categories:
     - Mathematic
     - Probability
@@ -18,7 +18,7 @@ date: 2018-04-04 22:17:23
 本文开始介绍多于一个变量的分布，其实分布我们已经学了不少了后面再讲一个双变量的正态分布本章就算结束了，主要学的就是如何使用前面学到的工具来对新的随机变量的性质进行分析。今天我们来分析多项式分布。
 多项式是二项分布的一个扩展。
 ## Definition and Derivation of Multinomial Distribution
-把[二项分布](https://tony4ai.com/2018/03/27/Math-Probability-5-2-the-Bernoulli-and-Binomial-Distributions/)中的两个变量扩展成多个变量，就能得到我们我们今天要介绍的多项式分布，而且遵守和二项式分布一样的放回的采样方式（with replacement），在计数方法中我们也学过[多项式系数](https://tony4ai.com/2018/01/26/Math-Probability-1-3-Combinatorial-Methods/)这个知识，与我们今天要说的多项式分布是紧密相关的，比如我们举个例子：
+把[二项分布](https://tony4ai.com/Math-Probability-5-2-the-Bernoulli-and-Binomial-Distributions/)中的两个变量扩展成多个变量，就能得到我们我们今天要介绍的多项式分布，而且遵守和二项式分布一样的放回的采样方式（with replacement），在计数方法中我们也学过[多项式系数](https://tony4ai.com/Math-Probability-1-3-Combinatorial-Methods/)这个知识，与我们今天要说的多项式分布是紧密相关的，比如我们举个例子：
 人类的血型可以分为 A，B，o，AB 四种类型，每种类型都有相应的比例（这个比例是从所有人的类型中统计计算出来的）现在才去放回式的抽样，假设我们抽取了若干个样本，得到随机变量的向量为： $\vec{x}=(X_A,X_B,X_o,X_{AB})$  对应的概率为 $\vec{p}=(p_A,p_B,p_o,p_{AB})$ 那么我们可以根据多项式系数的相关知识得到其分布：
 $$
 f(\vec{x}|4,\vec{p})=Pr(X_A=x_1,X_B=x_2,X_o=x_3,X_{AB}=x_4)\\

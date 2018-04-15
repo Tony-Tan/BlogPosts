@@ -1,5 +1,5 @@
 ---
-title: 【概率论】4-2:Properties of Expectation
+title: 【概率论】4-2:期望的性质(Properties of Expectation)
 categories:
     - Mathematic
     - Probability

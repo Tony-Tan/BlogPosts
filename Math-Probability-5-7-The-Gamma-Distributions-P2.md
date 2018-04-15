@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-7:The Gamma Distributions(Part II)
+title: 【概率论】5-7:Gama分布(The Gamma Distributions Part II)
 categories:
     - Mathematic
     - Probability
@@ -29,7 +29,7 @@ f(x\beta)=
 $$
 
 这就是指数分布的定义，还是想之前说的，定义就是对这个在什么情况下分布是什么样子的进行定义，然后我们接下来要做的是通过这个定义能产生多少相关的定理结论。
-作为对比，我们来列出Gamma分布，进行对比就能清楚地知道一些性质了，[Gamma分布](https://tony4ai.com/2018/03/31/Math-Probability-5-7-The-Gamma-Distributions-P1/)
+作为对比，我们来列出Gamma分布，进行对比就能清楚地知道一些性质了，[Gamma分布](https://tony4ai.com/Math-Probability-5-7-The-Gamma-Distributions-P1/)
 
 <font face="黑体" color=#6F6FFF><B>
 Gamma Distributions.Let $\alpha$ and $\beta$ be positive numbers.A random variable $X$ has the gamma distribution with parameters $\alpha$ and $\beta$ if $X$ has a continuous distribution for which the p.d.f. is

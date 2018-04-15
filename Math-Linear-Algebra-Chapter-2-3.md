@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-3:Elimination and Matrix
+title: 【线性代数】2-3:消元与矩阵的关系(Elimination and Matrix)
 toc: true
 categories:
   - Mathematic
@@ -27,7 +27,7 @@ $$
 \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}
 $$
 是一个n维***空间(space)***，在这个空间里，我们找一个特定或者若干个特定的vector使得$ Ax=b $成立
-根据[row picture](http://tony4ai.com/2017/08/31/Math-Linear-Algebra-Chapter-2-1/)，和[column pictur](http://tony4ai.com/2017/08/31/Math-Linear-Algebra-Chapter-2-1/)
+根据[row picture](http://tony4ai.com/Math-Linear-Algebra-Chapter-2-1/)，和[column pictur](http://tony4ai.com/Math-Linear-Algebra-Chapter-2-1/)
 :
 $$
 A\textbf{x}=col(1)x_1+rcol(2)x_2+\dots+col(n)x_n\\

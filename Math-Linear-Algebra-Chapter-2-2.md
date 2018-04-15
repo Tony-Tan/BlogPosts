@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-2:Eliminate
+title: 【线性代数】2-2:消元(Eliminate)
 toc: true
 categories:
   - Mathematic

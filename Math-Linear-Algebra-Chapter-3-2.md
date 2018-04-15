@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】3-2:Nullspace
+title: 【线性代数】3-2:零空间(Nullspace)
 categories:
   - Mathematic
   - Linear Algebra

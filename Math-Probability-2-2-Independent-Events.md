@@ -1,5 +1,5 @@
 ---
-title: 【概率论】2-2:Independent Events
+title: 【概率论】2-2:独立事件(Independent Events)
 categories:
   - Mathematic
   - Probability
@@ -59,7 +59,7 @@ $$
 ![](Math-Probability-2-2-Independent-Events/intersect.png)
 这是一种很自然的想法，当题设的条件中用到独立，互不影响地进进行两个实验的时候，我们很自然的把他们理解为两个样本空间，所以打死不会有交集，但事实是我们关心的是这两个试验的一个复合结果产生的样本空间。
 
-但事实是这是个明显错误的，当A和B事件作为同一个试验的事件，那么当B发生的时候严重影响A的概率，因为当B发生的时候，A不可能发生，根据[1-1](http://tony4ai.com/2018/01/24/Math-Probability-1-1-Definition-of-Probability/)中的T1，我们可以确定当$Pr(B)\geq 0$ 的时候 $Pr(A|B)=\frac{Pr(A\cap B)}{Pr(B)}=\frac{Pr(\emptyset)}{Pr(B)}=0$
+但事实是这是个明显错误的，当A和B事件作为同一个试验的事件，那么当B发生的时候严重影响A的概率，因为当B发生的时候，A不可能发生，根据[1-1](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中的T1，我们可以确定当$Pr(B)\geq 0$ 的时候 $Pr(A|B)=\frac{Pr(A\cap B)}{Pr(B)}=\frac{Pr(\emptyset)}{Pr(B)}=0$
 这是个对立事件，不是独立事件。
 
 

@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】4-1:Orthogonality of the Four Subspace
+title: 【线性代数】4-1:四个正交子空间(Orthogonality of the Four Subspace)
 categories:
   - Mathematic
   - Linear Algebra
@@ -108,7 +108,7 @@ This is very important ,The Fundamental subspace are more than just orthogonal i
 | **$N(A)$ is the orthogonal complement of the row space $C(A^T)$ (in $R^n$)** |
 | **$N(A^T)$ is the orthogonal complement of the row space $C(A)$ (in $R^m$)** |
 解读：Fundamental Theorem Part I给出维度关系，Fundamental Theorem Part II给出垂直关系，complement时表示一个向量$x\,in\,R^n$总能分解到rowspace和nullspace两部分，而且根据两个subspace之间的dimension关系，可以确定，rowspace和nullspace加起来是完整的$R^n$空间（这个后面有讨论）
-当$A(x_r+x_n)$时，奇迹出现了，还记得我们写[Ax=b](http://tony4ai.com/2017/09/25/Math-Linear-Algebra-Chapter-3-4/)的无数个解的时候的完整解么?
+当$A(x_r+x_n)$时，奇迹出现了，还记得我们写[Ax=b](http://tony4ai.com/Math-Linear-Algebra-Chapter-3-4/)的无数个解的时候的完整解么?
 $$ x=x_{particular}+x_n$$
 和上面这种形式是对应的
 矩阵A和向量相乘，可以有很多种解读，但是说到最根本的地方就是，$Ax$就是为了让x goes to column space，并没有其他什么更高级的功能。

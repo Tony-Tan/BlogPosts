@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-5:Inverse
+title: 【线性代数】2-5:逆(Inverse)
 toc: true
 categories:
   - Mathematic

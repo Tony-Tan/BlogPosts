@@ -1,5 +1,5 @@
 ---
-title: 【概率论】3-5:Marginal Distribution
+title: 【概率论】3-5:边缘分布(Marginal Distribution)
 categories:
   - Mathematic
   - Probability

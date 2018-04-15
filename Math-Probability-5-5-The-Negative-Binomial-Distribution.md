@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-5:The Negative Binomial Distribution
+title: 【概率论】5-5:负二项分布(The Negative Binomial Distribution)
 categories:
     - Mathematic
     - Probability
