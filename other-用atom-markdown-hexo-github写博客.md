@@ -34,10 +34,10 @@ atom是github搞得一个神一个级别的编辑器，编辑器，说实话，v
 #### markdown-preview-plus
 实时预览：
 像这样
-![markdown-preview-plus](other-用atom-markdown-hexo-github写博客/markdown-preview-plus.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/other-用atom-markdown-hexo-github写博客/markdown-preview-plus.png)
 以及LaTeX数学公式预览
 像这样
-![LaTeX](other-用atom-markdown-hexo-github写博客/latex.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/other-用atom-markdown-hexo-github写博客/latex.png)
 从word类软件启蒙的我们对所见即所得的模式产生依赖，看到结果也好，可以及时纠正一些排版问题
 
 #### markdown-scroll-sync

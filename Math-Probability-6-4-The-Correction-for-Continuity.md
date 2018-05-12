@@ -23,10 +23,10 @@ date: 2018-04-09 15:25:31
 ------------------------
 🌰 ：
 对于一个大的样本，6.3中我们讲了正态分布 $\mu=50,\sigma^2=25$ 可以用来近似 $n=100,p=0.5$ 的二项分布随机变量 $X$ 。特别的，如果 $Y$ 有 $\mu=50,\sigma^2=25$ 的正态分布，我们知道 $Pr(Y\leq X)$ 对于所有 $x$ 近似于 $Pr(X\leq x)$ 但是有对称的误差，如图
-![6_4](Math-Probability-6-4-The-Correction-for-Continuity/6_4.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-6-4-The-Correction-for-Continuity/6_4.png)
 
 可以看出，离散随机变量X的c.d.f.在图中是阶梯状的，因为其变量对应的为整数，所以每个阶梯左右端点对应的是整数，那么在 $[30,70]$ 区间上，可见连续随机变量的c.d.f穿过所有的离散阶梯的中心部分，也就是 $n+0.5$ 这里对于两个分布是相等，中间左半部分 $[n,n+0.5)$ 离散的c.d.f较大，反之，右半部分连续的c.d.f.较大。
-![6_4_1](Math-Probability-6-4-The-Correction-for-Continuity/6_4_1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-6-4-The-Correction-for-Continuity/6_4_1.png)
 我们应该可以利用这个特点对近似做一点优化。因为我们想要个一致的近似，比如总是大于总是小于的近似，而不是一个一会儿大一会小的近似。
 
 ------------------------
@@ -48,7 +48,7 @@ $$
 上面的近似有点黎曼积分的意思在里面，大家可以参考数学分析书籍进行理解，因为不能取极限，所以分析误差就变成了重要的一个环节。
 ## Approximating a Bar Chart
 接着我们来看如何近似一个直方图，直方图的理论依据在大数定理中已经进行了证明，今天我们来看如何用连续分布的p.d.f.来近似一个直方图。
-![6_5](Math-Probability-6-4-The-Correction-for-Continuity/6_5.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-6-4-The-Correction-for-Continuity/6_5.png)
 
 同样，直方图的面积对应的就是概率（高度和面积一样，因为宽度是1）但是我们和上面的处理方法不同，前面的处理方法是从整数到下一个整数，对应一个概率，这里改成从负半个整数到正半个整数作为一个概率，所以根据坐标来求和，区间 $[a-\frac{1}{2},b+\frac{1}{2}]$ 上条形图的面积近似于积分结果：
 $$
@@ -60,7 +60,7 @@ $$
 有了上面的修正结论，我们就可以对第一个例子进行优化了。
 比如我们用 $Pr(Y\leq x+0.5)$ 来替代 $Pr(Y\leq x)$ 来近似 $Pr(X\leq x)$ ，
 或者用 $Pr(Y\leq x-0.5)$ 来替代 $Pr(Y\leq x)$ 来近似 $Pr(X\leq x)$ 都能得出优于前面的结论，但是图像会变成这样：
-![6_6](Math-Probability-6-4-The-Correction-for-Continuity/6_6.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-6-4-The-Correction-for-Continuity/6_6.png)
 
 移动后的连续分布更能近似不移动的分布
 

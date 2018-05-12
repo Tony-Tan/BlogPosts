@@ -3,7 +3,7 @@ title: 【数字图像处理】5.6:灰度图像--图像增强 拉普拉斯算子
 date: 2015-01-31 14:49
 categories:
   - DIP
-tags:
+keywords:
   - 拉普拉斯算子
 toc: true
 ---
@@ -108,23 +108,23 @@ void LaplaceSharpen(double *src,double *dst,int width,int height,int mask_type,d
 总结就是，二阶微分拉普拉斯算子对图像的锐化效果很不错，但对噪声敏感，后面介绍非锐化掩蔽，和一阶微分算子
 
 
-[Center]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135408892.png
-[Center 1]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135715051.png
-[Center 2]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135725518.png
-[Center 3]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135933220.png
-[Center 4]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131140714026.png
-[Center 5]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131142008177.png
-[Center 6]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131143951412.png
-[Center 7]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144013096.jpg
-[Center 8]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144029815.png
-[Center 9]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144115262.png
-[Center 10]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144127055.png
-[Center 11]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144555794.png
-[Center 12]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144006837.png
-[Center 13]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144208536.png
-[Center 14]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144226304.jpg
-[Center 15]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144206021.jpg
-[Center 16]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144301092.png
-[Center 17]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144243711.png
-[Center 18]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144403099.jpg
-[Center 19]: DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144304927.jpg
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135408892.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135715051.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135725518.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131135933220.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131140714026.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131142008177.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131143951412.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144013096.jpg
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144029815.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144115262.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144127055.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144555794.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144006837.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144208536.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144226304.jpg
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144206021.jpg
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144301092.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144243711.png
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144403099.jpg
+[Center 19]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-6-灰度图像-图像增强-拉普拉斯算子/20150131144304927.jpg

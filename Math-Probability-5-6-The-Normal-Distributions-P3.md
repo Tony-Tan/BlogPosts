@@ -91,7 +91,7 @@ p_k=Pr(|X-\mu|\leq k\sigma)=Pr(|Z|\leq k)
 $$
 
 如图：
-![5_6](Math-Probability-5-6-The-Normal-Distributions-P3/5_6.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-5-6-The-Normal-Distributions-P3/5_6.png)
 
 表格中k表示几个标准偏移，也就是k的具体值，可以看出，当$k=3$ 的时候，正态分布内 $Pr(\mu-3\sigma,\mu+3\sigma)>0.99$ 了而且我记得我大学书上有个 $3-\sigma$ 原则，好像是当检测结果满足这个要求的时候就算合格了，这个具体的我们在数理统计部分再说，我们要知道的是正态分布的形状，和偏移性质。
 ## Linear Combinatios of Normally Distributed Variables

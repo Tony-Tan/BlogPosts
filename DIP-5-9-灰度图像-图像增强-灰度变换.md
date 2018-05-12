@@ -3,7 +3,7 @@ title: 【数字图像处理】5-9:灰度图像--图像增强 灰度变换
 date: 2015-02-03 09:58
 categories:
   - DIP
-tags:
+keywords:
   - 灰度变换
   - 伽马变换
 toc: true
@@ -36,10 +36,10 @@ toc: true
 ## 总结
 灰度变换的主要目的是改变对比度，而且针对灰度进行操作，一般的做法是建立一个映射表，大小为灰度级大小，然后根据不同的变换函数生成映射，将输入图片根据映射表产生输出，计算速度很快，时间复杂度为图像总的像素个数。
 
-[Center]: DIP-5-9-灰度图像-图像增强-灰度变换/20150203091558062.png
-[Center 1]: DIP-5-9-灰度图像-图像增强-灰度变换/20150203091638611.png
-[Center 2]: DIP-5-9-灰度图像-图像增强-灰度变换/20150203094613457.png
-[Center 3]: DIP-5-9-灰度图像-图像增强-灰度变换/20150203093829373.png
-[Center 4]: DIP-5-9-灰度图像-图像增强-灰度变换/20150203094651116.png
-[Center 5]: DIP-5-9-灰度图像-图像增强-灰度变换/20150203095017895.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-9-灰度图像-图像增强-灰度变换/20150203091558062.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-9-灰度图像-图像增强-灰度变换/20150203091638611.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-9-灰度图像-图像增强-灰度变换/20150203094613457.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-9-灰度图像-图像增强-灰度变换/20150203093829373.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-9-灰度图像-图像增强-灰度变换/20150203094651116.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-9-灰度图像-图像增强-灰度变换/20150203095017895.png
 [http_blog.csdn.net_tonyshengtan_article_details_41009683]: http://blog.csdn.net/tonyshengtan/article/details/41009683

@@ -3,7 +3,7 @@ title: 【数字图像处理】5.8:灰度图像-图像增强 Robert算子、Sobe
 date: 2015-02-01 15:28
 categories:
   - DIP
-tags:
+keywords:
   - Sobel算子
   - Robert算子
 toc: true
@@ -160,33 +160,33 @@ Sobel和Robert都能对边缘有较强的响应，而且Sobel对边缘的响应�
 
 
 
-[Center]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201135930958.png
-[Center 1]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201135941800.png
-[Center 2]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140106705.png
-[Center 3]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201162712251.png
-[Center 4]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140430119.png
-[Center 5]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140559196.png
-[Center 6]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140729925.png
-[Center 7]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141335631.png
-[Center 8]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141611356.png
-[Center 9]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141719523.png
-[Center 10]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141740230.png
-[Center 11]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141912982.png
-[Center 12]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201144450542.png
-[Center 13]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201144622639.png
-[Center 14]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201144724093.png
-[Center 15]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201145019915.png
-[Center 16]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201145426245.png
-[Center 17]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201145637551.jpg
-[Center 18]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151230067.jpg
-[Center 19]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151321376.jpg
-[Center 20]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151359424.jpg
-[Center 21]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151834318.jpg
-[Center 22]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151905580.png
-[Center 23]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151918466.png
-[Center 24]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152055321.png
-[Center 25]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152111373.png
-[Center 26]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152117535.png
-[Center 27]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152218563.png
-[Center 28]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152225505.png
-[Center 29]: DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152216992.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201135930958.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201135941800.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140106705.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201162712251.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140430119.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140559196.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201140729925.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141335631.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141611356.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141719523.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141740230.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201141912982.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201144450542.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201144622639.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201144724093.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201145019915.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201145426245.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201145637551.jpg
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151230067.jpg
+[Center 19]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151321376.jpg
+[Center 20]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151359424.jpg
+[Center 21]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151834318.jpg
+[Center 22]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151905580.png
+[Center 23]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201151918466.png
+[Center 24]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152055321.png
+[Center 25]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152111373.png
+[Center 26]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152117535.png
+[Center 27]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152218563.png
+[Center 28]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152225505.png
+[Center 29]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152216992.png

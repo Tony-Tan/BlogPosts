@@ -3,7 +3,7 @@ title: 【线性代数】3-1:向量空间(Space of Vectors)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Vectors Space
   - Subspace
   - Column Space
@@ -139,7 +139,7 @@ A是个矩阵，有m行，n列，每行有n个元素，每列有m个元素，刚
 >the system $Ax=b$ is solvable if and only if b is in the column space  of A
 
 举一个🌰：:
-![一个例子 ](Math-Linear-Algebra-Chapter-3-1/一个例子.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-1/一个例子.png)
 例子就是上面那段话的正规描述。
 ## Span(张成)
 张成，tensor翻译成"张弛"，搞得数学名词都姓张，但是张成这个词还是比较形象的，想象一把伞，散的骨架有很多细的支撑骨架，一打开，张成一把伞，其实这个很形象；如果你有棍子和布，如果有一根棍子，你只能撑出一个直线（晾床单模型），如果两个棍子不摆在一条直线，你可以撑起一个面，如果你有三根棍子（两两不在一条直线），就可以撑出一个四面体，一个三维图形，棍子就张成了对应的空间。这个有点牵强附会，但是可以简单的类比一下，向量也是，两个不在同一条直线上的向量，就能通过线性组合，组合出他们张成平面上的所有向量，对于更高维同理。对于矩阵A的n列，他们可以张成n维空间，或者小于n维的空间，当m(行数)>n(列数)那么就是 $\Re^m$的n维（或者小于n维）子空间。

@@ -3,7 +3,7 @@ title: 【线性代数】6-7:SVD分解(Singular Value Decomposition-SVD)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Singular Value Decomposition
   - JPEG
   - Eigenvalues
@@ -20,7 +20,7 @@ date: 2017-11-30 09:02:19
 今天的废话关于学习知识，最近看到一种说法，我觉的非常的形象，有个大神（是谁我忘了），他说已知的知识像一个圆圈，而自己能感受的未知就是紧邻圆圈，圆外部的区域，当你知道的知识越来越多，圆圈不断扩大，圆周也随之扩大，所以你会越来越发现自己无知，那么就会更努力的去学习，所以越有知识的人越谦逊，尤其是对待知识上，尊重知识，探索未知领域是人类文明存在的根本动力。
 ## Singular Value Decomposition
 SVD，熟悉的名字，如果不学习线性代数，直接机器学习，可能最先接触的就是SVD，所以我记得在写上个系列的博客的时候（CSDN，图像处理算法）就说到过SVD，当时还调侃了下百度，每次搜SVD出来的都是一把枪（报告政府，这个枪是穿越火线里面的，没超过1.7J）
-![svd](Math-Linear-Algebra-Chapter-6-7/SVD-1.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-7/SVD-1.jpg)
 
 这张分解图是我无意中发现的，ak47的发明人说过，如果一把枪，零件已经精简到最少了，那么这个才是精品，类似的意思上篇博客也说过，矩阵变换到最简单的形式，能够体现出其最重要的性质。
 SVD，奇异值分解，与QR，LU，$S\Lambda S^{-1}$ 等变换类似，其经过变换后会得到一个结构特异性质非凡的矩阵，SVD分解的结果和形式与对角化都非常相似，只是在形式和思路上更复杂，或者说如果说Jordan 是矩阵的对角化的扩展，因为有些矩阵特征向量不完全，那么SVD也是对角化的扩展，因为有些矩阵并不是方的。
@@ -209,7 +209,7 @@ $$
 一个2x2正定矩阵对应二维空间一个椭圆（或者圆），其正交特征矩阵Q矩阵是对椭圆轴的旋转，特征值矩阵 $\Lambda$ 是对轴的拉伸，那么我们的SVD有同样的功效，而且有过之无不及，思考：
 作为$A^TA$ 的正交特征矩阵$V$也是一个旋转矩阵，旋转的是圆的轴，$V^T$ 当然就是反方向旋转，$\Sigma$ 是对图形的拉伸，圆的拉成长的，接着 $AA^T$ 的正交特征矩阵也是旋转，整个过程如下图：
 
-![rotation_reflection](Math-Linear-Algebra-Chapter-6-7/rotation_reflection.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-7/rotation_reflection.png)
 
 所以一个2x2的可逆矩阵，对一个圆的操作就是先拉伸，然后旋转。图中来自[Cliff Long and Tom Herm](http://www.norsemathology.org/wiki/index.php?title=The_Singular_Value_Decomposition)
 

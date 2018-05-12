@@ -4,7 +4,7 @@ toc: true
 categories:
   - Deep Learning
 date: 2017-09-07 10:06:13
-tags:
+keywords:
   - 数据预处理
   - CNN
   - 训练数据
@@ -31,18 +31,18 @@ tags:
 
 色彩空间变换，RGB，GRAY，YCbCr
 YCbCr转换公式：
-![1](Deep-Learning-CNN训练数据讨论/7.03.17.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-CNN训练数据讨论/7.03.17.png)
 
 Normalization方式：
 
-![1](Deep-Learning-CNN训练数据讨论/7.02.58.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-CNN训练数据讨论/7.02.58.png)
 
-![1](Deep-Learning-CNN训练数据讨论/7.03.04.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-CNN训练数据讨论/7.03.04.png)
 
 实验结果：
-![1](Deep-Learning-CNN训练数据讨论/7.06.02.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-CNN训练数据讨论/7.06.02.png)
 
-![1](Deep-Learning-CNN训练数据讨论/7.06.09.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-CNN训练数据讨论/7.06.09.png)
 
 ### 总结
 不同变量域最后的结果差别较大

@@ -3,7 +3,7 @@ title: 【数字图像处理】4.7:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-15 20:38
 categories:
   - DIP
-tags:
+keywords:
   - 离散时间傅里叶变换
 toc: true
 ---
@@ -49,14 +49,14 @@ $x'[n]$ 是周期信号，所以其有傅里叶级数，并且其傅里叶级数
 至此，傅里叶家的四种主要变换已经全部推导了以下，下一篇写下DFT是什么，然后介绍几个常见问题，并给出傅里叶家谱和之间的相互关系。
 
 
-[SouthEast]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200005247.png
-[SouthEast 1]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200344100.png
-[SouthEast 2]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200543112.png
-[SouthEast 3]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200802093.png
-[SouthEast 4]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115201238984.png
-[SouthEast 5]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115201805315.png
-[SouthEast 6]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115201729781.png
-[SouthEast 7]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115202637437.png
-[SouthEast 8]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115203147156.png
-[SouthEast 9]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115203533699.png
-[SouthEast 10]: DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115203526093.png
+[SouthEast]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200005247.png
+[SouthEast 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200344100.png
+[SouthEast 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200543112.png
+[SouthEast 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115200802093.png
+[SouthEast 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115201238984.png
+[SouthEast 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115201805315.png
+[SouthEast 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115201729781.png
+[SouthEast 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115202637437.png
+[SouthEast 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115203147156.png
+[SouthEast 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115203533699.png
+[SouthEast 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-7-灰度图像-频域滤波-傅里叶变换之离散时间傅里叶变换DTFT/20150115203526093.png

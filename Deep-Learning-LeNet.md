@@ -4,7 +4,7 @@ toc: true
 categories:
   - Deep Learning
 date: 2017-09-13 16:05:58
-tags:
+keywords:
   - Batch Gradient
   - Stochastic Gradient
   - Squashing function
@@ -63,7 +63,7 @@ tags:
 
 error surface就是：
 
-![](Deep-Learning-LeNet/1000579-20160812015100906-691589358.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/1000579-20160812015100906-691589358.jpg)
 
 ## Conditions for Faster Convergence
 *"Gradient Based Learning Applied to Document Recognition "*
@@ -77,13 +77,13 @@ $$f(a)=A tanh(Sa)$$
 
 $$tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}$$
 
-![](Deep-Learning-LeNet/figure_1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/figure_1.png)
 
 本文指出：
 
 ### 收敛速度
 *对称函数能产生更快的收敛，当权重weights非常小的时候，收敛将变得及其的缓慢收敛变慢的原因：在权重空间，学习动力（learning dynamic）是一个固定点，或者，进入鞍点，各个方向都是下降方向。*
-![](Deep-Learning-LeNet/20160817072812773.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/20160817072812773.jpg)
 
 上图为最简单的单元，包含输入weights和激活函数（压缩函数），其反向传导（如不有疑问查询BP神经网络相关知识）公式为：
 
@@ -95,13 +95,13 @@ $\delta_i^{(l)}=(\sum_{i=1}^{s_{l+1}}W^{(l)}_{ji}\delta^{l+1}_j)f'(z_i^{(l)})$$
 
 观察下图：
 tanh函数图像：
-![](Deep-Learning-LeNet/figure_1-1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/figure_1-1.png)
 
 tanh函数一阶导数：
-![](Deep-Learning-LeNet/figure_1st.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/figure_1st.png)
 
 tanh函数二阶导数
-![](Deep-Learning-LeNet/figure_2nd.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/figure_2nd.png)
 
 二阶导数绝对值在+-1附近最大，二阶导数最大意味着一阶导数最大，这样就意味着梯度（一阶导数）在这附近有最大的变化，这样使得损失函数顺着下降的方向走去。。
 
@@ -115,14 +115,14 @@ tanh函数二阶导数
 
 *训练开始之前，对所有权重进行均匀分布随机初始化（在 $\frac{2.4}{F_i}$ 和 $\frac{-2.4}{F_i}$ 之间,F为所有连接的总数fan-in，扇入）*
 
-![](Deep-Learning-LeNet/20160817072812773.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/20160817072812773.jpg)
 图中每一个w所在的输入都被称为一个fan-in（像扇子一样的输入），图中有五个扇入。
 
 *如果一些连接有相同的权重，那么问题就变得复杂，但本文的网络（卷积层）对应同一Fan-in的所有权值都是share的，通过fan-in来划分的原因是我们希望加权和的初始化标准差在一个范围内，并且这个加权和落在激活函数的正常工作区。如果初始化权值太小，梯度会很小，优化速度将会变慢，如果权值过大，激活函数会饱和，梯度也会很小。当输入相互独立的时候加权和的标准差的比例类似于输入数量的标准差，当输入高度相关的时候，加权和的标准差接近于输入数量的线性关系。我们选择第二种假设，因为输入往往高度相关*
 
 卷积神经网络第一大特点：权值共享，也就是说同一fan-in，在整个过程中值是一样的，将fan-in初始化到一个范围内，可以控制其结果落在激活函数的一定区域内：
 
-![](Deep-Learning-LeNet/figure_1-2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/figure_1-2.png)
 
 因为落在外面区域将会使得激活函数过大，一阶导数过小。
 

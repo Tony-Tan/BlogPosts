@@ -3,7 +3,7 @@ title: 【线性代数】7-2:线性变化的矩阵(The Matrix of a Linear Transf
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Matrix
   - Matrix for the Derivate
   - Matrix for the Integral
@@ -262,7 +262,7 @@ $$
 ## Wavelet Transform = Change to Wavelet Basis
 标题小波变换，等于换成小波基，这里对小波的介绍并不多只是介绍了最简单的haar小波基的简单介绍，haar小波基主要用于数据压缩，压缩图像等数据，原理和前面的SVD压缩图像差不多，只是那个基是$U$ 和$V^T$ 中的特征向量的乘积，不同的奇异值代表这个向量在原始数据中的重要性，小波基与他不同点在于小波基的基是确定，压缩过程基本一致，无损的换基操作，然后丢弃影响小的部分（有损）完成压缩，然后对压缩后的数据进行逆变换恢复重建原始数据，压缩前后数据肯定是有损失的，那么这项研究的目的就是高压缩比例，小的数据损失。
 
-![compression](Math-Linear-Algebra-Chapter-7-2/compression.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-2/compression.png)
 
 ## Fourier Transform(DFT)=Change to Fourier Basis
 

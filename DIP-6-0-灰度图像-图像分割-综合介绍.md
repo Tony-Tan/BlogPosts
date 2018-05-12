@@ -3,7 +3,7 @@ title: 【数字图像处理】6.0:灰度图像-图像分割 综合介绍
 date: 2015-02-05 10:14
 categories:
   - DIP
-tags:
+keywords:
   - 图像分割
 toc: true
 ---
@@ -39,5 +39,5 @@ toc: true
 待续。。。。。
 
 
-[Center]: DIP-6-0-灰度图像-图像分割-综合介绍/20150205094128357.jpg
-[Center 1]: DIP-6-0-灰度图像-图像分割-综合介绍/20150205095906242.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-0-灰度图像-图像分割-综合介绍/20150205094128357.jpg
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-0-灰度图像-图像分割-综合介绍/20150205095906242.png

@@ -3,7 +3,7 @@ title: 【线性代数】3-2:零空间(Nullspace)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Nullspace
   - Pivot Columns
   - Free Columns
@@ -29,7 +29,7 @@ date: 2017-09-19 17:40:36
 其实这个nullspace还是挺别致的，起码他包含0，而之前Ax=b就不一定包含0。所以可以看出，nullspace是个subspace，原因是如果x，y向量Nullspace里面的两个向量，那么$A(x+y)=0$，并且$A(cx)=0$成立，所以nullspace是个子空间 $Ax=b$并不一定是。
 ### Special Solutions
 一般情况下，我们理解都是A0=0，这是最常规的，Ax=0的其他解一看就不是什么正经解，的确是这样的，看看下面这个例子：
-![例子1](Math-Linear-Algebra-Chapter-3-2/例子1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-2/例子1.png)
 
 没错看吧：
 $A=[1,2,3]$,$N(A)$是个啥？$1x+2y+3z=0$是个通过原点的平面，一个方程，三个未知数，那么有两个变量是随意的（这两个变量的值是随意的，但这两个变量并不是随意的），只要另一个委屈自己，使整体满足就可以，那么另外两个变量随意选择，这个随意选择就有技术含量了，你选两个0，那么x只能是0，这两个随意的变量叫做“free variables”,其个数等于m或n中大的那个减去主元的个数，而且上面说的随便两个变量也不是那么随便的，需要对应一定的列，下面的例子会仔细说明。
@@ -38,7 +38,7 @@ $A=[1,2,3]$,$N(A)$是个啥？$1x+2y+3z=0$是个通过原点的平面，一个�
 
 也就是如果有两个free variable 那么nullspace就是个平面，根据上面我们的研究发现确实这样的，x+y+z=0是个过原点的平面。这两个Special solutions的linear combination就是N(A).
 
-![又一个例子](Math-Linear-Algebra-Chapter-3-2/又一个例子.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-2/又一个例子.png)
 
 这个例子是找C矩阵的nullspace，上面忘了说了，如果你想研究nullspace首先要进行一些列的elimination操作，也就是把原始矩阵转化成U(上三角矩阵)，矩阵U中有主元的叫做主列，也就是说这部分系数是完整的，比如有两个主列，那么这两个主列对应的x中的元素就是不自由要委屈自己的，因为他有足够多的限制，而那些没有主元的列就是free列了，这些列在x中对应的元素就可以放飞自己了，但是一般情况下我们会分别让他们是0和1，这样free部分可以以标准基的形式出现，张成整个free空间，然后让主列的x元素去委屈自己，这个地方这么理解可能有点困难，仔细看下面这段话：
 ***首先我们必须承认Nullspace是矩阵的子空间，子空间就是不完整的A的列所张成的列空间，维度必然低于（等于）A的列空间的维度，一个五维空间中的向量（向量属于 $\Re^5$ ）三维子空间必然有两维不是完整的（不自由的），但是另外三维是完整的（自由的）三维空间***那么这三维的基就是我们选的标准基，如果你执意要选不标准的也可以，只要能张成三维空间就行。其实这就是特解的完整理解，上面的话都是我说的，不严谨可以提出。
@@ -52,7 +52,7 @@ A=\begin{bmatrix}1&1\end{bmatrix}
 $$
 第一列是主列，第二列是free的，我们可以选择1，那么x=-1。（-1，1）的任何倍数都是0空间内的向量，我们就得到了一条直线。注意A的列空间是个平面，而有一个free variable的nullspace是个直线，少一维，free variable控制这vector在这条直线上的位置。
 回来继续看上面C的例子
-![例子的解](Math-Linear-Algebra-Chapter-3-2/例子的解.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-2/例子的解.png)
 
 ***Special solutions span the Nullspace！！！！！***
 ## $Ux=0$ & $Rx=0$

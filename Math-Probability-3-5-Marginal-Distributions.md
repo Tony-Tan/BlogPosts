@@ -3,10 +3,13 @@ title: 【概率论】3-5:边缘分布(Marginal Distribution)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Marginal p.f.
+  - 边缘概率函数
   - Marginal p.d.f.
+  - 边缘密度函数
   - Independent
+  - 独立性
 toc: true
 date: 2018-02-09 11:33:45
 ---
@@ -65,7 +68,7 @@ f_2(y)=\sum_{\text{All } x}f(x,y).
 $$
 
 这个定理可以用来计算一个二维离散随机变量的联合分布如何计算出两个离散变量分别的离散分布，而书上给出的证明也过于感性化，作者通过一副和我们上一篇类似的图来说明
-![](Math-Probability-3-5-Marginal-Distributions/proof.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-5-Marginal-Distributions/proof.png)
 
 $f_1(x)$ 是在联合分布概率函数中，某一个变量不变（$x$） 而另一个变量取和的这种方式，来得到的边缘分布（x的一个一维分布概率函数）。如果从最初的关于概率的定义出发，我们也能得到类似的结论，二维随机变量对应的可以能是一个试验的二维结果，二维结果就对应了两个维度的可能性，而这个二维联合p.f.就是描述这个二维结果发生的概率的，当一个维度的可能性被消除（也就是二维变一维：$(x,y)\to x$）那么就应该把同一个 $x$ 下的所有不同的 $y$ 都加起来，因为在二维联合分布情况下 $(x_i,y_k)$ 和 $(x_i,y_l)$ 是不相关的（$k\neq l$）所以可以进行加法。
 ### Continuous

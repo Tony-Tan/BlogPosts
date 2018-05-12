@@ -100,7 +100,7 @@ $$
 
 于是我们会得到钟形曲线：
 
-![beel_shape](Math-Probability-5-6-The-Normal-Distributions-P2/beel_shape.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-5-6-The-Normal-Distributions-P2/beel_shape.png)
 
 并不是所有钟形曲线都是正态分布家族的，比如前面介绍的不存在期望的柯西分布，他的尾巴跟我们的正态分布不太一致。
 

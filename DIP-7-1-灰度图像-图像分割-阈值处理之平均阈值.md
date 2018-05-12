@@ -3,7 +3,7 @@ title: 【数字图像处理】7.1:灰度图像-图像分割 阈值处理之平�
 date: 2015-03-06 15:55
 categories:
   - DIP
-tags:
+keywords:
   - 阈值处理
   - 平均阈值
 toc: true
@@ -59,73 +59,73 @@ void MeanThreshold(double *src,double *dst,int width,int height,int type){
 
 
 原图：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153619281.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153619281.jpeg)
 
 原图直方图：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153757451.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153757451.jpeg)
 
 平均阈值：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153740853.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153740853.jpeg)
 
 阈值处理结果：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153800962.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153800962.jpeg)
 
 
 ----------
 原图加入1%的高斯噪声
 未处理：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153846280.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306153846280.jpeg)
 
 直方图：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154031891.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154031891.jpeg)
 
 平均阈值：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154143932.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154143932.jpeg)
 
 阈值处理结果：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154001846.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154001846.jpeg)
 
 
 ----------
 原图加入5%的高斯噪声
 未处理：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154122452.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154122452.jpeg)
 
 直方图：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154142685.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154142685.jpeg)
 
 平均阈值：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154311198.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154311198.jpeg)
 
 阈值处理结果：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154324349.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154324349.jpeg)
 
 
 ----------
 原图加入7%的高斯噪声
 未处理：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154244570.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154244570.jpeg)
 
 直方图：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154424581.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154424581.jpeg)
 
 平均阈值：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154437264.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154437264.jpeg)
 
 阈值处理结果：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154338905.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154338905.jpeg)
 
 
 ----------
 lena图均值阈值处理：
 原图：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154430401.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154430401.jpeg)
 
 处理后结果：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154457436.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154457436.jpeg)
 
 阈值：
-![这里写图片描述](DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154511975.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-1-灰度图像-图像分割-阈值处理之平均阈值/20150306154511975.jpeg)
 
 ## 总结
 均值阈值可以完成一些较为简单的的处理，但对目标与背景的大小敏感，也就是直方图那两个峰的面积大小有关，如果这两个峰相对大小相差不多，那么均值相对效果较好，如果两个峰相差太多，也就是背景比目标大很多或相反目标比背景大很多时，结果失效。其次也受到噪声影响，但没有上一因素影响大。

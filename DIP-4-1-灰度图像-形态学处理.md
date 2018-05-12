@@ -4,7 +4,7 @@ title: 【数字图像处理】4.1：灰度图像-形态学处理
 date: 2015-01-05 19:45
 categories:
   - DIP
-tags:
+keywords:
   - 形态学
   - 腐蚀
   - 膨胀
@@ -450,19 +450,19 @@ int main(){
 
 
 
-[Center]: DIP-4-1-灰度图像-形态学处理/20150105183312480.png
-[Center 1]: DIP-4-1-灰度图像-形态学处理/20150105184314531.png
-[Center 2]: DIP-4-1-灰度图像-形态学处理/20150105184358453.png
-[Center 3]: DIP-4-1-灰度图像-形态学处理/20150105184704226.png
-[Center 4]: DIP-4-1-灰度图像-形态学处理/20150105184658703.png
-[Center 5]: DIP-4-1-灰度图像-形态学处理/20150105193504319.png
-[Center 6]: DIP-4-1-灰度图像-形态学处理/20150105193542726.png
-[Center 7]: DIP-4-1-灰度图像-形态学处理/20150105193629823.png
-[Center 8]: DIP-4-1-灰度图像-形态学处理/20150105193721989.png
-[Center 9]: DIP-4-1-灰度图像-形态学处理/20150105193805654.png
-[Center 10]: DIP-4-1-灰度图像-形态学处理/20150105193810937.png
-[Center 11]: DIP-4-1-灰度图像-形态学处理/20150105194004058.jpg
-[Center 12]: DIP-4-1-灰度图像-形态学处理/20150105194047187.jpg
-[Center 13]: DIP-4-1-灰度图像-形态学处理/20150105194206362.jpg
-[Center 14]: DIP-4-1-灰度图像-形态学处理/20150105194248326.jpg
-[Center 15]: DIP-4-1-灰度图像-形态学处理/20150105194246968.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105183312480.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105184314531.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105184358453.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105184704226.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105184658703.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105193504319.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105193542726.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105193629823.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105193721989.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105193805654.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105193810937.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105194004058.jpg
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105194047187.jpg
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105194206362.jpg
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105194248326.jpg
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-1-灰度图像-形态学处理/20150105194246968.png

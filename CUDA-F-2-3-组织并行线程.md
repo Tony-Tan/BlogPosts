@@ -28,7 +28,7 @@ date: 2018-03-09 21:00:38
 ## 使用块和线程建立矩阵索引
 多线程的优点就是每个线程处理不同的数据计算，那么怎么分配好每个线程处理不同的数据，而不至于多个不同的线程处理同一个数据，或者避免不同的线程没有组织的乱访问内存。如果多线程不能按照组织合理的干活，那么就相当于一群没训练过的哈士奇拉雪橇，往不同的方向跑，那么是没办法前进的，必须有组织，有规则的计算才有意义。
 我们的线程模型前面2.0中已经有个大概的介绍，但是下图可以非常形象的反应线程模型，不过注意硬件实际的执行和存储不是按照图中的模型来的，大家注意区分：
-![cuda_thread](CUDA-F-2-3-组织并行线程/cuda_thread.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/cuda_thread.png)
 这里(ix,iy)就是整个线程模型中任意一个线程的索引，或者叫做全局地址，局部地址当然就是(threadIdx.x,threadIdx.y)了，当然这个局部地址目前还没有什么用处，他只能索引线程块内的线程，不同线程块中有相同的局部索引值，比如同一个小区，A栋有16楼，B栋也有16楼，A栋和B栋就是blockIdx，而16就是threadIdx啦
 图中的横坐标就是：
 $$
@@ -40,7 +40,7 @@ iy=threadIdx.y+blockIdx.y \times blockDim.y
 $$
 这样我们就得到了每个线程的唯一标号，并且在运行时kernel是可以访问这个标号的。前面讲过CUDA每一个线程执行相同的代码，也就是异构计算中说的多线程单指令，如果每个不同的线程执行同样的代码，又处理同一组数据，将会得到多个相同的结果，显然这是没意义的，为了让不同线程处理不同的数据，CUDA常用的做法是让不同的线程对应不同的数据，也就是用线程的全局标号对应不同组的数据。
 设备内存或者主机内存都是线性存在的，比如一个二维矩阵 $(8\times 6)$，存储在内存中是这样的：
-![memory](CUDA-F-2-3-组织并行线程/memory.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/memory.png)
 
 我们要做管理的就是：
 - 线程和块索引（来计算线程的全局索引）
@@ -100,7 +100,7 @@ int main(int argc,char** argv)
 
 ```
 这段代码输出了一组我们随机生成的矩阵，并且核函数打印自己的线程标号，注意，核函数能调用printf这个特性是CUDA后来加的，最早的版本里面不能printf，输出结果：
-![printf](CUDA-F-2-3-组织并行线程/printf.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/printf.png)
 由于截图不完全，上面有一段打印信息没贴全，但是我们可以知道每一个线程已经对应到了不同的数据，接着我们就要用这个方法来进行计算了，最简单的当然就是二维矩阵加法啦。
 ## 二维矩阵加法
 我们利用上面的线程与数据的对应完成了下面的核函数：
@@ -134,7 +134,7 @@ CHECK(cudaMemcpy(C_from_gpu,C_dev,nBytes,cudaMemcpyDeviceToHost));
 checkResult(C_host,C_from_gpu,nxy);
 ```
 运行结果：
-![2_2](CUDA-F-2-3-组织并行线程/2_2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/2_2.png)
 红色框内是运行结果，用cpu写一个矩阵计算，然后比对结果，发现我们的运算结果是正确的，用时0.002152秒。
 ## 一维网格和一维块
 接着我们使用一维网格一维块：
@@ -153,7 +153,7 @@ CHECK(cudaMemcpy(C_from_gpu,C_dev,nBytes,cudaMemcpyDeviceToHost));
 checkResult(C_host,C_from_gpu,nxy);
 ```
 运行结果：
-![1_1](CUDA-F-2-3-组织并行线程/1_1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/1_1.png)
 同样运行结果是正确的。
 ## 二维网格和一维块
 二维网格一维块：
@@ -172,7 +172,7 @@ CHECK(cudaMemcpy(C_from_gpu,C_dev,nBytes,cudaMemcpyDeviceToHost));
 checkResult(C_host,C_from_gpu,nxy);
 ```
 运行结果：
-![2_1](CUDA-F-2-3-组织并行线程/2_1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/2_1.png)
 ## 总结
 用不同的线程组织形式会得到正确结果，但是效率有所区别：
 

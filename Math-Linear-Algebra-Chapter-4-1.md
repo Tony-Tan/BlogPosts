@@ -3,7 +3,7 @@ title: 【线性代数】4-1:四个正交子空间(Orthogonality of the Four Sub
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Orthogonality
   - Four Subspace
   - Orthogonal Complements
@@ -99,7 +99,7 @@ This is very important ,The Fundamental subspace are more than just orthogonal i
 
 各位，大招来了，本章，本书的重点：
 
-![4spaces](Math-Linear-Algebra-Chapter-4-1/4spaces.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-1/4spaces.png)
 
 没错，就是之前上一张重点的图的一个信息补全，这里面值得注意的包括subspace之间的正交关系，以及dimension之间的互补关系，但要注意一下，其实在使用消元确定$Ax=b$解的时候可以得到nullsapce和columnspace之间的dimension互补关系，但是这里面把rowspace和nullspace写到一起主要还是正交的关系，而且向量长度相同n，加上rowspace和columnspace的dimension永远是一致的（rank），所以也就是这么放了（以上是我自己的理解）
 
@@ -112,7 +112,7 @@ This is very important ,The Fundamental subspace are more than just orthogonal i
 $$ x=x_{particular}+x_n$$
 和上面这种形式是对应的
 矩阵A和向量相乘，可以有很多种解读，但是说到最根本的地方就是，$Ax$就是为了让x goes to column space，并没有其他什么更高级的功能。
-![4spaces_extra ](Math-Linear-Algebra-Chapter-4-1/4spaces_extra.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-1/4spaces_extra.png)
 通过上面那张图可以看出，任何一个n维向量可以被分解到rowspace和nullspace，然后通过A goes to column space和 0
 这里最重要的是**任何一个属于$R^n$的向量都能被分解到row space 和 null space**
 

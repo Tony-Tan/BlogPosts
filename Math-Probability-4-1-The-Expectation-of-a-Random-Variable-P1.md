@@ -123,7 +123,7 @@ $$
 
 所以其期望不存在，那么是什么原因导致本来收敛的积分变得不确定了呢？原因是乘以了x，使得p.d.f. 的收敛性发生了极大的变化。
 
-![Cauchy](Math-Probability-4-1-The-Expectation-of-a-Random-Variable-P1/cauchy.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-4-1-The-Expectation-of-a-Random-Variable-P1/cauchy.png)
 
 ## Interpretation of the Expectation
 

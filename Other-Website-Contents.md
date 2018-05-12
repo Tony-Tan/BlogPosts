@@ -14,12 +14,12 @@ date: 9999-12-31 23:59:59
 -----------------------
 如对本站有兴趣可以通过下面二维码添加博主，进入讨论群，感谢您的支持。
 
-![wechart](http://tony4ai.com/Other-Website-Contents/Wechat.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Other-Website-Contents/Wechat.jpeg)
 
 -----------------------
 
 首先插入一下我的整体研究思路，也就是网站大致的更新顺序：
-![framwork](Other-Website-Contents/FrameWork.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Other-Website-Contents/FrameWork.png)
 
 ***以下目录点击直接传送：***
 
@@ -32,7 +32,7 @@ date: 9999-12-31 23:59:59
   - 分析
     - 微积分
     - 数学分析
-      - 《陶哲轩实分析》
+      - 《陶哲轩实分析》（包含习题解答）
         - [1.0 数学分析介绍](http://www.tony4ai.com/Math-Analysis-0-0-Introduction/)
         - [2.0 自然数概述](http://www.tony4ai.com/Math-Analysis-2-0-The-Natural-Numbers/)
         - [2.1 Peano公理](http://www.tony4ai.com/Math-Analysis-2-1-The-Peano-Axioms/)
@@ -40,6 +40,10 @@ date: 9999-12-31 23:59:59
         - [2.3 乘法](http://www.tony4ai.com/Math-Analysis-2-3-Multiplication/)
         - [3.0 集合论](http://www.tony4ai.com/Math-Analysis-3-0-Set-Theory)
         - [3.1 集合基础(Part I)](http://www.tony4ai.com/Math-Analysis-3-1-Fundamentals-P1/)
+        - [3.1 集合基础(Part II)](http://www.tony4ai.com/Math-Analysis-3-1-Fundamentals-P2/)
+        - [3.2 罗素悖论（选读）](http://www.tony4ai.com/Math-Analysis-3-2-Russell-s-Paradox/)
+        - [3.3 函数(I)](http://www.tony4ai.com/Math-Analysis-3-3-Function/)
+        - [3.3 函数(II)](http://www.tony4ai.com/Math-Analysis-3-3-Function2/)
     - 实分析
     - 复分析
     - 泛函分析
@@ -89,7 +93,7 @@ date: 9999-12-31 23:59:59
     - [1.2 古典概率、乘法原理、排列](http://www.tony4ai.com/Math-Probability-1-2-Counting-Methods/)
     - [1.3 组合、二项式定理、多项式定理](http://www.tony4ai.com/Math-Probability-1-3-Combinatorial-Methods/)
     - [1.4 有限事件并的概率、概率欺骗了你](http://www.tony4ai.com/Math-Probability-1-4-Union-of-Event/)
-    - [2.1 条件概率、全概率公式](http://www.tony4ai.com/Math-Probability-1-5-Conditional-Probability/)
+    - [2.1 条件概率、全概率公式](http://tony4ai.com/Math-Probability-2-1-Conditional-Probability/)
     - [2.2 事件独立、条件独立](http://www.tony4ai.com/Math-Probability-2-2-Independent-Events/)
     - [2.3 Bayes’ Theorem](http://www.tony4ai.com/Math-Probability-2-3-Bayes-Teorem/)
     - [3.1 随机变量和离散分布](http://www.tony4ai.com/Math-Probability-3-1-Random-Variables-and-Discrete-Distributions/)
@@ -129,6 +133,20 @@ date: 9999-12-31 23:59:59
     - [6.3 中心极限定理](http://tony4ai.com/Math-Probability-6-3-The-Central-Limit-Theorem/)
     - [6.4 连续性修正](http://tony4ai.com/Math-Probability-6-4-The-Correction-for-Continuity/)
   - 数理统计
+      - 《数理统计学简史》
+          - [介绍](http://tony4ai.com/Math-Statistics-History-Introduction/)
+          - [早期概率论——从萌芽到《推测术》](http://tony4ai.com/Math-Statistics-1-0-Early-Probability-Theory/)
+          - [1.1 卡丹诺的著作](http://tony4ai.com/Math-Statistics-1-1-Cardano/)
+          - [1.2 分赌本问题](http://tony4ai.com/Math-Statistics-1-2-Gambling-Problem/)
+          - [1.3 帕斯卡和费马的通信](http://tony4ai.com/Math-Statistics-1-3-Pascal-Fermat/)
+          - [1.4  惠更斯的“机遇与规律”](http://tony4ai.com/Math-Statistics-1-4-Huygens/)
+          - [1.5 《推测术》前三部分内容提要](http://tony4ai.com/Math-Statistics-1-5-Ars-Conjectandi-First-3-Sections/)
+          - [1.6 关于概率的几点看法](http://tony4ai.com/Math-Statistics-1-6-Some-Idea-of-Probability/)
+          - [1.7 伯努利大数定律](http://tony4ai.com/Math-Statistics-1-7-Bernouli-Law-of-Large-Numbers/)
+          - [2.0 狄莫弗的二项概率逼近](http://tony4ai.com/Math-Statistics-2-0-De-Moivre-Binomial-Distribution/)
+          - [2.1 狄莫弗研究的动因 ](http://tony4ai.com/Math-Statistics-2-1-De-Moivre-Motive/)
+          - [2.2 狄莫弗的初步结果](http://tony4ai.com/Math-Statistics-2-2-De-Moivre-Naive-Result/)
+          - [2.3 初步结果的改进，与斯特林的联系](http://tony4ai.com/Math-Statistics-2-3-Communication-With-Stirling)
   - 随机过程
   - 信息论
   - 凸优化
@@ -230,8 +248,8 @@ date: 9999-12-31 23:59:59
   - C++
   - Python
     - Web Crawler
-      - [1.0 Introduction](http://www.tony4ai.com/Crawler-Introduction/)
-      - [2.0 分析目标网站](http://www.tony4ai.com/Crawler-分析确定目标/)
+      - [1.0 Introduction](http://tony4ai.com/Crawler-1-0-Introduction/)
+      - [2.0 分析目标网站](http://tony4ai.com/Crawler-2-0-分析确定目标/)
       - [3.0 三只虫](http://www.tony4ai.com/Crawler-3-0-第一个爬虫/)
       - [3.1 HTTP协议（一）](http://www.tony4ai.com/Crawler-3-1-HTTP协议-1/)
       - [3.2 HTTP协议（二）](http://www.tony4ai.com/Crawler-3-2-HTTP协议-2/)
@@ -249,9 +267,16 @@ date: 9999-12-31 23:59:59
     - [3.2 理解线程束执行的本质（Part I）](http://www.tony4ai.com/CUDA-F-3-2-理解线程束执行的本质-P1/)
     - [3.2 理解线程束执行的本质（Part II）](http://www.tony4ai.com/CUDA-F-3-2-理解线程束执行的本质-P2/)
     - [3.3 并行性表现](http://www.tony4ai.com/CUDA-F-3-3-并行性表现/)
+    - [3.4 避免分支分化](http://www.tony4ai.com/CUDA-F-3-4-避免分支分化/)
+    - [3.5 循环展开](http://www.tony4ai.com/CUDA-F-3-5-展开循环/)
+    - [3.6 动态并行](http://www.tony4ai.com/CUDA-F-3-6-动态并行/)
+    - [4.0 全局内存](http://www.tony4ai.com/CUDA-F-4-0-全局内存/)
+    - [4.1 内存模型概述](http://www.tony4ai.com/CUDA-F-4-1-内存模型概述/)
+    - [4.2 内存管理](http://www.tony4ai.com/CUDA-F-4-2-内存管理/)
+    - [4.3 内存访问模式](http://www.tony4ai.com/CUDA-F-4-3-内存访问模式/)
 - 框架
   - OpenCV
-    - [OpenCV矩阵计算分析](http://www.tony4ai.com/Code-OpenCV-Mat过程分析/)
+    - [OpenCV矩阵计算分析](https://tony4ai.com/Other-OpenCV-Mat过程分析/)
   - TensorFlow .etc
 - 设计实现框架
   - PineNut

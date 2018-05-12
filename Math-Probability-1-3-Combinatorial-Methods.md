@@ -3,10 +3,13 @@ title: 【概率论】1-3:组合(Combinatorial Methods)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Combination
+  - 组合
   - Binormial Coeffcient
+  - 二项式系数
   - Multinormial Coeffcient
+  - 多项式系数
 toc: true
 date: 2018-01-26 9:20:58
 ---
@@ -80,12 +83,12 @@ $$
 $$
 
 一共n个元素组成了多项式（，那么当我们想要得到项 $x^ky^{n-k}$ 的时候，我们要做的是在n个式子中选k个来使用x，而不需要关心y因为k个x一旦选中，y自然是剩下的n-k个式子的y，来看个图，就豁然开朗了：
-![binormial](Math-Probability-1-3-Combinatorial-Methods/1-binomial.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-3-Combinatorial-Methods/1-binomial.png)
 
 我们来看 $x^1y^{n-1}$ ，最简单的是我们选中第一项的x 做为 $x^1$，他会和剩下的所有项的y相乘，但是不会和自己的y相乘，这样，我们还可以选剩下所有项中的x作为 $x^1$ ,一共有$C_{n,1}$ 种选择方法。
 
 接着我们看 $x^2y^{n-2}$ :
-![binormial](Math-Probability-1-3-Combinatorial-Methods/2-binomial.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-3-Combinatorial-Methods/2-binomial.png)
 
 这个就复杂一点，首先黄色问好是想说当我们选中第一项，第二项的x来作为 $x^2$ 中的x的时候，我们要不要把他们中y放进 $y^{n-2}$ ,答案当然是不能，这两项的结合是 $xy$ 而不是 $x^2$ 这样，我们就可以继续上面的思路了，一共n个项，选出两项的方法就是$C_{n,2}$
 

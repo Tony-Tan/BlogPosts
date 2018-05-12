@@ -3,7 +3,7 @@ title: 【线性代数】3-4:方程组的完整解( $Ax=b$ )
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Ax=b
   - Special Solution
   - Full Column Rank
@@ -76,7 +76,7 @@ x_1\\x_2\\x_3\\x_4
 $$
 可以通过回代验证$Rx=d$或者$Ax=b$这里的free variables都是0，那么就说这个解是particular的，而且可以发现pivot对应的x位置与d有关系，按顺序就是d对应的元素，这不是巧合，观察矩阵可以得到相应的结论。
 
-![particular](Math-Linear-Algebra-Chapter-3-4/particular.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-4/particular.png)
 这是我们到目前位置讨论的方程组的两种解，一个当b=0的时候，一个当b不等于0的时候，如果我们把这两个方程组左右相加，那么就得到
 $$
 Ax_p=b\\
@@ -85,7 +85,7 @@ Ax_p+Ax_n=b+0\\
 A(x_p+x_n)=b
 $$
 那么完整的解(式子中的数字来自上面的例子，nullspace我没有写出来，大家可以自行验证)：
-![complete](Math-Linear-Algebra-Chapter-3-4/complete.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-4/complete.png)
 
 为什么完整解是上看的式子呢，可以看下一节的详细介绍。
 ## The Complete Solution

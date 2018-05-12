@@ -3,7 +3,7 @@ title: 【线性代数】6-5:正定矩阵(Positive Definite Matrices)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Positive Definite Matrices
   - Symmetric Matrices
   - Eigenvalues
@@ -146,7 +146,7 @@ $$
 扩展x为任意变量的时候$x^TAx\geq 0$ 只有当x为对应于特征值为0的特征向量的时候等号成立。
 ## First Application: The Ellipse $ax^2+2bxy+cy^2=1$
 学习线性代数，从向量开始，我就有一种感觉就是线性代数当矩阵维度是2或者3的时候，应该是和几何有关系的，也就是我们能画出来的这些形状有关而不仅仅是解方程这么简单，线性变换，对图形的作用应该是比较直观的，所以我们来看书上的🌰，关于特征值，特征向量，以及椭圆的：
-![ellipse](Math-Linear-Algebra-Chapter-6-5/ellipse.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-5/ellipse.png)
 两个椭圆，一个倾斜的，一个立正的,两幅图能够看出下面这些信息：
 1. The tilted ellipse is associated with A. Its equation is $x^TAx=1$
 2. The lined-up ellipse is associated with $\Lambda$ .Its equation is $x^T\Lambda x=1$

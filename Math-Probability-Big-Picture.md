@@ -19,11 +19,11 @@ date: 2017-11-13 15:57:45
 这三类人没有歧视链，大家都是干工作没有高低贵贱，但是如果你是第一类人但讲的都是第三类的话，而且漏洞百出，这样就贻笑大方了。
 ## 概率论
 概率论不是数理统计，这两个有明显的区别，概率论是已经知道了内部机制，推算结果，数理统计是通过观察结果反推内部机制，机器学习更倾向于后者，但是概率论是数理统计的基础，所以概率论在我们的big big picture里面是五星的，与微积分线性代数同样重要。
-![Probability](Math-Probability-Big-Picture/Mathematic.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-Big-Picture/Mathematic.png)
 与线性代数和微积分不同，微积分更注重计算，也就是当我们有一个算式的时候可以用各种技巧得出最后的答案，这里的微积分是说初级的，高级的到了分析层面就是另一回事了，那个就是探索真理了，线性代数背后有一套完整的理论体系，而且包含了一些可以应用在实际场景的模型，所以线性代数属于基础与实践的边缘部分，故而在工程里显得尤为有用处。
 概率论则更加偏向应用，因为其提出就是为了赌博，概率论的公式都比较复杂，但是每一个公式背后都有非常明显的事物关系，也就是说概率论中的公式能清楚的反应一些事物的本来面目。
 ## 教材
-![Probability](Math-Probability-Big-Picture/probability_book.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-Big-Picture/probability_book.jpeg)
 ### 《Probability and Statistics》 M.H.DeGroot
 《Probability and Statistics(Fourth Edition)》(Morris H. DeGroot)这本书也很适合入门，书中有大量的例题和课后习题，语言也比较清晰明确，美国教材和中国教材以及俄罗斯前苏联的教材风格迥异，感觉美利坚的教材能让你更有自信，苏联教材能让你怀疑人生，而大部分中国教材能让你考上研究生，哈哈，不黑了
 ### 《概率论与数理统计》陈希孺
@@ -41,7 +41,7 @@ MIT的教材，比较简单，适合入门，也是作为补充，来辅助我�
 - Large Random Samples
 ## 总结
 先放个图
-![Probability](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/Probability.png)
+![](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/Probability.png)
 这个是根据DeGroot的教材总结出的基本知识重点框架。
 机器学习相关数学知识可以参考项目,以上图片皆出自此项目：
 [https://github.com/Tony-Tan/MachineLearningMath](https://github.com/Tony-Tan/MachineLearningMath)

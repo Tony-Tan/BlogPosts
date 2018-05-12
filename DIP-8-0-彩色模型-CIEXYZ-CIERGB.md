@@ -3,7 +3,7 @@ title: 【数字图像处理】8.0:彩色模型，CIE XYZ，CIE RGB
 date: 2015-03-11 14:03
 categories:
   - DIP
-tags:
+keywords:
   - 颜色空间
   - CIE XYZ
   - CIE 1931
@@ -86,17 +86,17 @@ CIE—XYZ色度的性质：
 至此我们简单的介绍了下CIE—XYZ空间的来源和相关知识，后续将介绍其他色彩空间知识，但出于知识的路线原因决定，下篇开始介绍二值图像的相关操作，然后介绍灰度图像相关的工作，最后介绍彩色图像时，再介绍其他色彩空间极其应用。欢迎收看。
 
 
-[Center]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141220123439812.jpg
-[Center 1]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222112304172.jpg
-[Center 2]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222114140775.png
-[Center 3]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140240997.png
-[Center 4]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140249625.png
-[overline_x_lambda]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/557e8d4cdd91b4461411088939ab1a41.png
-[overline_y_lambda]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/bee0b0d1dea7e1937ec3710c7c435f3e.png
-[overline_z_lambda]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/5aa5f099f72042122adaa7b313c37045.png
-[Center 5]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140916895.png
-[Center 6]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140922562.png
-[Center 7]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140935911.png
-[Center 8]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222141529859.png
-[Center 9]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222141337649.png
-[Center 10]: DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222141141897.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141220123439812.jpg
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222112304172.jpg
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222114140775.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140240997.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140249625.png
+[overline_x_lambda]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/557e8d4cdd91b4461411088939ab1a41.png
+[overline_y_lambda]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/bee0b0d1dea7e1937ec3710c7c435f3e.png
+[overline_z_lambda]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/5aa5f099f72042122adaa7b313c37045.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140916895.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140922562.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222140935911.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222141529859.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222141337649.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-0-彩色模型-CIEXYZ-CIERGB/20141222141141897.png

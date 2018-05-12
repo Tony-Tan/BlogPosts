@@ -3,7 +3,7 @@ title: 【数字图像处理】6.9:灰度图像-图像分割 Marr-Hildreth算子
 date: 2015-02-13 14:54
 categories:
   - DIP
-tags:
+keywords:
   - 边缘检测
   - LoG算子
 toc: true
@@ -34,14 +34,14 @@ $\nabla^2G(x,y)=[\frac{x^2+y^2-2\delta^2}{\delta^4}]e^{-\frac{x^2+y^2}{2\delta^2
 
 LoG零交叉出现在$x^2+y^2=2\delta^2$处LoG函数形状如下图，也被叫做墨西哥草帽算子。
 下面全方位无死角观察下，说明，上面公式给出的是倒置的草帽，我们这里给他加了个负号，让它正过来。。。
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141425740.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141437643.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141457330.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141500422.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141836448.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141425740.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141437643.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141457330.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141500422.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141836448.png)
 
 剖面图，沿着直径切开：
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141953980.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213141953980.jpeg)
 
 
 ## 模板性质
@@ -125,33 +125,33 @@ double LoG(double *src,double *dst,int width,int height,int m_width,int m_height
 ## 操作结果
 以下为算子对图像操作的结果
 原图：
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143510422.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143510422.jpeg)
 LoG结果：
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143608329.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143634270.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143636534.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143608329.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143634270.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143636534.jpeg)
 零交叉检测结果：
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143746139.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143755125.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143757233.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143845063.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143855281.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143913782.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143937744.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143946979.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143957915.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143746139.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143755125.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143757233.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143845063.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143855281.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143913782.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143937744.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143946979.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213143957915.jpeg)
 原图：
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144038067.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144038067.jpeg)
 零交叉检测结果：
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144208656.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144224755.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144240355.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144127831.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144129815.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144142357.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144320307.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144347638.jpeg)
-![这里写图片描述](DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144400274.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144208656.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144224755.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144240355.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144127831.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144129815.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144142357.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144320307.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144347638.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-9-灰度图像-图像分割-Marr-Hildreth算子-LoG算子/20150213144400274.jpeg)
 
 
 

@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 15:08:37
-tags:
+keywords:
   - row picture
   - column Picture
   - system of equations
@@ -28,7 +28,7 @@ $$
 不知道Picture这个词本身就是这种含义，还是Pro Strang喜欢这么说，Open Course和书上都是各种各样的Picture。
 什么是Row Picture？
 看到方程组中的两个等式么，每一行就是一个Picture，或者叫做Graph，在二维坐标系下，表现出来的是一条直线，同样第二个方程也是一条直线，直线上所有的点都满足方程，所以两条直线相交处就是方程组的解。
-![row_picture](Math-Linear-Algebra-Chapter-2-1/row_picture.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-1/row_picture.png)
 
 ## Column Picture
 这个是重点了，因为这个能引出后面一些列的知识，如果我们竖着看，把方程的系数排列整齐，把每个未知数的所有系数按照列向量排列：
@@ -41,7 +41,7 @@ $$
 
 在图像上，column picture 就变成了两个（或若干个）向量组合得到目标向量了，如图：
 
-![column_picture](Math-Linear-Algebra-Chapter-2-1/column_picture.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-1/column_picture.png)
 ## Coefficient Matrix
 下面矩阵正式出场，我们把上面那两个系数向量挨着拼接起来，就能得到一个系数矩阵(Coefficient Matrix)
 $$

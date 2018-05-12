@@ -3,7 +3,7 @@ title: 【数字图像处理】7.2:灰度图像-图像分割 阈值处理之P-Ti
 date: 2015-03-06 17:00
 categories:
   - DIP
-tags:
+keywords:
   - 阈值处理
   - p-tile
 toc: true
@@ -41,25 +41,25 @@ void PtileThreshold(double *src,double *dst,double p_value,int width,int height,
 ## 效果
 原图一个只有两个灰度值的图像，这里使用对其加入5%的高斯噪声，
 未处理图像：
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306164631631.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306164631631.jpeg)
 未处理时的直方图：
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306164804279.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306164804279.jpeg)
 观察直方图，估计出最佳阈值位置：
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306164829925.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306164829925.jpeg)
 下面使用不同的p值来测试结果：
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165259105.jpeg)
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165319010.jpeg)
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165244612.jpeg)
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165335998.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165259105.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165319010.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165244612.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165335998.jpeg)
 
 可以看出，第二次（我试了好久。。。。。）测试结果能够得出最好结果。
 
 ----------
 lena图处理测试：
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165555993.jpeg)
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165609004.jpeg)
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165622857.jpeg)
-![这里写图片描述](DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165632934.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165555993.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165609004.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165622857.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-2-灰度图像-图像分割-阈值处理之P-Tile阈值/20150306165632934.jpeg)
 
 ## 总结
 首先确定p值需要经验或实验，所以P-Tile方法应用于自适应有些困难，其次，影响处理结果的因素是目标与背景大小的比例，目标过大背景过小或者背景过大目标过小，都会对测试结果产生很大影响，其次是噪声，噪声也会对实验结果产生影响。

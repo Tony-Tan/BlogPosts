@@ -3,7 +3,7 @@ title: 【数字图像处理】7.4:灰度图像-图像分割 阈值处理之谷�
 date: 2015-03-07 16:19
 categories:
   - DIP
-tags:
+keywords:
   - 谷底阈值
   - 峰顶平均
 toc: true
@@ -186,23 +186,23 @@ void MeanDoubleHumpThreshold(double *src,double *dst,int width,int height,int ty
 上面包括谷底阈值和双峰平均值的阈值处理
 ## 结果观察
 原图：
-![这里写图片描述](DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161314721.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161314721.jpeg)
 
 直方图和平滑后的直方图，以及格式化的直方图：
-![这里写图片描述](DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161421614.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161421614.jpeg)
 
 阈值处理结果
-![这里写图片描述](DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161439851.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161439851.jpeg)
 
 原图
-![这里写图片描述](DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161603918.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161603918.jpeg)
 
 直方图和平滑后的直方图，以及格式化的直方图：
 
-![这里写图片描述](DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161353659.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161353659.jpeg)
 
 阈值处理结果
-![这里写图片描述](DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161630438.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-4-灰度图像-图像分割-阈值处理之谷底阈值-峰顶平均/20150307161630438.jpeg)
 
 
 ## 结论

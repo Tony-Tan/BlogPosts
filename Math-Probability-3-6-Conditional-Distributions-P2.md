@@ -5,8 +5,11 @@ categories:
   - Probability
 tags:
   - Multiplication Rule for Distributions
+  - 乘法法则
   - Bayes' Theorem
+  - 贝叶斯理论
   - Law of Total Probability for Random Variables
+  - 随机变量的全概率公式
 toc: true
 date: 2018-03-12 09:06:00
 ---

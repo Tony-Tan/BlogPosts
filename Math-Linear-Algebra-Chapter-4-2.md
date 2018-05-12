@@ -3,7 +3,7 @@ title: 【线性代数】4-2:投影(Porjections)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Projections
   - Projection Onto a Subspace
 toc: true
@@ -18,7 +18,7 @@ date: 2017-10-17 09:28:46
 开篇废话，喜迎十九大，嚯嚯哈哈。
 ## Projections
 映射，投影，感觉怎么翻译都不太对，总能想到函数，不过好像在这部分，投影矩阵和函数的功能非常类似。在典型的三维正交基向量空间内，一个向量的投影到一个平面上一般是下面这种形式：
-![projection1](Math-Linear-Algebra-Chapter-4-2/projection1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-2/projection1.png)
 
 向量b投影到xy平面，和b投影到z轴的一种几何上的反应，当然超过三维，就没办法画出来的，但是原理都一样，通过垂直（正交），将不在子空间的向量转换到子空间内最接近原始向量 $\vec{b}$ 的投影向量 $\hat{\vec{b}}$来近似原始向量，这种方法在最小二乘法中得到了完美的应用，以及后面将要做的一些分解，上一篇提到的split（分解到子空间的split），都可以利用projection的原理。
 继续解读上图，向量被分级到了正交的两个子空间，xy平面，和z轴，这两个子空间互为orthogonal complements，并且满足下面两种关系：
@@ -39,7 +39,7 @@ when\,|\vec{i}|=1\\
 $$
 其中夹角就是下图中 $\theta$
 
-![xiangliang](Math-Linear-Algebra-Chapter-4-2/xiangliang.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-2/xiangliang.png)
 
 可以看到映射到向量a上等价于和a方向上的单位向量dot product,假设 $\vec{p}$ 是 $\vec{b}$ 的投影结果，那么 $\vec{i}=\frac{\vec{a}}{|\vec{a}|}$
 $$
@@ -70,7 +70,7 @@ $$
 ### Orthogonal to Projections
 
 不错这个才是正统书上的方法，推到相对上面还要简单一些主要用到了一个向量的差与投影结果$\vec{p}$垂直这一关系，具体贴上原书两张图：
-![projection_(2)](Math-Linear-Algebra-Chapter-4-2/projection_2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-2/projection_2.png)
 
 还是将 $\vec{b}$ 投影到 $\vec{a}$ ，假设得到的投影是 $\hat{x}\vec{a}$ ;可以得到一个差向量 $\vec{e}$ （这个向量其实就是后面最小二乘法的误差，error的缩写）有些时候我们必须把向量近似到一个空间，以方便进一步计算，这时候希望得到误差最小的近似，误差就是这个 $\vec{e}$ 的模长，并且这个 $\vec{e}$ 和 $\vec{a}$ 是垂直关系，也就是正交，那么就有了 $\vec{a}^T(\vec{b}-\hat{x}\vec{a})$=0,最后能求出投影长度 $\hat{x}$,
 $$
@@ -80,7 +80,7 @@ $$
 $$
 下图就是详细的集合描述，大家不要过度依赖图片，因为有时候想象力更重要，因为一旦超过四维，图就没有了，只能靠想象和逻辑推导了。
 
-![projection_(3)](Math-Linear-Algebra-Chapter-4-2/projection_3.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-2/projection_3.png)
 
 根据上面公式可以得出投影矩阵
 $$

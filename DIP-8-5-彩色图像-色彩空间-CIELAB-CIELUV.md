@@ -3,7 +3,7 @@ title: 【数字图像处理】8.5:彩色图像-色彩空间 CIELAB、CIELUV
 date: 2015-03-14 17:17
 categories:
   - DIP
-tags:
+keywords:
   - 色彩空间
   - CIELAB
   - CIELUV
@@ -34,18 +34,18 @@ CIELAB是均匀的颜色空间，所谓均匀是当数值均匀变化时，人�
 在L*a*b* 模型中均匀改变对应于在感知颜色中的均匀改变。所以在L*a*b* 中任何两个颜色的相对感知差别，可以通过把每个颜色处理为（有三个分量：L*, a*, b* 的）三维空间中一个点来近似，并计算在它们之间的欧几里得距离。在L*a*b* 空间中的这个欧几里得距离是ΔE（经常叫做“Delta E”，更精确的是ΔE*ab）。
 
 使用L*a*b* 中的两个颜色 $({L_1}^*,\ {a_1}^*,\ {b_1}^*)和({L_2}^*,\ {a_2}^*,\ {b_2}^*)$ :
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165214402.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165214402.png)
 
 色彩空间的现实：
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165400694.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165400694.png)
 
 得到CIELAB的办法是从XYZ空间进行：
 
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165629628.png)
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165805740.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165629628.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165805740.png)
 
 从RGB到LAB是简单的近似，其本身就没有理论意义，但可以以另一种方式观察图像性质，但必须明确的是LAB是对颜色的定义，而RGB只是这种颜色的一个表达，而且与设备密切相关。设备一旦变化这个RGB值将失去意义。
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165948047.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314165948047.png)
 
 ## CIELUV色彩空间描述
 >LUV色彩空间，也作CIELUV。是于1976年由国际照明委员会CIE 提出，由CIE XYZ空间经简单变换得到，具视觉统一性。
@@ -53,8 +53,8 @@ CIELAB是均匀的颜色空间，所谓均匀是当数值均匀变化时，人�
 L*表示物体亮度，u*和v*是色度，其中L*与L*A*B*中的L*一致。
 一般来讲u*和v*的取值范围为-100到+100，亮度L为0到100。
 从XYZ到LUV的转换如下：
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314171413128.png)
-![这里写图片描述](DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314171258138.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314171413128.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-5-彩色图像-色彩空间-CIELAB-CIELUV/20150314171258138.png)
 
 ## 总结
 今天简单介绍下CIELAB和CIELUV这两种设备无关的色彩空间，下一篇接续色彩空间。

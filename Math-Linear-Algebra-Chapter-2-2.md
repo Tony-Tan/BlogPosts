@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 16:14:14
-tags:
+keywords:
   - Eliminate
   - Pivot
   - Row Exchange
@@ -77,6 +77,6 @@ Pivot in Row j 就是当前的主元
 比如你有三个方程，两个未知数，就很有可能没有解
 如果你有一个方程，两个未知数，肯定有英菲尼迪个解
 但是这个描述是小学的，根据back substitution的过程，我们确定，方程解的个数和pivot直接相关：
-![eliminate_faile](Math-Linear-Algebra-Chapter-2-2/eliminate_faile.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-2/eliminate_faile.png)
 ## 总结
 消元那步看不懂，就想象着把矩阵变成三角的，然后按照这个思路自己写个方程试试，过程中感受下主元的威力，主元是个非常重要的概念，用处特别多。。。

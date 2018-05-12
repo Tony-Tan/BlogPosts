@@ -2,7 +2,7 @@
 title: 【数字图像处理】1.1:灰度级
 date: 2014-11-06 10:58
 categories: DIP
-tags:
+keywords:
   - 灰度级数
 ---
 **Abstract:** 数字图像处理：第1天
@@ -44,9 +44,9 @@ int main(){
 }
 ```
 
-![](DIP-1-1-不同灰度级的图像/20141106101032359.jpg)
-![](DIP-1-1-不同灰度级的图像/20141106101045531.jpg)
-![](DIP-1-1-不同灰度级的图像/20141106105356188.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-1-不同灰度级的图像/20141106101032359.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-1-不同灰度级的图像/20141106101045531.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-1-不同灰度级的图像/20141106105356188.jpg)
 
 以上三张图从左到右从上到下，分别是：原始图像，K=1,2,3,4,5,6,7,8（1阶为二值化图像，8阶为原始图像灰度图）
 

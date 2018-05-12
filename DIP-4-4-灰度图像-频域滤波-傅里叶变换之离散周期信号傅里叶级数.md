@@ -3,7 +3,7 @@ title: 【数字图像处理】4.4：灰度图像-频域滤波 傅里叶变换�
 date: 2015-01-12 17:38
 categories:
   - DIP
-tags:
+keywords:
   - 离散周期序列
   - 傅里叶级数
 toc: true
@@ -61,20 +61,20 @@ $f(n)$ 为原始序列，$s(n)$ 为级数集合，$a_n$ 为对应的系数，根
 ## 总结
 离散时间周期信号的傅里叶级数与连续情况下的区别主要有：离散情况下不存在收敛问题，也没有吉伯斯现象，级数项是有限的N，并且离散时间周期序列傅里叶级数的系数是周期的，且周期为N。
 
-[Center]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112152853812.png
-[Center 1]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112153630546.png
-[Center 2]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112154303925.png
-[Center 3]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112155301531.png
-[Center 4]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112155322622.png
-[Center 5]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112155600697.png
-[Center 6]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112160240625.png
-[Center 7]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112160604761.png
-[Center 8]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112160639268.png
-[Center 9]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112161436531.png
-[Center 10]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112162154703.png
-[Center 11]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112162625650.png
-[Center 12]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112163656001.png
-[Center 13]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112163745968.png
-[Center 14]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112164844039.png
-[Center 15]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112165626861.png
-[Center 16]: DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112165638093.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112152853812.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112153630546.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112154303925.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112155301531.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112155322622.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112155600697.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112160240625.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112160604761.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112160639268.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112161436531.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112162154703.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112162625650.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112163656001.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112163745968.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112164844039.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112165626861.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-4-灰度图像-频域滤波-傅里叶变换之离散周期信号傅里叶级数/20150112165638093.png

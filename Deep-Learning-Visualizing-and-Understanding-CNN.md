@@ -4,7 +4,7 @@ toc: true
 categories:
  - Deep Learning
 date: 2017-09-13 16:46:09
-tags:
+keywords:
   - CNN Visualizing
   - CNN
 ---
@@ -88,7 +88,7 @@ tags:
 
 >networks and the final layer is a softmax classifie
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913190123281.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913190123281.png)
 ### Visualization with a Deconvnet
 
 >We present a novel way to map these activities back to the input pixel space, showing what input pattern originally caused a given activation in the feature maps.
@@ -105,7 +105,7 @@ tags:
 >In the convnet, the max pooling operation is non-invertible, however we can obtain an approximate inverse by recording the locations of the maxima within each pooling region in a set of switch variables. In the>deconvnet, the unpooling operation uses these switches to place the reconstructions from the layer above into appropriate locations, preserving the structure of the stimulus. See Fig. 1(bottom) for an illustration of the procedure
 >最大池化不可逆，我们通过记录位置来进行近似，记录被称为一组switch值，在deconvnet中，逆池化使用这些switch值来定位重建上一层，保留激活分布。在Fig1中说明
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913191649067.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913191649067.png)
 #### Rectification：
 
 >The convnet uses relu non-linearities, which rectify the feature maps
@@ -138,7 +138,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >Visualization of the first layer filters during training reveals that a few of them dominate, as shown in Fig. 6(a). To combat this, we>renormalize each filter in the convolutional layers whose RMS value exceeds a fixed radius of 10−1 to this fixed radius
 >第一层 Filter的可视化在训练过程揭示，其中一部分起支配作用，如Fig 6 a 所示，为了对抗这种情况，我们重新归一化RMS值超过fixed-radius的0.1倍的每一个在卷基层的Filter
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913221329283.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913221329283.png)
 评论：详细的训练过程
 ## Convnet Visualization
 关于特征：
@@ -146,7 +146,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >Feature Visualization: Fig. 2 shows feature visualizations from our model once training is complete. However, instead of showing the single strongest activation for a given feature map, we show the top 9 activations.
 >特征可视化：图2显示的特征可视化是当模型训练完成时就确定的，然而不显示对于给定特征映射的单一强刺激而显示top9
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913214421030.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913214421030.png)
 
 >Alongside these visualizations we show the corresponding image patches. These have greater variation than visualizations as the latter solely focus on the discriminant structure within each patch.
 >沿着这个可视化我们可以观察到相当的当前图像区域。这有相当大的可视化成都相对于单独把注意力放到每一个path。
@@ -157,7 +157,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >Feature Evolution during Training: Fig. 4 visualizes the progression during training of the strongest activation (across all training examples) within a given feature map projected back to pixel space.
 >特征在训练过程中的进化：图4，训练较强反应的神经元（在所有训练样本中）在给定特征映射逆向投影到像素空间的过程中的可视化。
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913215022775.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913215022775.png)
 
 >Sudden jumps in appearance result from a change in the image from which the strongest activation originates.
 >表面上突然的跳跃来自图像最强的激活区域（此区域能够激发网络中的部分神经元产生大的特征变化）
@@ -166,7 +166,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >Feature Invariance: Fig. 5 shows 5 sample images being translated,rotated and scaled by varying degrees while looking at the changes in the feature vectors from the top and bottom layers of the model,relative to the untransformed feature.
 >特征独立性：图5，显示五个样本图经过变换，旋转，缩放多种随机模型，然后从底层到高层观察特征向量与未变换的特征向量进行对比
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913214923055.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913214923055.png)
 小的变换对于模型的第一层有显著影响，但是对于顶层特征影响不大，对于变换和缩放大致呈线性
 
 >The network output is stable to translations and scalings.
@@ -198,7 +198,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >Fig. 7 attempts to answer this question by systematically occluding different portions of the input image with a grey square, and monitoring the output of the classifier.
 >图7试图回答这个问题，通过系统的遮挡输入图片不同的位置，使用一个灰色方框，然后监视分类器的输出
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913215441245.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913215441245.png)
 
 >When the occluder covers the image region that appears in the visualization, we see a strong drop in activity in the feature map.
 >当遮挡覆盖到可视化中出现的区域，我们发现在特征映射层有一个强烈的drop
@@ -212,11 +212,11 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >深度学习模型与现存其他识别机制不同在于：其不存在对于在不同图片之间某些物体的特殊部分之间的准确的区别关系（例如：脸部存在一个鼻子和脸的特别空间关系）
 >不同的特征向量计算公式：
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913220428886.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913220428886.png)
 
 >We then measure the consistency of this difference vector delta between all related image pairs (i, j):
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913220143576.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913220143576.png)
 >我们然后计算所有图片对之间的不同。
 >where H is Hamming distance.
 >H为汉明距离
@@ -225,9 +225,9 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >same object parts in different images (i.e. blocking the left eye)
 >在遮挡操作的变换结果中，一个较低的值表示部件之间较大的相关性fig8：
 
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913215615949.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913215615949.png)
 Table 1
-![](Deep-Learning-Visualizing-and-Understanding-CNN/20160913220319983.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913220319983.png)
 评论：不同特征的独立性验证，如果你有鼻子眼睛嘴的脸部特征，遮住鼻子对最后的特征向量影响不大，说明他们之间的相关性比较强，类似于一张图如果有鼻子，基本也有眼睛，所以你遮住眼睛也会得到差不多的特征向量。
 总结：简单的学习了一下这篇文章，后面第五部分讲的是经验，关于如何训练高质量的网络，会在下一篇推出，欢迎收看。
 

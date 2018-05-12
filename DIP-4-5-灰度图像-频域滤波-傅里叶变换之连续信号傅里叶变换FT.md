@@ -3,7 +3,7 @@ title: 【数字图像处理】4.5:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-13 15:41
 categories:
   - DIP
-tags:
+keywords:
   - 连续信号傅里叶变换
 toc: true
 ---
@@ -74,26 +74,26 @@ T进一步增加
 ![Center 22][]
 至此，对连续函数的傅里叶变换进行了简要的推导，由于其在图像处理里面很少用到，但有可能在模式识别中有用到，所进行简要的介绍。
 
-[Center]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113112315031.png
-[Center 1]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113111957137.png
-[Center 2]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113112445300.png
-[Center 3]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113113122384.png
-[Center 4]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113113855705.png
-[Center 5]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113135106375.png
-[Center 6]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113135547887.png
-[Center 7]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113140705864.png
-[Center 8]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113140722946.png
-[Center 9]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113143512945.png
-[Center 10]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113143818476.png
-[Center 11]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113145642833.png
-[Center 12]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113145657450.png
-[Center 13]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113150606914.png
-[Center 14]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113150654125.png
-[Center 15]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113150811090.png
-[Center 16]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151036186.png
-[Center 17]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151038437.png
-[Center 18]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151131504.png
-[Center 19]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151757293.png
-[Center 20]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151634437.png
-[Center 21]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113152616587.png
-[Center 22]: DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113153252421.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113112315031.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113111957137.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113112445300.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113113122384.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113113855705.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113135106375.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113135547887.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113140705864.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113140722946.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113143512945.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113143818476.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113145642833.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113145657450.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113150606914.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113150654125.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113150811090.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151036186.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151038437.png
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151131504.png
+[Center 19]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151757293.png
+[Center 20]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113151634437.png
+[Center 21]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113152616587.png
+[Center 22]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-5-灰度图像-频域滤波-傅里叶变换之连续信号傅里叶变换FT/20150113153252421.png

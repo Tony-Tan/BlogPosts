@@ -5,11 +5,17 @@ categories:
   - Probability
 tags:
   - Sample Space
+  - 样本空间
   - Finite Sample Space
+  - 有限样本空间
   - Kolmogorov axioms(Probability Axioms)
+  - 柯氏公理
   - Disjointed Events
+  - 不想交事件
   - Definition of Probability
+  - 概率定义
   - Properties of Probability
+  - 概率性质
   - Bonferroni Inequality
 toc: true
 date: 2018-01-24 10:12:00

@@ -96,7 +96,7 @@ python研究处于初级阶段，c++也是，但是c研究的比较多，感觉�
 知识结构如下
 
 [https://github.com/Tony-Tan/MachineLearningMath](https://github.com/Tony-Tan/MachineLearningMath)
-![结构图](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/mathRelation.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/mathRelation.png)
 
 相关书籍推荐
 

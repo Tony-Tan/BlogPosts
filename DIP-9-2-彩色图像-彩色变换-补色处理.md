@@ -3,7 +3,7 @@ title: 【数字图像处理】9.2:彩色图像-彩色变换 补色处理
 date: 2015-03-16 14:20
 categories:
   - DIP
-tags:
+keywords:
   - 色彩变换
   - 补色
   - 色环
@@ -24,7 +24,7 @@ $g(x,y)=T[f(x,y)]$
 #算法原理
 算法原理很简单，找到补色，等位替换就好。
 色环牛顿老爷子发明的，没有错，就是那个被苹果砸了的牛顿，不得不说，牛顿是位大师级的人物，色环如下：
-![这里写图片描述](DIP-9-2-彩色图像-彩色变换-补色处理/20150316141306249)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141306249)
 这个色环可能不是牛顿老爷子的色环，但通过这个来展示下补色就是一条直径上两端的颜色。
 对于RGB图像，补色是对应的CMY图像
 对于HSI和HSV图像，H分量需要进行相应的旋转，而亮度分量也需要相应的反转，而饱和度不变，能够得到类似的补色效果。
@@ -69,19 +69,19 @@ void Complementary_Color(C3 *src,C3 *dst,int width,int height,int color_space_ty
 ```
 ## 结果观察
 原图：
-![这里写图片描述](DIP-9-2-彩色图像-彩色变换-补色处理/20150316141655788.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141655788.png)
 
 RGB：
-![这里写图片描述](DIP-9-2-彩色图像-彩色变换-补色处理/20150316141713478.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141713478.jpeg)
 
 HSI：
-![这里写图片描述](DIP-9-2-彩色图像-彩色变换-补色处理/20150316141731293.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141731293.jpeg)
 
 HSV：
-![这里写图片描述](DIP-9-2-彩色图像-彩色变换-补色处理/20150316141750513.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141750513.jpeg)
 
 Paintbrush：
-![这里写图片描述](DIP-9-2-彩色图像-彩色变换-补色处理/20150316141818795.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141818795.jpeg)
 ## 总结
 简单的介绍了最简单的色彩变换，补色变换，可以看出HSI，HSV和RGB处理的结果有些不同，而PaintBrush处理和我处理都不同，不知道它使用的什么算法。
 待续。。。

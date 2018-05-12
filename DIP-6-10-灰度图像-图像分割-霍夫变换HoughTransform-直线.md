@@ -3,7 +3,7 @@ title: 【数字图像处理】6.10:灰度图像-图像分割 霍夫变换(Hough
 date: 2015-02-16 09:12
 categories:
   - DIP
-tags:
+keywords:
   - 霍夫变换
   - 直线检测
 toc: true
@@ -19,67 +19,67 @@ toc: true
 本篇只介绍标准霍夫变换对直线的检测，放在图像分割这部分是因为冈萨雷斯书中将霍夫变换用于连接边缘。
 #数学原理
 我们本篇只介绍检测直线，对于图像中直线，一般用方程 $y=kx+b$ ，式子中 $k$ 表示直线的斜率， $b$ 表示直线相对于y轴的截距，如图中所示：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215185437867.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215185437867.jpeg)
 
 如果按照正常思维，搜索图中的直线，使用穷举的方法，假设图像一共有N个像素任意两点可以构成一条直线，所以过一点应该有(N-1)/2条，所以全图像存在N(N-1)/2条直线，如果要确定一点是否是直线上的点，一共需要至少 $N^2(N-1)/2$ 次计算，这个代价的算法在实际中基本没有价值，于是，Hough提出了一种巧妙的方法，将直线表示成 $-b=xk-y$ 这种变换的意义在于自变量不是x而是k，y也不再是因变量，b变成了因变量，所以图像上任意两点，可以从（x，y）坐标系映射到（k，b）坐标系，系数选取点 $(x_1=1.8,y_1=7.6)$ 和点 $(x_2=3.4,y_2=10.8)$ ，绘制出两条曲线：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215190807615.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215190807615.jpeg)
 
 可以根据上图得出k=2，b=4，那么在$y=kx+b$的点的在k，b坐标系上的交点都在(2,-4)处，
 根据上面我们可以利用这个特点，将一幅图像从(x,y)坐标系，转换到(k,b)坐标系，假设原图中有k个亮点，可以在(k,b)坐标系画出k条直线，那么越多的直线交于一点，说明该点的坐标为斜率和截距的直线点在原图中出现频率越大，那么我们就能根据这个特点找出这些点。
 问题来了，当原图直线和x轴垂直时，斜率k趋近于无穷大，所以在(k,b)坐标系内无法表示，所以我们换一种方法，使用直线 $y=kx+b$ 的法线，截距为-b，那么这条直线为 $y=-\frac{1}{k}x-b$ ，如果使用参数方程，原直线为 $cos(\theta)y-sin(\theta)*x=cos(\theta)b$ ，令 $\varrho=cos(\theta)b$ 原坐标的直线为 $cos(\theta)y-sin(\theta)*x=\varrho$ ，那么法线的参数方程为 $sin(\theta)y+cos(\theta)*x=-\varrho$ ，方程坐标系为 $(\theta，\varrho)$  。
 将上面的思想应用到 $(\theta，\varrho)$ 坐标系，我们将得到，如下的信息，原图：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193045036.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193045036.jpeg)
 
 转换到参数坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193110277.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193110277.jpeg)
 
 交点出就是两条对角线的参数。
 我们来观察一条直线的参数坐标系：
 水平直线：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193217279.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193217279.jpeg)
 
 对应参数坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193230180.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193230180.jpeg)
 
 垂直直线：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193232819.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193232819.jpeg)
 
 对应参数坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193243879.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193243879.jpeg)
 
 45°直线：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193256515.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193256515.jpeg)
 
 对应参数坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193308059.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193308059.jpeg)
 
 -45°直线：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193410475.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193410475.jpeg)
 
 对应参数坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193422643.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193422643.jpeg)
 
 五条直线交于一点：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193328105.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193328105.jpeg)
 
 对应参数坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193343971.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193343971.jpeg)
 
 上图中越明亮的点说明重叠参数方程越多，我们来观察两条直线对应参数坐标系的立体情况：
 原图：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193815926.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193815926.jpeg)
 
 平面的参数方程坐标系：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193833164.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193833164.jpeg)
 
 参数方程坐标系的立体显示：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193931521.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193931521.jpeg)
 
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193935002.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215193935002.jpeg)
 
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194005467.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194005467.jpeg)
 
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194022798.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194022798.jpeg)
 
 
 #代码
@@ -125,22 +125,22 @@ void HoughLine(double *src,double *dst,int width,int height,int lineLength){
 ## 效果
 Hough变换输入图像因为边缘图像，或是二值图像效果如下图：
 原图：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194417925.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194417925.png)
 
 边缘检测：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194403510.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194403510.jpeg)
 
 霍夫直线检测：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194444364.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194444364.jpeg)
 
 原图：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194448813.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194448813.png)
 
 边缘检测：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194550446.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194550446.jpeg)
 
 霍夫直线检测：
-![这里写图片描述](DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194609603.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-10-灰度图像-图像分割-霍夫变换HoughTransform-直线/20150215194609603.jpeg)
 
 ## 结论
 霍夫变换可以有效的检测出图像中的直线，但需要设定一定的参数，比如定位参数坐标中极大值的方法，以避免错误的检出结果，广义的霍夫变换可以检测任何$g(\vec x,\vec c)=0$表示的形状，只是计算难度根据方程的复杂度决定，$\vec c$表示方程参数，参数越多需要的存储空间越大，需要的计算量也越大。

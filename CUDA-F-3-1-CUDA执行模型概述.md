@@ -34,7 +34,7 @@ CUDA执行模型揭示了GPU并行架构的抽象视图，再设计硬件的时�
 所以了解CUDA的执行模型，可以帮助我们优化指令吞吐量，和内存使用来获得极限速度。
 ## GPU架构概述
 GPU架构是围绕一个流式多处理器（SM）的扩展阵列搭建的。通过复制这种结构来实现GPU的硬件并行。
-![fermi_sm](CUDA-F-3-1-CUDA执行模型概述/fermi_sm.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/fermi_sm.png)
 
 上图包括关键组件：
 - CUDA核心
@@ -71,7 +71,7 @@ SIMT包括以下SIMD不具有的关键特性：
 简单的类比，但过程就是这样。
 ### CUDA编程的组件与逻辑
 下图从逻辑角度和硬件角度描述了CUDA编程模型对应的组件。
-![3_2](CUDA-F-3-1-CUDA执行模型概述/3_2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_2.png)
 
 SM中共享内存，和寄存器是关键的资源，线程块中线程通过共享内存和寄存器相互通信协调。
 寄存器和共享内存的分配可以严重影响性能！
@@ -81,7 +81,7 @@ SM中共享内存，和寄存器是关键的资源，线程块中线程通过共
 同一个SM上可以有不止一个常驻的线程束，有些在执行，有些在等待，他们之间状态的转换是不需要开销的。
 ## Fermi 架构
 Fermi架构是第一个完整的GPU架构，所以了解这个架构是非常有必要的，就像几十年过去了，我们的微机原理学的还是386一样，祖宗的基因代代相传，学好了祖宗后面的孙子辈都好掌握。
-![fermi](CUDA-F-3-1-CUDA执行模型概述/fermi.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/fermi.png)
 
 Fermi架构逻辑图如上，具体数据如下:
 1. 512个加速核心，CUDA核
@@ -102,11 +102,11 @@ Fermi架构逻辑图如上，具体数据如下:
 特殊功能单元SFU执行固有指令，如正弦，余弦，平方根和插值，SFU在每个时钟周期内的每个线程上执行一个固有指令。
 每个SM有两个线程束调度器，和两个指令调度单元，当一个线程块被指定给一个SM时，线程块内的所有线程被分成线程束，两个线程束选择其中两个线程束，在用指令调度器存储两个线程束要执行的指令（就像上面例子中分水果的水果一样，我们这里有两个班，两个班的老师各自控制的自己的水果，老师就是指令调度器）
 像第一张图上的显示一样，每16个CUDA核心为一个组，还有16个加载/存储单元或4个特殊功能单元。当某个线程块被分配到一个SM上的时候，会被分成多个线程束，线程束在SM上交替执行：
-![3_4](CUDA-F-3-1-CUDA执行模型概述/3_4.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_4.png)
 
 上面曾经说过，每个线程束在同一时间执行同一指令，同一个块内的线程束互相切换是没有时间消耗的。
 Fermi上支持同时并发执行内核。并发执行内核允许执行一些小的内核程序来充分利用GPU，如图：
-![3_5](CUDA-F-3-1-CUDA执行模型概述/3_5.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_5.png)
 ## Kepler 架构
 Kepler架构作为Fermi架构的后代，有以下技术突破：
 - 强化的SM
@@ -114,18 +114,18 @@ Kepler架构作为Fermi架构的后代，有以下技术突破：
 - Hyper-Q技术
 
 技术参数也提高了不少，比如单个SM上CUDA核的数量，SFU的数量，LD/ST的数量等：
-![kepler](CUDA-F-3-1-CUDA执行模型概述/kepler.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/kepler.png)
 
-![kepler_2](CUDA-F-3-1-CUDA执行模型概述/kepler_2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/kepler_2.png)
 
 kepler架构的最突出的一个特点就是内核可以启动内核了，这使得我们可以使用GPU完成简单的递归操作，流程如下。
-![3_8](CUDA-F-3-1-CUDA执行模型概述/3_8.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_8.png)
 Hyper-Q技术主要是CPU和GPU之间的同步硬件连接，以确保CPU在GPU执行的同事做更多的工作。Fermi架构下CPU控制GPU只有一个队列，Kepler架构下可以通过Hyper-Q技术实现多个队列如下图。
-![3_9](CUDA-F-3-1-CUDA执行模型概述/3_9.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_9.png)
 计算能力概览：
-![3_10](CUDA-F-3-1-CUDA执行模型概述/3_10.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_10.png)
 
-![3_11](CUDA-F-3-1-CUDA执行模型概述/3_11.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-1-CUDA执行模型概述/3_11.png)
 
 ## 使用Profile进行优化（Profile-Driven Optimization）
 中文翻译的这个标题是配置文件驱动优化，驱动这个词在这里应该是个动词，或者翻译的人直接按照字面意思翻译的，其实看完内容以后的意思是根据profile这个文件内的信息对程序进行优化。

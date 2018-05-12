@@ -3,7 +3,7 @@ title: 【数字图像处理】5.5:灰度图像-图像增强 锐化基础
 date: 2015-01-30 20:14
 categories:
   - DIP
-tags:
+keywords:
   - 锐化
 toc: true
 ---
@@ -51,10 +51,10 @@ toc: true
 因为以上为纯理论知识，所以今天做一个简单的总结，相关的实验和图像处理结果会在后面的相关算法介绍中给出。
 
 
-[Center]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130185806042.jpg
-[Center 1]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130194154768.png
-[Center 2]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130194251022.png
-[Center 3]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130194435093.png
-[Center 4]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130194538192.png
-[Center 5]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130195409342.png
-[SouthEast]: DIP-5-5-灰度图像-图像增强-锐化基础/20150130200223411.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130185806042.jpg
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130194154768.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130194251022.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130194435093.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130194538192.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130195409342.png
+[SouthEast]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-5-灰度图像-图像增强-锐化基础/20150130200223411.png

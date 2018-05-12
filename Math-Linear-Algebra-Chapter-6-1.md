@@ -3,7 +3,7 @@ title: 【线性代数】6-1:特征值介绍(Introduction to Eigenvalues)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Eigenvalues
   - Eigenvectors
   - Sigular
@@ -96,7 +96,7 @@ A^n=\begin{bmatrix}
 $$
 
 数学过程基本就是这个样子了，推到应该还算严谨，***思路是把矩阵的列分解到以特征向量为基的表示形式，通过特征向量和矩阵乘积还等于特征向量的这个特征，能够继续迭代进行下去***，如下图：
-![特征向量基](Math-Linear-Algebra-Chapter-6-1/特征向量基.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-1/特征向量基.png)
 
 图中的数字是$A=\begin{bmatrix}.8&.3\newline .2&.7\end{bmatrix}$ 作为例子来分解的。
 最后还要用到极限的一些知识，首先来看两个特征值，$\lambda$ 他们要被n次方，所以如果：
@@ -136,7 +136,7 @@ Rx=(2P-I)x\\
 \lambda_{R1} =2 \times 1-1=1\\
 \lambda_{R2} =2 \times 0-1=-1$$
 Reflection和Projection如下图：
-![r&p](Math-Linear-Algebra-Chapter-6-1/r&p.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-1/r&p.png)
 上图的理解步骤和求解 $A^n$ 的过程类似，首先分解左侧乘数向量到以特征向量为基的一组基，所以经过A的变换后，一个特征向量上的长度($\lambda=0$)为0，另一个则是1，就是一个分量没了，另一个保持不变，这就是projection的过程，类似的一个长度为-1，另一个不变的就是reflection，如果有不明白的同学可以那笔画一下，也就是上面的图形，也就差不多了。
 
 通过上面一些列推到可以得出，矩阵shift I ，特征值减1，特征向量不变。或者可以理解为当矩阵们拥有相同的特征向量，特征值满足加法原则。

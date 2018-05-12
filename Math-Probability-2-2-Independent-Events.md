@@ -3,10 +3,13 @@ title: 【概率论】2-2:独立事件(Independent Events)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Independent Events
+  - 独立事件
   - Independent of Several Events
+  - 多个事件独立
   - Coditionally Independent Events
+  - 条件独立
 toc: true
 date: 2018-02-01 09:33:49
 ---
@@ -20,7 +23,7 @@ date: 2018-02-01 09:33:49
 从根本上思考理解自己做的事，同时有计划的训练才是野蛮生长的最快途径。
 美国人Noel Tichy提出的理论，图里的3个区可以表示为你想学习的事物的等级:
 
-![learn](Math-Probability-2-2-Independent-Events/learn.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-2-Independent-Events/learn.jpg)
 
 不要停留在舒适区，也不要好高骛远的直接去Panic Zone，那样会死的很惨，多去学习区，这样才能不断的进步。
 
@@ -56,7 +59,7 @@ $$
 ### Exclusive Events and independent Events
 <font color=#ff0000 >说一个我之前初学概率时的一个思维误区:</font>
 我一直以为独立在集合上的反映就是不想交，，像这样：
-![](Math-Probability-2-2-Independent-Events/intersect.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-2-Independent-Events/intersect.png)
 这是一种很自然的想法，当题设的条件中用到独立，互不影响地进进行两个实验的时候，我们很自然的把他们理解为两个样本空间，所以打死不会有交集，但事实是我们关心的是这两个试验的一个复合结果产生的样本空间。
 
 但事实是这是个明显错误的，当A和B事件作为同一个试验的事件，那么当B发生的时候严重影响A的概率，因为当B发生的时候，A不可能发生，根据[1-1](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中的T1，我们可以确定当$Pr(B)\geq 0$ 的时候 $Pr(A|B)=\frac{Pr(A\cap B)}{Pr(B)}=\frac{Pr(\emptyset)}{Pr(B)}=0$
@@ -66,7 +69,7 @@ $$
 
 分析独立事件的定义，我们可以看出独立并不等于不想交，从频率角度的解释是相交部分的面积占事件B的比例，刚好等于事件A面积对整个样本空间的面积比例:
 
-![](Math-Probability-2-2-Independent-Events/independence.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-2-Independent-Events/independence.png)
 
 用图像的理解，A的面积与整体S的面积比等于灰色与B面积的比。
 

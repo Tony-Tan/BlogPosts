@@ -46,7 +46,7 @@ kernel_name<<<4,8>>>(argument list);
 ```
 
 上面这条指令的线程布局是：
-![](CUDA-F-2-1-CUDA编程模型概述2/1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-1-CUDA编程模型概述2/1.png)
 
 我们的核函数是同时复制到多个线程执行的，上文我们说过一个对应问题，多个计算执行在一个数据，肯定是浪费时间，所以为了让多线程按照我们的意愿对应到不同的数据，就要给线程一个唯一的标识，由于设备内存是线性的（基本市面上的内存硬件都是线性形式存储数据的）我们观察上图，可以用threadIdx.x 和blockIdx.x 来组合获得对应的线程的唯一标识（后面我们会看到，threadIdx和blockIdx能组合出很多不一样的效果）
 

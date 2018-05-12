@@ -3,11 +3,15 @@ title: 【概率论】3-4:二维分布(Bivariate Distribution)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Discrete Joint Distribution
+  - 离散联合分布
   - Continuous Joint Distribution
+  - 连续联合分布
   - Mixed Bivariate Distribution
+  - 混合分布
   - Bivariate Cumulative Distribution Functions
+  - 二维累计分布
 toc: true
 date: 2018-02-07 09:35:57
 ---
@@ -98,7 +102,7 @@ Pr[(X,Y)\in C]=\int_C\int \frac{1}{100000}dx dy
 $$
 这个只是算是微积分的一个简单应用，如果不知道为啥这么做，可以去看一下多重积分的基础知识就自然明白了，但是这个公式却可以延伸成为联合分布的定义。
 
-![w_e](Math-Probability-3-4-Bivariate-Distribution/w_e.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-4-Bivariate-Distribution/w_e.png)
 
 >Definition Continuous Joint Distribution/Joint p.d.f./Support:Two random varibales X and Y have a continuous joint distribution if there exists a nonnegative function f defined over the entire xy-plane such that for every subset C of the plane,
 $$
@@ -190,12 +194,12 @@ Pr(a<x\leq b \text{ and } c<Y\leq d)\\
 =F(b,d)-F(a,d)-F(b,c)+F(a,c)
 $$
 这个过程可能画个平面图也能看的清楚些，用概率定义时候的定理也可以：
-![w_e](Math-Probability-3-4-Bivariate-Distribution/cdf.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-4-Bivariate-Distribution/cdf.png)
 >Theorem Let $X$ and $Y$ have a joint c.d.f. $F$.The c.d.f. $F_1$ of just the single random variable $X$ can be derived from the joint c.d.f. $F$ as $F_1(x)=lim_{y\to \infty}F(x,y)$.Similarly,the c.d.f. $F_2$ of $Y$ equals $F_2(y)=lim_{x\to \infty}F(x,y)$ ,for $0<y\leq \infty$
 
 这个定理解决的问题是我们上面提到的关于如何把联合pdf拆分成单个变量的pdf，这个定理帮我们解决的是个相关的问题，就是把cdf拆成两个变量分别的cdf，具体做法就是对于二维联合cdf，对其中一个变量取极限得到的就是另一个变量的cdf。
 证明如下，我们只证明其中一个，另一个将不证自明：
-![w_e](Math-Probability-3-4-Bivariate-Distribution/proof.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-4-Bivariate-Distribution/proof.png)
 
 1. 离散情况下：
 $$

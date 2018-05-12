@@ -3,7 +3,7 @@ title: 【数字图像处理】6.4:灰度图像-图像分割 Sobel算子
 date: 2015-02-10 11:54
 categories:
   - DIP
-tags:
+keywords:
   - Sobel算子
   - 边缘检测
 toc: true
@@ -104,21 +104,21 @@ Sobel算子的效果相比于其他算子，效果较好，而且计算量不大
 
 
 
-[Center]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210091720752.png
-[Center 1]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210091735242.png
-[Center 2]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210092132940.png
-[Center 3]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210100357601.png
-[Center 4]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210103705512.png
-[Center 5]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210104639175.png
-[Center 6]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210112905939.png
-[Center 7]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210113951970.png
-[Center 8]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114237156.png
-[Center 9]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114247280.png
-[Center 10]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114257374.png
-[Center 11]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114304973.png
-[Center 12]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114311728.png
-[Center 13]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114323519.png
-[Center 14]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115127916.png
-[Center 15]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115128917.png
-[Center 16]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115134814.png
-[Center 17]: DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115140742.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210091720752.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210091735242.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210092132940.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210100357601.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210103705512.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210104639175.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210112905939.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210113951970.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114237156.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114247280.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114257374.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114304973.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114311728.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210114323519.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115127916.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115128917.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115134814.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-4-灰度图像-图像分割-Sobel算子/20150210115140742.png

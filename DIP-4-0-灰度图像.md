@@ -3,7 +3,7 @@ title: 【数字图像处理】4.0:灰度图像
 date: 2014-12-31 10:58
 categories:
   - DIP
-tags:
+keywords:
   - 灰度图像
 toc: true
 ---
@@ -42,10 +42,10 @@ toc: true
 ## 总结
 学习是没有尽头的，当我们只是单纯的喜欢一种技术，一门知识，并愿意花时间学习的时候，总会有所收获，无论是学习的过程还是结果，都会使我们终身受益。2015与诸君共勉。
 
-[Center]: DIP-4-0-灰度图像/20141231103526460.png
-[Center 1]: DIP-4-0-灰度图像/20141231104920282.png
-[Center 2]: DIP-4-0-灰度图像/20141231104951796.png
-[Center 3]: DIP-4-0-灰度图像/20141231105036987.png
-[Center 4]: DIP-4-0-灰度图像/20141231105205703.png
-[Center 5]: DIP-4-0-灰度图像/20141231105225984.png
-[Center 6]: DIP-4-0-灰度图像/20141231105334125.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231103526460.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231104920282.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231104951796.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231105036987.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231105205703.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231105225984.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-0-灰度图像/20141231105334125.png

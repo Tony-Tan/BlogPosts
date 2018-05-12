@@ -3,7 +3,7 @@ title: 【数字图像处理】2.5:图像傅里叶变换（快速傅里叶变换
 date: 2014-12-15 23:48
 categories:
   - DIP
-tags:
+keywords:
   - FFT
   - 傅里叶变换
   - 图像傅里叶谱
@@ -165,14 +165,14 @@ void ImageIFFT(Complex *src,IplImage *dst,int size_w,int size_h){
 下一篇继续研究傅里叶变换的应用；
 
 
-[SouthEast]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215231801668.bmp
-[SouthEast 1]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215231920479.jpg
-[SouthEast 2]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215233229529.jpg
-[SouthEast 3]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215233903656.jpg
-[SouthEast 4]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234208243.jpg
-[SouthEast 5]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234256525.jpg
-[SouthEast 6]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234330892.jpg
-[SouthEast 7]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234349359.jpg
-[SouthEast 8]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234450842.jpg
-[SouthEast 9]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234515864.jpg
-[SouthEast 10]: DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234536394.jpg
+[SouthEast]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215231801668.bmp
+[SouthEast 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215231920479.jpg
+[SouthEast 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215233229529.jpg
+[SouthEast 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215233903656.jpg
+[SouthEast 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234208243.jpg
+[SouthEast 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234256525.jpg
+[SouthEast 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234330892.jpg
+[SouthEast 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234349359.jpg
+[SouthEast 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234450842.jpg
+[SouthEast 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234515864.jpg
+[SouthEast 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234536394.jpg

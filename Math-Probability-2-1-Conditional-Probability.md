@@ -3,11 +3,14 @@ title: 【概率论】2-1:条件概率(Conditional Probability)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Conditional Probability
+  - 条件概率
   - Multiplication Rule
+  - 乘法原理
   - Partitions
   - Law of total Probability
+  - 全概率公式
 toc: true
 date: 2018-01-31 10:34:36
 ---
@@ -114,7 +117,7 @@ $$
 上面这个过程的证明和上面乘法原理的证明一样，就是通过等号右边每两个结合运用乘法原理，能够得到和等号左边一样的结果。
 我们只要掌握一个规律就可以，那就是，条件概率和普通的概率一样，加上某个条件时，其计算方法和不加这个条件时候计算方法一致。
 ## Conditional Probability and Partition - Law of total Probability (条件概率与分割，全概率公式)
-在[1-1的T3](http://tony4ai.com/2018/01/24/Math-Probability-1-1-Definition-of-Probability/)中，我们介绍了当一个样本空间被划分成两部分的时候，概率的计算方法，那么如果我们把切分继续下去，也就是一个样本空间我们把它切成k块不相交的子空间时，那么响应的计算会有什么变换呢？
+在[1-1的T3](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中，我们介绍了当一个样本空间被划分成两部分的时候，概率的计算方法，那么如果我们把切分继续下去，也就是一个样本空间我们把它切成k块不相交的子空间时，那么响应的计算会有什么变换呢？
 
 >Definition partition Let S denote the sample space of some experiment,and consider k events $B_1 \dots B_k$ in S such that $B_1 \dots B_k$ are disjoint and $\bigcup^k_{i=1}B_i=S$ It is said that these events from a partition of S
 
@@ -132,7 +135,7 @@ $$
 全概率公式可以通过乘法原理和partition的定义获得，当然也可以画图证明，通过集合论的知识也可以。
 
 ①画图：
-![pic](Math-Probability-1-5-Conditional-Probability/law_of_total_probability.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-5-Conditional-Probability/law_of_total_probability.png)
 圆圈是内是A，各分块内都有A的一部分，$B_i\cap A$，那么所有的部分加起来就是完整的A，通过下面集合论也可以完整的解释
 
 ②集合论：
@@ -151,7 +154,7 @@ $$
 Pr(A|C)=\sum^k_{j=1}Pr(B_j|C)Pr(A|B_j\cap C)
 $$
 通过画图可以简单的了解一下最简单的情况：
-![pic](Math-Probability-1-5-Conditional-Probability/law_of_total_probability2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-5-Conditional-Probability/law_of_total_probability2.png)
 
 怎么样很机制吧，给完整的样本空间S再加个套，这样$Pr(S)\neq 1$ 而是一个小于1的概率了，这种情况下产生了一个条件概率版本的全概率公式。
 如果从分析的方法看：

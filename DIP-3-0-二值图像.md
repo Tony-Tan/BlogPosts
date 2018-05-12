@@ -3,7 +3,7 @@ title: 【数字图像处理】3.0:二值图像
 date: 2014-12-24 14:57
 categories:
   - DIP
-tags:
+keywords:
   - 二值图像
   - 形态学
   - 邻域
@@ -67,11 +67,11 @@ toc: true
 对于R为一个图像子集，如果R连通的，则称R为一个区域。对于所有不连接的K个区域，其并集Rk构成了图像的前景，Rk的补集称为背景。
 二值图像简单的介绍如此，下节介绍形态学。
 
-[Center]: DIP-3-0-二值图像/20141224101155121.jpg
-[Center 1]: DIP-3-0-二值图像/20141224140523421.png
-[Center 2]: DIP-3-0-二值图像/20141224140538188.png
-[Center 3]: DIP-3-0-二值图像/20141224140532947.png
-[Center 4]: DIP-3-0-二值图像/20141224142415946.png
-[Center 5]: DIP-3-0-二值图像/20141224142420359.png
-[Center 6]: DIP-3-0-二值图像/20141224142431889.png
-[Center 7]: DIP-3-0-二值图像/20141224142446600.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224101155121.jpg
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224140523421.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224140538188.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224140532947.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224142415946.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224142420359.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224142431889.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-3-0-二值图像/20141224142446600.png

@@ -17,7 +17,7 @@ date: 2018-03-06 12:30:41
 
 ## 开篇废话
 本文创建于哈尔滨，完成于深圳，也算是边走边工作了，刚做了下新年计划，这个软件还不错，需要付费，但是能实时提醒下自己，安排下计划也不错
-![plane](Crawler-3-3-数据抓取/plane.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-3-数据抓取/plane.png)
 
 今年还是要忍住外界各种压力，把该打好的基础做好，然后恢复下身体，争取多走出人生的几步，去年前年都走了不少步，有对有错，希望今年也走几步（没病走两步~~）
 还是原来那句：**我不是爬虫专家或者前端后台专家，我的努力方向也不是这个方向，我只是想要运用这套技术，但是我又希望对整个过程有一个比较详细的了解，所以我在本系列只是简单介绍，有些东西可能含糊不清，需要详细学习的同学可以去查询相关资料**
@@ -25,11 +25,11 @@ date: 2018-03-06 12:30:41
 ## 分析网页
 前面讲的[三只虫](http://tony4ai.com/Crawler-3-0-第一个爬虫/)已经讲解了如何把静态的网页下载回本地，前两篇HTTP讲了下背后的理论基础，就是向服务器发送请求，得到相应的过程，按照[Introduction](http://tony4ai.com/Crawler-1-0-Introduction/)中介绍的处理过程
 
-![](Crawler-3-3-数据抓取/crawler.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-3-数据抓取/crawler.png)
 
 我们在得到内容后就要进行分析内容了，也就是抓取感兴趣的信息，可以是数据，比如文章，图片，也可以是链接，那么就是下一步要访问的页面了。
 分析网页的方法是使用浏览器自带的工具，比如Safari和Chrome的右键都能显示源代码（检查元素）之类的功能
-![](Crawler-3-3-数据抓取/resource.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-3-数据抓取/resource.png)
 这个源代码（html）就是我们上面用虫子下载到的，而接下来，就是要提取里面的信息了，想要啥，就拿啥。
 ## 抓取方法
 ### 正则表达式
@@ -167,7 +167,7 @@ html是服务器返回的响应，这里的类型就是字符串：
     var ajax_error_500 = 'An error occured, please <a href="/places/default/index">reload</a> the page'
     //--></script>
 
-<meta name="keywords" content="web2py, python, web scraping" />
+<meta name="tags" content="web2py, python, web scraping" />
 <meta name="generator" content="Web2py Web Framework" />
 <meta name="author" content="Richard Penman" />
 <script src="/places/static/js/jquery.js" type="text/javascript"></script><link href="/places/static/css/calendar.css" rel="stylesheet" type="text/css" /><script src="/places/static/js/calendar.js" type="text/javascript"></script><script src="/places/static/js/web2py.js" type="text/javascript"></script><link href="/places/static/css/web2py.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/style.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/web2py_bootstrap.css" rel="stylesheet" type="text/css" />

@@ -3,7 +3,7 @@ title: 【数字图像处理】6.2:灰度图像-图像分割 边缘检测算子 
 date: 2015-02-09 09:54
 categories:
   - DIP
-tags:
+keywords:
   - 边缘检测
   - 算法
 toc: true
@@ -30,4 +30,4 @@ toc: true
 
 
 
-[Center]: DIP-6-2-灰度图像-图像分割-边缘检测算子-综述/20150209095544000.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-2-灰度图像-图像分割-边缘检测算子-综述/20150209095544000.png

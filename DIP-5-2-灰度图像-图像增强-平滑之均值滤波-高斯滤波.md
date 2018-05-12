@@ -3,7 +3,7 @@ title: 【数字图像处理】5.2:灰度图像-图像增强 平滑之均值滤�
 date: 2015-01-28 12:09
 categories:
   - DIP
-tags:
+keywords:
   - 平滑
   - 均值滤波
   - 高斯平滑
@@ -161,21 +161,21 @@ toc: true
 ## 总结
 之前写了很多结论，现在都忘完了，因为理论很简单，主要是观察结果，线性平滑基本就介绍这些，下篇介绍非线性的。
 
-[Center]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120639281.png
-[Center 1]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128114711343.png
-[Center 2]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128114720017.png
-[Center 3]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128114728020.png
-[Center 4]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115026655.jpg
-[Center 5]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115035438.jpg
-[Center 6]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115043332.jpg
-[Center 7]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115602134.png
-[Center 8]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115553593.png
-[Center 9]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120049175.png
-[Center 10]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120107411.png
-[Center 11]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120158220.png
-[Center 12]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120215755.png
-[Center 13]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120150968.png
-[Center 14]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120235426.png
-[Center 15]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120254880.png
-[Center 16]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120309809.png
-[Center 17]: DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120322554.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120639281.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128114711343.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128114720017.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128114728020.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115026655.jpg
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115035438.jpg
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115043332.jpg
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115602134.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128115553593.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120049175.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120107411.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120158220.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120215755.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120150968.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120235426.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120254880.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120309809.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-2-灰度图像-图像增强-平滑之均值滤波-高斯滤波/20150128120322554.png

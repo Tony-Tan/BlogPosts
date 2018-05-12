@@ -3,7 +3,7 @@ title: 【线性代数】7-3:对角化和伪逆(Diagonalization and the Pseudoin
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Diagonalization
   - Pseudoinverse
 toc: true
@@ -19,7 +19,7 @@ date: 2017-12-06 14:03:08
 ## Diagonalization and the Pseudoinverse
 首先我们要回顾下，并且强调下昨天讲的内容，就是线性变换对应的矩阵，对于不同空间相互变换，知道空间是不能确定矩阵的，还要确定基和相互关系，光知道基也没用，比如求导和求积分的例子告诉我们，必须要知道他们之间的计算关系，或者叫做原始空的基向量线性变换到目标空间后的向量是啥才能确定矩阵A(上一篇的🌰 1)。
 接下来的换基运算是在同一个空间下进行的，也就是线性变换后空间不变，空间不变以为这矩阵的Rank不发生变化，想要进行换基操作就要知道新的基和原来的基都分别是什么，然后就能确定出矩阵了。
-![transformation](Math-Linear-Algebra-Chapter-7-3/lineartransformation.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/lineartransformation.png)
 
 手工图片，简约而不简单，哈哈，$T_1$就是个典型的夸空间的变换，已知两组基 $\vec{v_n}$ 和 $\vec{w_m}$ 并且要明确的知道 $T(\vec{v_n})$ 是啥，这样才能确定$T_1$ 对应的变换矩阵A是啥。
 
@@ -55,7 +55,7 @@ CI=BAI
 $$
 我们这里研究一下$BAI$，我们首先得到的是标准基的输出（通过与$I$相乘）,然后我们得到A的输出（通过与 $A$ 相乘）,最后我们得到B的输出（通过与 $B$ 相乘），上述所有的输入都是上一步的输出。
 所以上面的整个过程可以分解成下面这幅图：
-![CBA](Math-Linear-Algebra-Chapter-7-3/CBA.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/CBA.png)
 
 整个换基过程就是这样被拆解的，但是面对不同的拆解方式，我们可能得到非常标量的A，这个是我们想要的，也就是C被分解了，分解出了漂亮的A，我们对矩阵的所有操作基本都是在干这个事，所以这些事都算换基操作，整个过程就是当标准基输入到C中我们可以得到输出，这个过程的等效过程是先输入漂亮的A然后得到的输出再输入到B最后得到的输出和C的输出一致。
 
@@ -79,15 +79,15 @@ $$
 
 ## The Singular Value Decomposion(SVD)
 与上面的最大不同，SVD输入输出来自两个空间，我们上面说在同一空间下的线性变换都是换基操作，这里展示不同空间的换基操作，神奇的SVD，对于不同空间的线性变换矩阵，一般为长方形的（参考求导和微分的例子，在上一篇），假设矩阵A可以完成一个跨空间的线性变换，那么当我们改变两个空间的基的时候，这个时候，奇迹就发生了，当我们把原始空间X(dim=n)的基从标准基变成$AA^T$特征向量，得到一个换基后的输入，然后我们再把原始出Y(dim=m)换基到成$A^TA$特征向量，作为目标矩阵的输入和输出，那么我们会得到一个漂亮的对角矩阵（对角元素可能是0）
-![SVD](Math-Linear-Algebra-Chapter-7-3/SVD.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/SVD.png)
 上面这个求解 $\Sigma$ 的过程并不是一根筋，而是两头堵，根据紫色线的方向求解的，因为U和V都是正交矩阵，所以其逆和转置一样。
 
 ## The Pseudoinverse
 伪逆就是不是真的逆，并不是所有矩阵都有逆，但是所有矩阵都有伪逆，当矩阵是可逆矩阵的时候，伪逆和逆相等，我们前面学[四个子空间](http://tony4ai.com/Math-Linear-Algebra-Chapter-4-1/)的时候学过一幅图：
-![space](Math-Linear-Algebra-Chapter-7-3/4spaces_extra.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/4spaces_extra.png)
 这幅图我们当时有详细讲解，假设矩阵是 $m\times n$ 的那么他的行空间和Nullspace加起来肯定是$\Re^n$ ，文中已证明，这个也是线性代数的基本定理，那么 $\Re^n$ 中的任何向量都能被分解成rowspace和nullspace中基的线性组合，所以线性映射后得到将是列空间中的一个向量加上0，所以当nullspace不止零向量的时候不可逆，因为nullspace不能被反射，但是这里有个有趣的就是$Ax_r=b$ 可以被反射得到输入向量的rowspace的分量$x_r$，这个反射矩阵就是Pseudoinverse。
 从换基的角度，继续SVD，我们看到上图我们走的紫色路线，那么我们如果想反着走：
-![SVD](Math-Linear-Algebra-Chapter-7-3/SVD_invers.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/SVD_invers.png)
 红线对应的就是A的伪逆（如果A是可逆的也可能是逆），我们采取和求$Sigma$ 同样的两头堵占略，根据紫色的大粗箭头的方向进行换基，能够求到 $\Sigma_r^{-1}$ （只有r个有效成分），然后我们跟着红色箭头的方向就能得到A的伪逆了$A^{+}$ :
 
 $$
@@ -123,9 +123,9 @@ $$
 $$
 
 然后顺势就能求出$A^{+}$ 了整个过程如此，不在计算验证。把书上反射的图也贴上，大家对比来看：
-![pseudoinvers](Math-Linear-Algebra-Chapter-7-3/pseudoinvers.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/pseudoinvers.png)
 然后总结下我们学过的所有的变换的换基角度：
-![SVD](Math-Linear-Algebra-Chapter-7-3/changebase.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/changebase.png)
 
 ## Conclusion
 至此，线性代数的基础理论部分算是完结了，我们接下来可能介绍线性代数的一些相关应用，也有可能增加复数矩阵部分，但是不作为这个系列的内容了，所以我们线性代数今天正式毕业！撒花，啦啦啦，但是后面还有更精彩的系列，敬请关注！

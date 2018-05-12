@@ -258,7 +258,7 @@ $\{\emptyset,\{\emptyset\}\}$ 中有两个对象 $\emptyset$ 和 $\{\emptyset\}$
 <font face="黑体" color=#6F6FFF><B>
 公理3.4(双并）给定两个集合 $A,B$ 存在一个集合 $A\cup B$ ，叫作 $A$ 和 $B$ 的并，其元素由属于 $A$ 或属于 $B$ 或同时属于两者的一切元素组成.换句话说，对于 任何对象 $x$
 $$
-x\in A\cap B\Leftrightarrow(x\in A \text{ or }x\in B)
+x\in A\cup B\Leftrightarrow(x\in A \text{ or }x\in B)
 $$
 </B></font>
 

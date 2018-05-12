@@ -3,7 +3,7 @@ title: 【数字图像处理】7.8:灰度图像-图像分割 区域分割之区�
 date: 2015-03-10 10:37
 categories:
   - DIP
-tags:
+keywords:
   - 区域生长
   - 图像分割
   - 区域分割
@@ -65,15 +65,15 @@ void RegionGrow(double *src,double *dst,Position * position,int p_size,int width
 }
 ```
 ## 结果分析
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310102947344.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310102957219.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103121036.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103016999.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103140802.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103152174.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103208850.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103222111.jpeg)
-![这里写图片描述](DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103231315.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310102947344.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310102957219.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103121036.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103016999.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103140802.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103152174.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103208850.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103222111.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-8-灰度图像-图像分割-区域分割之区域生长/20150310103231315.jpeg)
 
 ## 总结
 区域生长算法实现较简单，但如果递归区域面积过大，可能造成程序卡死，可能是栈空间不够或者别的，这个需要处理下，这个算法的缺点是需要设置种子点，本算法的优点也是可以设置种子点，这样灵活但不够智能，算法执行速度较快。

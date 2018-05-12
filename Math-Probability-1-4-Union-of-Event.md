@@ -3,10 +3,13 @@ title: 【概率论】1-4:事件的的并集(Union of Events and Statical Swindl
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Union of two Events
+  - 两个事件的并
   - Union of Finite Number of Events
+  - 有限个事件的并
   - Statical Swindles
+  - 概率欺骗
 toc: true
 date: 2018-01-30 09:22:40
 ---
@@ -22,7 +25,7 @@ date: 2018-01-30 09:22:40
 在前面[1-1概率定义](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中的T7给出了两个相交的事件的并集的概率计算方法：
 $$Pr(A\cup B)=Pr(A)+Pr(B)-Pr(A\cap B)$$
 详细的证明在1-1中也有给出，这个公式在本文中将会进一步展开，把其延展到无数项，但是在开始之前我们还是来复习下这个定理，事件是试验结果的集合，集合的基本运算就是交，并，补，补集和概率的对应我们在1-1中的T3就是最基础的补集的概率计算，剩下就是交集和并集的计算了，T7给出了两个集合并集的概率计算公式，并给出了分析的证明方法，之前看书和上课老师都是给我们画个Venn图没然后说 $Pr(A\cup B)$ 是 $Pr(A)+Pr(B)$ 但是重复加了一遍 $Pr(A\cap B)$ 所以要减去。
-![two_event](Math-Probability-1-4-Union-of-Event/two_events.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-4-Union-of-Event/two_events.png)
 
 提到Venn图说一下，就是关于理解数学，到底是用图形化的可视化的方法好，还是分析法好，这个没办法一棍子打死，大学之前老师们都喜欢用画图的方法教大家理解概念知识点，原因是高中，初中，知识点极其少，更多是的各种拐弯的习题，所以为了加深大家的理解，画个图，直观，而且更容易被人接受，但是到了大学以后，画图就不再合适了，因为知识点变多，而且有很多没办法用二维三维的图来解释，所以，分析的方法到了大学以后是更有用的，拿机器学习的例子来说，做可视化是一个方向，但是这个方向的结果大多是为了展示给一些没有背景的人来看的，业内人士多半关注参数。
 

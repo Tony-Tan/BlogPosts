@@ -3,7 +3,7 @@ title: 【数字图像处理】6.1:灰度图像-图像分割 边缘模型
 date: 2015-02-05 16:33
 categories:
   - DIP
-tags:
+keywords:
   - 边缘模型
 toc: true
 ---
@@ -114,33 +114,33 @@ toc: true
 
 
 
-[Center]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205151021004.png
-[Center 1]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205151044448.png
-[Center 2]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205151101049.png
-[Center 3]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205152709312.png
-[Center 4]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205152715643.png
-[Center 5]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205152719951.png
-[Center 6]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205152840790.png
-[Center 7]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205152849696.png
-[Center 8]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205152855592.png
-[Center 9]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154004742.png
-[Center 10]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154023774.png
-[Center 11]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154043587.png
-[Center 12]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154555507.png
-[Center 13]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154545585.png
-[Center 14]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154538191.png
-[Center 15]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154530703.png
-[Center 16]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154524260.png
-[Center 17]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154517349.png
-[Center 18]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154509707.png
-[Center 19]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154503187.png
-[Center 20]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205154457883.png
-[Center 21]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155323573.png
-[Center 22]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155312591.png
-[Center 23]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155305820.png
-[Center 24]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155256647.png
-[Center 25]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155251715.png
-[Center 26]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155245725.png
-[Center 27]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155239984.png
-[Center 28]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155234196.png
-[Center 29]: DIP-6-1-灰度图像-图像分割-边缘模型/20150205155228674.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205151021004.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205151044448.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205151101049.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205152709312.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205152715643.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205152719951.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205152840790.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205152849696.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205152855592.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154004742.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154023774.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154043587.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154555507.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154545585.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154538191.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154530703.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154524260.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154517349.png
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154509707.png
+[Center 19]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154503187.png
+[Center 20]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205154457883.png
+[Center 21]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155323573.png
+[Center 22]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155312591.png
+[Center 23]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155305820.png
+[Center 24]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155256647.png
+[Center 25]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155251715.png
+[Center 26]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155245725.png
+[Center 27]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155239984.png
+[Center 28]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155234196.png
+[Center 29]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-1-灰度图像-图像分割-边缘模型/20150205155228674.png

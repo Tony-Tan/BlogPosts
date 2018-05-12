@@ -3,7 +3,7 @@ title: 【数字图像处理】7.5:灰度图像-图像分割 阈值处理之OTSU
 date: 2015-03-08 12:35
 categories:
   - DIP
-tags:
+keywords:
   - OTSU算法
 toc: true
 ---
@@ -16,7 +16,7 @@ toc: true
 阈值处理将灰度值分为两类，而对于分类问题，已有的一种最优闭合解--贝叶斯决策规则。
 ## 贝叶斯决策规则
 首先介绍下贝叶斯公式的形象化理解，考虑下图
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308140256646.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308140256646.jpeg)
 
 上面的12幅图中有手枪和弹夹，只有弹夹和手枪出现在同一个盒子的时候才有杀伤力，也就是你拿到一个盒子，你不知道里面是什么，有可能是枪，有可能是弹夹，有可能同时有枪和弹夹。下面来从概率学角度分析
 设盒子里有枪为事件A，那么A出现的概率设为 $p(A)$ 。
@@ -160,38 +160,38 @@ void OTSUThreshold(double *src,double *dst,int width,int height,int type){
 ```
 ## 观察结果
 原图：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152743862.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152907539.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152743862.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152907539.jpeg)
 
 加入1%的高斯噪声：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152918272.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152814765.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152918272.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152814765.jpeg)
 
 加入3%的高斯噪声：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152827323.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152836777.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152827323.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152836777.jpeg)
 
 加入5%的高斯噪声：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153000860.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153012264.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153000860.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153012264.jpeg)
 
 加入7%的高斯噪声：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152915106.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152932001.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152915106.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152932001.jpeg)
 
 加入9%的高斯噪声：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153053245.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153102277.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153053245.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153102277.jpeg)
 
 加入11%的高斯噪声：
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153112137.jpeg)
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153008599.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153112137.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153008599.jpeg)
 
 lena:
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153300433.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153300433.jpeg)
 
 baboon:
-![这里写图片描述](DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153428432.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153428432.jpeg)
 
 ## 总结
 OTSU算法产生的阈值是数学角度上的最佳分类，数学基础的贝叶斯公式，但应用也有一定的局限性，比如，前面说过最多的，对全局阈值，目标与背景的大小关系，当目标和背景大小相差很多时，或者噪声很大的时候，对OTSU产生影响较大。

@@ -3,9 +3,11 @@ title: 【概率论】2-3:贝叶斯定理(Bayes' Theorem)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Bayes' Theorem
+  - 贝叶斯公式
   - Law of total Probability
+  - 全概率公式
 toc: true
 date: 2018-02-02 10:10:45
 ---
@@ -26,7 +28,7 @@ date: 2018-02-02 10:10:45
 
 大概可以这么理解，我们不再纠结上面这个关于上帝存不存在的问题，回到数学本身。
 
-![bayes](Math-Probability-2-3-Bayes-Teorem/Bayes.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-3-Bayes-Teorem/Bayes.png)
 
 例如上图，来自全概率公式那一篇：当我们面对一个试验，在所有的partition中（ $B_1\dots B_n$ ）必然有一个将要发生，但不确定发生哪一个，我们可以观察到另一个事件A，如果已知$Pr(A|B_i)$ ，那么当我们确定A事件的发生概率的时候，就可以翻过来推到每个partition发生的概率有多大$Pr(B_i|A)$
 上面这个是简单的逻辑分析，可以大概知道我们为啥要Bayes公式。
@@ -73,7 +75,7 @@ $$
 
 这个就是普通的Bayes公式结合上全概率公式得出的一个比较实用的版本，证明这里就不详细写出来了，因为通过条件概率和全概率公式就能得出上面的结论，那么如此简单的一个公式为什么如此核心呢？
 我们从哲理中分析一下，首先我们看 $Pr(B_i)$ 从本文第一张图片上可以看出来，这个划分从客观上说是是对完整样本空间的一个分别估计，这个过程与A是否发生无关，但当试验被观察到事件A发生了，我们的样本空间实际上发生了改变，不在是完整的S，因为$A^c$ 不可能发生了，这种情况下，我们将这个分割重新计算：
-![bayes](Math-Probability-2-3-Bayes-Teorem/Bayes2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-3-Bayes-Teorem/Bayes2.png)
 
 这个图是从上面的那幅图啃出来的，所以有点不整齐，这个整个过程就是贝叶斯要刻画的，样本空间的改变导致了整个划分的概率发生了不确定的变化，以前大的可能现在变得小到没有，现在大的可能之前非常小。
 
@@ -204,4 +206,4 @@ $$
 ## Conclusion
 引用陈希孺先生的一句话总结：“概率思维是人们正确观察事物必备的文化修养，这样说并不过分”。
 有文化真好。
-![bayes](Math-Probability-2-3-Bayes-Teorem/conclusion.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-3-Bayes-Teorem/conclusion.jpg)

@@ -3,7 +3,7 @@ title: 【数字图像处理】4.2:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-07 13:52
 categories:
   - DIP
-tags:
+keywords:
   - 卷积
   - 傅里叶变换
 toc: true
@@ -48,16 +48,16 @@ STEP10:
 卷积可以按照以上来理解，之前网上有对卷积通俗的解释，是打人，先打一顿肿了，第二天还没好又打了一顿，感觉这种解释太血腥，而且不直观，不够数据化，所以想出来上面的解释，但数学是数学，理解归理解，数学还是更严谨些。希望大家能对卷积有更好的认识。
 
 
-[Center]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107135516150.png
-[Center 1]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107121954906.png
-[Center 2]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123112006.png
-[Center 3]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123541153.png
-[Center 4]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123638078.png
-[Center 5]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123725252.png
-[SouthEast]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123750181.png
-[SouthEast 1]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123755859.png
-[SouthEast 2]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123821562.png
-[SouthEast 3]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123855234.png
-[SouthEast 4]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123919343.png
-[SouthEast 5]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107124052202.png
-[SouthEast 6]: DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107124053515.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107135516150.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107121954906.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123112006.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123541153.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123638078.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123725252.png
+[SouthEast]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123750181.png
+[SouthEast 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123755859.png
+[SouthEast 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123821562.png
+[SouthEast 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123855234.png
+[SouthEast 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107123919343.png
+[SouthEast 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107124052202.png
+[SouthEast 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-2-灰度图像-频域滤波-傅里叶变换之卷积/20150107124053515.png

@@ -28,22 +28,22 @@ date: 2018-02-13 22:04:54
 首先就是买买买买，贵不贵？不便宜，但是看起来不错，每小时十几块钱（前几天去了一次网吧，我还以为两三块钱一个小时，结果服务员小妹妹说三十，一脸😳）
 ## 腾讯云GPU购买
 按照下面这个基本过程操作（2018年1月完成以下操作，如果过段时间腾讯界面修改，那么以当时的为准）
-![](CUDA-F-0-0-Tencent-GPU-Cloud/1.jpg)
-![](CUDA-F-0-0-Tencent-GPU-Cloud/2.jpg)
-![](CUDA-F-0-0-Tencent-GPU-Cloud/3.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/1.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/2.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/3.jpg)
 这里必须要注意一下，因为有的区没有GPU服务器，所以一定要选一个有的地区买，我之前就傻傻的在北京区折腾半天，我以为从“GPU云服务器”那个按钮点进来的，就每个机器都有GPU呢。。结果折腾半天也安装不上CUDA，后来发现，naive啊！
-![](CUDA-F-0-0-Tencent-GPU-Cloud/4.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/4.jpg)
 选一个你能接受的，我们目前这点小知识，最最最简陋的就够了，后面多GPU的试验估计我已经回到公司了，机器多得是，哈哈
-![](CUDA-F-0-0-Tencent-GPU-Cloud/5.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/5.jpg)
 点击服务市场，里面有带有CUDA的操作系统（搜索就可以了），我们选ubuntu的CUDA7.5。这次我们会自己制作一个镜像，把我们安装的一些东西打包起来，下次再买的时候可以直接安装我们自己的镜像。就不用配置环境了，安装好的全家桶。
-![](CUDA-F-0-0-Tencent-GPU-Cloud/6.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/6.jpg)
 配置一些基本信息，包括登录密码，记住开启ssh 22端口，不然没办法登录了
-![](CUDA-F-0-0-Tencent-GPU-Cloud/7.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/7.jpg)
 等待云端配置。
-![](CUDA-F-0-0-Tencent-GPU-Cloud/8.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/8.jpg)
 配置完成，注意你的公网IP，我们一会儿要用这个地址登录。
 ## 连接到云
-![](CUDA-F-0-0-Tencent-GPU-Cloud/10.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/10.jpg)
 简单的ssh登录，第一次要确认输入个yes，然后输入密码就可以了
 登录成功后我们要做的就是安装CUDA和CMAKE，这两个是我们后面整个工程都需要的。
 ### 安装CUDA7.5
@@ -62,25 +62,25 @@ nvcc
 ### 验证环境
 验证环境可以很多中方法，编译CUDA例子，运行也可以，用自己的也可以，我们用我们自己写的小代码来测试下，看运行是否成功
 先用nvidia-smi命令来看一下驱动是否正确安装
-![](CUDA-F-0-0-Tencent-GPU-Cloud/12.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/12.jpg)
 
 从我们的代码库中clone一份我们的学习cuda的代码，cmake一下
 ```
 git clone https://github.com/Tony-Tan/CUDA_Freshman.git
 ```
 别忘了给我来个星星
-![](CUDA-F-0-0-Tencent-GPU-Cloud/11.jpg)
-![](CUDA-F-0-0-Tencent-GPU-Cloud/13.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/11.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/13.jpg)
 看起来一帆风顺，继续下一步，cmake完后make一下，所有都生成成功了，执行一个例子，发现运行成功了，获取到的GPU型号是Tesla M40 24G 足够我们干各种各样的试验了
 
 ## 制作一个镜像
 我们是按照小时租的服务器，所以我们争取在线下写的正确些，然后买了服务器以后就马上做各种试验观察结果，因为服务器是按照小时收费的，我们尽可能的要快一些，所以，如果每次都配置环境，浪费时间太多，我们用搭建好的环境做个镜像出来，下次再买服务器的时候可以直接安装，美滋滋
-![](CUDA-F-0-0-Tencent-GPU-Cloud/15.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/15.jpg)
 更多里面有个只做镜像的功能，写好描述就可以，别到时候自己都忘了
 
 ## 及时销毁
 我们是按照小时收费的，所以用完了以后马上去销毁掉
-![](CUDA-F-0-0-Tencent-GPU-Cloud/15.jpg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-0-0-Tencent-GPU-Cloud/15.jpg)
 更多操作里面有销毁，等你确定备份好镜像了，可以关机了，就销毁就可以了。
 ## 总结
 好久没写这种流水账一样的文章，感觉写起来确实很流畅，没有啥精神压力，这篇文章只是写给那些没有nvidia设备还想学习CUDA的同学们，有nvidia显卡的同学可以直接在本地装CUDA和CMAKE方法类似。

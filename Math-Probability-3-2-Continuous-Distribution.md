@@ -3,11 +3,15 @@ title: 【概率论】3-2:连续分布(Continuous Distributions)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Continuous Random Variable
+  - 连续随机变量
   - Continuous Distributions
+  - 连续分布
   - Probability Desity Function
+  - 概率密度函数
   - Uniform Distributions on Intervals
+  - 均匀分布
 toc: true
 date: 2018-02-05 09:23:02
 ---
@@ -28,7 +32,7 @@ date: 2018-02-05 09:23:02
 举个🌰 ：
 我们有一家工厂，每个月用水是在 $[10,110]$ 吨，用电在 $[100,1100]$ 千瓦时，并且是完全随机的均匀的，那么我们可以计算用水在 $[20,40]$ 吨，用电在 $[600,800]$ 千瓦时的概率是多少？
 这里我们可以画一个图：
-![w_e](Math-Probability-3-2-Continuous-Distribution/w_e.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-2-Continuous-Distribution/w_e.png)
 从直觉上来说，中间这小块的面积与完整面积的比例就应该是上面描述的事件的概率。
 从频率的角度上来说也是，因为每个点出现的可能性相同。那么一个区域出现的可能性就是这个区域的积分，积分在几何的表示是面积，那么我们用面积比来近似概率应该没有问题，那么，我们如果是这个思想继续展开，一个点的概率是多少呢？点没有面积，所以每个点的概率是0，而我们之前认为事件的概率是0，表明事件不可能发生，但是在这个例子里面，任何一个点都有可能发生，矛盾了，那么我们的模型有问题？还是前面的公理有问题？我们接着往下看。
 我们发现我们认为事件概率是0的事件不可能发生的事件是离散的，也就是事件数量是有限的，而我们这个例子的事件个数是无限多的，那么我们要从连续的角度重新思考事件，随机变量和对应的概率的问题了。
@@ -53,7 +57,7 @@ $$
 上面关于连续随机变量的定义中 $f$ 的定义并不是随意的，而且这个 $f$ 可以算是一节大佬了，因为后面很多连续随机变量都要用它表达，被称为概率密度函数，过程简称pdf，这个函数能够表征一个连续随机变量的分布请款个，与离散情况下的概率函数功能相似，而且性质也类似，每个连续试验可以对应不同的pdf（可以移植上文中概率函数的证明方法），并且我们能够得到一个关于support(支撑) 的定义，连续随机变量所在的***闭区间***必须要能保证pdf大于0（因为有等于0的情况），这个区间就是一个support。
 
 图解的话就是下面的图了：
-![pdf](Math-Probability-3-2-Continuous-Distribution/support.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-2-Continuous-Distribution/support.png)
 
 图中所有有定义的区间（绿色）的积分的和是1，指定区间的积分是映射到这个区间上的所有事件之一发生的概率。红色开区间是上面定义的support。上图描述了一个随机变量在两个分开的区间上的pdf。
 
@@ -74,16 +78,16 @@ $$
 
 ## Nonuniqueness of the p.d.f.
 和前面所说的概率函数不“唯一”一样，pdf也不唯一，一个原因是关于随机变量（函数）的选择问题，还有很重要的一点，由于单点pdf对于整体而言其概率是0，那么其pdf值可以为任意值，而保持任意包含此点的区间上的pdf积分值不变（也就是概率不变）。
-![pdf](Math-Probability-3-2-Continuous-Distribution/pdf.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-2-Continuous-Distribution/pdf.png)
 
 这个pdf和下面这个pdf等效，但是却不一致：
 
-![pdf](Math-Probability-3-2-Continuous-Distribution/pdf2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-2-Continuous-Distribution/pdf2.png)
 
 所以每个连续随机变量都有无穷个pdf，我们通常会选取最自然的那个，而且尽量不要用这些存在间断点的pdf，因为从函数研究的角度来讲，这个将会很麻烦，我们把事件过渡到实数域的目的就是为了利用数学工具，比如函数，积分，微分等，如果还人为的引入障碍就有点不明智了，但是如果引入间断点可以更好的表述模型，那么也未尝不可。
 
 还有一个要注意下，我们说过几种分布了，不如二项分布，伯努利分布，均匀分布，这些分布里面的分布，与连续分布，离散分布不是一回事儿：
-![pdf](Math-Probability-3-2-Continuous-Distribution/distribution.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-2-Continuous-Distribution/distribution.png)
 
 ## Uniform Distributions on Intervals
 

@@ -3,7 +3,7 @@ title: 【数字图像处理】8.6:彩色图像-色彩空间 HSI(HSL)、HSV(HSB)
 date: 2015-03-15 14:57
 categories:
   - DIP
-tags:
+keywords:
   - 色彩空间
   - HSI
   - HSV
@@ -20,12 +20,12 @@ toc: true
 色调H(Hue)： 与光波的波长有关，它表示人的感官对不同颜色的感受，如红色、绿色、蓝色等，它也可表示一定范围的颜色，如暖色、冷色等。
 饱和度S(Saturation)： 表示颜色的纯度，纯光谱色是完全饱和的，加入白光会稀释饱和度。饱和度越大，颜色看起来就会越鲜艳，反之亦然。
 亮度I(Intensity)： 对应成像亮度和图像灰度，是颜色的明亮程度。
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315140859738.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315140859738.png)
 
 RGB和HSI的转换几种转换公式：
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315143324202.png)
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315143409729.png)
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315143421850.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315143324202.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315143409729.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315143421850.png)
 
 
 ----------
@@ -37,14 +37,14 @@ HSV模型的另一种可视方法是圆锥体。在这种表示中，色相被�
 HSV色彩空间还可以表示为类似于上述圆锥体的圆柱体，色相沿着圆柱体的外圆周变化，饱和度沿着从横截面的圆心的距离变化，明度沿着横截面到底面和顶面的距离而变化。这种表示可能被认为是HSV色彩空间的更精确的数学模型；但是在实际中可区分出的饱和度和色相的级别数目随着明度接近黑色而减少。此外计算机典型的用有限精度范围来存储RGB值；这约束了精度，再加上人类颜色感知的限制，使圆锥体表示在多数情况下更实用。
 转换公式：
 RGB->HSV
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145318868.png)
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145332783.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145318868.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145332783.png)
 
 HSV->RGB
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145343757.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145343757.png)
 
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145428311.png)
-![这里写图片描述](DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145440229.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145428311.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-6-彩色图像-色彩空间-HSI-HSL-HSV-HSB/20150315145440229.png)
 ## 总结
 今天主要介绍HSx模型，这类色彩空间与色彩定义对应，在后面的彩色图像处理中将大量用到。
 待续。。。

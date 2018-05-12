@@ -3,7 +3,7 @@ title: 【线性代数】4-4:正交基和Gram算法(Orthogonal Bases and Gram-Sc
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Orthogonal Matrix Q
   - Gram-Schmidt Algorithm
   - QR
@@ -106,7 +106,7 @@ $$
 这个算法是为了给subspace换正交基的，“如果，你有了一组非正交的基，你是否也渴望有一组像隔壁老王一样的正交基了呢？告别计算烦恼，再也不用低三下四看人脸色，马上拿起电话联系Gram，不要998，只要198....”
 编不下去了Gram主要是帮我做了一个算法，在已知一组非正交基的时候来找一组正交基，据Prof Strang课上讲，他也不清楚schmidt在这个算法里面做出了什么工作，但有他的名字，那么我们就当做他很重要吧，
 这个算法的主要原理用到的还是projection，我们之前在projection中提到了力的分解，速度的分解，当时我就是随口一说，想起了自己的初中物理老师而已，但是这没想到在这里居然有用，假设，我们在一个三维空间里面有一个速度，我想把他分解到xy轴，这个大家都应该会，根据project to line 的方法都能得到分量，那么如果我们用原速度减去xy的分量得到的是什么？没错z轴的分量，不知道为什么？再提示你一下，你把xy分量的两个向量加起来，得到的是xy平面（子空间）的分量，对应的 $\vec{e}$ 就是z轴分量（因为Z轴是xy子空间的 orthogonal complement）：
-![分解图](Math-Linear-Algebra-Chapter-4-4/fenjie.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-4/fenjie.png)
 
 如果还是不太明白，没关系，往下看吧：
 Gram-Schmidt算法分为以下几步，我们先假设一组向量，尾巴在一起是原点，那么这些向量都指向不同的方向，并且他们线性独立，那么我们要调整这些向量，最原始的想法就是首先，我们固定一条向量，然后调整第二个跟第一个向量垂直，然后再迭代这个过程。直到所有的向量都就位，那么这样的正交基有多少组？没错，无数组。
@@ -198,6 +198,6 @@ R 的对角线元素等于A中每一个列向量的长度，神奇么?意外么�
 
 在实际分解中并不是使用QR分解，而是有更快的计算方法，这个我们后面肯定还要讲，因为要研究计算方法和矩阵分析，这就留个引子吧，Gram算法的具体步骤就贴个书上的吧：
 
-![算法](Math-Linear-Algebra-Chapter-4-4/suanfa.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-4/suanfa.png)
 ## Conclusion
 小结就是这一章的内容都好多，想写成短小精悍的都不行，因为写的少了根本解释不清楚，自己在梳理过程中也体会到了很多读书的时候没有察觉的内容，后面我们开始继续新的一章，如果有什么问题欢迎大家留言（到目前，还没有留言。。。）

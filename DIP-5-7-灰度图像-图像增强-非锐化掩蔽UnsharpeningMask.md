@@ -3,7 +3,7 @@ title: 【数字图像处理】5.7:灰度图像-图像增强 非锐化掩蔽 （
 date: 2015-01-31 19:53
 categories:
   - DIP
-tags:
+keywords:
   - 非锐化掩蔽(USM)
 toc: true
 ---
@@ -120,26 +120,26 @@ $7\times 7$ ，$\sigma=2$ ，$k=2$：
 
 
 
-[Center]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131191926698.png
-[Center 1]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131191948722.png
-[Center 2]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131192302681.png
-[Center 3]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193027406.png
-[Center 4]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131195559575.png
-[Center 5]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193654958.jpg
-[Center 6]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193714208.jpg
-[Center 7]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193705422.jpg
-[Center 8]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193752818.jpg
-[Center 9]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193742612.jpg
-[Center 10]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193814717.jpg
-[Center 11]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194310450.jpg
-[Center 12]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194329311.jpg
-[Center 13]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194315486.jpg
-[Center 14]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194402866.jpg
-[Center 15]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194421883.jpg
-[Center 16]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194427199.jpg
-[Center 17]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194548229.jpg
-[Center 18]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194538600.jpg
-[Center 19]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194555994.jpg
-[Center 20]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194611438.jpg
-[Center 21]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194703562.jpg
-[Center 22]: DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194721673.jpg
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131191926698.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131191948722.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131192302681.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193027406.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131195559575.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193654958.jpg
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193714208.jpg
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193705422.jpg
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193752818.jpg
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193742612.jpg
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131193814717.jpg
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194310450.jpg
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194329311.jpg
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194315486.jpg
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194402866.jpg
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194421883.jpg
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194427199.jpg
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194548229.jpg
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194538600.jpg
+[Center 19]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194555994.jpg
+[Center 20]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194611438.jpg
+[Center 21]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194703562.jpg
+[Center 22]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194721673.jpg

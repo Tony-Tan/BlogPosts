@@ -4,7 +4,7 @@ toc: true
 categories:
   - Deep Learning
 date: 2017-09-13 15:49:22
-tags:
+keywords:
   - Dropout
   - Overfit
 
@@ -47,7 +47,7 @@ dropout就是来解决上述两个关键点的：
 
 其基本描述是阻止过拟合，提供一种方法有效的联合指数级的不同的神经网络的近似形式。dropout的意思是丢掉网络中的一些单元（可见的或隐藏的神经元），通过暂时性的移除一些单元，包括其输入输出链接全部移除，移除的单元是随机挑选的，如图：
 
-![图一](Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-10-23-下午12.15.52-1024x469.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-10-23-下午12.15.52-1024x469.png)
 
 对于一个简单的例子，每个单元按照一个固定概率P决定取舍，所有单元之间相互独立，P可以设置为一个集合（每个单元拥有自己的P）也可以简单的把所有单元都设置成0.5。设置成0.5就接近于找到模型所有子集的集合。对于输入单元，p一般选择大于0.5小于1之间的数（使输入尽量完整些）。
 
@@ -56,7 +56,7 @@ dropout就是来解决上述两个关键点的：
 在测试阶段，明确的平均地平均指数级子网络的输出结果是不可能的，然而在实际中有一种非常简单的近似方法，这种思想被用于神经网络的测试阶段，而不需要把网络dropout后再测试。网络中的权重被缩小（与训练时的子网络比较），如果子网络选取方法是按照概率p来dropout，测试时所有权重乘以p来，
 如图2：
 
-![图二](Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-10-23-下午1.44.22-1024x383.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-10-23-下午1.44.22-1024x383.png)
 来确保任何隐含层测试时的输出与激活输出（训练时dropout的情况下的激活输出）一致，通过scale-down（缩小）2^n个共享权值的网络组合成一个网络在test过程中使用。我们发现使用这种训练时dropout，测试时加权合并近似的网络，在大量分类任务中
 与其他正则化方方法相比，dropout的泛化误差相当的小。
 
@@ -113,14 +113,14 @@ z_i^{(l+1)}=w_i^{(l+1)}\tilde{y}^l+b_i^{(l+1)}\\
 y_i^{(l+1)}=f(z_i^{(l+1)})
 $$
 
-![图二](Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-11-18-下午6.39.37-1024x516.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-11-18-下午6.39.37-1024x516.png)
 
 上图为正常神经网络和dropout后的网络结构比较
 对于layer l $r^{(l)}$ 是一个独立的伯努利随机分布的向量，其中元素为1的可能性为p。这个向量的目的是dropout，随机的选取一些输出，也就是说随机的去掉一些连接，这样的结果就是从 $y^{(l)}$ 来得到dropout后的裁剪过的 $\tilde{y}^{(l)}$ ，这个裁剪过的输出作为下一个单元的输入，这种操作应用于所有layer，这样的整体结果，网络被随机裁剪成一个子网络。
 在训练阶段，loss函数的导数反向传导只经过子网络，相当于其他被dropout的节点将不被更新。
 在测试阶段，所有weight被缩放 $W_{test}^{(l)}=pW^{(l)}$ ，此后不再使用dropout
 如图：
-![图二](Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-11-18-下午7.13.59-1024x410.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/屏幕快照-2016-11-18-下午7.13.59-1024x410.png)
 
 ## 总结
 现在来看，这篇文章主要是翻译工作，没有什么自己的理解和感受，因为阅读原文你会发现，你能想到的，文章都有，你想不到的，文章也有一部分，可能这就是大牛的论文吧

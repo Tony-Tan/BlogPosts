@@ -27,7 +27,7 @@ date: 2018-03-27 10:53:24
 
 举个例子：
 首先统计了某一个片区所有人家的家庭成员和手机持有数量，然后得到了下面这个表：
-![table](Math-Probability-4-7-Conditional-Expectation/table.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-4-7-Conditional-Expectation/table.png)
 
 那么当我们随机选取这个调查中的某一家人，其中有n个家庭成员，那么他们的手机持有量是多少呢？
 

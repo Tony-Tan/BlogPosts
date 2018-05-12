@@ -5,8 +5,9 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-28 10:44:28
-tags:
+keywords:
   - Linear Combinations
+  - 线性组合
 ---
 **Abstract:** 线性组合详细说明
 **Keywords:** Linear Combinations
@@ -52,7 +53,7 @@ $$
 
 ## 向量的表示
 这个大家都会，画箭头嘛，从0点，画向坐标位置，标个箭头就okay了
-![加法](Math-Linear-Algebra-Chapter-1-1/加法.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-1-1/加法.png)
 ## Important Questions
 Suppose
 $\textbf{u}$ $\textbf{v}$ $\textbf{w}$ are three-dimensional non-zero:

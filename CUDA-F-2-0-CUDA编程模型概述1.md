@@ -19,13 +19,13 @@ date: 2018-02-15 17:25:38
 <!--more-->
 ## 开篇废话
 过年了，祝大家新年快乐，新年希望自己学习的东西能都学会
-![](CUDA-F-2-0-CUDA编程模型概述1/gou.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-0-CUDA编程模型概述1/gou.png)
 这是一只不爱学习的狗，总看电视！
 
 编程模型就是告诉我们如何写CUDA程序，如果做过C开发的同学或者其他开发的同学都知道做个完整的项目不只是写代码，还有需求分析，调试，优化，部署等一些列步骤。CUDA平台也提供了着一些列的工具供我们使用，我们这一章主要就是讲解这些工具怎么用，如何编写调试CUDA程序。以及编写两个矩阵运算有关的CUDA应用，以供大家把玩。
 ## CUDA编程模型概述
 CUDA编程模型为应用和硬件设备之间的桥梁，所以CUDA C是编译型语言，不是解释型语言，OpenCL就有点类似于解释型语言，通过编译器和链接，给操作系统执行（操作系统包括GPU在内的系统），下面的结构图片能形象的表现他们之间的关系：
-![](CUDA-F-2-0-CUDA编程模型概述1/1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-0-CUDA编程模型概述1/1.png)
 
 其中Communication Abstraction是编程模型和编译器，库函数之间的分界线。
 可能大家还不太明白编程模型是啥，编程模型可以理解为，我们要用到的语法，内存结构，线程结构等这些我们写程序时我们自己控制的部分，这些部分控制了异构计算设备的工作模式，都是属于编程模型。
@@ -59,7 +59,7 @@ CUDA模型主要的一个功能就是线程层结构抽象的概念，以允许�
 注意这两个内存从硬件到软件都是隔离的（CUDA6.0 以后支持统一寻址），我们目前先不研究统一寻址，我们现在还是用内存来回拷贝的方法来编写调试程序，以巩固大家对两个内存隔离这个事实的理解。
 
 一个完整的CUDA应用可能的执行顺序如下图：
-![](CUDA-F-2-0-CUDA编程模型概述1/2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-0-CUDA编程模型概述1/2.png)
 从host的串行到调用核函数（核函数被调用后控制马上归还主机线程，也就是在第一个并行代码执行时，很有可能第二段host代码已经开始同步执行了）。
 
 我们接下来的研究层次是：
@@ -104,7 +104,7 @@ char* cudaGetErrorString(cudaError_t error)
 ```
 内存是分层次的，下图可以简单地描述，但是不够准确，后面我们会详细介绍每一个具体的环节：
 
-![](CUDA-F-2-0-CUDA编程模型概述1/3.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-0-CUDA编程模型概述1/3.png)
 共享内存（shared Memory）和全局内存（global Memory）后面我们会特别详细深入的研究，这里我们来个例子，两个向量的加法：
 
 代码库：[https://github.com/Tony-Tan/CUDA_Freshman](https://github.com/Tony-Tan/CUDA_Freshman)
@@ -195,7 +195,7 @@ cudaMalloc((float**)&a_d,nByte);
 
 ## 线程管理
 当内核函数开始执行，如何组织GPU的线程就变成了最主要的问题了，我们必须明确，一个核函数只能有一个grid，一个grid可以有很多个块，每个块可以有很多的线程，这种分层的组织结构使得我们的并行过程更加自如灵活：
-![](CUDA-F-2-0-CUDA编程模型概述1/4.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-0-CUDA编程模型概述1/4.png)
 
 一个线程块block中的线程可以完成下述协作：
 - 同步

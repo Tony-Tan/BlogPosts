@@ -4,7 +4,7 @@ toc: true
 categories:
   - Machine Learning
 date: 2017-09-07 09:56:12
-tags:
+keywords:
   - 数据预处理
   - 训练数据选择
 ---
@@ -14,7 +14,7 @@ tags:
 
 ### 这篇短小的文章是这两个月血泪的结晶：
 
-![xls](MachineLearning-训练数据选择血泪史/sample.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/MachineLearning-训练数据选择血泪史/sample.png)
 这一幅图就能完整说明整个训练过程，说明
 从左到右，从上到下的顺序，表明整个训练
 >

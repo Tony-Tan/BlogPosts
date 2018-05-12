@@ -3,7 +3,7 @@ title: 【数字图像处理】5.11:灰度图像-图像增强 直方图匹配（
 date: 2015-02-04 10:16
 categories:
   - DIP
-tags:
+keywords:
   - 直方图匹配
   - 直方图规定化
   - 增强对比度
@@ -154,22 +154,22 @@ void HistogramSpecification(double *src,double *dst,int* hist,int width,int heig
 
 
 
-[Center]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204092942843.png
-[Center 1]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204093958904.png
-[Center 2]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204094118730.png
-[Center 3]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204095222744.png
-[Center 4]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204095241652.png
-[Center 5]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100939523.jpg
-[Center 6]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100835749.png
-[Center 7]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100026705.jpg
-[Center 8]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100046361.png
-[Center 9]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100748575.png
-[Center 10]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100127107.jpg
-[Center 11]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100144985.png
-[Center 12]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100716049.png
-[Center 13]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100201708.jpg
-[Center 14]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100219306.png
-[Center 15]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100551153.png
-[Center 16]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100236605.jpg
-[Center 17]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100437553.png
-[Center 18]: DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100628359.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204092942843.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204093958904.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204094118730.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204095222744.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204095241652.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100939523.jpg
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100835749.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100026705.jpg
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100046361.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100748575.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100127107.jpg
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100144985.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100716049.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100201708.jpg
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100219306.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100551153.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100236605.jpg
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100437553.png
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-11-灰度图像-图像增强-直方图匹配-规定化-HistogramSpecification/20150204100628359.png

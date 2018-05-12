@@ -112,7 +112,7 @@ cudaGetDeviceCount
 ```
 运行的效果如下：
 
-![cudaInformation](CUDA-F-2-4-设备信息/cudainformation.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-4-设备信息/cudainformation.png)
 
 这里面很多参数是我们后面要介绍的，而且每一个都对性能有影响：
 1. CUDA驱动版本
@@ -136,10 +136,10 @@ cudaGetDeviceCount
 上面这些都是后面要用到的关键参数，这些会严重影响我们的效率。后面会一一说到，不同的设备参数要按照不同的参数来使得程序效率最大化，所以我们必须在程序运行前得到所有我们关心的参数。
 ## NVIDIA-SMI
 nvidia-smi是nvidia驱动程序内带的一个工具，可以返回当前环境的设备信息：
-![nvida-smi](CUDA-F-2-4-设备信息/nvida-smi.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-4-设备信息/nvida-smi.png)
 这个命令可以加各种参数，当然参数你要查文档查文档查文档：
 
-![nvidia-L](CUDA-F-2-4-设备信息/nvidia-l.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-4-设备信息/nvidia-l.png)
 利用下面这个参数可以精简上面那么一大堆的信息，而这些可以在脚本中帮我们得到设备信息，比如我们可以写通用程序时在编译前执行脚本来获取设备信息，然后在编译时固化最优参数，这样程序运行时就不会被查询设备信息的过程浪费资源。
 也就是我们可以用一下两种方式编写通用程序：
 - 运行时获取设备信息：
@@ -354,7 +354,7 @@ nvidia-smi -q -i 0 -d MEMORY
 ```
 得到如下：
 
-![memory](CUDA-F-2-4-设备信息/memory.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-4-设备信息/memory.png)
 
 多设备时，我们只要把上面的0改成对应的设备号就好了。
 

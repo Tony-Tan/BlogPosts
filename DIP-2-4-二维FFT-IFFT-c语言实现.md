@@ -4,7 +4,7 @@ title: 【数字图像处理】2.4:二维FFT,IFFT,c语言实现
 date: 2014-11-25 19:38
 categories:
   - DIP
-tags:
+keywords:
   - FFT
   - 二维FFT
   - 二维IFFT
@@ -486,5 +486,5 @@ int IFFT2D(Complex *src,Complex *dst,int size_w,int size_h){
 
 
 
-[Center]: DIP-2-4-二维FFT-IFFT-c语言实现/20141125193401542.png
-[Center 1]: DIP-2-4-二维FFT-IFFT-c语言实现/20141125193557185.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-4-二维FFT-IFFT-c语言实现/20141125193401542.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-4-二维FFT-IFFT-c语言实现/20141125193557185.png

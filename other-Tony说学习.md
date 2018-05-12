@@ -29,6 +29,6 @@ tags:
 ***经验需要时间，知识需要学习***
 
 做了一张low到无法言语的图，比较简陋后面可能会更新
-![study](other-Tony说学习/study.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/other-Tony说学习/study.png)
 
 ### 未完待续

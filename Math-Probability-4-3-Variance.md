@@ -25,7 +25,7 @@ date: 2018-03-23 22:22:11
 先举个例子，股票。。
 一个股波动范围在 $[25,35]$ 之间，均匀分布，第二个股分布在 $[15,45]$ 之间的均匀分布。
 那么其图像显示如下：
-![stock_price](Math-Probability-4-3-Variance/stock_price.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-4-3-Variance/stock_price.png)
 
 可见这个图像上，均值一致，都是30，但是分布有着明显区别，我们开始介绍我们的主角——“方差”
 ## Definitions of the Variance and the Standard Deviation
@@ -111,7 +111,7 @@ $$
 
 求平方根就能得到关于标准差的公式。
 当线性变换中 $a=1$ 的时候就变成给分布搬家了，而其形状完全不变：
-![4_6](Math-Probability-4-3-Variance/4_6.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-4-3-Variance/4_6.png)
 
 图上就是搬家计算了，图例中最后一个是错的，应该是 $x-3$
 

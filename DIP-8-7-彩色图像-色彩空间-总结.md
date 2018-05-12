@@ -3,7 +3,7 @@ title: 【数字图像处理】8.7:彩色图像-色彩空间 总结
 date: 2015-03-15 17:33
 categories:
   - DIP
-tags:
+keywords:
   - 色彩空间
 toc: true
 ---
@@ -18,7 +18,7 @@ toc: true
 下面这个视频连接可以简单的向你介绍颜色的实质：
 [http://v.youku.com/v_show/id_XNTQ5NzAxMTQ0.html](http://v.youku.com/v_show/id_XNTQ5NzAxMTQ0.html)
 总结起来一张图可以简单的概括下：
-![这里写图片描述](DIP-8-7-彩色图像-色彩空间-总结/20150315173127912.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-7-彩色图像-色彩空间-总结/20150315173127912.png)
 
 色彩空间简单进行介绍，在后面用到相关知识的时候再进行补充。
 下篇开始新的内容。

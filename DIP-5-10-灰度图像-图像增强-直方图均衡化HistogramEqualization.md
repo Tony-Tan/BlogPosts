@@ -3,7 +3,7 @@ title: 【数字图像处理】5.10:灰度图像--图像增强 直方图均衡�
 date: 2015-02-03 15:12
 categories:
   - DIP
-tags:
+keywords:
   - 直方图均衡
 toc: true
 ---
@@ -154,17 +154,17 @@ void HistogramEqualization(double *src,double *dst,int width,int height){
 待续。。。
 
 
-[Center]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203140744870.png
-[Center 1]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203141746095.png
-[Center 2]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203142337502.png
-[Center 3]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203143359875.png
-[Center 4]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145321801.png
-[Center 5]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145404166.png
-[Center 6]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145538188.png
-[Center 7]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145705771.png
-[Center 8]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145754490.png
-[Center 9]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145939848.png
-[Center 10]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150424927.jpg
-[Center 11]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150504286.png
-[Center 12]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150532491.jpg
-[Center 13]: DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150553115.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203140744870.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203141746095.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203142337502.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203143359875.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145321801.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145404166.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145538188.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145705771.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145754490.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203145939848.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150424927.jpg
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150504286.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150532491.jpg
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-10-灰度图像-图像增强-直方图均衡化HistogramEqualization/20150203150553115.png

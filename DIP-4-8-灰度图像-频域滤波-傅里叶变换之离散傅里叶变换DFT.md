@@ -3,7 +3,7 @@ title: 【数字图像处理】4.8:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-16 20:44
 categories:
   - DIP
-tags:
+keywords:
   - 离散傅里叶变换
 toc: true
 ---
@@ -53,13 +53,13 @@ $-w>-\frac{2\times\pi}{2\times T}$ ，所以离散序列对应的频率宽度为
 ![Center 7][]
 
 
-[Center]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116195809794.png
-[Center 1]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116200001116.png
-[Center 2]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116202033093.png
-[Center 3]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116202001538.png
-[Center 4]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116202026108.png
-[Center 5]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116203431349.png
-[Center 6]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116203442565.png
-[SouthEast]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116203951828.png
-[SouthEast 1]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116204003484.png
-[Center 7]: DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150118161515772.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116195809794.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116200001116.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116202033093.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116202001538.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116202026108.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116203431349.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116203442565.png
+[SouthEast]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116203951828.png
+[SouthEast 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150116204003484.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-8-灰度图像-频域滤波-傅里叶变换之离散傅里叶变换DFT/20150118161515772.png

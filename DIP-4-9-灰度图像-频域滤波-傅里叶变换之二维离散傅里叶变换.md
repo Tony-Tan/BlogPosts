@@ -3,7 +3,7 @@ title: 【数字图像处理】4.9:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-18 15:15
 categories:
   - DIP
-tags:
+keywords:
   - 卷积
   - 图像傅里叶变换
 toc: true
@@ -127,34 +127,34 @@ $k_1，k_2$ 为整数。
 ![Center 30][]
 下一篇介绍图像混淆
 
-[Center]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141144636.png
-[Center 1]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141153013.png
-[Center 2]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141702018.png
-[Center 3]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141708336.png
-[Center 4]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141527591.png
-[Center 5]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141538168.png
-[Center 6]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118142253019.png
-[Center 7]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118142859713.png
-[Center 8]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118143112656.png
-[Center 9]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118143247234.png
-[Center 10]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153044782.jpeg
-[Center 11]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153040156.jpeg
-[Center 12]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153136512.jpeg
-[Center 13]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153135609.jpeg
-[Center 14]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118144104755.png
-[Center 15]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118144300820.png
-[Center 16]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118144312598.png
-[Center 17]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145616983.png
-[Center 18]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145713158.png
-[Center 19]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145705437.png
-[Center 20]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145038415.jpg
-[Center 21]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145052736.jpg
-[Center 22]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145311857.jpg
-[Center 23]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145925203.png
-[Center 24]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150010812.png
-[Center 25]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150334345.png
-[Center 26]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150347948.png
-[Center 27]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150523748.png
-[Center 28]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150823819.png
-[Center 29]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150813406.png
-[Center 30]: DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150847921.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141144636.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141153013.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141702018.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141708336.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141527591.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118141538168.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118142253019.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118142859713.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118143112656.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118143247234.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153044782.jpeg
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153040156.jpeg
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153136512.jpeg
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118153135609.jpeg
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118144104755.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118144300820.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118144312598.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145616983.png
+[Center 18]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145713158.png
+[Center 19]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145705437.png
+[Center 20]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145038415.jpg
+[Center 21]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145052736.jpg
+[Center 22]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145311857.jpg
+[Center 23]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118145925203.png
+[Center 24]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150010812.png
+[Center 25]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150334345.png
+[Center 26]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150347948.png
+[Center 27]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150523748.png
+[Center 28]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150823819.png
+[Center 29]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150813406.png
+[Center 30]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-4-9-灰度图像-频域滤波-傅里叶变换之二维离散傅里叶变换/20150118150847921.png

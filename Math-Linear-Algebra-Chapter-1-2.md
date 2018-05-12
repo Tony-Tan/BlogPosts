@@ -5,9 +5,11 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-28 12:12:18
-tags:
+keywords:
   - Length
+  - 长度
   - Dot Product
+  - 点乘
 ---
 **Abstract:** 介绍点乘，length
 **Keywords:** dot product，length
@@ -53,7 +55,7 @@ $|\textbf{v}|^2=v_1^2+v_2^2$
 #### 90°
 点乘结果为0的时候，两个向量夹角为直角，证明：
 
-![90](Math-Linear-Algebra-Chapter-1-2/90.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-1-2/90.png)
 
 #### 其他角度
 后面我们使用到矩阵以后，这个夹角基本没用，但是单位长度的向量相乘，其结果是他们夹角的cos值

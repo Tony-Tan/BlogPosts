@@ -3,7 +3,7 @@ title: 【线性代数】5-2:置换和余因子(Permutations and Cofactors)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Determinants
   - 'Pivot Formula'
   - 'Big Formula'
@@ -108,11 +108,11 @@ d,0,0\\
 $$
 分解出来是这个形状的，我们只做了下图中绿色的部分
 
-![行列式分解](Math-Linear-Algebra-Chapter-5-2/行列式分解.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-5-2/行列式分解.png)
 
 我们只做了27个行列式中的3个，故只做了1/9。但是这个分解的结果显示最后的行列式都为0，因为总有一列全是0，但是这种情况并不是所有人都是0，这里我不再继续分解别的行列式了，但是我给出最后不是0的行列式（下图中红色为非零行列式）
 
-![非零](Math-Linear-Algebra-Chapter-5-2/非零.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-5-2/非零.png)
 
 所以我们可以得到，一定是每个行选出一个元素，每个列也只能选出一个元素组成的行列式才是非零的，那么这就是一个组合的问题，也就是说，第一行我们可以选择任意一列，故有n种方式，第二行只能有n-1列的选择余地，以此类推到最后一行没有自由度，只能选最后的一个，所以，有  $n!$ 个项，那么怎么求呢？
 

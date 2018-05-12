@@ -3,11 +3,15 @@ title: 【概率论】3-1:随机变量和分布(Random Variables and Discrete Di
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Random Variables
+  - 随机变量
   - Discrete Distributions
+  - 离散分布
   - Uniform Distributions on Integers
+  - 均匀分布
   - Binomial Distributions
+  - 二项分布
 toc: true
 date: 2018-02-03 13:00:10
 ---
@@ -116,9 +120,9 @@ $$
 
 我们下面用两张图来梳理其中关系：
 先来个小的：
-![random_variable](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/random_variables.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/random_variables.png)
 这是详细的：
-![pf](Math-Probability-3-1-Random-Variables-and-Discrete-Distributions/pf.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-1-Random-Variables-and-Discrete-Distributions/pf.png)
 样本空间是起始点，然后向左产生了事件，概率，向右产生了随机变量，概率函数，离散分布。
 
 有一些离散分布很出名，很基础，因为后续的很多能很好模拟实际过程的概率模型都是根据他们演化出来的

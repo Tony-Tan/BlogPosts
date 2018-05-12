@@ -5,12 +5,19 @@ categories:
   - Probability
 tags:
   - Probability
+  - 概率
   - the Frequency Interpretation
+  - 频率概率
   - the Classical Interpretation
+  - 古典概率
   - the Subjective Interpretation
+  - 主观概率
   - the Axiomatic Interpretation
+  - 公理化概率
   - Experiments
+  - 试验
   - Events
+  - 事件
 toc: true
 date: 2018-01-23 11:20:14
 ---

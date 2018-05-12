@@ -3,7 +3,7 @@ title: 【数字图像处理】6.7:灰度图像-图像分割 Sobel算子，Prewi
 date: 2015-02-13 11:49
 categories:
   - DIP
-tags:
+keywords:
   - Sobel算子
   - Scharr算子
   - Prewitt算子
@@ -60,18 +60,18 @@ Matlab写程序写的不多，所以将就看。
 $\frac{1}{4}\times[1,2,1]$，$\frac{1}{3}\times[1,1,1]$，$\frac{1}{16}\times[3,10,3] $
 对叠加了噪声的lena图的第250行数据进行平滑，叠加的噪声的标准差分别是当前信号的$0.5\%,1\%,2\%,3\%,4\%,5\%$，均值为$0$下面我们来观察效果。
 下面折线图中，为了观察清楚，均方误差未乘以$\frac{1}{n}$，因为所有信号使用的n都相同，图中的黑色线为未处理信号的噪声强度，红色为Scharr算子的结果，绿色为Prewitt算子的结果，蓝色为Sobel算子结果，下面我们来观察结果：
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184248537.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184348657.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184418750.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184423479.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184443179.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184447862.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184527936.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184547436.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184610602.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184614130.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184624239.png)
-![这里写图片描述](DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184640975.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184248537.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184348657.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184418750.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184423479.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184443179.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184447862.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184527936.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184547436.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184610602.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184614130.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184624239.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184640975.png)
 
 ## 总结
 当噪声强度超过标准差为信号的 $4\%$ 时，Sobel和Scharr的性能开始接近，超过 $5\%$ 的时候Prewitt，Sobel，Scharr性能基本相同，但小于 $3\%$ 时候Scharr的性能明显强于Sobel，并且其性能排名为$Scharr > Sobel > Prewitt$当噪声标准差为 $0.5\%$ 时，误差大概为1个像素左右，此时不进行平滑的结果更好，此时均值平滑的效果最差。

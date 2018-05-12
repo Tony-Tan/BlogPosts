@@ -20,7 +20,7 @@ date: 2017-11-16 14:03:01
 <!--more-->
 ## 开篇废话
 这两天写字写的有点多，吐血更新，尤其是线性代数已经接近高潮部分，所以看书时间少了一下，但是感觉看的数量反而没有减少，现在在看概率论的书籍，陈希孺先生的《概率与数理统计》 ，钟开莱先生的《初等概率论》 Morris H.Degroot的他《概率统计》 这三本书后两本是英文，陈希孺先生的是中文，读起来肯定要顺畅一些，但是根据“经验人士透露”这些书都各有长处，所以我决定从一本英文书来下手，陈希孺先生的概率论部分不多，我也先大概多少看了一遍了，接下来是精度了，包括推到里面的所有数学符号，同时在想是看Morris的英文呢？还是看钟开莱先生的英文呢？这两个真的很难选，都是第四版，说明都很畅销，所以我决定扔🎲，如果是小就是钟开莱先生，要是大就Morris，结果跟我想象的差不多，Morris
-![random](Math-Set-Theory-2-Operations-with-Sets/random.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/random.png)
 1到6 ，结果是5
 但是集合论这块还是继续用钟开莱先生的书，看完Morris回头再来钟先生
 ## Operation
@@ -53,7 +53,7 @@ $$A \cap B=\{\omega \in A \, and\, \omega \in B\}$$
 
 逻辑词汇and，必须满足前后两个条件，同时满足哦。
 
-![complement&intersection](Math-Set-Theory-2-Operations-with-Sets/complement_intersection.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/complement_intersection.png)
 ### Commutative Law & Associative Law
 $$
 A \cup B=B \cup A\\
@@ -76,7 +76,7 @@ $$
 (A \cup B )\cap C \neq  A \cup (B \cap C)
 $$
 解释可以通过Venn 图来看
-![neq](Math-Set-Theory-2-Operations-with-Sets/neq.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/neq.png)
 Venn图怎么画？画圈就行了，相交的地方是交集，合起来是并集，没圈到的地方是complement，这个我看五年级的小孩都在奥数题里面写这个。
 
 ### Distributive Law
@@ -86,11 +86,11 @@ $$
 (A \cap B) \cup C=(A \cup C) \cap (B \cup C) \dots\dots (D_2)
 $$
 这两个公式都是正确的么？证明一个公式不正确，只需要找到一个反例就可以但是要证明一个公式正确，就很麻烦了。那么我们还是用五年级奥数的方法来检验一下这两个公式哪些是正确的：
-![distributive](Math-Set-Theory-2-Operations-with-Sets/distributive.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/distributive.png)
 通过venn图可以发现，这两个哥们都是正确的，那么我们之前那个类比就有问题了，也就是合集和并集类似加法和乘法在此处不再合理了，并且其实$A \cup A =A$ 就已经宣告类比不成立了。
 接着钟老师用了一个食物的例子来证明了一下 $D_1$ 这里就不详细说了，这个比较简单，我们下面用数学的方法来证明下 $D_2$ 证明思想就是(I)证明属于左边的元素都属于右边，(II)再证明右边的元素都属于左边 $M \subset N$ and $M \supset N$
 -----
-![prove](Math-Set-Theory-2-Operations-with-Sets/prove.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/prove.png)
 -----
 I:假设元素属于左边，那么它属于A交B或者属于C。
 ①如果属于A交B那么 肯定属于A并C也要属于B并C，所以属于右边

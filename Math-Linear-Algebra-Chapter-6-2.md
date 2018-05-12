@@ -3,7 +3,7 @@ title: 【线性代数】6-2:对角化(Diagonalizing a Matrix)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Eigenvalues
   - Eigenvectors
   - Diagonalizing
@@ -189,7 +189,7 @@ c_2=-\frac{1}{\sqrt{5}}\\
 a_{100}=\frac{1}{\sqrt{5}}(\frac{1+\sqrt{5}}{2})^{99}\frac{1+\sqrt{5}}{2}=3.534\times 10^{20}
 $$
 检验一下：
-![python](Math-Linear-Algebra-Chapter-6-2/python.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-2/python.png)
 基本一致
 
 ## Matrix Powers $A^k$

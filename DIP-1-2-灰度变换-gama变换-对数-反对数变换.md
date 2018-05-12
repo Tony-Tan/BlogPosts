@@ -2,7 +2,7 @@
 title: 【数字图像处理】1.2:灰度变换，gama变换，对数，反对数变换
 categories:
   - DIP
-tags:
+keywords:
   - gama变换
   - 对数
   - 反对数变换
@@ -122,11 +122,11 @@ int main(){
 分段线性变换，当参数设置为（100,0）（100,255）时，函数为二值化函数：
 ![Center 7][]
 
-[Center]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111133834016.jpg
-[Center 1]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111133913905.jpg
-[Center 2]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134111109.jpg
-[Center 3]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134125335.jpg
-[Center 4]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134148719.jpg
-[Center 5]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134210731.jpg
-[Center 6]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134239732.jpg
-[Center 7]: DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111135816015.jpg
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111133834016.jpg
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111133913905.jpg
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134111109.jpg
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134125335.jpg
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134148719.jpg
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134210731.jpg
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134239732.jpg
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111135816015.jpg

@@ -5,6 +5,7 @@ categories:
     - Probability
 tags:
     - Convolution
+    - 卷积
 toc: true
 date: 2018-03-19 10:12:34
 ---
@@ -42,7 +43,7 @@ $$
 g(y_1,\dots,y_m)=\sum_{(x_1,\dots,x_n)\in A}f(x_1,\dots,x_n)
 $$
 
-和单变量函数的套路基本一致，最后的公式是最关键的逻辑和兴，也就是 $(x_1,\dots,x_n)\in A$ 是解决问题的关键，换句话说，多变量也好，单变量也好，最后我们要做的都是一个逆向的求解，或者叫做穷举的方法，因为我们并没计算公式能够得到全部的向量 $\vec{x}=(x_1,\dots,x_n)$ 保证其满足 $\vec{x}\in A$ 所以$g$ 和 $f$ 的关系也就是这么确定的，找到所有f的输入 $\vec{x}$ 使其满足 $\vec{y_0}$ 的需求，求的所有满足条件的概率和。
+和单变量函数的套路基本一致，最后的公式是最关键的逻辑核心，也就是 $(x_1,\dots,x_n)\in A$ 是解决问题的关键，换句话说，多变量也好，单变量也好，最后我们要做的都是一个逆向的求解，或者叫做穷举的方法，因为我们并没计算公式能够得到全部的向量 $\vec{x}=(x_1,\dots,x_n)$ 保证其满足 $\vec{x}\in A$ 所以$g$ 和 $f$ 的关系也就是这么确定的，找到所有f的输入 $\vec{x}$ 使其满足 $\vec{y_0}$ 的需求，求的所有满足条件的概率和。
 这部分和单离散随机变量完全一致，只是随机变量变成了随机变量向量了。
 
 下面的定理关于二项分布和伯努利分布：
@@ -67,7 +68,7 @@ $$
 A_y={(x_1,x_2):x_1+x_2\leq y}\\
 $$
 那么当 $Y\leq y$ 当且仅当 $(X_1,X_2)\in A_y$ 集合 $A_y$ 如图所示
-![a_y](Math-Probability-3-9-Functions-of-Two-or-More-Random-Variables/a_y.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-9-Functions-of-Two-or-More-Random-Variables/a_y.png)
 
 如果我们让 $G(y)$ 来定义 $Y$ 的 c.d.f. 那么对于 $y>0$ 我们有：
 $$

@@ -5,9 +5,13 @@ categories:
   - Probability
 tags:
   - Joint Distributions
+  - 联合分布
   - Mixed Distributions
+  - 混合分布
   - Marginal Distributions
+  - 边缘分布
   - Independent Random Variable
+  - 独立随机变量
 toc: true
 date: 2018-03-14 09:55:14
 ---

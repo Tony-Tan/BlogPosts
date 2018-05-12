@@ -3,7 +3,7 @@ title: 【数字图像处理】5.4:灰度图像-图像增强 中值滤波
 date: 2015-01-30 15:26
 categories:
   - DIP
-tags:
+keywords:
   - 图像平滑
   - 中值滤波
 toc: true
@@ -224,14 +224,14 @@ OpenCV的结果：
 
 
 
-[Center]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130151626067.png
-[Center 1]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130151630136.png
-[Center 2]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130151723491.png
-[Center 3]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130151714393.png
-[Center 4]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130151852907.png
-[Center 5]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130152029256.jpg
-[Center 6]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130152014667.jpg
-[Center 7]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130152031655.jpg
-[Center 8]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130152046740.jpg
-[Center 9]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130152102372.jpg
-[Center 10]: DIP-5-4-灰度图像-图像增强-中值滤波/20150130152148504.jpg
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130151626067.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130151630136.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130151723491.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130151714393.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130151852907.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130152029256.jpg
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130152014667.jpg
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130152031655.jpg
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130152046740.jpg
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130152102372.jpg
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-4-灰度图像-图像增强-中值滤波/20150130152148504.jpg

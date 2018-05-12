@@ -22,13 +22,13 @@ date: 2018-02-15 09:48:57
 GPU本来的任务是做图形图像的，也就是把数据处理成图形图像，图像有个特点就是并行度很高，基本上一定距离意外的像素点之间的计算是独立的，所以属于并行任务。
 GPU之前是不可编程的，或者说不对用户开放的，人家本来是做图形计算控制显示器的，虽然对用户不可编程，但是你只要把硬件卖给了我，就由不得你了，然后就有hacker开始想办法给GPU编程，来帮助他们完成规模较大的运算，于是他们研究着色语言或者图形处理原语来和GPU对话。后来黄老板发现了这个是个新的功能啊，然后就让人开发了一套平台，CUDA，然后深度学习火了，顺带着，CUDA也火到爆炸。
 刚刚最新消息，英伟达新版本GPU架构会被命名为Turing，一丝欣慰，发自内心深处地敬那些为世界进步做出了杰出贡献的人们，他们是人类未来的希望。
-![](CUDA-F-1-1-异构计算-CUDA/0.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/0.jpeg)
 
 x86 CPU+GPU的这种异构应该是最常见的，也有CPU+FPGA，CPU+DSP等各种各样的组合，CPU+GPU在每个笔记本或者台式机上都能找到。当然超级计算机大部分也采用异构计算的方式来提高吞吐量。
 异构架构虽然比传统的同构架构运算量更大，但是其应用复杂度更高，因为要在两个设备上进行计算，控制，传输，这些都需要人为干预，而同构的架构下，硬件部分自己完成控制，不需要人为设计。
 ### 异构架构
 举一个我用的工作站的构成，我使用的是一台 intel i7-4790 CPU加上两台Titan x GPU构成的工作站，GPU插在主板的PCIe卡口上，运行程序的时候，CPU像是一个控制者，指挥两台Titan完成工作后进行汇总，和下一步工作安排，所以CPU我们可以把它看做一个指挥者，主机端，host，而完成大量计算的GPU是我们的计算设备，device。
-![](CUDA-F-1-1-异构计算-CUDA/1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/1.png)
 上面这张图能大致反应CPU和GPU的架构不同。
 - 左图：一个四核CPU一般有四个ALU，ALU是完成逻辑计算的核心，也是我们平时说四核八核的核，控制单元，缓存也在片上，DRAM是内存，一般不在片上，CPU通过总线访问内存。
 - 右图：GPU，绿色小方块是ALU，我们注意红色框内的部分SM，这一组ALU公用一个Control单元和Cache，这个部分相当于一个完整的多核CPU，但是不同的是ALU多了，control部分变小，可见计算能力提升了，控制能力减弱了，所以对于控制（逻辑）复杂的程序，一个GPU的SM是没办法和CPU比较的，但是对了逻辑简单，数据量大的任务，GPU更搞笑，并且，注意，一个GPU有好多个SM，而且越来越多。
@@ -75,13 +75,13 @@ nvidia自己有一套描述GPU计算能力的代码，其名字就是“计算�
 这里的Tesla架构，与上面的Tesla平台不同，不要混淆，一个是平台名字，一个是架构名字
 ### 范例
 CPU和GPU相互配合，各有所长，各有所短，不能说GPU就是比CPU强这种幼稚的话：
-![](CUDA-F-1-1-异构计算-CUDA/2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/2.png)
 
 低并行逻辑复杂的程序适合用CPU
 高并行逻辑简单的大数据计算适合GPU
 
 一个程序可以进行如下分解，串行部分和并行不分：
-![](CUDA-F-1-1-异构计算-CUDA/3.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/3.png)
 
 CPU和GPU线程的区别：
 1. CPU线程是重量级实体，操作系统交替执行线程，线程上下文切换花销很大
@@ -90,7 +90,7 @@ CPU和GPU线程的区别：
 
 ### CUDA：一种异构计算平台
 CUDA平台不是单单指软件或者硬件，而是建立在Nvidia GPU上的一整套平台，并扩展出多语言支持
-![](CUDA-F-1-1-异构计算-CUDA/4.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/4.png)
 
 CUDA C 是标准ANSI C语言的扩展，扩展出一些语法和关键字来编写设备端代码，而且CUDA库本身提供了大量API来操作设备完成计算。
 
@@ -98,7 +98,7 @@ CUDA C 是标准ANSI C语言的扩展，扩展出一些语法和关键字来编�
 - CUDA驱动API
 - CUDA运行时API
 
-![](CUDA-F-1-1-异构计算-CUDA/5.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/5.png)
 
 
 驱动API是低级的API，使用相对困难，运行时API是高级API使用简单，其实现基于驱动API。
@@ -113,15 +113,15 @@ CUDA nvcc编译器会自动分离你代码里面的不同部分，如图中主�
 
 **注意：核函数是我们后面主要接触的一段代码，就是设备上执行的程序段**
 
-![](CUDA-F-1-1-异构计算-CUDA/6.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/6.png)
 
 nvcc 是从LLVM开源编译系统为基础开发的。
 
-![](CUDA-F-1-1-异构计算-CUDA/7.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/7.png)
 
 CUDA工具箱提供编译器，数学库，调试优化等工具，当然CUDA的文档是相当完善的，可以去查阅，当然在我们基本了解基础结构的情况下，直接上来看文档会变得机械化。
 
-![](CUDA-F-1-1-异构计算-CUDA/8.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-1-1-异构计算-CUDA/8.png)
 ## "Hello World!"
 Hello World是所有程序初学者都非常喜欢的，之前GPU是不能printf的，我当时就很懵，GPU是个做显示的设备，为啥不能输出，后来就可以直接在CUDA核里面打印信息了，我们写下面程序
 ``` C++

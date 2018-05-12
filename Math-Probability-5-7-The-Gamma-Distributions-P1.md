@@ -169,7 +169,7 @@ $$
 
 根据定理5.7.3 结果是1.
 Gamma分布长这个样子
-![gamma_distribution](Math-Probability-5-7-The-Gamma-Distributions-P1/gamma_distribution.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-5-7-The-Gamma-Distributions-P1/gamma_distribution.png)
 
 接着我们研究一下gamma分布的距，进而能得到均值和方差。
 

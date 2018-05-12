@@ -3,7 +3,7 @@ title: 【数字图像处理】6.8:灰度图像-图像分割 Canny边缘检测
 date: 2015-02-13 11:55
 categories:
   - DIP
-tags:
+keywords:
   - canny
   - 边缘检测
 toc: true
@@ -146,7 +146,7 @@ $N_n=\frac{2W}{x_{max}}=\frac{2}{k}$(14)
 ```
 
 双阈值滞后处理是Canny的核心部分，下面给出双阈值的阈值传递函数：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181022310.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181022310.jpeg)
 
 上图说明只有的时滞后阈值的传递函数，解释下就是如果一个候选点大于高阈值，那么它肯定是边缘点，如果大于小阈值，则需要它连通到边缘点。
 我们在算法实现时使用方法是，先找到所有大于大阈值的点的集合H，H全部为边缘点，然后找出所有大于小阈值的点的集合L，其中L包含所有的H，那么以H中的每个点为种子点，以八邻域遍历L，被遍历到的为边缘点，未被遍历的为非边缘点。这里的遍历与图的遍历相同，可以使用深度优先或广度优先。
@@ -302,47 +302,47 @@ void Canny(double *src,double *dst,int width,int height,int sobel_size,double th
 ## 实现结果
 实验每步结果：
 原图：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181924413.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181924413.jpeg)
 
 STEP1：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181937158.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181937158.jpeg)
 
 STEP2：
 Sobel梯度幅度结果：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181953180.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181953180.jpeg)
 
 Sobel梯度方向结果：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182006783.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182006783.jpeg)
 
 STEP3：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182025625.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182025625.jpeg)
 
 STEP4：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182315899.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182315899.jpeg)
 
 
 ----------
 
 
 原图：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182333621.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182333621.jpeg)
 
 STEP1：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182345025.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182345025.jpeg)
 
 STEP2：
 Sobel梯度幅度结果：
 
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182356134.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182356134.jpeg)
 
 Sobel梯度方向结果：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182416318.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182416318.jpeg)
 
 STEP3：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182426040.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182426040.jpeg)
 
 STEP4：
-![这里写图片描述](DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182449655.jpeg)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182449655.jpeg)
 ## 总结
 总结，Canny实现起来算法过程并不难，可能进一步优化加速就需要一些难度了，冈萨雷斯书中提到，第四步滞后阈值可以和第三步非极大值抑制放在一起。
 待续。。。。

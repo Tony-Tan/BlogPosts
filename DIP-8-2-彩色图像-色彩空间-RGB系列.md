@@ -3,7 +3,7 @@ title: 【数字图像处理】8.2:彩色图像-色彩空间 RGB系列
 date: 2015-03-12 15:08
 categories:
   - DIP
-tags:
+keywords:
   - RGB
 toc: true
 ---
@@ -15,18 +15,18 @@ toc: true
 心情烦躁，换了一个特别吵的办公室，看来是时候离开了。。本想写完所有冈萨雷斯的学习笔记后去找工作，但时不我待，边找遍边学吧，学习是没有尽头的。
 ## CIE RGB
 CIE RGB 详细信息已经在Day8中介绍，详情点击下面链接：
-[CIE XYZ CIE RGB](http://www.tony4ai.com/2015/03/11/DIP-8-0-彩色模型-CIEXYZ-CIERGB/)
+[CIE XYZ CIE RGB](http://www.tony4ai.com/DIP-8-0-彩色模型-CIEXYZ-CIERGB/)
 ## sRGB
 
 > sRGB色彩空间是惠普与微软于1996年一起开发的用于显示器、打印机以及因特网的一种标准RGB色彩空间。
 > sRGB最初设计的目的是作为生成在因特网以及万维网上浏览的图像的通用色彩空间，最后选择的是使用Gamma校准系数为2.2的色彩空间，即CRT显示器在这种情况下的平均线性电压响应。
 
 下面是从$CIE XYZ$空间转换到$sRGB$的转化公式：
-![这里写图片描述](DIP-8-2-彩色图像-色彩空间-RGB系列/20150312135048067.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-2-彩色图像-色彩空间-RGB系列/20150312135048067.png)
 逆向变换：
-![这里写图片描述](DIP-8-2-彩色图像-色彩空间-RGB系列/20150312135131528.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-2-彩色图像-色彩空间-RGB系列/20150312135131528.png)
 其中的变换理论基础：
-![这里写图片描述](DIP-8-2-彩色图像-色彩空间-RGB系列/20150312135205770.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-2-彩色图像-色彩空间-RGB系列/20150312135205770.png)
 以上图片信息和引用信息全部来自wiki。
 
 ## $R_nG_nB_n$

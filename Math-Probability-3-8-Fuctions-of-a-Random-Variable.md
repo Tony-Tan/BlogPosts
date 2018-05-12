@@ -5,8 +5,11 @@ categories:
   - Probability
 tags:
   - The Probability Integral Transformation
+  - 概率积分变换
   - Simulation
+  - 仿真
   - Pseudo-Random Numbers
+  - 伪随机数
   - General Function
 toc: true
 date: 2018-03-16 09:49:24

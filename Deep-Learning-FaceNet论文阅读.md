@@ -2,7 +2,7 @@
 title: FaceNet论文阅读
 categories:
   - Deep Learning
-tags:
+keywords:
   - Face Recognition
   - FaceNet
   - GoogleNet
@@ -89,7 +89,7 @@ To improve clustering accuracy, we also explore hard-positive mining techniques 
 
 可以处理以前觉得很难的样本，如下：
 
-![](Deep-Learning-FaceNet论文阅读/12.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-FaceNet论文阅读/12.png)
 
 ## RelatedWork
 
@@ -143,7 +143,7 @@ Given the model details, and treating it as a black box (see Figure 2), the most
 
 网络模型当做黑盒如下图，我们主要关心更重要的。端对端的系统学习
 
-![](Deep-Learning-FaceNet论文阅读/11.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-FaceNet论文阅读/11.png)
 
 To this end we employ the triplet loss that directly reflects what we want to achieve in face verification, recognition and clustering.
 
@@ -174,7 +174,7 @@ Here we want to ensure that an image
 
 
 我们希望确保同一人的ap相近，ab距离远，如下图
-![](Deep-Learning-FaceNet论文阅读/7.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-FaceNet论文阅读/7.png)
 
 因此，我们希望：
 
@@ -295,4 +295,4 @@ Batch size大约1800个样例
 >The first category, shown in Table 1, adds 1×1×d convolutional layers, as suggested in [9], between the standard convolutional layers of the Zeiler&amp;Fergus [22] architecture and results in a model 22 layers deep. It has a total of 140 million parameters and requires around 1.6 billion FLOPS per image.
 >The second category we use is based on GoogLeNet style Inception models [16]. These models have 20× fewer parameters (around 6.6M-7.5M) and up to 5×fewer FLOPS(between 500M-1.6B).
 
-![](Deep-Learning-FaceNet论文阅读/1.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-FaceNet论文阅读/1.png)

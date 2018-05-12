@@ -3,13 +3,17 @@ title: 【概率论】1-2:计数方法(Counting Methods)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Counting Methods
+  - 技术方法
   - Combinatorial Methods
+  - 组合方法
   - Multiplication
+  - 乘法法则
   - Permutations
+  - 排列
   - Stirling's Formula
-
+  - 斯特林公式
 toc: true
 date: 2018-01-25 10:35:46
 ---
@@ -43,11 +47,11 @@ $$
 (6,1),(6,2),(6,3),(6,4),(6,5),(6,6)\}
 $$
 一共36种结果，36，很神奇的数字，因为每个骰子有6种结果，两个骰子，难道是$6^2$ 的关系？我们先不给出结论，我们来观察试验过程，首先我们扔第一个骰子，可能出现以下结果：
-![第一个骰子](Math-Probability-1-2-Counting-Methods\first_dic.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-2-Counting-Methods\first_dic.png)
 
 下面我们扔第二个骰子：
 
-![两个骰子](Math-Probability-1-2-Counting-Methods\two_dic.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-1-2-Counting-Methods\two_dic.png)
 
 看出来了吧，第一个骰子能扔出来6种结果，每一种结果后第二个骰子还能扔出6种结果，那么两个骰子的结果总数就是 $6\times 6$ 种结果。
 同样扔两个硬币就会得到$2\times 2$ 种结果，分别是：

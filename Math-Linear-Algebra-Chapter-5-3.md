@@ -3,7 +3,7 @@ title: 【线性代数】5-3:克莱姆法则，逆和体积(Cramer's Rule,Invers
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Inverses
   - Cramer's Rule
   - Volumes
@@ -140,13 +140,13 @@ $$
 2. 交换任意两行，面积不变（绝对值），行列式绝对值不变，只是要变号
 3. 满足加法和乘法原理，如果一条边乘以2（也就是行列式中的一行），那么面积要乘以2 ，与行列式性质相同，如果变增长一部分相当于延长，在行列式上的直接反应也是增加了一个行列式（另一块的面积），具体如下图
 
-![性质3](Math-Linear-Algebra-Chapter-5-3/性质3.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-5-3/性质3.png)
 如果不明白A是什么，A是像三角形那个行列式一样，各顶点组合出来的。
 
 这样的话就能证明行列式就是面积，具体是谁的面积，就是以各行为坐标，圈起来的图形的面积。
 比如2x2的矩阵就是平行四边形的以原点为一个顶点，另外两个点是矩阵的行，推广到体积同样成立，
 
-![体积](Math-Linear-Algebra-Chapter-5-3/体积.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-5-3/体积.png)
 这里就不再继续描述了，因为大道理就上面的三条性质。
 
 下面我们要正式回应一下本章开头提出的懵逼场景2[(点击查看)](http://tony4ai.com/Math-Linear-Algebra-Chapter-5-1/)，也就是二重积分转换成极坐标的那个带入问题，其实问题的根源在于对于$dA=dxdy$ 是一种简单的形式，或者叫做一个结果，他求的是矩形面积，忽略了其中角度的关系，原始的$dA$ 应该是一个行列式比如对于直角坐标系,对x和y求二重微分
@@ -170,7 +170,7 @@ J=\begin{bmatrix}
 \end{bmatrix}
 $$
 然后根据行列式性质，两边同时行列式，就得到了新的积分元了，雅克比行列式提供了一个伸缩比例
-![polar](Math-Linear-Algebra-Chapter-5-3/polar.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-5-3/polar.png)
 积分元的大小明显发生了变换，伸缩比例就是雅克比行列式的值。
 
 ## The Cross Product

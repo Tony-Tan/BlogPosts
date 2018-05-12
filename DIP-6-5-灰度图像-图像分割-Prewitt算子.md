@@ -3,7 +3,7 @@ title: 【数字图像处理】6.5:灰度图像-图像分割 Prewitt算子
 date: 2015-02-11 10:17
 categories:
   - DIP
-tags:
+keywords:
   - Prewitt算子
   - 边缘检测
 toc: true
@@ -76,21 +76,21 @@ prewitt算子的处理结果：
 
 
 
-[Center]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211092423079.png
-[Center 1]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211094303908.png
-[Center 2]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095529339.png
-[Center 3]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095610932.png
-[Center 4]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095628965.png
-[Center 5]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095634347.png
-[Center 6]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095645764.png
-[Center 7]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095646874.png
-[Center 8]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095658696.png
-[Center 9]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095658090.png
-[Center 10]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095710053.png
-[Center 11]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095716106.png
-[Center 12]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095714611.png
-[Center 13]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095726792.png
-[Center 14]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101039011.png
-[Center 15]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101048823.png
-[Center 16]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101059119.png
-[Center 17]: DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101107980.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211092423079.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211094303908.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095529339.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095610932.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095628965.png
+[Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095634347.png
+[Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095645764.png
+[Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095646874.png
+[Center 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095658696.png
+[Center 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095658090.png
+[Center 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095710053.png
+[Center 11]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095716106.png
+[Center 12]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095714611.png
+[Center 13]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211095726792.png
+[Center 14]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101039011.png
+[Center 15]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101048823.png
+[Center 16]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101059119.png
+[Center 17]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-5-灰度图像-图像分割-Prewitt算子/20150211101107980.png

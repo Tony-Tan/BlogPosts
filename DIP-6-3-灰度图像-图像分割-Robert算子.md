@@ -3,7 +3,7 @@ title: 【数字图像处理】6.3:灰度图像-图像分割 Robert算子
 date: 2015-02-09 15:07
 categories:
   - DIP
-tags:
+keywords:
   - Robert算子
   - 边缘检测
 ---
@@ -38,11 +38,11 @@ Robert算子可以检测到全部的边缘候选点，边界定位能力一般�
 
 
 
-[SouthEast]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209144156102.png
-[SouthEast 1]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209144346238.png
-[SouthEast 2]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209150136540.png
-[Center]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209150250596.png
-[Center 1]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209150302546.png
-[Center 2]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209150311142.png
-[Center 3]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209150322449.png
-[Center 4]: DIP-6-3-灰度图像-图像分割-Robert算子/20150209150329641.png
+[SouthEast]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209144156102.png
+[SouthEast 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209144346238.png
+[SouthEast 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209150136540.png
+[Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209150250596.png
+[Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209150302546.png
+[Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209150311142.png
+[Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209150322449.png
+[Center 4]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-3-灰度图像-图像分割-Robert算子/20150209150329641.png

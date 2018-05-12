@@ -55,9 +55,9 @@ if __name__=='__main__':
 ```
 
 上面的这段代码作用是向url：'https://www.baidu.com' 所在的服务器发送请求，显示的html显示这是一个跳转，转到'http://www.baidu.com'， 服务器返回的就是上面的html代码，我们看到的就是：
-![baidu_pic](Crawler-3-0-第一个爬虫/baidu_pic.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-0-第一个爬虫/baidu_pic.png)
 而我们通过浏览器查看其源代码：
-![baidu_source](Crawler-3-0-第一个爬虫/baidu_source.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-0-第一个爬虫/baidu_source.png)
 
 ### 重试下载
 上面的代码有个try的代码块，Python知识，try后的语句可能出现错误，如果出现错误，except语句开始执行，返回错误信息，有些时候下载网页有可能是网络暂时性问题，也就是说返回错误了虽然，但是再来一次很有可能成功，这类错误的代号是从500到600之间的，如果发生看404这类错误，很遗憾没有重试的必要了，不是撞墙了，就是人家没有这一页。
@@ -82,7 +82,7 @@ hasattr(obj,name)
 ```
 函数说明：判断obj对象中是否有name属性或方法。
 我们可以测试一个我们预先设定好的网页，他作用就是返回错误500
-![500](Crawler-3-0-第一个爬虫/500.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-0-第一个爬虫/500.png)
 输出结果：
 ```bash
 Downloading: http://httpstat.us/500
@@ -142,7 +142,7 @@ def crawl_sitemap(url):
 ## 链接爬虫
 这种爬虫才是最正规的爬虫，前面两种虫子都是比较特例的，当我们分析完目标站时，发现其具有上述两种性质时，这两种虫子才有作用，当时对于一般网站，我们只能用一般的办法，链接虫子，一种通用的高端虫。其一般过程如下：
 
-![](Crawler-3-0-第一个爬虫/link_crawler.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-0-第一个爬虫/link_crawler.png)
 
 把上面的过程代码化前，必须明确几个问题
 1. 就是网站内死循环的问题，网页A包含B的链接，B包含C的链接，C包含A的链接，这样下去循环往复，无休无止。解决办法就是用一个list或者其他数据结构保存已访问的网页，每次访问前判断是否重复访问，不重复，则访问。
@@ -225,7 +225,7 @@ def link_crawler(seed_url,link_regex):
 上面这个版本如果没有问题就能访问网站中所有的网页了，这个爬虫是可用的。
 ### robots
 我们上一篇提到过robots.txt，里面有一些可以访问以及不可以访问的路径，我们可以通过python工具包robotparser来自动解析使用(贴一段书上的截图吧)：
-![robotsparser](Crawler-3-0-第一个爬虫/robotsparser.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-0-第一个爬虫/robotsparser.png)
 
 ### 支持代理
 有些网站对地区等访问有限制，当然万里长城那个不是这类的，有些网站站长就不希望别的国家人访问，但是我们还想访问，怎么办，vpn或者通过代理，python有个requests模块可以实现这部分功能，这个部分应该在download中完成，那么新版本的download函数如下：

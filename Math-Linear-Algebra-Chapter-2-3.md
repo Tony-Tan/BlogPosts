@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 17:55:10
-tags:
+keywords:
   - Elimination Matrix
   - Matrix Multiplication
   - Row Exchange
@@ -22,7 +22,7 @@ tags:
 ## Elimination Using Matrix
 本节的主要目的就是告诉你，小子，矩阵是用来解方程的，你会算行列式只能考上研究生，哈哈哈（博主吃不到狐狸说葡萄酸）
 来个方程：
-![formular](Math-Linear-Algebra-Chapter-2-3/formular.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-3/formular.png)
 $$
 \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}
 $$
@@ -67,7 +67,7 @@ $$
 Eb=b_{new}\\
 \begin{bmatrix}1&0&0\\{-2}&1&0\\0&0&1\end{bmatrix}\begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix}=\begin{bmatrix}b_1\\b_2-2b_1\\b_3\end{bmatrix}
 $$
-![Elimination](Math-Linear-Algebra-Chapter-2-3/elimination.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-3/elimination.png)
 这个过程全靠自己领悟，如果这两种语言你都没明白，那就过几天再看一遍吧。
 
 ## Matrix Multiplication

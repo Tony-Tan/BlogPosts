@@ -3,9 +3,11 @@ title: 【概率论】3-3:累积分布函数(Cumulative Distribution Function)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Cumulative Distribution Function
+  - 概率累计函数
   - Quantial
+  - 分位数
 toc: true
 date: 2018-02-06 10:09:15
 ---
@@ -75,7 +77,7 @@ $Pr(\{x:x<x_2\})=0 \quad \text{for } x_2=-\infty$
 
 只要能证明上述两个结果那么就能得到结论
 c.d.f不需要有连续性，如图：
-![](Math-Probability-3-3-Cumulative-Distribution-Function/cdf.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-3-Cumulative-Distribution-Function/cdf.png)
 
 根据函数的连续性定义，当左右极限和函数值相等时连续，
 $$
@@ -144,7 +146,7 @@ F(x)=Pr(X\leq x)
 $$
 那么根据这个定理，图中的 $Pr(x_1)=z_1-z_0$
 
-![](Math-Probability-3-3-Cumulative-Distribution-Function/cdf2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-3-Cumulative-Distribution-Function/cdf2.png)
 ## The c.d.f. of a Discrete Distribution
 对于离散分布，cdf可以通过定义得到，而其函数形状应该是阶梯状的，而且离散分布的cdf有以下几点性质（设 $f(x)$ 是离散随机变量的概率函数）：
 1. $F(x)$ will have a jump of magnitude $f(x_i)$ at each possible valuee $x_i$ of $X$
@@ -174,9 +176,9 @@ at  all x such that f is continuous.
 > Definition Quantiles/Percentiles: Let $X$ be a random variable with c.d.f. $F$ .For each $p$ strictly between $0$ and $1$ ,define $F^{-1}(p)$  to be the smallest value $x$ such that $F(x)\geq p$ .Then $F^{-1}(p)$ is called the $p$ quantile of $X$ or the $100p$ percentile of $X$ .The function $F^{-1}$ defined here on the open interval $(0,1)$ is called the quantile function of $X$
 
 定义的简单解释，对于一般情况，我们假定cdf严格递增（可以通过水平检测）我们观察cdf的图像可以知道其横轴是随机变量的所在轴，纵轴是$F(x)$ 对应的值，$[0,1]$ 那么如果我们去其反函数，那么自变量变成了 $[0,1]$ ，而对应的值域就是随机变量，当我们选定任意  $1\geq p\geq 0$ 时通过反函数$F^{-1}（p）$ 得到的是随机变量的值，这个随机变量含义是，获得概率和为 $p$ 的随机变量上限。
-![](Math-Probability-3-3-Cumulative-Distribution-Function/quantile.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-3-Cumulative-Distribution-Function/quantile.png)
 对于特殊情况，不能通过水平检验的，我们规定，其反函数的下:
-![](Math-Probability-3-3-Cumulative-Distribution-Function/quantile2.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-3-3-Cumulative-Distribution-Function/quantile2.png)
 
 所以我们规定当出现这种情况是，我们选择较小的随机变量值$x_1$
 虽然我们前面说数学应该更多使用分析的方法，但是这里使用了大量的图片是为了让对函数图像没有概念的同学可以直观的感受下，如果从分析的方法直接分析值域和定义域的关系能得到相同的答案。
