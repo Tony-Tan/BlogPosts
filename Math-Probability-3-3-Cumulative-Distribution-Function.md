@@ -3,7 +3,7 @@ title: 【概率论】3-3:累积分布函数(Cumulative Distribution Function)
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Cumulative Distribution Function
   - 概率累计函数
   - Quantial
@@ -53,7 +53,7 @@ $$
 \text{for }x_1\leq x_2\\
 \{x:x<x_1\}\subset \{x:x<x_2\}
 $$
-根据[1-1中的T4](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)可以得到：
+根据[1-1中的T4](http://face2ai.com/Math-Probability-1-1-Definition-of-Probability/)可以得到：
 $$
 Pr(\{x:x<x_1\})\leq Pr( \{x:x<x_2\})
 $$
@@ -98,7 +98,7 @@ $$
 Pr(X>x) = 1 - F(x)
 $$
 QED
-证明显而易见，依据定义 $F(x)=Pr(X\leq x)$ 又因为 $\{x:X\leq x\}$ 和$\{x:X > x\}$ 是互补事件，所以依据[1-1](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)必然有 $Pr(X>x) = 1 - F(x)$
+证明显而易见，依据定义 $F(x)=Pr(X\leq x)$ 又因为 $\{x:X\leq x\}$ 和$\{x:X > x\}$ 是互补事件，所以依据[1-1](http://face2ai.com/Math-Probability-1-1-Definition-of-Probability/)必然有 $Pr(X>x) = 1 - F(x)$
 ### T2:$Pr(x_1<X\leq x_2)=F(x_2)-F(x_1)$
 > Theorem :For all value $x_1$ and $x_2$ such that $x_1<x_2$ :
 $$
@@ -111,7 +111,7 @@ $$
 $$
 B=A^{c}\cap C
 $$
-根据[1-1中的T6](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)：
+根据[1-1中的T6](http://face2ai.com/Math-Probability-1-1-Definition-of-Probability/)：
 $$
 Pr(B)=Pr(C)-Pr(A\cap C)\\
 \text{for: }A=A\cap C\\

@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 17:55:10
-keywords:
+tags:
   - Elimination Matrix
   - Matrix Multiplication
   - Row Exchange
@@ -27,7 +27,7 @@ $$
 \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}
 $$
 是一个n维***空间(space)***，在这个空间里，我们找一个特定或者若干个特定的vector使得$ Ax=b $成立
-根据[row picture](http://tony4ai.com/Math-Linear-Algebra-Chapter-2-1/)，和[column pictur](http://tony4ai.com/Math-Linear-Algebra-Chapter-2-1/)
+根据[row picture](http://face2ai.com/Math-Linear-Algebra-Chapter-2-1/)，和[column pictur](http://face2ai.com/Math-Linear-Algebra-Chapter-2-1/)
 :
 $$
 A\textbf{x}=col(1)x_1+rcol(2)x_2+\dots+col(n)x_n\\

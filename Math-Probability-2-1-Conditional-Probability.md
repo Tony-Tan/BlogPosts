@@ -3,7 +3,7 @@ title: 【概率论】2-1:条件概率(Conditional Probability)
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Conditional Probability
   - 条件概率
   - Multiplication Rule
@@ -37,7 +37,7 @@ ps:The conditional probability $Pr(A|B)$ is not defined if $Pr(B)=0$
 翻译一下，当我们知道事件B已经发生并且我们希望计算另外一个事件A的时候考虑当B发生时A的概率，那就是条件概率 $Pr(A|B)$ 。当$Pr(B)=0$ 时，条件概率无定义
 
 但是我们应该注意到，所有事件的概率都是条件的，比如试验：扔一个均匀的硬币，事件A表示正面，那么概率$Pr(A)$ 的条件就是"扔一个均匀硬币"，如果把扔一个均匀的硬币这个事件看做事件B，那么出现正面的概率是$Pr(A|B)$ ，这里事件B是肯定发生的，所以作为条件给出，如果事件B不是肯定发生，那么就要用我们下面给出的计算法则计算正面出现的概率了。
-以上是从[Subjective Interpretation](http://tony4ai.com/Math-Probability-1-0-Introduction/)的角度定义的，但是从[Frequency Interpretation](http://tony4ai.com/Math-Probability-1-0-Introduction/)的角度，我们可以这么理解，一个重复$N$ 次的试验事件B发生的$N_B$次数与试验次数的比例近似于$Pr(B)=\frac{N_B}{N}$ 事件A和事件B同时发生的次数$N_{A\cap B}$ 与试验次数$N$ 的比例近似于$Pr(A\cap B)=\frac{N_{A\cap B}}{N}$，所以当B事件发生时，A事件也发生的概率接近于比例：$\frac{N_{A\cap B}}{N_B}=\frac{\frac{N_{A\cap B}}{N}}{\frac{N_B}{N}}=\frac{Pr(A\cap B)}{Pr(B)}$
+以上是从[Subjective Interpretation](http://face2ai.com/Math-Probability-1-0-Introduction/)的角度定义的，但是从[Frequency Interpretation](http://face2ai.com/Math-Probability-1-0-Introduction/)的角度，我们可以这么理解，一个重复$N$ 次的试验事件B发生的$N_B$次数与试验次数的比例近似于$Pr(B)=\frac{N_B}{N}$ 事件A和事件B同时发生的次数$N_{A\cap B}$ 与试验次数$N$ 的比例近似于$Pr(A\cap B)=\frac{N_{A\cap B}}{N}$，所以当B事件发生时，A事件也发生的概率接近于比例：$\frac{N_{A\cap B}}{N_B}=\frac{\frac{N_{A\cap B}}{N}}{\frac{N_B}{N}}=\frac{Pr(A\cap B)}{Pr(B)}$
 
 通过上面的几个表达式可以了解关于频率观点下的条件概率的计算方法。
 
@@ -117,7 +117,7 @@ $$
 上面这个过程的证明和上面乘法原理的证明一样，就是通过等号右边每两个结合运用乘法原理，能够得到和等号左边一样的结果。
 我们只要掌握一个规律就可以，那就是，条件概率和普通的概率一样，加上某个条件时，其计算方法和不加这个条件时候计算方法一致。
 ## Conditional Probability and Partition - Law of total Probability (条件概率与分割，全概率公式)
-在[1-1的T3](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中，我们介绍了当一个样本空间被划分成两部分的时候，概率的计算方法，那么如果我们把切分继续下去，也就是一个样本空间我们把它切成k块不相交的子空间时，那么响应的计算会有什么变换呢？
+在[1-1的T3](http://face2ai.com/Math-Probability-1-1-Definition-of-Probability/)中，我们介绍了当一个样本空间被划分成两部分的时候，概率的计算方法，那么如果我们把切分继续下去，也就是一个样本空间我们把它切成k块不相交的子空间时，那么响应的计算会有什么变换呢？
 
 >Definition partition Let S denote the sample space of some experiment,and consider k events $B_1 \dots B_k$ in S such that $B_1 \dots B_k$ are disjoint and $\bigcup^k_{i=1}B_i=S$ It is said that these events from a partition of S
 

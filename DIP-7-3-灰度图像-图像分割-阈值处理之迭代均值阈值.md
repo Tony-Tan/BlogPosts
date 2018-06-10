@@ -3,7 +3,7 @@ title: 【数字图像处理】7.3:灰度图像--图像分割 阈值处理之迭
 date: 2015-03-07 11:49
 categories:
   - DIP
-keywords:
+tags:
   - 迭代阈值
   - 迭代均值
 toc: true

@@ -3,7 +3,7 @@ title: 【数字图像处理】2.3:FFT算法理解与c语言的实现
 date: 2014-11-21 15:12
 categories:
   - DIP
-keywords:
+tags:
   - FFT
 toc: true
 ---

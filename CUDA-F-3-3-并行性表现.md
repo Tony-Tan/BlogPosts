@@ -3,7 +3,7 @@ title: 【CUDA FRESHMAN】3.3 并行性表现
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - nvprof
 toc: true
 date: 2018-04-15 21:17:52

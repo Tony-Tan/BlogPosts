@@ -87,7 +87,7 @@ date: 2018-04-13 17:44:44
 - 证明 $A\subseteq B$ 且 $B\subseteq A$ 那么必然有 $A=B$ :
     1. 根据子集的定义， $A\subseteq B$ 对于所有 $x\in A$ 必然有 $x\in B$
     2. 同样根据子集的定义， $B\subseteq A$ 对于所有 $x\in B$ 必然有 $x\in A$
-    3. 结合[定义3.1.4](https://tony4ai.com/Math-Analysis-3-1-Fundamentals-P1/) 我们发现 1和2 就是描述集合相等的定义。
+    3. 结合[定义3.1.4](https://face2ai.com/Math-Analysis-3-1-Fundamentals-P1/) 我们发现 1和2 就是描述集合相等的定义。
     4. 证毕
 - 证明 若 $A\subsetneq B$ 且 $B\subsetneq C$ 则 $A\subsetneq C$
     1. 根据真子集的定义和传递性，我们能得到 $A\subseteq B\subseteq C$ ，且 $A\neq B,B \neq C$
@@ -369,7 +369,7 @@ $$
         3. 第二种情况 $x\in (B\cap C)$
         4. 和上面的证明方法有点不同的是，当第一种情况满足的时候，也就是 $x\in A$ 的时候 $x\in((A\cup B)\cap(A\cup C))$ 成立
         5. 第一种情况满足的时候，也就是 $x\in (B\cap C)$ 的时候， $x\in((A\cup B)\cap(A\cup C))$ 也成立
-        6. 证明思路类似于[引理3.1.13](https://tony4ai.com/Math-Analysis-3-1-Fundamentals-P1/)的证明过程。
+        6. 证明思路类似于[引理3.1.13](https://face2ai.com/Math-Analysis-3-1-Fundamentals-P1/)的证明过程。
 - (g) 证明 $A\cup(X\setminus A)=X$ 以及 $A\cap(X\setminus A)=\emptyset$
     - $A\cup(X\setminus A)=X$
         1. 根据并集和差集的定义，$x\in A\cup(X\setminus A)$ 表示 $x\in A$ 或者 $x\in (X\setminus A)$

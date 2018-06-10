@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 15:08:37
-keywords:
+tags:
   - row picture
   - column Picture
   - system of equations

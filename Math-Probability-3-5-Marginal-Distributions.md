@@ -3,7 +3,7 @@ title: 【概率论】3-5:边缘分布(Marginal Distribution)
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Marginal p.f.
   - 边缘概率函数
   - Marginal p.d.f.

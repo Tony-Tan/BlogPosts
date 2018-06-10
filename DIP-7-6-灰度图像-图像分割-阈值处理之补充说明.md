@@ -3,7 +3,7 @@ title: 【数字图像处理】7.6:灰度图像--图像分割 阈值处理之补
 date: 2015-03-08 19:00
 categories:
   - DIP
-keywords:
+tags:
   - 阈值处理
 toc: true
 ---

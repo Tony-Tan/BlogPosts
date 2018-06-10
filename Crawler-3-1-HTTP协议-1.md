@@ -70,7 +70,7 @@ TCP/IP协议是分层的，这个是TCP/IP最重要的一个结构
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-1-HTTP协议-1/三次握手.png)
 当然TCP还有别的策略保证通讯准确无误
 ## DNS域名解析
-DNS和HTTP一样，也是应用层的一个协议，主机除了Ip地址也可以被赋予主机名和域名，比如[www.tony4ai.com](https://www.tony4ai.com)这种字符串比IP地址和主机名好记多了，而域名对应的IP地址需要用dns服务器来解析：
+DNS和HTTP一样，也是应用层的一个协议，主机除了Ip地址也可以被赋予主机名和域名，比如[www.face2ai.com](https://www.face2ai.com)这种字符串比IP地址和主机名好记多了，而域名对应的IP地址需要用dns服务器来解析：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-1-HTTP协议-1/dns.png)
 ## HTTP与各个协议
 HTTP使用时，下面的简图可以大致反应各个协议发挥的作用：
@@ -80,7 +80,7 @@ HTTP使用时，下面的简图可以大致反应各个协议发挥的作用：
 
 
 ## uri和url
-URI统一资源标识符，我们更熟悉URL，在web浏览器中输入[www.tony4ai.com](https://www.tony4ai.com)就能访问相关地址
+URI统一资源标识符，我们更熟悉URL，在web浏览器中输入[www.face2ai.com](https://www.face2ai.com)就能访问相关地址
 
 Uniform Resource Identifier的缩写，定义如下：
 - Uniform

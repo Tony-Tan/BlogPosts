@@ -20,7 +20,7 @@ Bernoulli过程就是多次的独立的试验形成的一个结果序列，这�
 ## The Beta Function
 和Gamma分布一样，Beta分布也是先有的Beta函数，先来看个例子，这个例子可以引出我们的Beta函数。
 🌰 ：
-一个机器制造零件，只有两种情况就是合格和不合格，不会出现第三种情况，我们让 $P$ 表示不合格的零件占总零件的比例，假设我们得到了n个零件，其中X个不合格，我们假设在给定条件P下每个零件的合格与否条件独立，那么我们就能得出在[3.6中的例子](https://tony4ai.com/Math-Probability-3-6-Conditional-Distributions-P2/)，对应这个例子，当给定 $X=x$ 的条件下 $P$ 的分布：
+一个机器制造零件，只有两种情况就是合格和不合格，不会出现第三种情况，我们让 $P$ 表示不合格的零件占总零件的比例，假设我们得到了n个零件，其中X个不合格，我们假设在给定条件P下每个零件的合格与否条件独立，那么我们就能得出在[3.6中的例子](https://face2ai.com/Math-Probability-3-6-Conditional-Distributions-P2/)，对应这个例子，当给定 $X=x$ 的条件下 $P$ 的分布：
 $$
 g_2(p|x)=\frac{p^x(1-p)^{n-x}}{\int^{1}_{0}q^x(1-q)^{n-x}dx} \text{ for }0<p<1
 $$

@@ -3,7 +3,7 @@ title: 【线性代数】5-3:克莱姆法则，逆和体积(Cramer's Rule,Invers
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
+tags:
   - Inverses
   - Cramer's Rule
   - Volumes
@@ -149,7 +149,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-5-3/体积.png)
 这里就不再继续描述了，因为大道理就上面的三条性质。
 
-下面我们要正式回应一下本章开头提出的懵逼场景2[(点击查看)](http://tony4ai.com/Math-Linear-Algebra-Chapter-5-1/)，也就是二重积分转换成极坐标的那个带入问题，其实问题的根源在于对于$dA=dxdy$ 是一种简单的形式，或者叫做一个结果，他求的是矩形面积，忽略了其中角度的关系，原始的$dA$ 应该是一个行列式比如对于直角坐标系,对x和y求二重微分
+下面我们要正式回应一下本章开头提出的懵逼场景2[(点击查看)](http://face2ai.com/Math-Linear-Algebra-Chapter-5-1/)，也就是二重积分转换成极坐标的那个带入问题，其实问题的根源在于对于$dA=dxdy$ 是一种简单的形式，或者叫做一个结果，他求的是矩形面积，忽略了其中角度的关系，原始的$dA$ 应该是一个行列式比如对于直角坐标系,对x和y求二重微分
 $dx=1dx+0dy$ 以及 $dx=0dx+1dy$ 那么写成矩阵形式就是下面的样子
 $$
 dA=

@@ -3,7 +3,7 @@ title: 【线性代数】5-2:置换和余因子(Permutations and Cofactors)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
+tags:
   - Determinants
   - 'Pivot Formula'
   - 'Big Formula'
@@ -22,7 +22,7 @@ date: 2017-11-03 09:50:36
 今天写的是行列式的三种计算方法，瞬间想到了孔乙己的茴香豆的四种写法，一个多少有点文化的人（被老师们解读为迂腐）却被一些没什么文化的人嘲笑挖苦；如果孔乙己是个那个时代的悲剧，那我们自己会不会成为这个时代的悲剧呢？读书无用论，某首富的“北大，清华大不如胆大”论，如果思维继续，结果最后肯定是喜闻乐见
 ## The Pivot Formula
 Pivot的方式求行列式的值，Pro. Stang说这是matlab的做法，也就是计算机求行列式一般通过消元后得到Pivot，然后将所有Pivots相乘，得到行列式的值，这里有个主意的地方，我们反复强调，如果不是满rank的话，Pivot必然在某些行或者列里面不存在，那么这个矩阵是奇异矩阵，行列式值为0。
-能够支持Pivot的乘积等于行列式的原因是上文关于[properties](http://tony4ai.com/Math-Linear-Algebra-Chapter-5-1/) 中Rule5 是消元的主要过程，rule5 告诉我们消元前后行列式的值不变，但是有的时候我们不光要消元还要进行行交换，这个是随机次数的，所以行列式的值等于Pivot乘积的前面正负号不明确，故:
+能够支持Pivot的乘积等于行列式的原因是上文关于[properties](http://face2ai.com/Math-Linear-Algebra-Chapter-5-1/) 中Rule5 是消元的主要过程，rule5 告诉我们消元前后行列式的值不变，但是有的时候我们不光要消元还要进行行交换，这个是随机次数的，所以行列式的值等于Pivot乘积的前面正负号不明确，故:
 $$
 det(A)=\pm p_{11}p_{22}\dots p_{nn}
 $$

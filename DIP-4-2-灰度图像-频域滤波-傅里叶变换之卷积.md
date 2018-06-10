@@ -3,7 +3,7 @@ title: 【数字图像处理】4.2:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-07 13:52
 categories:
   - DIP
-keywords:
+tags:
   - 卷积
   - 傅里叶变换
 toc: true

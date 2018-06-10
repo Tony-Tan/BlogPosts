@@ -3,7 +3,7 @@ title: 【数字图像处理】2.5:图像傅里叶变换（快速傅里叶变换
 date: 2014-12-15 23:48
 categories:
   - DIP
-keywords:
+tags:
   - FFT
   - 傅里叶变换
   - 图像傅里叶谱

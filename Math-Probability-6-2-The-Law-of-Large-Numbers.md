@@ -28,7 +28,7 @@ date: 2018-04-07 21:07:42
 本节我们就会介绍一些结果来表明，“样本均值”和“组成随机样本的单个随机变量”之间的关系。
 
 ## The Markov and Chebyshev Inequalities
-在学习均值的时候讲到过有关[重心](https://tony4ai.com/Math-Probability-4-1-The-Expectation-of-a-Random-Variable-P1/)类似的概念，也就是说当我们改变分布，让小概率对应一个大的值的时候，比如离散情况下随机变量值 $\{1,100,0.1\}$ 对应于概率 $\{0.1,0.01,0.89\}$  这时的期望是 $1\times 0.1+100\times 0.01 + 0.1\times 0.89=1.189$ 也可以说重心在1.189这个位置，如果我们调整下，让大的随机变量值对应到大概率 $\{1,0.1,100\}$ 对应于概率 $\{0.1,0.01,0.89\}$ 这时的期望是 $1\times 0.1+0.1\times 0.01 + 100\times 0.89=89.101$ 显然这个重心发生了明显的偏移，但是我们有个新想法，如果我们有很多个离散随机变量值，或者是连续分布的随机变量，我们在固定分布均值的情况下，有多少随机变量值可以调整位置呢？
+在学习均值的时候讲到过有关[重心](https://face2ai.com/Math-Probability-4-1-The-Expectation-of-a-Random-Variable-P1/)类似的概念，也就是说当我们改变分布，让小概率对应一个大的值的时候，比如离散情况下随机变量值 $\{1,100,0.1\}$ 对应于概率 $\{0.1,0.01,0.89\}$  这时的期望是 $1\times 0.1+100\times 0.01 + 0.1\times 0.89=1.189$ 也可以说重心在1.189这个位置，如果我们调整下，让大的随机变量值对应到大概率 $\{1,0.1,100\}$ 对应于概率 $\{0.1,0.01,0.89\}$ 这时的期望是 $1\times 0.1+0.1\times 0.01 + 100\times 0.89=89.101$ 显然这个重心发生了明显的偏移，但是我们有个新想法，如果我们有很多个离散随机变量值，或者是连续分布的随机变量，我们在固定分布均值的情况下，有多少随机变量值可以调整位置呢？
 ### Markov Inequality
 >Theorem Markov Inequality.Suppose that $X$ is a random variable such that $Pr(X\geq 0)=1$ .Then for every real number $t>0$ ,
 $$
@@ -93,11 +93,11 @@ $$
 
 证明虽然比较简单，我们还是证明一下比较好：
 证明：
-1. 根据[4.2](https://tony4ai.com/Math-Probability-4-2-Properties-of-Expectations/) 中的定理
+1. 根据[4.2](https://face2ai.com/Math-Probability-4-2-Properties-of-Expectations/) 中的定理
 $$
 E(\bar{X_n})=\frac{1}{n}\sum^{n}_{i=1}E(X_i)=\frac{1}{n}n\mu=\mu
 $$
-2. 根据[4.3](https://tony4ai.com/Math-Probability-4-3-Variance/) 中方差的定理
+2. 根据[4.3](https://face2ai.com/Math-Probability-4-3-Variance/) 中方差的定理
 $$
 \begin{aligned}
 Var(\bar{X_n})&=\frac{1}{n^2}Var(\sum^n_{i=1}X_i)\\
@@ -180,7 +180,7 @@ $$
 
 >Corollary Continuous Functions of Random Variables.If $\vec{Z_n}\xrightarrow{p}\vec{b}$ ,and if $g(vec{z})$ is a function that is continuous at $\vec{z}=\vec{b}$ ,then $g(\vec{Z_n})\xrightarrow{p}g(\vec{b})$
 
-这个定理的证明用到了随机变量的函数，和极限的函数两个知识点，这里不进行证明，具体可以参考[3.8](http://tony4ai.com/Math-Probability-3-8-Fuctions-of-a-Random-Variable/)
+这个定理的证明用到了随机变量的函数，和极限的函数两个知识点，这里不进行证明，具体可以参考[3.8](http://face2ai.com/Math-Probability-3-8-Fuctions-of-a-Random-Variable/)
 
 >Theorem Histogram.Let $X_1,X_2,\dots$ be a sequence of i.i.d. random variables.Let $c_1 < c_2$ be two constants.Define $Y_i=1$ if $c_1\leq X_i<c_2$ and $Y_i=0$ if not .Then $\bar{Y}_n=\frac{1}{n}\sum^{n}_{i=1}Y_i$ is the proportion of $X_1,\dots,X_n$ that lie in the interval $[c_1,c_2)$ ,and $\bar{Y}_n \xrightarrow{p}Pr(c_1\leq X_1<c_2)$
 

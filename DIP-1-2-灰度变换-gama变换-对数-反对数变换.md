@@ -2,7 +2,7 @@
 title: 【数字图像处理】1.2:灰度变换，gama变换，对数，反对数变换
 categories:
   - DIP
-keywords:
+tags:
   - gama变换
   - 对数
   - 反对数变换

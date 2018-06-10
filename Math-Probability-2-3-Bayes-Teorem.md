@@ -3,7 +3,7 @@ title: 【概率论】2-3:贝叶斯定理(Bayes' Theorem)
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Bayes' Theorem
   - 贝叶斯公式
   - Law of total Probability

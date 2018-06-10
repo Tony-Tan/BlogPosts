@@ -3,7 +3,7 @@ title: 【数字图像处理】4.7:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-15 20:38
 categories:
   - DIP
-keywords:
+tags:
   - 离散时间傅里叶变换
 toc: true
 ---

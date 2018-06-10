@@ -3,7 +3,7 @@ title: 【概率论】3-1:随机变量和分布(Random Variables and Discrete Di
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Random Variables
   - 随机变量
   - Discrete Distributions
@@ -108,7 +108,7 @@ $$
 >Let $X$ be a discrete random variable with p.f. $f$ ,If $x$ is not one of the possible values of $X$ ,then $f(x)=0$ also if the sequence $x_1,x_2,\dots$ include all the possible values of X then $\sum^{\infty}_{i=1}f(x_i)=1$
 
 注意这是一个关于概率函数的定理，和概率分布有些不同的是，概率函数 $Pr(X=x)$ 而概率分布式 $Pr(X\in C)$ 这两个有关系，但是是完全不同的两个概念。上述定理说到的是当一个x不在随机变量中的时候，其概率是0，这点很明显，因为原始样本空间就没有与之对应的自变量，也就没有概率与其对应。
-接着说的是所有可能的随机变量对应的概率和是1，这个与样本空间中[1-1](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)的T2一致。
+接着说的是所有可能的随机变量对应的概率和是1，这个与样本空间中[1-1](http://face2ai.com/Math-Probability-1-1-Definition-of-Probability/)的T2一致。
 
 注意下，我们上面强调了，分布和概率函数的不同，但是之间有关系，没错，$Pr(X=x)$ 不同于 $Pr(X\in C)$ 但是当 $C$ 被设置为$X=x$ ，这种条件下，两种情况等价，也就是说概率分布其实“是但不限于”概率函数的。
 概率函数是随机变量的一种分布表示。随机变量可以有无数种概率分布，关键点在于“事件”的划分
@@ -163,7 +163,7 @@ $$
 $$
 \begin{pmatrix}N\\m\end{pmatrix}
 $$
-种，那么根据[1-1](http://tony4ai.com/Math-Probability-1-1-Definition-of-Probability/)中的T2加法原理，得到m个出现的概率是：
+种，那么根据[1-1](http://face2ai.com/Math-Probability-1-1-Definition-of-Probability/)中的T2加法原理，得到m个出现的概率是：
 $$
 Pr(X=m)=\begin{pmatrix}N\\m\end{pmatrix}p^{m}(1-p)^{N-m}
 $$

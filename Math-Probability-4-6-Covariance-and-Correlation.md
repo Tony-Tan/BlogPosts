@@ -182,7 +182,7 @@ f(x)=
 0&\text{otherwise }
 \end{cases}
 $$
-因为随机变量变化范围是个圆而不是矩形，所以很明显 X和Y不独立（参考[随机变量的独立性](https://tony4ai.com/Math-Probability-3-5-Marginal-Distributions/)），但是可以计算其协方差为 $Cov(X,Y)=E[XY]-E[X]E[Y]=0-0=0$ 那么其相关性也是 0 ，于是相关的两个随机变量，其协方差，相关性也可以是0.
+因为随机变量变化范围是个圆而不是矩形，所以很明显 X和Y不独立（参考[随机变量的独立性](https://face2ai.com/Math-Probability-3-5-Marginal-Distributions/)），但是可以计算其协方差为 $Cov(X,Y)=E[XY]-E[X]E[Y]=0-0=0$ 那么其相关性也是 0 ，于是相关的两个随机变量，其协方差，相关性也可以是0.
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-4-6-Covariance-and-Correlation/circle.png)
 
 ---------

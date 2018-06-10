@@ -3,7 +3,7 @@ title: 【CUDA FRESHMAN】3.5 展开循环
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 展开归约
     - 归约
     - 模板函数
@@ -75,7 +75,7 @@ a[i+3]=b[i+3]+c[i+3];
 
 
 ## 展开的归约
-前面在[避免分支](https://tony4ai.com/CUDA-F-3-4-避免分支分化/)的博客中,我们的内核函数reduceInterleaved 核函数中每个线程块只处理对应那部分的数据，我们现在的一个想法是能不能用一个线程块处理多块数据，其实这是可以实现的，如果在对这块数据进行求和前（因为总是一个线程对应一个数据）使用每个线程进行一次加法，从别的块取数据，相当于先做一个向量加法，然后再归约，这样将会用一句指令，完成之前一般的计算量，这个性价比看起来太诱人了。
+前面在[避免分支](https://face2ai.com/CUDA-F-3-4-避免分支分化/)的博客中,我们的内核函数reduceInterleaved 核函数中每个线程块只处理对应那部分的数据，我们现在的一个想法是能不能用一个线程块处理多块数据，其实这是可以实现的，如果在对这块数据进行求和前（因为总是一个线程对应一个数据）使用每个线程进行一次加法，从别的块取数据，相当于先做一个向量加法，然后再归约，这样将会用一句指令，完成之前一般的计算量，这个性价比看起来太诱人了。
 上代码
 ```c++
 __global__ void reduceUnroll2(int * g_idata,int * g_odata,unsigned int n)
@@ -139,7 +139,7 @@ printf("reduceUnrolling2            elapsed %lf ms gpu_sum: %d<<<grid %d block %
 这里需要注意由于合并了一半的线程块，这里的网格个数都要对应的减少一半，来看效率
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-5-展开循环/2.png)
 
-相比于[上一篇](https://tony4ai.com/CUDA-F-3-4-避免分支分化/)中的效率，“高到不知道哪里去了”（总能引用名人名言），比最简单的归约算法快了三倍，warmup的代码，不需要理睬。
+相比于[上一篇](https://face2ai.com/CUDA-F-3-4-避免分支分化/)中的效率，“高到不知道哪里去了”（总能引用名人名言），比最简单的归约算法快了三倍，warmup的代码，不需要理睬。
 我们上面框里有2，4，8三种尺度的展开，分别是一个块计算2个块，4个块和8个块的数据，对应的调用代码也需要修改，在github上有库，可以自己去看
 
 Github:[https://github.com/Tony-Tan/CUDA_Freshman](https://github.com/Tony-Tan/CUDA_Freshman)
@@ -230,7 +230,7 @@ volatile int类型变量是控制变量结果写回到内存，而不是存在�
 vmem[tid]+=vmem[tid+32];
 vmem[tid]+=vmem[tid+16];
 ```
-tid+16要用到tid+32的结果，会不会有其他的线程造成内存竞争，答案是不会的，因为一个线程束，执行的进度是完全相同的，当执行 tid+32的时候，这32个线程都在执行这步，而不会有任何本线程束内的线程会进行到下一句，详情请回忆CUDA执行模型。
+tid+16要用到tid+32的结果，会不会有其他的线程造成内存竞争，答案是不会的，因为一个线程束，执行的进度是完全相同的，当执行 tid+32的时候，这32个线程都在执行这步，而不会有任何本线程束内的线程会进行到下一句，详情请回忆CUDA执行模型（因为CUDA编译器是激进的，所以我们必须添加volatile，防止编译器优化数据传输而打乱执行顺序）。
 然后我们就得到结果了，看看时间:
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-3-5-展开循环/4.png)
 又往后退了一位，看起来还是很爽的。

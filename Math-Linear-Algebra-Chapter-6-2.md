@@ -3,7 +3,7 @@ title: 【线性代数】6-2:对角化(Diagonalizing a Matrix)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
+tags:
   - Eigenvalues
   - Eigenvectors
   - Diagonalizing

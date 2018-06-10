@@ -3,7 +3,7 @@ title: 【线性代数】6-7:SVD分解(Singular Value Decomposition-SVD)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
+tags:
   - Singular Value Decomposition
   - JPEG
   - Eigenvalues
@@ -76,7 +76,7 @@ m\times r=m\times r
 $$
 从矩阵相乘的规模上也能看出等式没有问题，但是这个r有的问题，可以肯定的是，有效的Singular vector有r组，但是这样与原始矩阵形状差的有点多，那么就补一补，虽然补的都是没用的，但是也算是整齐划一了，首先 $\Sigma$ 中缺少的只能补0 ，所以对应的V就只能补A的Nullspace了，因为这样 $AV$ 的补充部分是0,同理，为了配合V，U添加的是left nullspace，并且这些添加的无用值也要选择orthonormal的，以保证$U^TU=I$ 和$V^TV=I$。
 
-其实这里隐藏了一个重要的知识点，就是四个空间的那课，矩阵的rowspace和nullspace正交column space与left nullspace正交，而V本来是A的行空间正交基，那么添加的一定是Nullspace中的正交基，以保证矩阵正交，所以完美结合，（如果忘了四个空间[点击查看](http://tony4ai.com/Math-Linear-Algebra-Chapter-4-1/)）
+其实这里隐藏了一个重要的知识点，就是四个空间的那课，矩阵的rowspace和nullspace正交column space与left nullspace正交，而V本来是A的行空间正交基，那么添加的一定是Nullspace中的正交基，以保证矩阵正交，所以完美结合，（如果忘了四个空间[点击查看](http://face2ai.com/Math-Linear-Algebra-Chapter-4-1/)）
 
 所以更一般化的表示：
 $$
@@ -205,7 +205,7 @@ A^TA=V\Sigma (U^TU) \Sigma V^T\\
 A^TA=V\Sigma^2 V^T
 $$
 虽然A不是对称的，但因为$A^TA$ 是对称矩阵，存在正交矩阵Q使得 $A^TA=Q\Lambda Q^T$，那么这时候的V就是 $A^TA$ 的Q这个是没问题的，至于 $\lambda_i=\sigma_i^2 \geq 0$ 成立的原因是 $A^TA$ 是个正定矩阵（A中各列线性无关），或者半正定矩阵（A中各列线性相关），所以其特征值 $\lambda$ 必然非负数，所以根号后能得到奇异值，根据$Av_i=\sigma u_i$ 可以求出剩下的 $u_i$ ,当然这是理论上的方法，实际上的数值计算过程中可以避免 $A^TA$ 这种大规模矩阵乘法。
-回忆一下正定矩阵关于椭圆的那个[例子](http://tony4ai.com/Math-Linear-Algebra-Chapter-6-5/)
+回忆一下正定矩阵关于椭圆的那个[例子](http://face2ai.com/Math-Linear-Algebra-Chapter-6-5/)
 一个2x2正定矩阵对应二维空间一个椭圆（或者圆），其正交特征矩阵Q矩阵是对椭圆轴的旋转，特征值矩阵 $\Lambda$ 是对轴的拉伸，那么我们的SVD有同样的功效，而且有过之无不及，思考：
 作为$A^TA$ 的正交特征矩阵$V$也是一个旋转矩阵，旋转的是圆的轴，$V^T$ 当然就是反方向旋转，$\Sigma$ 是对图形的拉伸，圆的拉成长的，接着 $AA^T$ 的正交特征矩阵也是旋转，整个过程如下图：
 

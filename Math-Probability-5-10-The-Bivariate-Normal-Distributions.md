@@ -18,7 +18,7 @@ date: 2018-04-05 22:03:55
 > 万般皆下品惟有读书高
 
 今天我们来研究双变量的正态分布，多变量，连续分布。
-对于某些研究者，可能用正态分布来非常好的描述某个随机变量，那么如果我们有两个随机变量，都可以用正态分布描述，而且他们之间存在关系，这时候我们就可以用一个双变量正态分布来描述了这两个变量之间的关系，并且这个二维分布的边缘分布，还是这两个随机变量单变量的分布。[5.6中](https://tony4ai.com/Math-Probability-5-6-The-Normal-Distributions-P3/) 我们介绍了某些有正态分布的独立随机变量的线性组合还是正态分布。但是双变量正态分布（联合分布）可以是相关的。
+对于某些研究者，可能用正态分布来非常好的描述某个随机变量，那么如果我们有两个随机变量，都可以用正态分布描述，而且他们之间存在关系，这时候我们就可以用一个双变量正态分布来描述了这两个变量之间的关系，并且这个二维分布的边缘分布，还是这两个随机变量单变量的分布。[5.6中](https://face2ai.com/Math-Probability-5-6-The-Normal-Distributions-P3/) 我们介绍了某些有正态分布的独立随机变量的线性组合还是正态分布。但是双变量正态分布（联合分布）可以是相关的。
 ## Definition and Derivation of Bivariate Normal Distributions
 >Theorem Suppose that $Z_1$ and $Z_2$ are independent random variables,each of which has the standard normal distribution.Let $\mu_1,\mu_2,\sigma_1,\sigma_2$ ,and $\rho$ be constants such that $-\infty<\mu_i<\infty(i=1,2)$ , $\sigma_i>0(i=1,2)$  ,and $-1<\rho<1$ . Define two new random variables $X_1$ and $X_2$ as follows:
 $$
@@ -44,7 +44,7 @@ $$
 >Theorem Independence and Correlation.Two random variables $X_1$ and $X_2$ that have a bivariate normal distribution are independent if and only if they are uncorrelated.
 
 两个随机变量有一个双变量正态分布，那么他们独立的充分必要条件是他们不相关。
-来回忆一下[独立性](https://tony4ai.com/Math-Probability-3-5-Marginal-Distributions/)和[相关性](https://tony4ai.com/Math-Probability-4-6-Covariance-and-Correlation/)，独立性是两个随机变量分布之间满足 $f(x,y)=f_1(x)f_2(y)$ 这时 $X,Y$ 独立，不相关是说 $\rho(X,Y)=\frac{Cov(X,Y)}{\sigma_X^2\sigma_Y^2}=0$ 的时候两个变量不相关，[相关性(点击传送)](https://tony4ai.com/Math-Probability-4-6-Covariance-and-Correlation/)的介绍中对于任何随机变量的分布，独立性都能推出不相关，但是不相关不能推出独立，所以为了证明本定理我们可以只证明，if过程，也就是不相关来推到独立，另一部分在相关性的文章中已经证明了。
+来回忆一下[独立性](https://face2ai.com/Math-Probability-3-5-Marginal-Distributions/)和[相关性](https://face2ai.com/Math-Probability-4-6-Covariance-and-Correlation/)，独立性是两个随机变量分布之间满足 $f(x,y)=f_1(x)f_2(y)$ 这时 $X,Y$ 独立，不相关是说 $\rho(X,Y)=\frac{Cov(X,Y)}{\sigma_X^2\sigma_Y^2}=0$ 的时候两个变量不相关，[相关性(点击传送)](https://face2ai.com/Math-Probability-4-6-Covariance-and-Correlation/)的介绍中对于任何随机变量的分布，独立性都能推出不相关，但是不相关不能推出独立，所以为了证明本定理我们可以只证明，if过程，也就是不相关来推到独立，另一部分在相关性的文章中已经证明了。
 证明 if 过程：
 假设两个变量不相关，所以当 $\rho=0$ 从公式 5.10.2 中可以看出 $f(x_1,x_2)$ 可以被分解成两个分布相乘的形式，所以，我们可以得到这两个边缘分布独立。
 证毕。

@@ -3,7 +3,7 @@ title: 【概率论】3-4:二维分布(Bivariate Distribution)
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Discrete Joint Distribution
   - 离散联合分布
   - Continuous Joint Distribution

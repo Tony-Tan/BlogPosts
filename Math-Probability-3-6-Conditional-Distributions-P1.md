@@ -3,7 +3,7 @@ title: 【概率论】3-6:条件分布(Conditional Distributions Part I）
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - Discrete Conditional Distributions
   - 离散条件分布
   - Continuous Conditional Distributions
@@ -98,7 +98,7 @@ $$
 $$
 Q.E.D
 
-定理为了确定我们一系列计算得到仍然是p.d.f，证明了三点性质（其实是2点），保证函数满足p.d.f.的基本需求。参考，[p.d.f.的定义](http://tony4ai.com/Math-Probability-3-2-Continuous-Distribution/)
+定理为了确定我们一系列计算得到仍然是p.d.f，证明了三点性质（其实是2点），保证函数满足p.d.f.的基本需求。参考，[p.d.f.的定义](http://face2ai.com/Math-Probability-3-2-Continuous-Distribution/)
 
 继续上面关于工序的例子,我们来计算条件分布，当已知 $Y=y$ 的时候我们知道 $x\geq y$所以计算边缘分布：
 $$

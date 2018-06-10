@@ -28,7 +28,7 @@ date: 2018-03-02 20:48:20
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-2-0-分析确定目标/robots.png)
 上图就是网易公开课的robots.txt文件的内容，其中允许我们爬取'/'下的内容，而且给我了我们一个地图，没错，这个就是下面我们要说的地图。
 ### 网站大小与地图
-在说地图前，我们先研究一下网站大小，我们可以利用搜索引擎来确定下网站的大致规模，用到的搜索引擎技术是在搜索框里使用'site:example.com'，就会得到大致的网页数量，从而可以大致的估算网站规模，比如我们来测试一下[tony4ai.com](http://www.tony4ai.com)的规模：
+在说地图前，我们先研究一下网站大小，我们可以利用搜索引擎来确定下网站的大致规模，用到的搜索引擎技术是在搜索框里使用'site:example.com'，就会得到大致的网页数量，从而可以大致的估算网站规模，比如我们来测试一下[face2ai.com](http://www.face2ai.com)的规模：
 1. 先看我们的baidu，3个结果
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-2-0-分析确定目标/baidu.png)
 2. 看一下bing，35个结果
@@ -37,7 +37,7 @@ date: 2018-03-02 20:48:20
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-2-0-分析确定目标/google.png)
 
 这个没办法说谁搜的好谁搜的快，但是从细节上来说，google确实还是要强一些
-规模上来说tony4ai.com确实不大，不止35个网页，当然也没有285那么多，我感觉大概也就是200个网页左右，所以google还是非常接近的。不得不再次说，google真心厉害。
+规模上来说face2ai.com确实不大，不止35个网页，当然也没有285那么多，我感觉大概也就是200个网页左右，所以google还是非常接近的。不得不再次说，google真心厉害。
 接着就是地图啦，我们在观察网易公开课的robot.txt文件中我们看到了本网站的地图，这个地图会给我们提供非常多的信息，类似于主人邀请你去他家的宫殿游玩，主人不在，又怕你迷路，所以robots告诉你哪些可以去哪些不可以去，如果你想去，应该怎么走，这个应该怎么走就是地图啦。
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-2-0-分析确定目标/sitemap.png)
 其中第一行sitemap.org是提供标准的，具体可以访问查询，而这个网站地图后面我们将会使用它来引导我们访问全站。
@@ -48,14 +48,14 @@ date: 2018-03-02 20:48:20
 用到的代码：
 ```python
 import builtwith
-print builtwith.parse('http://www.tony4ai.com')
+print builtwith.parse('http://www.face2ai.com')
 ```
 就能得到这个网址对应的网站是使用什么技术搭建的。
 ### 网站所有者
 接着上面那个工具包，又一个工具包叫做whois，用来检测我们的目标网站属于谁，不能打了半连对方是谁都不清楚，那不就白打了么。
 ```python
 import whois
-print whois.whois('http://www.tony4ai.com')
+print whois.whois('http://www.face2ai.com')
 ```
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-2-0-分析确定目标/whois.png)
 

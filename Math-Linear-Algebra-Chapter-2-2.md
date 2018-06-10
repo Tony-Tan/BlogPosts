@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 16:14:14
-keywords:
+tags:
   - Eliminate
   - Pivot
   - Row Exchange
