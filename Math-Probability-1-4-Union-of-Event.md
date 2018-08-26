@@ -3,7 +3,7 @@ title: 【概率论】1-4:事件的的并集(Union of Events and Statical Swindl
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Union of two Events
   - 两个事件的并
   - Union of Finite Number of Events

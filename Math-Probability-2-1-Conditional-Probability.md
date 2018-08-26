@@ -3,7 +3,7 @@ title: 【概率论】2-1:条件概率(Conditional Probability)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Conditional Probability
   - 条件概率
   - Multiplication Rule

@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-12 15:41:12
-tags:
+keywords:
   - A=LU
   - A=LDU
   - Factorization

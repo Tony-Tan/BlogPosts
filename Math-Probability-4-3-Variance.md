@@ -3,7 +3,7 @@ title: 【概率论】4-3:方差(Variance)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Variance
     - Standard Deviation
 toc: true

@@ -3,7 +3,7 @@ title: 【数字图像处理】6.0:灰度图像-图像分割 综合介绍
 date: 2015-02-05 10:14
 categories:
   - DIP
-tags:
+keywords:
   - 图像分割
 toc: true
 ---

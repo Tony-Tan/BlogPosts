@@ -3,7 +3,7 @@ title: 【概率论】3-9:多随机变量函数(Functions of Two or More Random 
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Convolution
     - 卷积
 toc: true

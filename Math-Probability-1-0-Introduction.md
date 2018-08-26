@@ -3,7 +3,7 @@ title: 【概率论】1-0：Introduction
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Probability
   - 概率
   - the Frequency Interpretation

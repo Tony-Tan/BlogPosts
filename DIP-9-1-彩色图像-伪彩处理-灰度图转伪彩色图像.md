@@ -3,7 +3,7 @@ title: 【数字图像处理】9.1:彩色图像-伪彩处理 灰度图转伪彩�
 date: 2015-03-16 12:05
 categories:
   - DIP
-tags:
+keywords:
   - 伪彩色图像
   - 伪彩色生成算法
 toc: true

@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】4.0 全局内存
+title: 【CUDA 基础】4.0 全局内存
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - 全局内存
     - CUDA内存模型
     - CUDA内存管理

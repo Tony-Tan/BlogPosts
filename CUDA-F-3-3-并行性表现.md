@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】3.3 并行性表现
+title: 【CUDA 基础】3.3 并行性表现
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - nvprof
 toc: true
 date: 2018-04-15 21:17:52

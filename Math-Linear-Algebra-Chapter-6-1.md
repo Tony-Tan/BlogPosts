@@ -3,7 +3,7 @@ title: 【线性代数】6-1:特征值介绍(Introduction to Eigenvalues)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Eigenvalues
   - Eigenvectors
   - Sigular

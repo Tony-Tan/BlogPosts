@@ -3,7 +3,7 @@ title: 【概率论】5-10:二维正态分布(The Bivariate Normal Distributions
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - The Bivariate Normal Distributions
 toc: true
 date: 2018-04-05 22:03:55

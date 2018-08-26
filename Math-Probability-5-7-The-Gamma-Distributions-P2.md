@@ -3,7 +3,7 @@ title: 【概率论】5-7:Gama分布(The Gamma Distributions Part II)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - The Exponential Distributions
 toc: true
 date: 2018-04-02 09:16:46

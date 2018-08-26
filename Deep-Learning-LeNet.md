@@ -4,7 +4,7 @@ toc: true
 categories:
   - Deep Learning
 date: 2017-09-13 16:05:58
-tags:
+keywords:
   - Batch Gradient
   - Stochastic Gradient
   - Squashing function

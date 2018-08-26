@@ -3,7 +3,7 @@ title: 【数字图像处理】6.8:灰度图像-图像分割 Canny边缘检测
 date: 2015-02-13 11:55
 categories:
   - DIP
-tags:
+keywords:
   - canny
   - 边缘检测
 toc: true

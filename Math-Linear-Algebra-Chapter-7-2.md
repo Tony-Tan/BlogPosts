@@ -3,7 +3,7 @@ title: 【线性代数】7-2:线性变化的矩阵(The Matrix of a Linear Transf
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Matrix
   - Matrix for the Derivate
   - Matrix for the Integral

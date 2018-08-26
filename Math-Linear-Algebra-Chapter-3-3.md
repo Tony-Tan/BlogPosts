@@ -3,7 +3,7 @@ title: 【线性代数】3-3:秩(Rank)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Rank
   - Row Reduced form
   - Pivot Columns

@@ -3,7 +3,7 @@ title: 【数字图像处理】4.5:灰度图像-频域滤波 傅里叶变换之�
 date: 2015-01-13 15:41
 categories:
   - DIP
-tags:
+keywords:
   - 连续信号傅里叶变换
 toc: true
 ---

@@ -3,7 +3,7 @@ title: 【线性代数】7-3:对角化和伪逆(Diagonalization and the Pseudoin
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Diagonalization
   - Pseudoinverse
 toc: true

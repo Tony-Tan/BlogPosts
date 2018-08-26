@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】3.2 理解线程束执行的本质(Part I)
+title: 【CUDA 基础】3.2 理解线程束执行的本质(Part I)
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - 线程束分化
   - CUDA分支
 toc: true

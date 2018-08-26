@@ -3,7 +3,7 @@ title: 【概率论】2-2:独立事件(Independent Events)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Independent Events
   - 独立事件
   - Independent of Several Events

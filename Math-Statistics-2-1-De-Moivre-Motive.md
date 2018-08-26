@@ -3,7 +3,7 @@ title: 【数理统计学简史】2.1 狄莫弗研究的动因
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 狄莫弗
     - 狄莫弗公式
     - 二项概率

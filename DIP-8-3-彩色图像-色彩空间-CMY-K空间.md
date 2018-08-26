@@ -3,7 +3,7 @@ title: 【数字图像处理】8.3:彩色图像-色彩空间 CMY(K)空间
 date: 2015-03-12 18:55
 categories:
   - DIP
-tags:
+keywords:
   - CMK
 ---
 **Abstract:** 数字图像处理：第63天

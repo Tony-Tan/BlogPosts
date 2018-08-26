@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】5.0 共享内存和常量内存
+title: 【CUDA 基础】5.0 共享内存和常量内存
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - 共享内存
     - 常量内存
 toc: true

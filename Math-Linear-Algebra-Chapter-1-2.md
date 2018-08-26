@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-28 12:12:18
-tags:
+keywords:
   - Length
   - 长度
   - Dot Product

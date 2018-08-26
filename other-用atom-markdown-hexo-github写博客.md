@@ -4,7 +4,7 @@ title: 用atom+markdown+hexo+github写博客
 categories:
   - Other
 date: 2017-08-24 22:24:52
-tags:
+keywords:
   - markdown
   - Hexo
   - LaTeX

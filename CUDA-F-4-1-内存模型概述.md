@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】4.1 内存模型概述
+title: 【CUDA 基础】4.1 内存模型概述
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - CUDA内存模型
     - CUDA内存层次结构
     - 寄存器

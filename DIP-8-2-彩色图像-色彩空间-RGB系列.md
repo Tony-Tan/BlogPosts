@@ -3,7 +3,7 @@ title: 【数字图像处理】8.2:彩色图像-色彩空间 RGB系列
 date: 2015-03-12 15:08
 categories:
   - DIP
-tags:
+keywords:
   - RGB
 toc: true
 ---

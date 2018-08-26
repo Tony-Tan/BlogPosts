@@ -3,7 +3,7 @@ title: 【陶哲轩实分析】3.2 罗素悖论
 categories:
     - Mathematic
     - Analysis
-tags:
+keywords:
     - 罗素悖论
     - 万有公理
     - 基础公理

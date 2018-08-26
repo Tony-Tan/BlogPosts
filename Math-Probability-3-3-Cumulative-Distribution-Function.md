@@ -3,7 +3,7 @@ title: 【概率论】3-3:累积分布函数(Cumulative Distribution Function)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Cumulative Distribution Function
   - 概率累计函数
   - Quantial

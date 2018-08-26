@@ -3,7 +3,7 @@ title: 【数值分析】0.2 二进制数字
 categories:
     - Mathematic
     - Numerical Analysis
-tags:
+keywords:
     - 数制
     - 二进制
     - 十进制

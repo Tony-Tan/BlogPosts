@@ -3,7 +3,7 @@ title: 【数理统计学简史】1.6 关于概率的几点看法
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 主观概率
     - 客观概率
     - 《推测术》

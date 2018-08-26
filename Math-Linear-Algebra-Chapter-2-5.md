@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-11 20:00:16
-tags:
+keywords:
   - Inverse
   - Singular
   - Pivot

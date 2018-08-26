@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】4.5 使用统一内存的向量加法
+title: 【CUDA 基础】4.5 使用统一内存的向量加法
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - 统一内存
     - Uniform Memory
 toc: true

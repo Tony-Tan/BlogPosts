@@ -3,7 +3,7 @@ title: 【数理统计学简史】2.3 初步结果的改进，与斯特林的联
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 二项分布
     - 斯特林公式
 toc: true

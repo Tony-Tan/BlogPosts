@@ -3,7 +3,7 @@ title: 【线性代数】6-4:对称矩阵(Symmetric Matrices)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Eigenvalues
   - Eigenvectors
   - Symmetric Matrices

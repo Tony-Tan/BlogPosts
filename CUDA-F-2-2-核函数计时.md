@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】2.2 给核函数计时
+title: 【CUDA 基础】2.2 给核函数计时
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - gettimeofday
   - nvprof
 toc: true

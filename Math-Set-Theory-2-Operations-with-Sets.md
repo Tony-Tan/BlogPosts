@@ -3,7 +3,7 @@ title: 【集合论】2 Set Theory:Operation with sets
 categories:
   - Mathematic
   - Set Theory
-tags:
+keywords:
   - Complement
   - Union
   - Intersection

@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】3.5 展开循环
+title: 【CUDA 基础】3.5 展开循环
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - 展开归约
     - 归约
     - 模板函数

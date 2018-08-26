@@ -3,7 +3,7 @@ title: 【概率论】3-6:条件分布(Conditional Distributions Part II）
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Multiplication Rule for Distributions
   - 乘法法则
   - Bayes' Theorem

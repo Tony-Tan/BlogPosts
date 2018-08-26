@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】2.3 组织并行线程
+title: 【CUDA 基础】2.3 组织并行线程
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - Thread
   - Block
   - Grid

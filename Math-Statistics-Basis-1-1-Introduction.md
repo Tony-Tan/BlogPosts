@@ -3,7 +3,7 @@ title: 【数理统计理论基础】 1.1 导言
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 数理统计
     - 数理统计应用
 toc: true

@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】4.2 内存管理
+title: 【CUDA 基础】4.2 内存管理
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - CUDA内存管理
     - CUDA内存分配和释放
     - CUDA内存传输

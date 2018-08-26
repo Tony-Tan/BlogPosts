@@ -3,7 +3,7 @@ title: 【集合论】1 Set Theory:Sample sets
 categories:
   - Mathematic
   - Set Theory
-tags:
+keywords:
   - set theory
   - Sample sets
 toc: true

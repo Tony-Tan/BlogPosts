@@ -3,7 +3,7 @@ title: 【概率论】5-8:Beta分布(The Beta Distributions)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - The Beta Distribution
 toc: true
 date: 2018-04-02 15:14:12

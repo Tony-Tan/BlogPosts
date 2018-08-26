@@ -3,7 +3,7 @@ title: 【线性代数】4-1:四个正交子空间(Orthogonality of the Four Sub
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Orthogonality
   - Four Subspace
   - Orthogonal Complements

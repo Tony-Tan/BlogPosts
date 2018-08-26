@@ -3,7 +3,7 @@ title: 【数字图像处理】5.4:灰度图像-图像增强 中值滤波
 date: 2015-01-30 15:26
 categories:
   - DIP
-tags:
+keywords:
   - 图像平滑
   - 中值滤波
 toc: true

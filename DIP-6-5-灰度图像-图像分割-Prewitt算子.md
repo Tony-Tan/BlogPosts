@@ -3,7 +3,7 @@ title: 【数字图像处理】6.5:灰度图像-图像分割 Prewitt算子
 date: 2015-02-11 10:17
 categories:
   - DIP
-tags:
+keywords:
   - Prewitt算子
   - 边缘检测
 toc: true

@@ -2,7 +2,7 @@
 title: 【斯坦福大学】人工智能课程安排
 categories:
   - Other
-tags:
+keywords:
   - Stanford Artificial Intelligence Track
   - 人工智能课程
 toc: true

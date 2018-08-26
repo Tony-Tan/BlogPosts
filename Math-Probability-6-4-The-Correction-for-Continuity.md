@@ -3,7 +3,7 @@ title: 【概率论】6-4:分布连续性修正(The Correction for Continuity)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - The Central Limit Theorem
     - Approximation
 toc: true

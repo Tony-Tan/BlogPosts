@@ -3,7 +3,7 @@ title: 【概率论】5-2:伯努利和二项分布(The Bernoulli and Binomial Di
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Bernoulli Distributions
     - Binomial Distributions
 toc: true

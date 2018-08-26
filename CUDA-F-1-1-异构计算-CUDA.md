@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】1.1 异构计算与CUDA
+title: 【CUDA 基础】1.1 异构计算与CUDA
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - 异构计算
   - CUDA
 toc: true

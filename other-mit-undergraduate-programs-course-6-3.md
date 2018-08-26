@@ -2,7 +2,7 @@
 title: 【麻省理工学院】人工智能课程安排
 categories:
   - Other
-tags:
+keywords:
   - other-mit-undergraduate-programs-course-6-3
 toc: true
 date: 2018-05-26 17:58:27
@@ -44,7 +44,7 @@ MIT很讲究的一点是把你的打怪升级图贴出来了
 
 以及一张表
 
-![1-2](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/other-mit-undergraduate-programs-course-6-3/1-2.png) 
+![1-2](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/other-mit-undergraduate-programs-course-6-3/1-2.png)
 
 ## 总结
 本文只列出了MIT本科CS专业（包含AI的部分的相关课程，供自学人员参考）

@@ -4,7 +4,7 @@ toc: true
 categories:
  - Deep Learning
 date: 2017-09-13 16:46:09
-tags:
+keywords:
   - CNN Visualizing
   - CNN
 ---

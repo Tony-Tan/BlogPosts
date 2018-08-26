@@ -3,7 +3,7 @@ title: 【数理统计学简史】1.1 卡丹诺的著作
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 《机遇博弈》
     - 组合公式
     - 卡丹诺

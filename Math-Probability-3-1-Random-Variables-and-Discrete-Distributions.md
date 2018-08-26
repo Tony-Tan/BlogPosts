@@ -3,7 +3,7 @@ title: 【概率论】3-1:随机变量和分布(Random Variables and Discrete Di
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Random Variables
   - 随机变量
   - Discrete Distributions

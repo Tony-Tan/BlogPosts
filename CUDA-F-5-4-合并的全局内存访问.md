@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】5.4 合并的全局内存访问
+title: 【CUDA 基础】5.4 合并的全局内存访问
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - 合并
     - 转置
 toc: true

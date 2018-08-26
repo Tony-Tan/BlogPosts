@@ -3,7 +3,7 @@ title: 【数字图像处理】5.1:灰度图像-图像增强 综合介绍
 date: 2015-01-27 14:42
 categories:
   - DIP
-tags:
+keywords:
   - 灰度拉伸
 ---
 **Abstract:** 数字图像处理：第27天

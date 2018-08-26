@@ -3,7 +3,7 @@ title: 【概率论】5-4:泊松分布(The Poisson Distribution)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Poisson Distribution
     - Poisson Processes
 toc: true

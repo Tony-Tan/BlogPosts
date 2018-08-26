@@ -3,7 +3,7 @@ title: 【数字图像处理】6.10:灰度图像-图像分割 霍夫变换(Hough
 date: 2015-02-16 09:12
 categories:
   - DIP
-tags:
+keywords:
   - 霍夫变换
   - 直线检测
 toc: true

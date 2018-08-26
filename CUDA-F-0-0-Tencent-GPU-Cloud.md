@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】0.0 腾讯云CUDA环境搭建
+title: 【CUDA 基础】0.0 腾讯云CUDA环境搭建
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - CUDA 环境搭建
 toc: true
 date: 2018-02-13 22:04:54

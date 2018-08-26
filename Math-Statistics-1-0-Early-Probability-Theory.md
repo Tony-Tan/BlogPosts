@@ -3,7 +3,7 @@ title: 【数理统计学简史】1.0 早期概率论——从萌芽到《推测
 categories:
   - Mathematic
   - Statistics
-tags:
+keywords:
   - 《推测术》
   - 早期概率论
   - 赌博

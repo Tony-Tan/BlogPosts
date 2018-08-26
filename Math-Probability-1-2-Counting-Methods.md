@@ -3,7 +3,7 @@ title: 【概率论】1-2:计数方法(Counting Methods)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Counting Methods
   - 技术方法
   - Combinatorial Methods

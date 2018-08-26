@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】2.1 CUDA编程模型概述（二）
+title: 【CUDA 基础】2.1 CUDA编程模型概述（二）
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - CUDA核函数
   - CUDA错误处理
 toc: true

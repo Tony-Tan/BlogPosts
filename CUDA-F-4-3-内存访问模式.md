@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】4.3 内存访问模式
+title: 【CUDA 基础】4.3 内存访问模式
 categories:
     - CUDA
     - Freshman
-tags:
+keywords:
     - 内存访问模式
     - 对齐
     - 合并

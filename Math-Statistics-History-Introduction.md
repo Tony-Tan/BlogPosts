@@ -3,7 +3,7 @@ title: 【数理统计学简史】 介绍
 categories:
   - Mathematic
   - Statistics
-tags:
+keywords:
   - 数理统计学简史
 toc: true
 date: 2018-04-20 15:03:01

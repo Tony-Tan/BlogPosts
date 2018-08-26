@@ -2,7 +2,7 @@
 title: Hexo下next主题畅言评论同步问题的解决方案
 categories:
   - Other
-tags:
+keywords:
   - Hexo
   - next
   - 畅言

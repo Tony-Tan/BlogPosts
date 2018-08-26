@@ -3,7 +3,7 @@ title: 【数字图像处理】7.8:灰度图像-图像分割 区域分割之区�
 date: 2015-03-10 10:37
 categories:
   - DIP
-tags:
+keywords:
   - 区域生长
   - 图像分割
   - 区域分割

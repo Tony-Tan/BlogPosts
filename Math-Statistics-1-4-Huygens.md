@@ -3,7 +3,7 @@ title: 【数理统计学简史】1.4 惠更斯的“机遇与规律”
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 期望
     - 全概率公式
 toc: true

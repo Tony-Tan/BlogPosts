@@ -3,7 +3,7 @@ title: 【概率论】3-2:连续分布(Continuous Distributions)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Continuous Random Variable
   - 连续随机变量
   - Continuous Distributions

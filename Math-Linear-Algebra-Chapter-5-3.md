@@ -3,7 +3,7 @@ title: 【线性代数】5-3:克莱姆法则，逆和体积(Cramer's Rule,Invers
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Inverses
   - Cramer's Rule
   - Volumes

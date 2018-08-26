@@ -3,7 +3,7 @@ title: 【概率论】4-4:距(Moments)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Moments
     - Moments Generating Function
 toc: true

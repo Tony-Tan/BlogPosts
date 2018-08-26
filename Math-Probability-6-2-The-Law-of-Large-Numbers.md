@@ -3,7 +3,7 @@ title: 【概率论】6-2:大数定理(The Law of Large Numbers)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Markov Inequality
     - Chebyshev Inequality
     - Sample Mean

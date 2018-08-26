@@ -3,7 +3,7 @@ title: 【数值分析】0.1 多项式求值
 categories:
     - Mathematic
     - Numerical Analysis
-tags:
+keywords:
     - 多项式求值
     - 霍纳方法
 toc: true

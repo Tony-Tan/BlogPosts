@@ -3,7 +3,7 @@ title: 【数理统计学简史】1.2 分赌本问题
 categories:
     - Mathematic
     - Statistics
-tags:
+keywords:
     - 分赌本问题
     - 二项分布
     - 期望

@@ -5,7 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-12 16:47:01
-tags:
+keywords:
   - Transposes
   - Permutation
   - Symmetric

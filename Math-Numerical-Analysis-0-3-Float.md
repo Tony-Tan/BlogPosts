@@ -3,7 +3,7 @@ title: 【数值分析】0.3 实数的浮点表示
 categories:
     - Mathematic
     - Numerical Analysis
-tags:
+keywords:
     - 浮点表示
     - IEEE754
 toc: true

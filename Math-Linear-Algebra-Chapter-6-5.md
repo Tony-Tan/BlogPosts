@@ -3,7 +3,7 @@ title: 【线性代数】6-5:正定矩阵(Positive Definite Matrices)
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Positive Definite Matrices
   - Symmetric Matrices
   - Eigenvalues
@@ -54,7 +54,7 @@ $$
 注意关联词哦是and两个必须同时发作，那么这个条件才算是成功了.举两个计算的🌰。
 $$
 A_1=\begin{bmatrix}1&2\\2&1\end{bmatrix}\;\;ac-b^2=1-4<0\\
-A_2\begin{bmatrix}1&-2\newline -2&6\end{bmatrix}\;\;ac-b^2=6-4>0\,\,a=1>0
+A_2\begin{bmatrix}1&-2\newline -2&6\end{bmatrix}\;\;ac-b^2=6-4>0\;\;a=1>0
 $$
 结论
 $A_1$ 不是正定的

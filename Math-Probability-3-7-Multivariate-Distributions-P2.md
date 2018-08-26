@@ -3,7 +3,7 @@ title: 【概率论】3-7:多变量分布(Multivariate Distributions Part II）
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Conditional Distributions
   - 条件分布
   - Bayes' Theorem

@@ -3,7 +3,7 @@ title: 【数字图像处理】4.4：灰度图像-频域滤波 傅里叶变换�
 date: 2015-01-12 17:38
 categories:
   - DIP
-tags:
+keywords:
   - 离散周期序列
   - 傅里叶级数
 toc: true

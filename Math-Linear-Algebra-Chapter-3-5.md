@@ -3,7 +3,7 @@ title: 【线性代数】3-5:独立性，基和维度(Independence,Basis and Dim
 categories:
   - Mathematic
   - Linear Algebra
-tags:
+keywords:
   - Independence
   - Basis
   - Dimension

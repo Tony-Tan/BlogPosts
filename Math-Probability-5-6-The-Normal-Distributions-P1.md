@@ -3,7 +3,7 @@ title: 【概率论】5-6:正态分布(The Normal Distributions Part I)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - The Normal Distributions
 toc: true
 date: 2018-03-29 14:15:47

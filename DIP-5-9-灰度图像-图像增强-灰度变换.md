@@ -3,7 +3,7 @@ title: 【数字图像处理】5-9:灰度图像--图像增强 灰度变换
 date: 2015-02-03 09:58
 categories:
   - DIP
-tags:
+keywords:
   - 灰度变换
   - 伽马变换
 toc: true

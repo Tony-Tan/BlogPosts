@@ -3,7 +3,7 @@ title: 【概率论】4-5:均值和中值(The Mean and the Median)
 categories:
     - Mathematic
     - Probability
-tags:
+keywords:
     - Mean
     - Median
     - Mean Squared Error

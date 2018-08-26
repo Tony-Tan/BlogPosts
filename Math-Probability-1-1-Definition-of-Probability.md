@@ -3,7 +3,7 @@ title: 【概率论】1-1:概率定义(Definition of Probability)
 categories:
   - Mathematic
   - Probability
-tags:
+keywords:
   - Sample Space
   - 样本空间
   - Finite Sample Space

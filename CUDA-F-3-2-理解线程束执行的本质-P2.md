@@ -1,9 +1,9 @@
 ---
-title: 【CUDA FRESHMAN】3.2 理解线程束执行的本质(Part II)
+title: 【CUDA 基础】3.2 理解线程束执行的本质(Part II)
 categories:
   - CUDA
   - Freshman
-tags:
+keywords:
   - CUDA资源分配
   - CUDA延迟隐藏
   - 吞吐量
