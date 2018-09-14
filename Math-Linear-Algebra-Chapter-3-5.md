@@ -125,7 +125,7 @@ Linear combination的性质是所有线性代数知识的合法性来源。
 ## Matrix Space and Function Space
 前面说过矩阵和函数可以是向量的组成元素，那么矩阵向量的基和函数向量的基与上面实数向量的定义和性质完全一致：
 
-![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/matrixSpace.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-5/matrixSpace.png)
 
 
 ## Conclusion

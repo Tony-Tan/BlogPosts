@@ -151,7 +151,7 @@ $$
 使用多组S来还原原始数据，使用S越多还原度越高，但需要的存储空间就越大，S就是上面$u_iv_i$的结果，可以看做图像的一个切片，视频中第一幅为原图，第二幅为若干张S相加得到的结果，最后一张是他们之间的差，我们可以暂时理解为压缩误差。
 
 
-<iframe height=480 width=640 src='http://player.youku.com/embed/XMzE5NTIyNjQ4MA==' frameborder=0 'allowfullscreen'></iframe>
+视频演示地址[http://player.youku.com/embed/XMzE5NTIyNjQ4MA==](http://player.youku.com/embed/XMzE5NTIyNjQ4MA==)
 
 代码
 ```python

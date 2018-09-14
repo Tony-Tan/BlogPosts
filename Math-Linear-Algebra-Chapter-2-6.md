@@ -22,17 +22,17 @@ keywords:
 >A to U
 $$
 E_{21}A=
-\begin{bmatrix}1&0\\{-3}&1\end{bmatrix}
-\begin{bmatrix}2&1\\6&8\end{bmatrix}=
-\begin{bmatrix}2&1\\0&5\end{bmatrix}=U
+\begin{bmatrix}1&0\newline  -3&1\end{bmatrix}
+\begin{bmatrix}2&1\newline 6&8\end{bmatrix}=
+\begin{bmatrix}2&1\newline 0&5\end{bmatrix}=U
 $$
 >U to A
 
 $$
 E_{21}^{-1}U=
-\begin{bmatrix}1&0\\{3}&1\end{bmatrix}=
-\begin{bmatrix}2&1\\0&5\end{bmatrix}=
-\begin{bmatrix}2&1\\6&8\end{bmatrix}=A
+\begin{bmatrix}1&0\newline 3&1\end{bmatrix}=
+\begin{bmatrix}2&1\newline 0&5\end{bmatrix}=
+\begin{bmatrix}2&1\newline 6&8\end{bmatrix}=A
 U
 $$
 从U到A的过程就是我们今天的男一号，$A=LU$
@@ -57,16 +57,16 @@ $A=LU$ 数学家们喜欢0，喜欢1，喜欢对称，$A=LU$ 显然不那么对�
 啥意思？就是这个意思:
 $$
 \begin{bmatrix}
-d_1&\,&\,&\,\\
-\,&d_2&\,&\,\\
-\,&\,&\ddots&\,\\
-\,&\,&\,&d_n\\
+d_1&\,&\,&\,\newline
+\,&d_2&\,&\,\newline
+\,&\,&\ddots&\,\newline
+\,&\,&\,&d_n\newline
 \end{bmatrix}
 \begin{bmatrix}
-1&u_{12}/d_1&u_{13}/d_1&.\\
-\,&1&u_{23}/d_2&.\\
-\,&\,&\ddots&\vdots\\
-\,&\,&\,&1\\
+1&u_{12}/d_1&u_{13}/d_1&.\newline
+\,&1&u_{23}/d_2&.\newline
+\,&\,&\ddots&\vdots\newline
+\,&\,&\,&1\newline
 \end{bmatrix}
 $$
 如果除法不好理解那就当做$D^{-1}U$然后根据row model 或者 col model一看，发现上面式子没问题。

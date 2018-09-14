@@ -20,10 +20,10 @@ date: 2017-09-25 15:21:01
 本篇应该不长，因为关于矩阵的四个子空间的难点在后面所有章节，我们这张主要讲线性独立，基，维度这些基本概念，同时联系到rank，融合前面elimination的基本知识。
 上面这句话如果不看前面的文章基本被干晕了，但是如果前面每篇都完全读懂了，这句话就变得非常好理解。
 线性代数核心问题就是这四个子空间：
-![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/bigpicture.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-6/bigpicture.png)
 矩阵的四个子空间分别是：column space ，row space ，nullspace，left nullspace，
 左nullspace就是矩阵转置的nullspace：
-![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/fourSpace.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-6/fourSpace.png)
 
 对于行空间和列空间，他们的dimensions就是rank，上一篇已经有所说明。
 nullspace就是free columns的数量n-r，left nullspace就是free rows的数量m-r
@@ -47,5 +47,5 @@ The nullspaces have dimensions n-r and m-r
 凡是叫fundamental开头的定理都是非常非常重要。
 ## conclusion
 总结这篇就是简单的总结下A和R的dimensions之间的关系，没有新的知识更像是个总结：
-![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/conclusion.png)
+![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-6/conclusion.png)
 下章开始研究总结正交，各位加油。

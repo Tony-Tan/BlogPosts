@@ -67,7 +67,7 @@ RL不是监督学习，也不是非监督学习，RL的目标很单纯:
 
 
 
-## 参考文献
+## References
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 2. Nasrabadi N M. Pattern recognition and machine learning[J]. Journal of electronic imaging, 2007, 16(4): 049901.
 
