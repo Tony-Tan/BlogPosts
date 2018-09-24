@@ -20,7 +20,7 @@ date: 2018-09-20 12:59:01
 但是我认为AI如果能达成，一定是模拟人或者动物的智慧形成过程的，即使进化方法不是学习技能（learn skills in individual lifetime）的主要方法，但是其对智慧的长期形成一定有非常重要影响，不能因为进化方法不适合强化学习的某些任务就彻底否定他，相反我们要注意他们的结合。
 本书在讲述强化学习的过程中主要是围绕 Estimating Value Function展开的，但是Estimating Value Function在强化学习中不是必须的，Estimating Value Function前一篇介绍过https://face2ai.com/RL-RSAB-1-3-Elements-of-RL/。
 
-## Evolution Method（进化方法）
+# Evolution Method（进化方法）
 
 在wiki上有进化的详细解释，如果有对进化算法不了解的同学可以大概看看或者自己google 。如果用概括性的语言描述一下，大概是这个样子的：
 
@@ -56,16 +56,22 @@ date: 2018-09-20 12:59:01
 
 “进化方法”和“学习过程”（主要指agent自我修正调整policy的过程）在自然过程中有很多相同的特征，但是其目前看来确实不适合强化学习问题，所以本书（本系列博客）中的强化学习方法一般不包括进化方法
 
-## Policy Gradient Method
+# Policy Gradient Method
 
 这里有一个类似进化方法的学习方法，我们会在后面经常用到，这也是一个非常简单的方法，可以解决一些小的问题，叫做 “决策梯度方法”（Policy Gradient Method）
 这种方法的特点是agent中的参数是有限的，换句话说，这个空间是离散且有限的，注意离散和不连续是两回事，有限的离散的空间参数个数是固定的，这样的话搜索空间会被缩小到很小，并且存在理论上的最优解，这种方法在有限的参数空间调整自己的policy来获得更好的reward，这个调整过程有点像进化算法的组合那一步，但是不同的是，这里的调整要根据agent和state之间的action来调整，而进化方法的调整方法是不关心这些信息的，所以他们有类似，但是又大不同。
 决策梯度方法和其他的强化学习方法没有什么严格的定义区别，所以没有必要过于计较区分算法的归类。
 
-## Conclusion
+# Conclusion
 
 本文介绍了进化方法和强化学习之间的一些关系，以及决策梯度方法之间的一些知识，注意进化方法是没有Estimating Value Function 的，这是问题的关键。
 
-## References
+# References
 
 Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope](https://www.face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope)转载请标明出处

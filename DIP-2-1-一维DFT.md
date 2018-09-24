@@ -131,3 +131,9 @@ int main(int argc, const char * argv[]) {
 
 }
 ```
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-2-1-一维DFT](https://www.face2ai.com/DIP-2-1-一维DFT)转载请标明出处

@@ -11,7 +11,7 @@ toc: true
 **Keywords:** 阈值处理
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 在前面的介绍中，说到过，影响阈值处理的两个主要问题是目标和背景的大小关系，和噪声对目标的影响，补充说明就是来解决下这两个问题。
 #算法原理
 首先来解决噪声影响，在图像增强的时候提到过，低通滤波和平滑能够减少图像噪声，通过减少噪声，可以一定程度上提高阈值处理的结果。例如未去噪的时候直方图如下：
@@ -33,7 +33,7 @@ toc: true
 
 可以看到相对明显的边界，值得注意的是，这里选取边界的算法一定选用检测结果是外边界和内边界结合的边缘图像。所以我们选用Sobel算子进行边缘检测，边缘检测后的阈值处理（对边缘结果的阈值处理）。最后对Mask出来的灰度集合进行OTSU阈值计算，得出最终结果。
 
-## 代码
+# 代码
 上代码
 ```c++
 /*对于小目标物体
@@ -67,7 +67,7 @@ void SobelThreshold(double *src,double *dst,int width,int height,double sobel_th
 }
 
 ```
-## 结果分析
+# 结果分析
 原图，加入3%的高斯噪声
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-6-灰度图像-图像分割-阈值处理之补充说明/20150308184139999.jpeg)
 
@@ -96,6 +96,12 @@ void SobelThreshold(double *src,double *dst,int width,int height,double sobel_th
 平滑后直方图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-6-灰度图像-图像分割-阈值处理之补充说明/20150308185637843.jpeg)
 
-## 总结
+# 总结
 为了解决前面所说的两个影响阈值处理的两个重要因素，提出的两种解决方法，也可以使用局部阈值或者可变阈值进行处理。
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-7-6-灰度图像-图像分割-阈值处理之补充说明](https://www.face2ai.com/DIP-7-6-灰度图像-图像分割-阈值处理之补充说明)转载请标明出处

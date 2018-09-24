@@ -45,3 +45,9 @@ date: 2018-07-17 22:27:10
     - Decision Theory
     - Information Theory
 ------------------
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/MachineLearning-PRML-1-Introduction](https://www.face2ai.com/MachineLearning-PRML-1-Introduction)转载请标明出处

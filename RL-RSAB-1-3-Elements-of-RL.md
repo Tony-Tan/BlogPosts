@@ -20,9 +20,9 @@ date: 2018-09-12 21:51:01
 **Keywords:** Policy，策略，Reward Signal，奖励，Value Function，评价函数，Model of Environment，环境模型
 
 <!--more-->
-## Element of Reinforcement Learning
+# Element of Reinforcement Learning
 前面我们说到了几个生活中的例子，和几个RL中基本模型，本文我们继续深入，探索目前强化学习中最基本的组成元素。
-## Policy(策略)
+# Policy(策略)
 
 策略是我的翻译，我不知道“正确”的翻译是什么，但是我们还是老原则，用英文。书中的定义是
 > A policy defines the learning agent's way of behaving at a given time.
@@ -40,7 +40,7 @@ Policy是agent面对环境做出action的核心，但是这个核心有时候也
 
 
 
-## Reward Signal
+# Reward Signal
 激励信号，或者奖励信号，书中的定义：
 > A reward signal defines the goal in a reinforcement leaning problem
 
@@ -51,7 +51,7 @@ agent不断学习新的知识来提高自己的得分，其工作方法是改变
 同样这个裁判也有可能是随机，没错，一个疯了的裁判，至于为什么会有这种情况，我也不知道后面会不会涉及。
 第三章我们会介绍这个reward 函数对于agent不变是有生物学原理的，原理来自我们的大脑。
 
-## Value Function
+# Value Function
 注意区分，Reward Function 和Value Function是不同的两个函数，作用不同，性质不同。书中的定义：
 >Whereas the reward signal indicates what is good in an immediate sense, a value function specifies what is good in the long run.
 
@@ -62,7 +62,7 @@ agent不断学习新的知识来提高自己的得分，其工作方法是改变
 然而，agent做决定的时候有时候更多的考虑value function，这个原因是我们的RL最终目标是得到更高的reward总和，而不是某一步的reward，所以这会给我们一个错觉，就是value function比reward要更重要。
 作为得到更多reward的参考，value的获得更加复杂，比获得reward要复杂的多，reward依据当前环境给出，而value是依据后面的环境给出，一个是静态的，一个是动态的（环境在变，agent的policy也在变）
 在一般的RL算法的重要组成就是要找到有效value预测值，这个工作会是未来几十年的重点研究方向
-## Model of Environment
+# Model of Environment
 
 最后一个就是环境模型，环境是个很大的很抽象的概念，环境模型和环境并不是一会儿事，但是关系密切。
 
@@ -71,14 +71,20 @@ agent不断学习新的知识来提高自己的得分，其工作方法是改变
 不基于环境模型的方法是更直接的trail-and-error 方式，经常被看做是planning方式的对立方法。但是第八章，会介绍同时使用 trail-and-error 和 模型以及planning 的方法。
 基于模型的方法会跨越我们RL中各种层级：low-level, trail-and-error, high level以及deliborating planning。
 
-## Conclusion
+# Conclusion
 
 本文介绍了强化学习的四种基本组成元素，不但基础而且非常重要，基本就是后面所有的研究对象了。需要好好研究。
 
 
-## References
+# References
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 
 
 原文来自：[https://face2ai.com/RL-RSAB-1-3-Elements-of-RL](https://face2ai.com/RL-RSAB-1-3-Elements-of-RL)转载标明出处
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/RL-RSAB-1-3-Elements-of-RL](https://www.face2ai.com/RL-RSAB-1-3-Elements-of-RL)转载请标明出处

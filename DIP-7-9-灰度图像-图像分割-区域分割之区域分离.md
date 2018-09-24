@@ -11,9 +11,9 @@ toc: true
 **Keywords:** 区域分割
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 废话开始，今天本来只想写一篇，但晚上觉得还是快把区域分割简单介绍下，后面开始彩色图像类的知识学习和代码实现，下一篇介绍分水岭算法，这才是个头疼的算法，今天的区域分离（合并）相对比较好理解。
-## 算法原理
+# 算法原理
 首先本算法依然是基于区域的，用到的区域的性质是区域的均值和标准差，简单描述算法，如果一个区域满足设定的均值范围和标准差范围，设置整个区域为亮，否则将次区域分为四份，每一份继续递归进行，直至预先设定的最小区域。
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-9-灰度图像-图像分割-区域分割之区域分离/20150310201759768.jpeg)
 
@@ -29,7 +29,7 @@ toc: true
 3. 将其中一份带入步骤2递归进行计算
 4. 如果区域分割小于设定的最小值结束递归。
 
-## 代码
+# 代码
 ```c++
 /*
  *区域分割算法，递归进行判断
@@ -65,7 +65,7 @@ void RegionSplit(double *src,double *dst,int width,int height,double mean_param1
 
 }
 ```
-## 实验结果
+# 实验结果
 原图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-9-灰度图像-图像分割-区域分割之区域分离/20150310202929976.jpeg)
 想要分离周围的星云,参数见图中标注：
@@ -74,6 +74,12 @@ void RegionSplit(double *src,double *dst,int width,int height,double mean_param1
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-9-灰度图像-图像分割-区域分割之区域分离/20150310203055667.jpeg)
 同样分离周围的星云，参数见图中标注：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-9-灰度图像-图像分割-区域分割之区域分离/20150310203021441.jpeg)
-## 总结
+# 总结
 此算法运行速度很快，但精确度不够高，因为设置的最小区域值决定了区域分割的准确性，所以会有锯齿状的边缘，这是一个缺点。
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-7-9-灰度图像-图像分割-区域分割之区域分离](https://www.face2ai.com/DIP-7-9-灰度图像-图像分割-区域分割之区域分离)转载请标明出处

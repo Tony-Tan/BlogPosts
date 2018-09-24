@@ -14,11 +14,11 @@ date: 2018-03-28 09:27:39
 **Keywords:** Hypergeomtirc Distribution,Finite Population Correction
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 实力这个东西是不能被完全表现出来的，中华民族传统文化告诉我们，有十分的能力，只显示一分，但是我们现在是有一分能力要显示出十分，这叫推销自己，而且我们自己根本不知道自己只有一分能力，人心浮躁，我们还是憋着看书学习吧，外面的是是非非自然有人去解决，我们要做的是推动人类文明的发展😆
 上文书我们说到（改成单口相声了）二项分布就是若干个独立同分布的伯努利分布的随机变量的和的结果，而伯努利分布如果对应最原始的抽样的话应该是这样的场景：
 如果我们有一个不透明的箱子，里面有 $A$ 个红球， $B$ 个蓝球，其被拿出来的可能性相等，在我们拿出之前我们不知道我们会拿到什么（也就是保证随机性）那么我们拿出一个球是红球(称为事件R)的概率是 $Pr(R)=\frac{A}{A+B}$ ，如果我们连续进行本实验，那么就有两种取样方式，而这就导致了从伯努利到二项分布，和从伯努利到超几何分布的变化
-## Definition and Examples
+# 超几何分布定义和例子 Definition and Examples
 首先我们用一个具体的例子来看。
 
 ----------
@@ -61,7 +61,7 @@ $$
 
 几何分布和超几何分布的关系？
 几何分布是二项分布中的一种极端情况，就是前 $k-1$ 次必须失败，第 $k$ 次成功，然后试验结束，换句话说就是在伯努利过程中当结果是 $X_k=1$ 时完成整个过程，这时的概率是 $p(1-p)^{k-1}$ 。那么如果 $X$ 是几何分布，那么其p.f.就是 $f(x|1,p)=p(1-p)^x$ for $x=0,1,2,\dots$
-## The Mean and Variance for a Hypergeomtirc Distribution
+# 超几何分布的均值和方差 The Mean and Variance for a Hypergeomtirc Distribution
 基础了解的差不多了我们就开始研究下数字特征了。
 
 >Theorem Mean and Variance.Let X have a hypergeometric distribution with strictly positive parameters A,B and n.Then:
@@ -113,7 +113,7 @@ $$
 
 纯计算过程，但可以看出我们的证明也越来越复杂了。
 
-## Comparison of Sampling Methods
+# 抽样方法比较 Comparison of Sampling Methods
 上面我们就大致完成了超几何分布的知识，但是要说的是我们又涉及到了采样，我在上面说过，当我们不放回采样的对象，数量不多的时候，我们要用超几何分布来建模，当数量非常大的时候，不放回采样每次采集出现目标的概率变化非常小的时候，我们可以把超几何分布当做二项分布处理，而且我们仔细观察超几何分布的期望和方差，期望和二项分布一致，方差只差一个系数 $\alpha=\frac{T-n}{T-1}$ 这个系数是有名字 "finite population correction" 有限整体校正参数。有限就证明了超几何分布的采样是从有限个样本中进行的，如果样本数量无限大，这个参数接近于1，就变成了二项分布。而当T较小的时候，这个参数对整体结果影响较大，这时超几何分布和二项分布差异较大。
 分析系数 $\alpha$ 也有很多有趣的，比如$n=T$ 的时候，结果是0，只有一种方法，方差是0.并且 $\alpha\in [0,1]$  其越接近1，证明放回抽样和不放回抽样差距越小，越接近零表示其差距越大。
 
@@ -133,6 +133,12 @@ $$
 
 这个证明用到了上面未证明的定理，而整个证明也比较复杂，书上有详细的过程，我就不写了，想了解详细过程的同学去看看书吧，今天大概就这样了。
 
-## 总结
+# 总结
 本文介绍了超几何分布的相关知识，下一篇我们继续研究Poison分布。
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-5-3-The-Hypergeomtirc-Distribution](https://www.face2ai.com/Math-Probability-5-3-The-Hypergeomtirc-Distribution)转载请标明出处

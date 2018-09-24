@@ -18,9 +18,9 @@ date: 2017-09-25 15:20:38
 
 <!--more-->
 
-## 开篇废话
+# 开篇废话
 来段废话吧，之前写过一个小短文关于学习的，我把能力分成知识和经验两种方面来说，知识要考学习，而经验要依靠不断的练习和思考，以及通过知识作为基础来升级创造经验。不过看看周围那些掌握了更多社会资源的人，他们经验相当丰富，各种各样的经验，但是知识却有所欠缺，这样就使得某些产品和服务发生了根本上的变化，为了掩盖其中有一些不良变化，这些人又会利用自己丰富的经验来掩盖或者转移问题，这样下去不知道会产生些什么。
-## Rank
+# Rank
 Rank，the ordinary members of an organization (such as the enlisted soldiers of an army)，谋组织原有的成员，中文翻译“秩”，把八个字翻译成一个字，意思字形上还没什么关系，所以我们以后不会用这个字，博客中仅使用Rank。
 前面我们所有的知识都依靠方程组来推进的，Rank也一样，毕竟线性代数就是研究方程组的，方程组$Ax=b$在消元过程中，有些行最后的结果是$0x=0$这个现象从字面上理解就是上面的方程和这行的方程存在倍数关系，比如本行的方程是$2x+2y=2$那么上面可能有一行$x+y=1$或者其他等价方程，还有可能是上面几个方程的线性组合刚好和本行方程一致，这样的意思就表明，这行方程对于全局求解没有提供任何有用的信息，比如描述一个人，A说你是个男的，B说你不是个女的，B这个信息就没用了（也可以说A的信息没用），那这样虽然有两条信息，但是原有的信息（原有的成员）就是1，B的信息可以通过A的演化出来，所以Rank就是矩阵所表示的方程组中那些原有的成员的数量。
 
@@ -30,7 +30,7 @@ Rank，the ordinary members of an organization (such as the enlisted soldiers of
 
 
 
-### Rank one
+## Rank one
 只有一个pivot的矩阵，是一种特殊的矩阵
 $$
 A=\begin{bmatrix}
@@ -66,7 +66,7 @@ $$
 也就是行空间内的任意向量($av^T$)和Nullspace内的任意向量垂直。
 
 Rank r还是行空间和列空间的维数，同时跟Nullspace的维度有关！
-### Free Columns & Pivot Columns
+## Free Columns & Pivot Columns
 [3-2:Nullspace](http://face2ai.com/Math-Linear-Algebra-Chapter-3-2/)中对Free Columns和Pivot Columns有相关介绍，下面再介绍一些相关的性质，Free Columns是不包含Pivot的列，Pivot Columns则是包含Pivot的列，
 对于任何一个Free Column都是其前面pivot列的线性组合。
 举个例子，我们不看具体数字就看形状
@@ -85,7 +85,7 @@ $$
 > Defination: The pivot columns are not combinations of earlier columns.The free columns are combinations of earlier columns.The combinations are the **Special Solutions**
 
 
-## Special Solutions
+# Special Solutions
 Special Solutions上一篇也提到过了，我不知道怎么翻译（particular solution和special solution分不清谁是谁）。通俗得说就是给free variables赋予特殊值，然后求出pivot对应的未知数的，一般我们都是分别设置0和1，一个为1其他是0，然后迭代。
 
 > $Ax=0$ has r pivots and n-r free variables: n columns minus r pivot columns.The nullspace matrix M contains the n-r special solutions .Then $AN=0$
@@ -131,5 +131,11 @@ N=\begin{bmatrix}
 R_{new}N=0
 $$
 $-F$ 包含r个pivot variables，并且$R_{new}$中的I和N中I规模是不一样的。
-## Conclusion
+# Conclusion
 总结一下，这篇从原文来看有点模糊，就是前一篇的知识也有后一篇的知识也有而且融合在一些，想捋顺出来一点点说有点费劲，写了一篇用了一下午，下面看看还能不能再写两篇。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-3-3](https://www.face2ai.com/Math-Linear-Algebra-Chapter-3-3)转载请标明出处

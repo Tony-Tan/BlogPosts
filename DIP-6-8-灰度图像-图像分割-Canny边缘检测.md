@@ -12,7 +12,7 @@ toc: true
 **Keywords:** canny,边缘检测
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 废话开始，Canny大名鼎鼎，大家都称之为Canny算子，包括wiki上也是写的Canny detector，但是按照我的理解，我觉得叫做Canny算法比较合适，但如果叫做算子，那也应该叫做复合算子，因为Canny本身并不是一个线性模板（像Sobel那样）或者一个局部比较类的算法（像中值滤波那样的），Canny是一套完整的理论，并实现出了完整的算法。
 Canny是目前已知的最好的边缘检测算法，是不是之一我不确定，但可以肯定的是，它的应用非常广泛，基本用到边缘检测的，大家永远第一个想到它。Canny算法的复杂度比前面的**检测加阈值**的算法计算复杂度更高，空间复杂度也要高一些，但现在的计算设备，对于Canny基本可以实现实时，并且有人用GPU来实现，所以从86年Canny提出了这个算法到现在，在边缘检测方面，其地位还是比较稳固的。
 Canny算法的另一个显著特征是它有完整的数学推导过程，能够证明这个算法能给出最好的边缘。后面我们将会简单的看一下数学过程。
@@ -21,7 +21,7 @@ Canny算法的另一个显著特征是它有完整的数学推导过程，能够
 ----------
 
 
-## 算法原理
+# 算法原理
 算法原理，Canny首先提出了三种基本条件，来定义一个边缘。来看原文【Canny1986】：
 >1) Good detection. There should be a low probability of failing to mark real edge points, and low probability of falsely marking nonedge points. Since both these probabilities are monotonically decreasing functions of the output signal-to-noise ratio, this criterion corresponds to maximizing signal-to-noise ratio.
 >2) Good localization. The points marked as edge points by the operator should be as close as possible to the center of the true edge.
@@ -39,7 +39,7 @@ Canny算法的另一个显著特征是它有完整的数学推导过程，能够
 ----------
 
 
-## 数学原理
+# 数学原理
 发表在VOL. PAMI-8, NO. 6, NOVEMBER 1986上的文章给出了明确的求解过程，包括建模上面的理论，并求解最优解，因为本人数学功底一般，后面的求解过程有兴趣的同学可以自行查看论文，这里只给出建模上面三个基本原理的过程，以一维下的情况给出。
 首先我们设滤波器的单位冲击响应为： $f(x)$ ，定义边缘本身为 $G(x)$ ，边缘中心位置为$x=0$处，滤波器响应范围 $[-w,+w]$
 边缘对滤波器的响应为：
@@ -120,7 +120,7 @@ $N_n=\frac{2W}{x_{max}}=\frac{2}{k}$(14)
 ----------
 
 
-## 算法过程
+# 算法过程
 算法过程比较容易：
 
 1. 高斯平滑，采用$5 \times5$的高斯滤波器对图像进行平滑。
@@ -152,7 +152,7 @@ $N_n=\frac{2W}{x_{max}}=\frac{2}{k}$(14)
 我们在算法实现时使用方法是，先找到所有大于大阈值的点的集合H，H全部为边缘点，然后找出所有大于小阈值的点的集合L，其中L包含所有的H，那么以H中的每个点为种子点，以八邻域遍历L，被遍历到的为边缘点，未被遍历的为非边缘点。这里的遍历与图的遍历相同，可以使用深度优先或广度优先。
 
 第五步：细化结果，有时一个边缘会产生两个等价的边缘点，使用细化可以得到单像素边缘，但需注意，这两个点都是正确的点，选其中任意一个都是正确的。
-## 代码实现
+# 代码实现
 
 ```c++
 /*
@@ -299,7 +299,7 @@ void Canny(double *src,double *dst,int width,int height,int sobel_size,double th
 }
 ```
 
-## 实现结果
+# 实现结果
 实验每步结果：
 原图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212181924413.jpeg)
@@ -343,6 +343,12 @@ STEP3：
 
 STEP4：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-8-灰度图像-图像分割-Canny边缘检测/20150212182449655.jpeg)
-## 总结
+# 总结
 总结，Canny实现起来算法过程并不难，可能进一步优化加速就需要一些难度了，冈萨雷斯书中提到，第四步滞后阈值可以和第三步非极大值抑制放在一起。
 待续。。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-6-8-灰度图像-图像分割-Canny边缘检测](https://www.face2ai.com/DIP-6-8-灰度图像-图像分割-Canny边缘检测)转载请标明出处

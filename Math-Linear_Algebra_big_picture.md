@@ -15,13 +15,13 @@ keywords:
 
 
 
-## 开篇废话
+# 开篇废话
 废话不多说，网易公开课有MIT 18.06的课程翻译，MIT OCW提供相关练习，如有需要都可以进行下载。
 Gilbert Strang教授的讲授能够让大多数人入门，掌握这门课的大部分内容。
 本课程教材使用的也是professor Strang的书籍，很遗憾，中国目前好像没有销售。
 18.06的最大一个优点就是让你知道，你还不是特别笨，线性代数也没有大学老师讲的那么难。
 
-## 关系图
+# 关系图
 知识图：
 
 ![](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/LinearAlgebra.png)
@@ -29,7 +29,7 @@ Gilbert Strang教授的讲授能够让大多数人入门，掌握这门课的大
 此图由Graphviz生成，相关项目见：
 Github：[https://github.com/Tony-Tan/MachineLearningMath](https://github.com/Tony-Tan/MachineLearningMath)
 
-## 总结
+# 总结
 线性代数是机器学习的基础数学之一，之前看到知乎上有一段话总结：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear_Algebra_big_picture/zhihu.png)
 基本和我的一些思想不谋而合，很中肯，但是社会浮躁，能安心学习基础的人少之又少。
@@ -69,3 +69,9 @@ Github：[https://github.com/Tony-Tan/MachineLearningMath](https://github.com/To
 - [7.1 线性变换思想](http://www.face2ai.com/Math-Linear-Algebra-Chapter-7-1/)
 - [7.2 线性变换的矩阵](http://www.face2ai.com/Math-Linear-Algebra-Chapter-7-2/)
 - [7.3 对角化和伪逆](http://www.face2ai.com/Math-Linear-Algebra-Chapter-7-3/)
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear_Algebra_big_picture](https://www.face2ai.com/Math-Linear_Algebra_big_picture)转载请标明出处

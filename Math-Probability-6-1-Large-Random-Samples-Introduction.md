@@ -13,10 +13,10 @@ date: 2018-04-07 14:43:51
 **Keywords:** Large Random Samples
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 身着简陋而举止优雅，身着华丽而举止粗俗，比选其一的话，我更愿意尊重第一种类型。
 本章我们介绍一些近似的结果，简化大量随机样本的分析。
-## Introduction
+# 大样本介绍 Introduction
 本文通过两个例子来举例两个不同的分析方向，并有不同的分析工具。
 
 --------------
@@ -56,5 +56,11 @@ $$
 中心极限定理来给出样本的均值来近似期望的概率。
 
 
-## 总结
+# 总结
 本文给出本章的研究方向，和基本研究背景。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-6-1-Large-Random-Samples-Introduction](https://www.face2ai.com/Math-Probability-6-1-Large-Random-Samples-Introduction)转载请标明出处

@@ -15,10 +15,10 @@ date: 2018-03-30 08:58:10
 **Keywords:** The Normal Distributions，The Standard Normal Distribution
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 废话就是概率论基础知识部分快要结束了，接下来的关于数理统计部分的内容很多都是依赖概率论的知识的，所以打好基础才好继续深入。
 本文继续介绍标准正态分布，以及正态分布不同参数的比较。
-## The Standard Normal Distribution
+# 标准正态分布 The Standard Normal Distribution
 >Definition Standard Normal Distribution.The  normal distribution with mean 0 and variance 1 is called the standard normal distribution.The p.d.f. of the standard nromal distribution is usually denoted by the symbol $\phi$ ,and the c.d.f. is denoted by the symbol $\Phi$ .Thus,
 $$
 \phi(x)=f(x|0,1)=\frac{1}{(2\pi)^{1/2}}e^{-\frac{1}{2}x^2} \text{ for }-\infty<x<\infty
@@ -78,7 +78,7 @@ $$
 
 本section的精髓是，首先我们没办法计算正态分布的不定积分，所以想求值要查表，查表你有不能对每一个分布参数都建表，所以要制造一个标准，其他的不同参数和标准有数字关系，于是定义一个标准正态分布，然后所有正态分布和标准正态分布产生数字联系，就能用一张表解决问题了。
 
-## Comparisons of Normal Distributions
+# 正态分布比较 Comparisons of Normal Distributions
 接着我们来比较一下，不同参数的正态分布。得到的结论是均值决定了位置，方差决定了胖瘦。
 这里有一个非常重要的性质，以均值位置为参考物，一个标准偏移是一个标准差，这个偏移之内的概率是相等的，并且任意个相同的标准偏移都相等，对于两个正态分布有$f_1(X|\mu_X,\sigma_X^2),f_2(Y|\mu_Y,\sigma_Y^2)$ 有正数 $k$ ：
 $$
@@ -94,7 +94,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-5-6-The-Normal-Distributions-P3/5_6.png)
 
 表格中k表示几个标准偏移，也就是k的具体值，可以看出，当$k=3$ 的时候，正态分布内 $Pr(\mu-3\sigma,\mu+3\sigma)>0.99$ 了而且我记得我大学书上有个 $3-\sigma$ 原则，好像是当检测结果满足这个要求的时候就算合格了，这个具体的我们在数理统计部分再说，我们要知道的是正态分布的形状，和偏移性质。
-## Linear Combinatios of Normally Distributed Variables
+# 正太分布随机变量的线性组合 Linear Combinatios of Normally Distributed Variables
 在经过标准化变换后我们思考的另一个问题，就是多个正态分布的随机变量的线性组合会是什么样子呢？
 >Theorem If the random variables $X_1,\dots,X_k$ are independent and if $X_i$ has the normal distribution with mean $\mu_i$ and variance $\sigma^2_i(i=1,\dots,k)$ ,then the sum $X_1+\dots+X_k$ has the normal distribution with mean $\mu_1+\dots+\mu_k$ and variance $\sigma^2_1+\dots+\sigma^2_k$
 
@@ -125,11 +125,17 @@ $$
 $$
 这就是一个线性组合，而且根据条件，$X_i$ 的均值方差一致，那么均值最后不变 $\sum^n_{i=1}\frac{1}{n}\mu_i=\mu_i$ 而对应的方差应该是 $\sum^{n}_{i=0}\frac{1}{n^2}\sigma^2=\sigma^2/n$
 证毕
-## The Lognormal Distributions
+# 正态分布的对数 The Lognormal Distributions
 对数正态分布，就是对随机变量进行一个对数变换后，这个新的分布是正态分布。
 >Definition Lognormal Distribution.If $log(X)$ has the normal distribution with mean $\mu$ and variance $\sigma^2$ ,we say that $X$ has the lognormal distribution with parameters $\mu$ and $\sigma^2$
 
 我们之前研究的都是一个某分布的随机变量经过一个函数变换后产生新的随机变量对应的分布是什么样的，今天是反过来，一个随机变量经过函数变换后是正态分布，那么这个分布是怎么样的。
-## 总结
+# 总结
 本文主要介绍了正态分布的形状，和不同正态分布之间的相关性一致性，以及正态分布随机变量的线性组合结果，以及扩展的对数正太分布，可以看出正态分布有很多非常简单有用的性质。
 下一篇我们进入gamma分布。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-5-6-The-Normal-Distributions-P3](https://www.face2ai.com/Math-Probability-5-6-The-Normal-Distributions-P3)转载请标明出处

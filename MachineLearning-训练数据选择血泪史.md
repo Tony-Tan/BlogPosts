@@ -12,7 +12,7 @@ keywords:
 **Keywords:** 数据，预处理
 <!--more-->
 
-### 这篇短小的文章是这两个月血泪的结晶：
+## 这篇短小的文章是这两个月血泪的结晶：
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/MachineLearning-训练数据选择血泪史/sample.png)
 这一幅图就能完整说明整个训练过程，说明
@@ -31,3 +31,9 @@ keywords:
 解决方法：
 >1. 样本复杂化，尽量覆盖整个分布
 >2. 更多样本
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/MachineLearning-训练数据选择血泪史](https://www.face2ai.com/MachineLearning-训练数据选择血泪史)转载请标明出处

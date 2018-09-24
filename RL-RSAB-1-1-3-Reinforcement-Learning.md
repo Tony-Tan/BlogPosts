@@ -17,7 +17,7 @@ date: 2018-08-29 23:18:29
 **Keywords:** agent，real-time，organism，robot，framwork
 
 <!--more-->
-## Reinforcement Learning Framework
+# Reinforcement Learning Framework
 上来就把这篇的核心知识点讲出来吧，对于一个RL任务，其框架从总体上分，包括：
 1. agent
 2. agent's environment
@@ -25,7 +25,7 @@ date: 2018-08-29 23:18:29
 我不知道怎么翻译agent这个词，所以就一直用英文了，代理，或者特工都不太合适，而且我总能想到Agent Hunter。。agent我们已经用了好多次了，到现在都不知道是什么，是算法，还是算法和其他的什么的合集，就像模型一样，可能用了很久都不知道所谓模型，架构到底是什么，而我们在后面会用详细的例子来形容agent是什么。
 就像数学分析里面的定义一样，一个限定加命名而已。所以不要过于担心这一点。
 
-## Agent
+# Agent
 虽然不知道agent到底是什么，有没有枪什么的，但是我们知道他有以下几个特点：
 - explicit goal(明确的目标)
 - sense aspect of their environment(对他们的环境敏感)
@@ -39,9 +39,9 @@ date: 2018-08-29 23:18:29
 
 还是继续说agent，agent不是我们想象中organism或者robot，就是agent并不是一个完整的有智慧的个体，或者一个器官，agent更像是一个复杂系统中的一个组成部分，比如对于一个完整robot系统，其中一个agent就像是电池系统，负责管理充电程度的，这个agent不和机器人的外部环境直接interact，而是和更大的系统（包含他的那个机器人系统）直接interact。这时候这个agent的environment就是robot所处的大environment，以及robot内部出了自己以外的其他部分。
 
-## Conclusion
+# Conclusion
 本文有点小凌乱，介绍了RL的框架，是Agent和他的environment，以及agent的几个小特点，以及environment是什么，总体来说比较抽象，我也不知道为啥这本书开头就给出了这么多没解释的东西，但是可能作者的风格就是让你先猜一下，后面再公布答案。
-## References
+# References
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 
@@ -49,3 +49,9 @@ date: 2018-08-29 23:18:29
 
 
 原文来自：[https://face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning/](https://face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning/)转载标明出处
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning](https://www.face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning)转载请标明出处

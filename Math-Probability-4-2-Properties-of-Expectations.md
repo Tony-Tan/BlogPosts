@@ -13,10 +13,10 @@ date: 2018-03-23 10:24:47
 **Keywords:** Properties of Expectation
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 更新了下博客主题，添加了RSS订阅功能，这个功能看起来不错，以前听说过，但是一直也没用过，今天下了个软件，注册了个账号，帮忙收集信息也是不错，效率高很多，欢迎大家订阅。
 本文介绍期望的一些性质，计算性质，而且很多是比较常见的随机变量函数的期望，从这篇看起来我们的套路有点越来越接近国内教材了，定义完了是计算性质，但是这个计算性质确实是必须的，不掌握好后面很多内容学起来就会吃力，就像我前两天看了一会儿统计，发现很多关于计算的的性质，在统计书籍里是直接使用的，如果不掌握好那就是好几脸懵逼。
-## Basic Theorems
+# 期望的基本定理 Basic Theorems
 >Linear Function:.If Y=aX+b,where a and b are finite constants,then
 $$
 E(Y)=aE(X)+b
@@ -107,8 +107,8 @@ $$
 詹森不等式，说明了函数的期望和期望的函数之间的一般大小关系，等号当且仅当$g$ 是线性函数时成立，证明过程书上没写，等我思考出完整的证明后再来补充一下。
 
 
-## Expectation of a Product of Independent Random Variables
-独立随机变量之积的期望关系
+# 独立随机变量之积的期望关系 Expectation of a Product of Independent Random Variables
+
 
 >If $X_1,\dots,X_n$ are $n$ independent random variables such that each expectation $E(X_i)$ is finite $(i=1,\dots,n)$ then
 $$
@@ -129,6 +129,12 @@ $$
 
 最后一步的拆分大家可能会感到疑惑不解，把积分内层拆开，那么每个除了当前要积分的 $x_i$ 以外，其他变量都是已知的就可以挪到本层积分的外面，然后本层积分的结果也必然是是个数字，所以一层一层的拆开就是最后的式子，如果实在看不懂，试试两个独立现需随机变量的计算请款个就知道了。
 
-## 总结
+# 总结
 总结就是今天我们研究了上一篇的扩展部分，我们得到了很多期望的计算性质，而这些兴致将在后面的计算中非常有用处！
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-4-2-Properties-of-Expectations](https://www.face2ai.com/Math-Probability-4-2-Properties-of-Expectations)转载请标明出处

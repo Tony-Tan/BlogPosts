@@ -14,9 +14,9 @@ date: 2017-10-17 09:28:46
 **Keywords:** Projections，Projection Onto a Subspace
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 开篇废话，喜迎十九大，嚯嚯哈哈。
-## Projections
+# Projections
 映射，投影，感觉怎么翻译都不太对，总能想到函数，不过好像在这部分，投影矩阵和函数的功能非常类似。在典型的三维正交基向量空间内，一个向量的投影到一个平面上一般是下面这种形式：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-2/projection1.png)
 
@@ -30,8 +30,8 @@ $$
 第二个式子是projection matrix之间的关系，这里可以轻易的看出来，映射到xy平面$P_1=\begin{bmatrix}1&0&0\\0&1&0\\0&0&0\end{bmatrix}$，同理到z轴的就是$P_2=\begin{bmatrix}0&0&0\\0&0&0\\0&0&1\end{bmatrix}$，可以看出$P_1+P_2=I$
 。
 
-## Projection Onto a Line（映射到直线）
-### Dot product to Projections
+# Projection Onto a Line（映射到直线）
+## Dot product to Projections
 把一个向量 $\vec{b}$ 映射到一条直线$a$，等价于问题类似于把一个向量projection到另一个向量上，这个和我们之前学习的dot product有点像，如果
 $$
 when\,|\vec{i}|=1\\
@@ -67,7 +67,7 @@ $$
 $$
 不可以结合，因为尺寸不满足需求，上面的变形中间就有这个问题，所以向量乘法结合律最好别用，用的话也自己搞好大家的尺寸，别最后对不上。
 
-### Orthogonal to Projections
+## Orthogonal to Projections
 
 不错这个才是正统书上的方法，推到相对上面还要简单一些主要用到了一个向量的差与投影结果$\vec{p}$垂直这一关系，具体贴上原书两张图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-4-2/projection_2.png)
@@ -96,12 +96,12 @@ $$
 \vec{e}=\vec{b}-P\vec{b}=(I-P)\vec{b}
 $$
 那么这样的话， $(I-P)$ 也是一个投影矩阵，投影到向量e所在直线的投影矩阵。
-### 小结
+## 小结
 如果 $\vec{a}$ 和 $\vec{b}$ 在同一条直线上，那么可以得出 $P\vec{b}=\vec{b}$;
 如果 $\vec{a}$ 和 $\vec{b}$ 垂直，那么$P\vec{b}=0$;
 这里的投影矩阵相当于一个函数映射，把一个矩阵垂直的映射到另一个向量，这个投影矩阵就是我们非常关心，也具有很多有趣性质的矩阵 P
 
-## Projection Onto a Subspace
+# Projection Onto a Subspace
 上面说的映射到直线，用一个向量就能准确的描述出直线的方向，但是对于子空间，最好的描述方式就是basis，把basis作为列组合到一起，就是矩阵B，子空间就是B的列空间。这样更方便下面的计算，投影到子空间 $C(B)$ ,这次试用书中映射到直线的类比方法，假设 $\vec{a}$ 向 $C(B)$ 投影得到向量 $\vec{p}=B\hat{x}$ ，这样我们就可以得到 $\vec{e}$ 了,并且 $\vec{e}$ 正交于子空间 $C(B)$ ，那么
 $$
 \vec{e}= \vec{a}-B\hat{x}\\
@@ -134,5 +134,11 @@ $B^TB$ 得到的是个小的方矩阵（对称，可逆），如果是 $BB^T$ �
 1. $P^2=P$
 2. $P^n=P$
 3. distance from $\vec{a}$ to subspace is $\vec{e}$
-## 总结
+# 总结
 本来以为这篇会短点，结果还是这么长，可以得出很多有意思的结论也算有所值，今天到此为止，我们来热烈庆祝十九大顺利召开。。蛤蛤蛤。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-4-2](https://www.face2ai.com/Math-Linear-Algebra-Chapter-4-2)转载请标明出处

@@ -16,9 +16,9 @@ date: 2017-12-04 09:04:18
 **Keywords:** Linear Transformation，Linear Combination，Kernel，Range
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 今天没废话，线性代数到上一篇可以说已经成体系了，不能说自己精通，起码了解了大概的讨论，接下来这三篇第7章的博客是从另一个角度入门线性代数，所以从现在开始，你可以忘记前面学的所有的切入方法，也就是线性代数提出的方法，我们之前的完整套路依靠的是对线性方程组求解的过程引出后面一系列的操作，但是，线性代数为什么叫线性代数，而不叫线性方程组呢？那么本章就是解释，我觉得这个角度切入提出完整的理论更通顺，但是问题就是这么切入没有通过方程组来的那么简单，所以这个角度适合下一步提高，线性方程组适合入门，但是殊途同归，最后都能得到完整的线性代数知识框架。
-## The Idea of a Linear Transformation
+# The Idea of a Linear Transformation
 
 我们第一章应该反复强调线性组合，就是一个乘加计算满足线性，当时一直很困惑为啥叫线性组合，并且当时的博客一直强调线性组合是线性代数的重要理论基础，有了线性组合才有了后面的所有。但是线性组合和线性变换有所区别：线性组合是线性变换的一种，但是线性变换并不一定就是乘加计算（线性组合）。从Caculus的角度来看，如果把某个线性组合看成一个函数，那么这个函数 $T$ 满足 ：
 $$
@@ -57,7 +57,7 @@ T(v+w)=Av+Aw+u_0 \neq Av+u_0+Aw+u_0=T(v)+T(w)
 $$
 很明显这不是一个线性变换，这是一个线性变换$Av$ 然后sift了一下(linear-plus-shift)，我们管这个叫做放射变换（Affine）在图像处理里面经常用到。
 
-## Lines to Lines,Triangles to Triangles
+# Lines to Lines,Triangles to Triangles
 尘归尘土归土，经过线性变换，直线依旧是直线，这就是这个section要说的，也就是一个例子，然后这个例子表明为啥叫做线性变换，直线经过变换依旧是直线。
 如何证明直线经过线性变换还是直线呢，我们知道两个点可以确定一个直线，那么我们假设点$a(x_1,y_1)$ 在直线上， 点$b(x_2,y_2)$ 在直线上，那么直线上的中点，可以表示为$c(\frac{1}{2}x_1+ \frac{1}{2}x_2,\frac{1}{2}y_1+ \frac{1}{2}y_2)$ 也就是说对于两个点确定的直线上的中点经过线性变换，如果依然是这两个点的中点，那么直线经过线性变换还是直线：
 $$
@@ -80,9 +80,15 @@ $$
 
 对于线性变换，也有一套独立的术语，比如对于一个线性变换 $T(v)=Av$ (A不是矩阵，不是矩阵不是矩阵)，那么$T(v)=0$ 成立的 $v$ 叫做"Kernel" ；所有的输出$T(v)$ 被称作"range"
 。对应的就是nullspace和columnspace不过我们只叫他们kernel或者range，因为我们还没给出矩阵的定义，下篇才会给出。
-## Linear Transformation of the Plane
+# Linear Transformation of the Plane
 这里还是一个大🌰 ；但是看起来比较可爱，证明过程上面证明直线的时候已经证明了，但是这里有个小问题，就是他又用矩阵了，我这篇中极力的避免矩阵，因为我们还没证明线性变换跟矩阵什么关系，但是我们不妨假设矩阵 $A$ 对向量空间 $V$ 的变换是线性的，所以我们的小房子就要变形了：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-1/linear_transform.png)
 
-## Conclusion
+# Conclusion
 总结就是今天要把线性变换和后面矩阵引出的部分写完，然后我就可以高高兴兴的搞概率论了，线性代数的基础部分也就算是毕业了，待续。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-7-1](https://www.face2ai.com/Math-Linear-Algebra-Chapter-7-1)转载请标明出处

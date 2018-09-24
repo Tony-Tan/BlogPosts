@@ -20,16 +20,16 @@ date: 2018-02-03 13:00:10
 **Keywords:** Random Variables，Discrete Distributions，Uniform Distributions on Integers，Binomial Distributions
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 目前阶段，每天研究数学，数学和技术的最基本差别是数学基本不能马上变现，而技术不一样，学个java或者php你可以在三到五个月内找到工作，三到五个月微积分计算都学不透彻，更别说用这个挣钱了，所以学数学基本没办法看到短期结果，但有没有用我就不说了，因为有人觉得有用有人觉得没用，我已经用我的行动站队了，而且我也不想劝别人跟自己站一队。
 
 关于别人的建议，我觉得自己肯定干不出任何事，听取别人意见也是很重要的，孔圣人的境界：三个人就有一个是他老师。这句话从概率的角度分析有没有道理？有，我们可以简单分析一下，假设这三个人的属于最常规的人，他们之间的知识互相独立，并假设每个人有 $\frac{1}{n}$ 概率的知识是可以教给我们的，那么三个人互相独立，三个人中找到一个可学习的知识的概率就是 $\frac{1}{n} \times 3=\frac{3}{n}$ ，看起来还不错，那么我们继续分析，每个事件（可以被学到的知识点）拥有相等的概率，也是我们下面要离散均匀分布，从频率派的角度，我们三个人每讨论n件事才能学到3个知识，假设讨论一个问题的时间恒定为t，那么我们学会三个知识点的大概用时是 $\frac{nt}{3}$  的时间；下一种情况，如果我们和一个在我们相同圈子，而且比较资深的专家探讨呢？假设其有 $\frac{1}{m}$ 的概率知识可以启发我们，那么我们学会一个知识点的时间是 $mt$ 如果这位资深专家的 $\frac{1}{m}\geq \frac{3}{n}$ 的话 $mt\leq\frac{nt}{3}$ 就可以节约我们的时间，比如机器学习，我们和 Geoff Hinton 教授讨论，Prof. Hinton 的 $\frac{1}{m}$ 应该会远远远远大于 隔壁大婶，二舅妈和三姨的 $\frac{3}{n}$   简陋的例子，牛人的一封邮件比一般人的三天三夜的长谈还有营养，从感觉上也是这样的。
 所以当我不在接受你的建议并保持沉默的时候，不是我们很高傲，可能是 $\frac{1}{n}$ 太小了。
 
-## Random Variables
+# 随机变量 Random Variables
 上面的应用题是简单的概率分析，简单到可能有点漏洞百出，但要准确建模，我觉得我再来一百年也搞不定，但是我们应该有一个比较直观的感受，我们在此之前研究的概率，都是基于事件的，而事件是样本空间的子集，样本空间是试验结果的集合，也就是说，我们研究的最原始的变量是结果，这个结果可以是下不下雨，打不打雷，扔硬币的结果，等等，在最初研究赌博天气预报可能这些可以接受，那时候概率可能还不太属于数学，或者只能算是数数的过程，但是随着研究深入，概率论转移到数学范围，我们就必须数学化，数学化的第一步就是把这些实验结果数字化，所以我们引出了随机变量。
 
-### Definition of a Random Variable
+## 随机变量的定义 Definition of a Random Variable
 先来个例子压压惊🌰 ：
 一个硬币扔十次，可能会出现$s=\{HTTTHHTTHT\}$ 的结果序列，如果我们把序列当做实验结果，我们定义出现H的次数为这个结果的数字化描述，那么存在一个函数$X(s)=4$ 。有这样的函数么？答案是没问题，数学分析上的函数定义与此完全一致，从一个集合$S$ （样本空间）映射到另一个集合 $\Re$ （实数）。
 
@@ -39,7 +39,7 @@ date: 2018-02-03 13:00:10
 <font color=#ff0000 face="微软雅黑">
 “这个定义是个概率论非常关键的转折，从此我们从赌博走向了数学的康庄大道”</font>
 上面的例子还可以得到另一个随机变量，就是$Y(s)=6$ 表示T出现的次数。
-## The Distribution of a Random Variable
+# 随机变量的分布 The Distribution of a Random Variable
 
 我们刚才定义了随机变量这个叫变量的函数。那么他的输出对应着之前的样本空间，因此输出也要对应一个概率。但是当函数出现多对一（函数的一种状态，多个不同的输入产生同一个输出）的时候，这个概率描述和前面就有不同了。我们下面说到随机变量，可能有时候把关注集中在他（随机变量这个函数）的输出上，也就是产生那个实数值。
 那么这个随机变量（函数）的结果（实数值）可能是之前某些样本点的和，我们可以在实数轴上定义一个区间$C$ 并产生一个事件$X \in C$ (这里的X就是指随机变量的输出值$X(s)\in C$ )，我们就有了一个新的随机变量版本的概率:
@@ -62,7 +62,7 @@ $$
 疑惑，很多人可能不懂为啥有个 $X=x$ ，其实我也一直不太懂这里，知道我在这本书上看到了随机变量是函数，其含义就是 $X(s)=x$ ，缩写会方便会的人告诉扩展，同时也给初学者设置了一定的障碍。
 
 ***注意：从这开始，我们将不再故意区分随机变量到底是函数还是函数的输出值，全靠自己理解了哦***
-## Discrete Distribution
+# 离散分布 Discrete Distribution
 我们继续上面的话题，从前面文章的研究事件的概率转移到研究随机变量的概率，随机变量（的输出结果）其实也可以称之为事件，并且随机变量（的输出结果）也可以组合出新的事件，所以一个随机变量可以产生无数个分布（无数种关于C的划分），我们先研究下，当随机变量是离散的时候怎么办。
 >Definition Discrete Distribution/Random Variable:We say that a random variable $X$ has a discrete distribution or that $X$ is a discrete random variable  if $X$ can take only a finite number k of different values $x_1,\dots , x_k$ or at most an infinite sequence of different values $x_1,x_2\dots$
 
@@ -126,7 +126,7 @@ $$
 样本空间是起始点，然后向左产生了事件，概率，向右产生了随机变量，概率函数，离散分布。
 
 有一些离散分布很出名，很基础，因为后续的很多能很好模拟实际过程的概率模型都是根据他们演化出来的
-## Bernoulli  Distributions
+# 伯努利分布 Bernoulli  Distributions
 伯努利分布也叫0-1分布，只有两个随机变量可以选，0和1，各对应于一个概率，扔硬币就是伯努利分布。
 >Bernoulli Distribution/Random Variable:A random variable Z that takes only values 0 and 1 with $Pr(Z=1)=p$ has the Bernoulli distribution with parameter $p$ .We also say that $Z$ is a Bernoulli random variable with parameter $p$
 
@@ -134,7 +134,7 @@ $$
 
 扔不正常的硬币的例子，X就是一个$p=0.6$ 的Bernoulli分布。当忽略p,直接说X是个Bernoulli分布没有任何意义。
 
-## Uniform Distributions(Discrete)
+# 均匀分布 Uniform Distributions(Discrete)
 > Definition Uniform Distribution on Integers:Let $a\leq b$ be integers.Suppose that the value of a random variable $X$ is equally likely to be each of the integers $a,\dots ,b$ .Then we say that $X$ has the uniform distribution  on the integers $a,\dots,b$
 
 >Theorem If X has the uniform distribution on the integers $a,\dots ,b$ ,the p.f. of X is :
@@ -152,7 +152,7 @@ $$
 
 均匀分布也很常见，比如扔一个均匀的骰子，骰子上的数目对应相应的数字，一点对应1，二点对应2.......六点对应6，那么他就是一个在$[1,6]$ 内$p=\frac{1}{6}$ 的均匀分布。
 
-## Binormial Distributions
+# 二项分布 Binormial Distributions
 二项分布是从伯努利那里演化过来的，可以模拟反复丢硬币的那个过程。
 我们上面引入随机变量的地方说到了扔十次硬币的例子，我们现在假设扔的硬币不均匀，其得到正面的概率是 $\frac{3}{5}$ ,得到反面的概率是 $\frac{2}{5}$ 并且我们通过随机变量 $X(s)$ ，把正面对应于1，反面对应于2，假设反复进行 $N$ 次试验，那么我们想要知道出现 $m(m\leq N)$ 次正面的概率是多少。
 分析：前后两次丢硬币互不影响，所以每步之间独立，分步试验对应于我们的乘法法则，事件 $s_1$ “前 $m$ 次全是正面”的概率:
@@ -192,5 +192,11 @@ is called the binomial distribution with parameters $n$ and $p$ .A random variab
 
 这个定义开始逐渐的不说显示中的情况了，直接来了个形状如上式的分布就是二项分布。
 二项分布就是每步独立的伯努利分布的复合实验结果。
-## Conclusion
+# 总结
 总结，我们从事件进入到数字化的时代，从此概率论进入数学时代，今天好冷，打了这么多字手都冻僵了，明天继续
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-3-1-Random-Variables-and-Discrete-Distributions](https://www.face2ai.com/Math-Probability-3-1-Random-Variables-and-Discrete-Distributions)转载请标明出处

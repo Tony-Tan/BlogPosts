@@ -20,14 +20,14 @@ date: 2018-03-14 09:55:14
 **Keywords:** Joint Distributions,Mixed Distributions,Marginal Distributions,Independent Random Variable
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 今天讲的废话可能真是废话，因为这个道理真是自古以来经过无数次的验证，关于合作，合作就是多个人在一起做一件事，有钱出钱有力出力，所有的想法，工作和信息都要共享。这是一个团队存在的必要条件，但是有两种东西千万别想着与团队内部人员分享，首先是别人的收益，你不能指望别人把收益分给你，这个不现实也不讲道理的，说好是谁的就是谁的，不能拿别人的任何收益，这是保证团队不崩溃的底线；第二不要让别人跟你分担风险，你的风险就是你的风险，你出资赔钱你就要忍着，不可能让别人补偿你，这是不符合规矩的，别人也没这个义务，甚至别人主动补偿都不能要；最后一点就在于沟通，有些话说了必须负责任，任何事给出预期，同时必须提示风险，别总拍着胸脯保证什么什么，尤其是没有发生的事，这样的结果就是，一旦负面情况发生，你的责任就会非常大了，而且大家会对你这个产生怀疑！
 接着就是正经的废话了，关于概率论，我这两天尝试着看数理统计方面的书，发现，难度有点提升的过快，尤其是概率论掌握的不是很熟练的时候，我的概率论现在什么水平？看了一遍书，写了下书后的习题，目前也就这样，但是写完博客会是一个很大的提升，整个思路和认知都会有所提升，所以我决定先把概率论的博客写完再继续数理统计，到时候应该能通常一点了
 本文是对前三节内容的扩展，我们学习概率论从试验，到事件再到随机变量，从概率，到概率分布，都是从简单的可见的，到复杂的抽象的，这篇就把前面的限制进一步减小，从单个随机变量到两个随机变量，再到今天的多个随机变量的过程
-## Joint Distributions
+# 联合分布 Joint Distributions
 当一个分布中随机变量的个数超过两个的时候，我们称之为多变量概率分布；在实际应用中多变量随机分布应用更广。
 
-### Joint Discrete Distribution
+## 联合离散分布 Joint Discrete Distribution
 >Definition Joint Distribution Function/c.d.f.:The joint c.d.f. of $n$ random variables $X_1,\dots ,X_n$ is the function $F$ whose value at every point $(x_1,\dots ,x_n)$ in n-dimensional space $\mathbb{R}^n$ is specified by the relation
 $$
 F(x_1,\dots , x_n)=Pr(X_1\leq x_1,X_2\leq x_2,\dots X_n\leq x_n)
@@ -62,7 +62,7 @@ Pr(\vec{X}\in C)=\sum_{x\in C}f(x)
 $$
 如果每个随机变量$X_1,\dots,X_n$ 每个随机变量都有离散的分布，那么 $\vec{X}=(X_1,\dots,X_n)$ 就有一个离散的联合分布
 
-### Joint Continuous Distribution
+## 联合连续分布 Joint Continuous Distribution
 >Definition Continuous Distribution/p.d.f. It is said that $n$ random variables $X_1,\dots,X_n$  have a continuous joint distribution if there is a nonnegative function $f$ defined on $\mathbb{R}^n$ such that for every subset $C\subset \mathbb{R}^n$,
 $$
 Pr[(X_1,\dots,X_n)\in C ]=\underbrace{\int\dots\int}_{C}f(x_1,\dots,x_n)dx_1,\dots,dx_n
@@ -95,22 +95,25 @@ f(x_1,x_2,x_3)=\begin{cases}6e^{-x_1-2x_2-3x_3}&\text{ for }x_1,x_2,x_3> 0\\
 \end{cases}
 $$
 注意，这里 $x_1,x_2,x_3$ 的范围是大于0的，而前面的例子是C.D.F. 是$x_1,x_2,x_3$ 的范围是大于等于0的
-## 插播新闻
+
+# 插播新闻
 突发事件，就在我写本文的时候，Stephen Hawking 教授去世，享年76岁；非亲非故，也不是相关专业的学生，Howking先生的著作也没拜读过，但是感觉莫名的失落，希望晚辈们能继承先贤们的遗志，为了人类的进步事业做出贡献。
-## Mixed Distributions
+
+# 混合分布 Mixed Distributions
 混合分布就是一个联合分布里有连续的随机变量也有离散的随机变量，而处理起来也和双变量联合分布一样，连续部分就用积分和微分处理，离散就用求和做差处理。
 >Definition Joint p.f./p.d.f. Let $X_1,\dots ,X_n$ be random variables,some of which have a continuous joint distribution and some of which have discrete distributions ,their joint distribution would then be represented by a function $f$ that we call the joint p.f./p.d.f .The function has the property that the probability that $X$ lies in a subset $C \subset \mathbb{R}^n$ is calculated by summing $f(x)$ over the values of the coordinates of $x$ that correspond to the discrete random variables and integrating over those coordinates that correspond to the continuous random  variables for all piints $\vec{x}\in C$
 
 对于连续和离散混合的分布，还是那句话对不同的敌人用不同的战术，但总体思路都是一样的
-## Marginal Distributions
-### Deriving a Marginal p.d.f.
+
+# 边缘分布 Marginal Distributions
+## 计算边缘概率密度函数 Deriving a Marginal p.d.f.
 对于一个多元连续的联合分布，求其边缘概率密度函数的方法是：
 $$
 f_1(x_1)=\underbrace{\int^\infty_{-\infty}\dots \int^\infty_{-\infty}}_{n-1}f(x_1,\dots,x_n)dx_2\dots dx_n
 $$
 求谁的边缘分布就把其他的所有变量求积分就可以了，当然也可以求某两个，三个，多个变量的边缘分布。
 如果里面对应的变量是离散型的，就把对应的积分换成求和就可以了
-### Deriving a Marginal c.d.f.
+## 计算边缘概率累积函数 Deriving a Marginal c.d.f.
 对于一个联合分布，其c.d.f. 为$F$ ,其中x_1的边缘c.d.f.为：
 $$
 F_1(x_1)=Pr(X_1\leq x_1,X_2<\infty,\dots ,X_n<\infty)\\
@@ -118,7 +121,7 @@ F_1(x_1)=Pr(X_1\leq x_1,X_2<\infty,\dots ,X_n<\infty)\\
 $$
 
 由上可见，跟双变量的操作也是如出一辙，只是变量多了一些，计算起来更加复杂，需要小心一点
-## Independent Random Variable
+# 独立随机变量 Independent Random Variable
 多维的随机变量的独立性相对要复杂一些，但是原理还是相似的。
 > Definition Independent Random Variables,It is said that n random varibales $X_1,\dots,X_n$ are independent if for every $n$ sets $A_1,A_2,\dots A_n$ of real numbers
 $$
@@ -143,7 +146,13 @@ g(x_1,\dots,x_n)=f(x_1)f(x_2)\dots f(x_n)
 $$
 
 因为i.i.d讲究的的是独立同分布，同分布就保证了不可能出现混合分布的形式，否则会自相矛盾。
-## 总结
+# 总结
 至此我们讲完了上半部分关于多变量的扩展，理论上难度并不是很大，但是实际操作起来可能会出现各种小问题，需要大家谨慎。
 致敬Stephen Hawking 先生！
 待续。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-3-7-Multivariate-Distributions-P1](https://www.face2ai.com/Math-Probability-3-7-Multivariate-Distributions-P1)转载请标明出处

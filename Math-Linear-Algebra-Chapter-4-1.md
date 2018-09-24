@@ -18,10 +18,10 @@ date: 2017-10-17 09:28:42
 **Keywords:** Orthogonality,Four Subspace,Orthogonal Complements,Fundamental Theorem of Linear Algebra ,Combining Bases from Subspaces,Split
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 这次真的是好久没写博客了，十一去了一趟湖南，感受了下山村生活，不得不说，真的能净化人心，村里的人感觉比城里人的生活的更自然，更像人。感觉城里人活的更像机器。
 十一之前读的这一章内容，果不其然，只记得大概内容了，回来又重新看了一遍，又发现不少之前没发现的东西，经验一次又一次的告诉我，书要多读几遍，这句话我之前就说过，但是自己都做不到，也是惭愧。
-## Orthogonality
+# Orthogonality
 这个地方大师Gilbert写了关于$Ax$的三个境界：
 1. This is only a number
 2. It is combination of column vectors
@@ -87,7 +87,7 @@ $$
 
 Fundamental Theorem I 说的是四个subspaces之间的维度的相互关系，第二部分说的是四个subspaces之间的正交关系，看来线性代数的核心是这四个subspace没错了。
 
-## Orthogonal Complements
+# Orthogonal Complements
 This is very important ,The Fundamental subspace are more than just orthogonal in pairs.Their dimansions are also right.说实话，right这个词我想了半天也不知道对应中文那个词，三维空间中的两条线正交，但是他们并不可能是一个属于$3\times 3$矩阵的nullspace和rowspace因为他们都是dimension 1的加起来并不是3？你要问我为什么，往下看喽
 >Definition:Orthogonal Complement of a subspace V contains every vector that is perpendicular to V.This orthogonal subsapce is denot $V^{\perp}$(pronounced "V perp")
 
@@ -120,10 +120,16 @@ $$ x=x_{particular}+x_n$$
 *来仔细观察箭头，$x_r$->$x_b$,是单射，没错，如果是单射就有逆运算，对于列空间的一个元素都有且只有一个行空间中的向量与之对应，但是由于不存在$A^{-1}$ 使得 $x_n=A^{-1}0$成立，也就是说不存在$A^{-1}$ 使得 $x=A^{-1}b$这也是为什么不是所有的矩阵都有逆，但是我们能确定一个 $\hat{A}^{-1}$ 使得 $x_r=\hat{A}^{-1}b$成立，这个戴帽子的A叫做pseudoinvers ，伪逆*
 这也告诉我并不是因为矩阵行列式为0他才没有逆，以前老师说，来算行列式，值是0矩阵没有逆，说的的确是真理，但是他一直也没说为啥。
 
-## Combining Bases from Subspaces
+# Combining Bases from Subspaces
 这段补充说明下矩阵基bases的一些扩展，主要还是用到上面那张图，就是离这里最近的那张带映射的图，rowspace和nullspace是可以span整个$R^n$的，比如在rowspace中找到r个线性独立的bases加上nullspace里面n-r个线性独立的bases，他们就能span出整个空间，为啥？因为这两个空间里的bases肯定线性独立，人家都正交了，哪来线性关系。所以，任何一个n维向量都能备份家到rowspace和nullspace，如果nullspace只有0向量，恭喜，$x=x_r$，A可逆，Ax=b有唯一解。在$R^n$ 中任何n个线性独立的vectors必然能span出$R^n$，反过来说也对，同理写成矩阵形式，一个由n个线性独立的向量组成的$n \times n$矩阵必然可逆。
 
 注意:***任何一个n维向量都能被split成一个rowspace中的向量和一个nullspace中的向量***
 
-## 总结
+# 总结
 这篇内容实在是多到不行，而且都是精华，慢慢吸收，后面我如果发现问题可能还会补充，欢迎大家讨论
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-4-1](https://www.face2ai.com/Math-Linear-Algebra-Chapter-4-1)转载请标明出处

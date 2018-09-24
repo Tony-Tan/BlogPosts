@@ -13,7 +13,7 @@ toc: true
 **Keywords:** 色彩变换,补色,色环
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 啊啊啊啊啊。。。办公室好乱。像菜市场那个一样，说好的做一个安静的美男子呢。
 彩色图像处理中彩色变换是指
 $g(x,y)=T[f(x,y)]$
@@ -28,7 +28,7 @@ $g(x,y)=T[f(x,y)]$
 这个色环可能不是牛顿老爷子的色环，但通过这个来展示下补色就是一条直径上两端的颜色。
 对于RGB图像，补色是对应的CMY图像
 对于HSI和HSV图像，H分量需要进行相应的旋转，而亮度分量也需要相应的反转，而饱和度不变，能够得到类似的补色效果。
-## 代码实现
+# 代码实现
 ```c++
 void Complementary_Color(C3 *src,C3 *dst,int width,int height,int color_space_type){
     switch (color_space_type) {
@@ -67,7 +67,7 @@ void Complementary_Color(C3 *src,C3 *dst,int width,int height,int color_space_ty
     }
 }
 ```
-## 结果观察
+# 结果观察
 原图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141655788.png)
 
@@ -82,6 +82,12 @@ HSV：
 
 Paintbrush：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-9-2-彩色图像-彩色变换-补色处理/20150316141818795.jpeg)
-## 总结
+# 总结
 简单的介绍了最简单的色彩变换，补色变换，可以看出HSI，HSV和RGB处理的结果有些不同，而PaintBrush处理和我处理都不同，不知道它使用的什么算法。
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-9-2-彩色图像-彩色变换-补色处理](https://www.face2ai.com/DIP-9-2-彩色图像-彩色变换-补色处理)转载请标明出处

@@ -11,10 +11,10 @@ toc: true
 **Keywords:** OTSU算法
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 废话开始，今天介绍OTSU算法，本算法比前面给出的算法更能够给出数学上的最佳阈值，不需要任何输入附加参数、与同样不需要输入附加参数的迭代均值和均值阈值来比较，OTSU给出的阈值能使分类更加均匀。
 阈值处理将灰度值分为两类，而对于分类问题，已有的一种最优闭合解--贝叶斯决策规则。
-## 贝叶斯决策规则
+# 贝叶斯决策规则
 首先介绍下贝叶斯公式的形象化理解，考虑下图
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308140256646.jpeg)
 
@@ -53,7 +53,7 @@ $p(B)=\frac{7}{12}$
 $p(A|B)=\frac{p(B|A)\times p(A)}{p(B)}$
 
 以上就是贝叶斯公式的一般形式，更复杂的形式会在后面的文章中详细介绍。（更复杂的形式是指盒子里有枪，子弹，弹夹，手榴弹。。。。。。）
-## 数学原理
+# 数学原理
 OTSU算法可以基于直方图计算，考虑灰度级为{0，1，2........L-1}大小为 $M \times N$ 的图像，设 $n_i$ 为灰度级为i的像素的总数量，那么:
 $M \times N=\sum^{L-1}_{i=0}n_i$
 
@@ -102,7 +102,7 @@ $\delta^2_B=P_1P_2(m_1-m_2)^2=\frac{P_1(m_1-m_G)^2}{1-P_1}$
 $\delta^2_B(k^{*})=max_{0\leq k \leq L-1}\delta^2_B(k)$
 
 通过上式可以通过迭代计算出最佳的k值。使用k作为阈值，对图像进行处理。
-## 代码实现
+# 代码实现
 ```c++
 /*
  *OTSU 算法
@@ -158,7 +158,7 @@ void OTSUThreshold(double *src,double *dst,int width,int height,int type){
 }
 
 ```
-## 观察结果
+# 观察结果
 原图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152743862.jpeg)
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308152907539.jpeg)
@@ -193,6 +193,12 @@ lena:
 baboon:
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值/20150308153428432.jpeg)
 
-## 总结
+# 总结
 OTSU算法产生的阈值是数学角度上的最佳分类，数学基础的贝叶斯公式，但应用也有一定的局限性，比如，前面说过最多的，对全局阈值，目标与背景的大小关系，当目标和背景大小相差很多时，或者噪声很大的时候，对OTSU产生影响较大。
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值](https://www.face2ai.com/DIP-7-5-灰度图像-图像分割-阈值处理之OTSU阈值)转载请标明出处

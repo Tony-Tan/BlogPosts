@@ -14,7 +14,7 @@ date: 2018-03-23 22:22:11
 **Keywords:** Variance,Standard Deviation
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 这两天更新有点频繁，但是没办法，必须快速的完成的基础知识积累，毕竟时间是有限的，还要留出更多的时间用于更进一步的深入研究，打牢基础的同时尽可能的提升速度。
 
 > 如果我虚度光阴，那就请结束我的一生。如果你用奉承掐媚愚弄我，那我便自得取乐，如果你用荣华富贵诱惑我，那即便我的末日来临，我也要赌个输赢！
@@ -28,7 +28,7 @@ date: 2018-03-23 22:22:11
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-4-3-Variance/stock_price.png)
 
 可见这个图像上，均值一致，都是30，但是分布有着明显区别，我们开始介绍我们的主角——“方差”
-## Definitions of the Variance and the Standard Deviation
+# 方差和标准差的定义 Definitions of the Variance and the Standard Deviation
 >Definition Variance/Standard Deviation.Let $X$ be a random variable with finite mean $\mu=E(X)$ ,The variance of $X$ denoted by $Var(x)$ ,is defined as follows:
 $$
 Var(X)=E[(X-\mu)^2]
@@ -68,7 +68,7 @@ Q.E.D
 方差和标准差只取决于其分布，而且其实际意义就是随机变量对均值 $\mu$ 的离散程度，值越大说明越分散，相反，越小表示与均值越聚集。
 这里可以有个例子，这里我就不写啦，大家自己看书吧
 
-## Properties of the Variance
+# 方差的性质 Properties of the Variance
 学了定义，该学性质了，看起来方差的性质没有期望多，期望用了整整一课来说明，方差只是一个小section。
 >Theorem For each $X$ , $Var(X)\geq 0$ .If $X$ is a bounded random varibale,then $Var(X)$ must exist and be finite.
 
@@ -157,7 +157,7 @@ Var(a_1X_1+\dots+a_nX_n)=a^2Var(X_1)+\dots+a_n^2Var(X_n)
 $$
 
 这个推论的证明用到了上面两个已经被证明的定理，所以我们就不用证明了，没错，我又开始偷懒了。。
-## The Variance of a Binomial Distribution
+# 二项分布的方差 The Variance of a Binomial Distribution
 二项式分布的方差：
 独立同伯努利分布的随机变量的和是满足二项分布的随机变量，这个我们前面已经说过了，后面下一章还会再说，我们现在就假装知道他们是独立的就行，根据独立随机变量的方差性质。
 $$
@@ -177,13 +177,19 @@ Var(X) & =\sum^{n}_{i=1} Var(X_i)\\
 $$
 行了，就这么样了，二项分布的方差就是上面这个了。
 
-## Interquartile Range
+# 四分位数范围 Interquartile Range
 我们是否还记得方差的实际意义，他描述的是分布距离均值的离散程度，方差可以没有，也就是说当期望不存在或者无限的时候，方差可以不存在，但是描述分布的离散程度，这个可以有啊，所以我们就提出个新的数字特征，这个特征能帮忙解决没有方差，比如柯西分布，这种特殊的分布的离散程度的刻画。
 
 >Definition Interquartile Range(IQR). Let X be a random varibale with quatile function $F^{-1}(p)$ for $0<p<1$ .The interquartile range (IQR) is defined to be $F^{-1}(0.75)-F^{-1}(0.25)$
 
 换句话说，IQR就是四分之一分位数，和四分之三分位数之间的距离。
-## 总结
+# 总结
 继期望过后，我们用期望引申出了一个更复杂的，刻画分布另一个性质的期望。
 下几篇还是期望，我们本章就叫期望。
 待续
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-4-3-Variance](https://www.face2ai.com/Math-Probability-4-3-Variance)转载请标明出处

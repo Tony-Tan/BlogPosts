@@ -14,7 +14,7 @@ date: 9999-09-30 23:00:00
 **Keywords:** 数值分析
 
 <!--more-->
-## 数值分析
+# 数值分析
 数值分析并没有在我们那张人工智能基础数学地图上
 ![](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/Mathematic.png)
 但是根据MIT和Stanford人工智能课程安排，数值分析这门课都是在大一或者大二的必修课，换句话说，学完线性代数和微积分，就要学数值分析，为什么数值分析没在我们的数学地图上，但却被这些大学如此之重视呢？当然我上大学也是大二就开了这么课。
@@ -45,7 +45,13 @@ date: 9999-09-30 23:00:00
 上图表示个个章节关系，注意本书中的所有问题我们可能都要研究下，但是微分方程等可能会放在后面，因为相关理论我们还没研究。
 我们的参考书为：《Numerical Analysis Second Edition》，Timothy Sauer著。
 之前没注意有没有英文版，所以用的是翻译版。
-## 总结
+# 总结
 本系列预计每天更新，每篇应该都不长，所有代码使用Matlab编写。当然经过调整或者不调整，就直接可以在octave下运行，当然我鼓励大家使用octave。
 关于编程工具，我们目前做的是上层工作，以模型开发为主，所以需要快速实现模型的编程，试验阶段高效并没有那么重要，当模型有优秀表现的时候，我们在使用C或者CUDA进行二次开发，结合我们的CUDA系列完成最终工作。
 学习数值分析和CUDA都是为了使得计算结果更快，但一个从算法角度，加速分析结果，一个从硬件和技术角度完成加速，两种最重要的途径，我们都要掌握。手持利剑，身怀秘籍，才是绝世高手。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Numerical-Analysis-0-0-Introduction](https://www.face2ai.com/Math-Numerical-Analysis-0-0-Introduction)转载请标明出处

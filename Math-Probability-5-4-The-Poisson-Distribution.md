@@ -14,11 +14,11 @@ date: 2018-03-28 15:40:55
 **Keywords:** Poisson Distribution
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 前面这几个分布包括今天说的泊松分布都是和二项分布，伯努利分布相互联系的，之间有各种各样的关系，我们的学习目的不是背诵所有这些分布的性质，而是在这些性质的推到过程。
 
 很多实验比较关注次数，比如一段时间内到达商店的顾客的人数，电话交换机每分钟受到的通话请求，洪水或者其他自然人为灾害发生的次数。泊松分布被用来建模，一段事件这些事情发生的次数，并且泊松分布也是用来近似当 $p$ 很小的时候的二项分布的一种方法。
-## Definition and Properties of the Poisson Distributions
+# 泊松分布的定义和性质 Definition and Properties of the Poisson Distributions
 先来看一个商店一段时间有多少顾客到来的例子，这个例子会贯穿正片博客，大家应该好好读一下。
 
 ---------------
@@ -90,7 +90,7 @@ $$
 
 还是传统的定义方法，告诉你，这个式子是泊松分布~
 
-### Mean
+## 泊松分布的均值 Mean
 >Theorem Mean. The mean of Poisson Distribution with p.f. equal to upside is $\lambda$ .
 怎么样！神奇不神奇~均值是 $\lambda$
 我们接下来就来证明这一点。
@@ -110,7 +110,7 @@ E(X)&=\sum^{\infty}_{x=0}x\frac{e^{-\lambda}\lambda^x}{x!}\\
 $$
 这样 $\sum^{\infty}_{y=0}\frac{e^{-\lambda}\lambda^{y}}{y!}$ 变成了一个对p.f.为$f(y|\lambda)$ 的概率函数求和的计算，结果必然为1，那么我们就证明了泊松分布的期望是 —— $\lambda$
 
-### Varaince
+## 泊松分布的方差 Varaince
 >Theorem Variance.The variance of Poisson distribution with mean $\lambda$ is also $\lambda$
 意外不意外！惊喜不惊喜！依旧是 $\lambda$
 证明：
@@ -134,7 +134,7 @@ $$
 
 至此证毕，构造了 $E[X^2]$ 然后求出了 $Var(X)$
 
-### m.g.f.
+## 泊松分布的距生成函数 m.g.f.
 接着我们研究第三大工具，m.g.f.
 >Theorem Moment Generating Function.The m.g.f. of the Poisson distribution with mean $\lambda$ is
 $$
@@ -156,7 +156,7 @@ $$
 
 有了m.g.f就能得到期望，方差或者其他阶距。
 
-### Poisson 分布随机变量相加
+## 泊松分布随机变量相加
 
 >Theorem If the random variable $X_1,\dots,X_k$ are independent and if $X_i$ has Poisson distribution with mean $\lambda_i(i=1,\dots,k)$ ,then the sum $X_1+\dots+X_k$ has the Poisson distribution with mean $\lambda_1+\dots+\lambda_k$
 
@@ -169,7 +169,7 @@ $$
 $$
 
 结合前面泊松分布的m.g.f.可见定理成立。
-## The Poisson Approximation to Binomial Distributions
+# 二项分布的泊松近似 The Poisson Approximation to Binomial Distributions
 接下来我们研究一下泊松分布近似二项分布的详细内容。
 >Theorem Closeness of Binomial and Pisson Distribution.For each integer n and each $0 < p < 1$ ,let $f(x|n,p)$ denote the p.f. of the binomial distribtuion with parameters $n$ and $p$ .Let $f(x|\lambda)$ denote the p.f. of the Poisson distribution with mean $\lambda$ .Let ${\{P_n\}}^{\infty}_{n=1}$ be a sequence of numbers between 0 and 1 such that $lim_{n\to \infty}np_n=\lambda$ . Then
 $$
@@ -211,7 +211,7 @@ $$
 lim_{T\to \infty}\frac{Pr(Y=x)}{Pr(X_t=x)}=1
 $$
 
-## Poisson Processes
+# 泊松过程 Poisson Processes
 前面我们第一个例子说的如何估算在一个小时内到店的客户，那么如果是我想知道半个小时或者15分钟的顾客数量呢？难道是要用2.25个或者1.125个作为平均数的Poisson Distribution建模么？于是我们使用Poisson过程来对这种情况建模。
 
 >Definition Poisson Process.A Poisson process with rate $\lambda$ per unit time is a process that satisfies the following two properties:
@@ -221,6 +221,12 @@ ii: The numbers of arrivals in every collection of  disjoint time intervals are 
 泊松过程满足两点要求，首先固定时间段内平均时长 $\lambda t$，其次每个不同时段之间人数彼此独立。
 所以上面我们说是否能用改了 $\lambda$ 的泊松分布建模这个答案是肯定的就是通过改变 $\lambda$ 值来重新建模的。
 后面有一个关于泊松过程的选读内容，有兴趣的同学可以在书上找到
-## 总结
+# 总结
 本文介绍泊松分布，性质及用途，以及泊松过程
 明天继续。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-5-4-The-Poisson-Distribution](https://www.face2ai.com/Math-Probability-5-4-The-Poisson-Distribution)转载请标明出处

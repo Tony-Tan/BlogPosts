@@ -18,11 +18,11 @@ date: 2018-01-26 9:20:58
 **Keywords:** Combination，Binormial Coeffcient，Multinormial Coeffcient
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 苏东坡有诗云：“可使食无肉，不可居无竹。无肉令人瘦，无竹令人俗。人瘦尚可肥，俗士不可医。” 穷可以通过任意一种方法变富，但是没文化真的没办法短时间变富。从概率论的角度来说，如果我们有文化，我们可以通过买彩票变富，比如买32个数选6个，我们的中奖概率是$P_{32,6}$ ,我们有这么大的概率一夜变富，但是目前科技还没有能一夜变得才高八斗的方式概率能超过$P_{32,6}$ 的，所以，我一直跟周围的人说，钱很好赚，但是有文化这个事真的特别难，钱对于人来说个附属品，可以随时增减，但是文化思想是属性，不好改。
-## Combinatorial Methods(组合方法)
+# 组合方法 Combinatorial Methods
 我们的废话中还复习了下上一节的知识，彩票分两种，一种是有序排列，一种是无序排列，比如开奖过程中**Without Replacement**的方式抽取，先后出来的号码是 $\{4,1,5,3,8\}$ ，那么第一种中奖方式是：“你的五个号码必须与上述号码一致，并且，顺序必须一致！如果你的号码是 $\{1,4,3,8,5\}$ ，那么恭喜你，一分钱都没中！”；第二种方式是：“号码部分顺序，只要你的数字是 $\{1,3,4,5,8\}$ 这个集合就可以”，第一种方式就是我们昨天说的排列问题，第二种就是我们今天要说的组合，两种计数方法的共同前提就是**Without Replacement**。如果**With Replacement**，那么情况将会完全不同。
-### Combination(组合)
+## 组合 Combination
 重新描述下问题，回到最初的设计，我们把试验的所有结果看做一个有限的集合，也就是所说的有限的样本空间，多步without replacement的过程中，每一步之间没有影响，如果每次抽取的结果严格要求与步骤保持对应，就是所说的排列问题，如果我们只关心结果的元素而不关心顺序，那么我们就要用到组合（如果不太明白这段话，可以参考上面的例子，或者下面的例子）
 
 >Definition Combination:Consider a set with $n$ elements.Each subset of size $k$ chosen from this set is called a combination of $n$ elements taken $k$ at a time.We denote the number of distinct such combinations by the symbol $C_{n,k}$
@@ -62,7 +62,7 @@ C_{n,k}=\frac{n!}{k!(n-k)!}
 $$
 再次说明一下，我们这两篇所讲的都是计数方法，不涉及到随机，不管是Permutation和Combination都是数数的过程，其结果是数字（一般来说都是自然数），对试验，以及试验结果没有任何影响，一旦试验条件确定，这个数字唯一确定，不会有任何更改。
 重复强调其不影响随机的主要原因是，我上高中的时候老师给我们讲过二项式，而那时我理解的是在二项式中随意挑数字，所以有随机过程在里面，其实完全没有，这两节跟随机一毛钱关系都没有，所以下面我们开始研究二项式
-## Binormial Coeffcient(二项式系数)
+# 二项式系数 Binormial Coeffcient
 二项式：
 $$
 (x+y)^n
@@ -129,7 +129,7 @@ $$
 
 
 
-## Multinormial Coeffcient(多项式系数)
+# 多项式系数 Multinormial Coeffcient
 首先假设另一种试验，上面我们注意到定义说一次取出$k$个，那么如果我们分步进行抽取呢？两步理论上互不影响，分两步分别取$k_1$,$k_2$个，根据乘法原理和上面的Combination，我们可以确定分两步，取$k_1$,$k_2$ 并且 $(k_1+k_2\leq n)$ 会有：
 $$
 \begin{pmatrix}n\\k_1\end{pmatrix}\begin{pmatrix}n-k_1\\k_2\end{pmatrix}=\frac{n!}{k_1!(n-k_1)!}\frac{(n-k_1)!}{k_2!(n-k_1-k_2)!}\\
@@ -151,5 +151,11 @@ $$
 $$
 \begin{pmatrix}n\\k，n-k\end{pmatrix}=\begin{pmatrix}n\\k\end{pmatrix}
 $$
-## 总结
+# 总结
 完成另一种计数方法Combination的总结，这两篇给的例子不多，但是每个都很经典，有时候看懂例题更重要，因为概率以例子为主，待续。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-1-3-Combinatorial-Methods](https://www.face2ai.com/Math-Probability-1-3-Combinatorial-Methods)转载请标明出处

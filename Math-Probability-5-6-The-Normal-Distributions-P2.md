@@ -13,11 +13,11 @@ date: 2018-03-29 15:02:03
 **Keywords:** The Normal Distributions
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 一共要写四篇，哪来那么多废话。
 首先我们要从最基础的原始的正态分布的数学原理说起
-## Properties of Normal Distributions
-### Definition
+# 正态分布的性质 Properties of Normal Distributions
+## 正态分布的定义 Definition
 到目前为止，我们还没看到正态分布长什么样。
 >Definition and p.d.f. A random X has the normal distribution with mean $\mu$ and variance $\sigma^2$ ($-\infty<\mu<\infty$ and $\sigma > 0$) if X has a contimuous distribution with the following p.d.f.
 $$
@@ -50,7 +50,7 @@ $$
 证毕。
 也就证明了两个这个积分相乘的结果是1，但是我们并没有求出他的反函数。
 
-### m.g.f.
+## 正态分布的距生成函数 m.g.f.
 m.g.f. 一旦得到相应的均值和方差就非常简单了。
 >Theorem Moment Generating Function.The m.g.f. of the distribution with p.d.f. given by upside is
 $$
@@ -76,7 +76,7 @@ $$
 
 思路是按照m.g.f.的定义，然后把里面的凑成正态分布的样子利用积分为1，化简表达式
 
-### Mean and Variance
+## 正态分布的均值和方差 Mean and Variance
 >Theorem Mean and Variance.The mean and variance of the distribution with p.d.f. given by definition upside are $\mu$ and $\sigma^2$ ,repectively.
 
 证明方法就是直接用m.g.f.求导就可以了：
@@ -91,7 +91,7 @@ Var(X)&=\psi''(0)-[\psi'(0)]^2=\sigma^2
 $$
 注意m.g.f.对于所有 $t$ 都有限，所以所有正态分布的距都存在。
 
-### the Shapes of Normal Distribution
+## 正态分布的形状 the Shapes of Normal Distribution
 我们上面稀稀拉拉写了一些常见的性质，但是到现在我们还不知道正态分布长什么样呢？
 分析p.d.f和我们已经计算出来的数字特征，我们可以总结出下面这些基本信息：
 1. 均值和中值都是 $\mu$
@@ -104,7 +104,7 @@ $$
 
 并不是所有钟形曲线都是正态分布家族的，比如前面介绍的不存在期望的柯西分布，他的尾巴跟我们的正态分布不太一致。
 
-### Linear Transformations
+## 线性变换 Linear Transformations
 我们接着研究研究正态分布的线性变换。
 >Theorem If $X$ has the normal distribution with mean $\mu$ and variance $\sigma^2$ and if $Y =aX+b$ ,where $a$ and $b$ are given constants and $a \neq 0$ ,then $Y$ has the normal distribution with mean $a\mu+b$ and variance $a^2\sigma^2$ .
 
@@ -123,6 +123,12 @@ $$
 $$
 
 可以看出线性变化后的分布是一个均值为 $a\mu+b$ 方差为 $a^2\sigma^2$ 那么我们得到一个新的正态分布，并且新正态分布的参数和原正态分布有关系
-## 总结
+# 总结
 本文主要介绍正态分布的数学性质。后面我们继续研究标准正态分布和对数正态分布。
 待续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-5-6-The-Normal-Distributions-P2](https://www.face2ai.com/Math-Probability-5-6-The-Normal-Distributions-P2)转载请标明出处

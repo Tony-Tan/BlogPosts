@@ -14,9 +14,9 @@ date: 2017-12-06 14:03:08
 **Keywords:** Diagonalization，Pseudoinverse
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 傻子不是生出来的，是教出来的，如果一个人从小没人教他如何看问题如何思考，或者他自己也不愿意去思考，别人说什么他都相信，那么这个人将会变成一个温和的劳动者，这个道理我们老一辈革命家们都明白，枪杆子笔杆子就可万世而为君，看个头条都能热血沸腾的人统治成本极低。
-## Diagonalization and the Pseudoinverse
+# Diagonalization and the Pseudoinverse
 首先我们要回顾下，并且强调下昨天讲的内容，就是线性变换对应的矩阵，对于不同空间相互变换，知道空间是不能确定矩阵的，还要确定基和相互关系，光知道基也没用，比如求导和求积分的例子告诉我们，必须要知道他们之间的计算关系，或者叫做原始空的基向量线性变换到目标空间后的向量是啥才能确定矩阵A(上一篇的🌰 1)。
 接下来的换基运算是在同一个空间下进行的，也就是线性变换后空间不变，空间不变以为这矩阵的Rank不发生变化，想要进行换基操作就要知道新的基和原来的基都分别是什么，然后就能确定出矩阵了。
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/lineartransformation.png)
@@ -60,7 +60,7 @@ $$
 整个换基过程就是这样被拆解的，但是面对不同的拆解方式，我们可能得到非常标量的A，这个是我们想要的，也就是C被分解了，分解出了漂亮的A，我们对矩阵的所有操作基本都是在干这个事，所以这些事都算换基操作，整个过程就是当标准基输入到C中我们可以得到输出，这个过程的等效过程是先输入漂亮的A然后得到的输出再输入到B最后得到的输出和C的输出一致。
 
 要说明的是上面的箭头方向对应一个矩阵，如果这个矩阵可逆那么这个箭头就可以反过来对应的矩阵也就变成了原矩阵的逆。
-## Similar Matrices:$A$ and $S^{-1}AS$ and $W^{-1}AW$
+# Similar Matrices:$A$ and $S^{-1}AS$ and $W^{-1}AW$
 
 还是我们上面$C=BA$ 的分解过程，那么把它变形到其他矩阵分解形式，对角化或者相似矩阵和上面的比较相似，举个🌰
 $$
@@ -77,12 +77,12 @@ $$
 
 上面的过程对于线性变换$T$ 对应矩阵A，我们可以通过一系列的换基操作在其他基下找到等效的但是比A漂亮的矩阵，再通过换基操作还原到A基形式下，这个过程就是$IAI=W^{-1}XW$ 的各种特例。
 
-## The Singular Value Decomposion(SVD)
+# The Singular Value Decomposion(SVD)
 与上面的最大不同，SVD输入输出来自两个空间，我们上面说在同一空间下的线性变换都是换基操作，这里展示不同空间的换基操作，神奇的SVD，对于不同空间的线性变换矩阵，一般为长方形的（参考求导和微分的例子，在上一篇），假设矩阵A可以完成一个跨空间的线性变换，那么当我们改变两个空间的基的时候，这个时候，奇迹就发生了，当我们把原始空间X(dim=n)的基从标准基变成$AA^T$特征向量，得到一个换基后的输入，然后我们再把原始出Y(dim=m)换基到成$A^TA$特征向量，作为目标矩阵的输入和输出，那么我们会得到一个漂亮的对角矩阵（对角元素可能是0）
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/SVD.png)
 上面这个求解 $\Sigma$ 的过程并不是一根筋，而是两头堵，根据紫色线的方向求解的，因为U和V都是正交矩阵，所以其逆和转置一样。
 
-## The Pseudoinverse
+# The Pseudoinverse
 伪逆就是不是真的逆，并不是所有矩阵都有逆，但是所有矩阵都有伪逆，当矩阵是可逆矩阵的时候，伪逆和逆相等，我们前面学[四个子空间](http://face2ai.com/Math-Linear-Algebra-Chapter-4-1/)的时候学过一幅图：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/4spaces_extra.png)
 这幅图我们当时有详细讲解，假设矩阵是 $m\times n$ 的那么他的行空间和Nullspace加起来肯定是$\Re^n$ ，文中已证明，这个也是线性代数的基本定理，那么 $\Re^n$ 中的任何向量都能被分解成rowspace和nullspace中基的线性组合，所以线性映射后得到将是列空间中的一个向量加上0，所以当nullspace不止零向量的时候不可逆，因为nullspace不能被反射，但是这里有个有趣的就是$Ax_r=b$ 可以被反射得到输入向量的rowspace的分量$x_r$，这个反射矩阵就是Pseudoinverse。
@@ -127,5 +127,11 @@ $$
 然后总结下我们学过的所有的变换的换基角度：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-7-3/changebase.png)
 
-## Conclusion
+# Conclusion
 至此，线性代数的基础理论部分算是完结了，我们接下来可能介绍线性代数的一些相关应用，也有可能增加复数矩阵部分，但是不作为这个系列的内容了，所以我们线性代数今天正式毕业！撒花，啦啦啦，但是后面还有更精彩的系列，敬请关注！
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-7-3](https://www.face2ai.com/Math-Linear-Algebra-Chapter-7-3)转载请标明出处

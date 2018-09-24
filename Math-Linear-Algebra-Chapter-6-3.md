@@ -16,3 +16,9 @@ date: 2017-11-22 15:09:04
 
 <!--more-->
 与最小二乘法那篇一样，由于微分方程将会是后面一项要学习的重点内容，我们这里先不介绍了，就是跳过。。哈哈哈哈。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-6-3](https://www.face2ai.com/Math-Linear-Algebra-Chapter-6-3)转载请标明出处

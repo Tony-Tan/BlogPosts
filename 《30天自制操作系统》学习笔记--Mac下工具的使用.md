@@ -24,8 +24,7 @@ project的内容可以修改，因为批处理可以下岗了：
 ```
     TOOLPATH = ../z_tools/
     INCPATH  = ../z_tools/haribote/
-    ###################################################
-    MAKE     = make
+    ##################################################     MAKE     = make
     NASK     = $(TOOLPATH)nask
     CC1      = $(TOOLPATH)gocc1 -I$(INCPATH) -Os -Wall -quiet
     GAS2NASK = $(TOOLPATH)gas2nask -a
@@ -36,8 +35,7 @@ project的内容可以修改，因为批处理可以下岗了：
     IMGTOL   = $(TOOLPATH)imgtol.com
     COPY     = cp
     DEL      = rm
-    ###################################################
-    # ÉfÉtÉHÉãÉgìÆçÏ
+    ##################################################     # ÉfÉtÉHÉãÉgìÆçÏ
 
     default :
     	$(MAKE) img
@@ -66,11 +64,9 @@ project的内容可以修改，因为批处理可以下岗了：
 
     bootpack.hrb : bootpack.bim Makefile
     	$(BIM2HRB) bootpack.bim bootpack.hrb 0
-    ##################################################
-    haribote.sys : asmhead.bin bootpack.hrb Makefile
+    #################################################     haribote.sys : asmhead.bin bootpack.hrb Makefile
     	cat  asmhead.bin bootpack.hrb>haribote.sys
-    ###################################################
-    haribote.img : ipl10.bin haribote.sys Makefile
+    ##################################################     haribote.img : ipl10.bin haribote.sys Makefile
     	$(EDIMG)   imgin:../z_tools/fdimg0at.tek \
     		wbinimg src:ipl10.bin len:512 from:0 to:0 \
     		copy from:haribote.sys to:@: \
@@ -80,12 +76,10 @@ project的内容可以修改，因为批处理可以下岗了：
 
     img :
     	$(MAKE) haribote.img
-    #################################################
-    run :
+    ################################################     run :
     	$(MAKE) img
     	qemu -fda haribote.img
-    ###################################################
-
+    ################################################## 
 
     clean :
     	-$(DEL) *.bin
@@ -115,3 +109,9 @@ project的内容可以修改，因为批处理可以下岗了：
 [Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/《30天自制操作系统》学习笔记--Mac下工具的使用//20131213143655937.png
 [Center 2]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/《30天自制操作系统》学习笔记--Mac下工具的使用/20131213143514609.png
 [Center 3]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/《30天自制操作系统》学习笔记--Mac下工具的使用/20131213144145015.png
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/《30天自制操作系统》学习笔记--Mac下工具的使用](https://www.face2ai.com/《30天自制操作系统》学习笔记--Mac下工具的使用)转载请标明出处

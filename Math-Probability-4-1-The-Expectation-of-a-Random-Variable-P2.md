@@ -13,14 +13,14 @@ date: 2018-03-22 09:09:37
 **Keywords:** Expectation
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 本来这篇可以和前一篇合在一起的，但是看了下还是有点长，控制下篇幅来保证质量，有的时候追求多快就会影响到质量。
-## The Expecatation of a function
+# 函数的期望 The Expecatation of a function
 一个函数的期望，首先这个函数一定是个随机变量的函数，那么其结果也是个随机变量，是随机变量就有分布，所以就有可能有期望。
 举个🌰 ：
 一个家电制造公司制造的电器每年出现故障的比率是 $X$ ，$X$ 是一个当前不知道的随机变量，如果我们感兴趣的是这个电器是失效前能运行多久，我们可能会使用 $1/X$ 来表示这个时间，那么我们计算 $Y=1/X$ 的平均值呢？
 这就是我们今天要讨论的问题，如何求一个关于随机变量函数的期望。
-### Function of a Single Random Variable
+## 单随机变量的函数 Function of a Single Random Variable
 首先来看函数的自变量只有一个随机变量的情况。
 > Function of a Single Random Variable : If $X$ is a random variable for which the p.d.f. is $f$ ,then the expectation of each real-valued function $r(X)$ can be found by applying the definition of expectation to the distribution of $r(X)$ as follows:Let $Y=r(X)$ ,determine the probability distribution of $Y$ ,and then determine $E(Y)$ by applying either expectation for a discrete distribution or expectation for a continous distribution.For example suppose that $Y$ has a continuous distribution with the p.d.f. $g$ .Then
 $$
@@ -76,7 +76,7 @@ Q.E.D
 知识点完毕按道理来说，这里应该多看几个例子。
 
 注意： $E[g(x)]\neq g(E[x])$
-### Function of Several Random Variables
+## 多随机变量的函数 Function of Several Random Variables
 同样的问题，如果上面的r对应的自变量随机变量不是一个随机变量呢？已知随机变量 $x$ 和 $y$ 的分布，那么求随机变量 $Z=X^2+Y^2$ 的期望，这事怎么办？
 继续我们的尴尬😓 定理
 >Theorem Law of Unconscious Statistician:Suppose $X_1,\dots,X_n$ are random variables with the joint p.d.f $f(x_1,\dots,x_n)$ Let $r$ be a real-valued function of $n$ real varibales,and suppose that $Y=r(X_1,\dots,X_n)$ .Then $E(Y)$ can be determined directly from the relation
@@ -92,6 +92,12 @@ if the mean exists
 没错，就是上面单变量的扩展版本。证明过程也是一样的，就是把单变量改成向量而已，基本没有难度，甚至如果你对线性代数很了解，基本上就是把一定范围的数的求和引申的某个空间上所有向量的求和，然后就能得出结论，连续情况下，积分同理！
 
 
-## 总结
+# 总结
 
 期望是一个分布的一个非常重要的属性，分布确定就能确定唯一的期望，这种一对一的关系也好，或者是其本身含义也好，都决定了其在概率学中的重要地位，我们本章学的基本都是分布的一些数字性质，而且都是用期望作为基础得到的，我们后面继续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-4-1-The-Expectation-of-a-Random-Variable-P2](https://www.face2ai.com/Math-Probability-4-1-The-Expectation-of-a-Random-Variable-P2)转载请标明出处

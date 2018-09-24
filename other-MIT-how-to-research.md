@@ -27,12 +27,12 @@ A. I. Laboratory Working Papers are produced for internal circulation, and may c
 
 # Introduction
 
-## What is this?
+# What is this?
 There's no guaranteed recipe for success at research. This document collects a lot of informal rules-of-thumb advice that may help.
-## Who's it for?
+# Who's it for?
 This document is written for new graduate students at the MIT AI Laboratory. However, it may be useful to many others doing research in AI at other institutions. People even in other fields have found parts of it useful.
 
-## How do I use it?
+# How do I use it?
 It's too long to read in one sitting. It's best to browse. Most people have found that it's useful to flip through the whole thing to see what's in it and then to refer back to sections when they are relevant to their current research problems.
 The document is divided roughly in halves. The first several sections talk about the concrete skills you need: reading, writing, programming, and so on. The later sections talk about the process of research: what it's like, how to go at it, how to choose an advisor and topic, and how to handle it emotionally. Most readers have reported that these later sections are in the long run more useful and interesting than the earlier ones.
 
@@ -520,3 +520,9 @@ A month or two after you've completed a project such as a thesis, you will proba
 This document incorporates ideas, text, and comments from Phil Agre, Jonathan Amsterdam, Jeff Anton, Alan Bawden, Danny Bobrow, Kaaren Bock, Jennifer Brooks, Rod Brooks, David Chapman, Jim Davis, Bruce Donald, Ken Forbus, Eric Grimson, Ken Haase, Dan Huttenlocher, Leslie Kaelbling, Mike Lowry, Patrick Sobalvarro, Jeff Shrager, Daniel Weise, and Ramin Zabih. We'd like to thank all the people who gave us the wisdom that we pass on in this document (and which, incidentally, got us through our theses), especially our advisors.
 
 Some of the ideas herein were lifted from "On Being a Researcher" by John Backus and "How to Get a PhD in AI," by Alan Bundy, Ben du Boulay, Jim Howe, and Gordon Plotkin.
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/other-MIT-how-to-research](https://www.face2ai.com/other-MIT-how-to-research)转载请标明出处

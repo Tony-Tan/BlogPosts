@@ -118,3 +118,9 @@ int main() {
 由于只是为了观察结果，所以使用了固定大小的二维数组，若实际工作中应该根据需要动态分配内存。如下结果：上面为原始数据，中间为DFT后的数据，最下面为IDFT后的结果。
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-2-二维DFT/20141117154113661.png)
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-2-2-二维DFT](https://www.face2ai.com/DIP-2-2-二维DFT)转载请标明出处

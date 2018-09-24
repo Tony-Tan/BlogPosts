@@ -14,7 +14,7 @@ date: 2018-03-19 10:12:34
 **Keywords:** 离散多随机变量的函数，连续多随机变量的函数，卷积
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 任何一个领域的顶级人才都是需要很久的基础知识积累的，所以根据自己的定位可以适当的补充自己的基础知识：
 1. 如果你想进入机器学习这个行业，了解基础技术更重要，你需要会使用python，各种工具包，TensorFlow等基础工具
 2. 如果你想在机器学习这个行业稳定的输出而不是撞大运式的调参，你需要了解下网络结构，基础算法，并且你需要非常多的经验去调参。
@@ -23,7 +23,7 @@ date: 2018-03-19 10:12:34
 以上为个人理解，每一个等级难度都会提升，但是不保证收入和难度完全成正比。
 
 上文书我们讲到单个随机变量的函数变换，本文我们只进行简单变换，因为我们从试验结果到事件进行了一次映射，事件到随机变量又是一次映射，如果从随机变量再到另一个随机变量还是一个映射，这个过程可能都不是一对一的，所以这个过程是对原始信息的总结和提取，提取对我们有用的信息的方法。通过总结归纳出一个或者多个结构化的函数，可以反映信息的容积。
-## Random Variables with a Discrete Joint Distribution
+# 有离散联合分布的多随机变量 Random Variables with a Discrete Joint Distribution
 >Theorem Functions of Discrete Random Variables. Suppose that $n$ random varibales $X_1,\dots ,X_n$ have a discrete joint distribution for which the joint p.f. is $f$ and that $m$ functions $Y_1,\dots ,Y_m$ of these $n$ random variables are defined as follows:
 $$
 Y_1=r_1(X_1,\dots,X_n),\\
@@ -58,7 +58,7 @@ $$
 4. Q.E.D
 
 
-## Random Variables with a Continuous Joint Distribution
+# 有连续联合分布的多随机变量 Random Variables with a Continuous Joint Distribution
 先来个🌰，不然全文没有例子有点不像概率论学习该有的样子，顺便补充一句，博客只能是总结精华部分，如果想和熟练的掌握，需要去做大量的练习，也就是我们这里的例子也好课后习题也好，反正要练习。
 排队的🌰 :
 假设队伍里面的前两个客户计划同时离开，$X_i$ 表示第 $i$ 为客户用的时间 $i=1,2$ 假设 $X_1$ 和 $X_2$ 是独立的随机变量，并有相同的分布: $f(x)=2e^{-2x}$ 其中 $x>0$ 因为两个客户想同时离开（也就是先完成的人要等待没完成的人），所以我们感兴趣的是他们用的总时间：$Y=X_1+X_2$ 所以 $Y$ 的p.d.f. 是我们要求的：
@@ -138,5 +138,12 @@ $$
 
 怎么样，像卷积了吧，不过不要忘了这是双连续随机变量的线性函数变换后的pd.f.的关系！这句话有点复杂？那就好好多读几遍。
 本想举个🌰就结束，结果发现这几个🌰是连续的，所以这里就不再多写了，大家可以参考'Probability and Statistics 4th'中的例子，都非常精彩
-## 总结
+
+# 总结
 本文扩展上文介绍了多随机变量的函数，从离散到连续，遵循和单变量类似的法则，但是用处却大大扩展了，下一篇开始就要进入第四章了，我们一起加油。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Probability-3-9-Functions-of-Two-or-More-Random-Variables](https://www.face2ai.com/Math-Probability-3-9-Functions-of-Two-or-More-Random-Variables)转载请标明出处

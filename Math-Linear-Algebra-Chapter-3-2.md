@@ -19,15 +19,15 @@ date: 2017-09-19 17:40:36
 
 <!--more-->
 
-## 开篇废话
+# 开篇废话
 重新搭的环境发现有点问题，有些latex公式显示格式有些问题，慢慢发现慢慢改，然后找一个完备的，能完全备份网站的方法，一劳永逸的完成网站，这样就可以集中精力在写博客，理解知识上了，其实我以前总犯这种错误，把一些辅助性的东西，当做主要工作点，本末倒置，买椟还珠，这种事情还是少干，毕竟人生苦短（我用python）
 
-## $Ax=0$
+# $Ax=0$
 之前讲$Ax=b$的时候提到过，正着看反着看的例子，其实这个办法是MIT18.01Caculus里面讲的一种技巧，不同的方向含义不同，今天更直接了当，把b改成o，好啦，来吧，怎么能让A的列组合出来0？不用说0肯定可以，那么只有0么？并不是。
 >The nullspace of A consists of all solutions to Ax=0.These vectors x are in $\Re^n$ the nullspace containing all solutions of Ax=0 is donate by $N(A)$
 
 其实这个nullspace还是挺别致的，起码他包含0，而之前Ax=b就不一定包含0。所以可以看出，nullspace是个subspace，原因是如果x，y向量Nullspace里面的两个向量，那么$A(x+y)=0$，并且$A(cx)=0$成立，所以nullspace是个子空间 $Ax=b$并不一定是。
-### Special Solutions
+## Special Solutions
 一般情况下，我们理解都是A0=0，这是最常规的，Ax=0的其他解一看就不是什么正经解，的确是这样的，看看下面这个例子：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-2/例子1.png)
 
@@ -55,7 +55,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-2/例子的解.png)
 
 ***Special solutions span the Nullspace！！！！！***
-## $Ux=0$ & $Rx=0$
+# $Ux=0$ & $Rx=0$
 求解nullspace的过程
 >1：Forward elimination to U or its reduced form R
 >2：Back substitution in Ux=0 or Rx=0 product x
@@ -64,5 +64,11 @@ $$
 解释下，reduced form 就是通过向上消元，把pivot上方的元素消掉变成0，同时缩放，把pivot全部变成0.$N(A)=N(U)=N(A)$
 U或者R中没有pivot的列是free列，对应x中的一个free variable，如果当m<n的时候，至少包含1个free variable。
 
-## Conclusion
+# Conclusion
 这篇主要介绍Nullspace，线性代数最重要的四个spaces已经搞定两个，还剩下两个就比较容易通过前两个推导了（什么？我居然没说是哪四个？好吧，列空间，Nullspace，行空间，左Nullspace）。这篇文字叙述有点多，因为没办法形象的
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-3-2](https://www.face2ai.com/Math-Linear-Algebra-Chapter-3-2)转载请标明出处

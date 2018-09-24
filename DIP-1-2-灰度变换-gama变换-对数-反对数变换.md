@@ -130,3 +130,9 @@ int main(){
 [Center 5]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134210731.jpg
 [Center 6]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111134239732.jpg
 [Center 7]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-1-2-灰度变换-gama变换-对数-反对数变换/20141111135816015.jpg
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-1-2-灰度变换-gama变换-对数-反对数变换](https://www.face2ai.com/DIP-1-2-灰度变换-gama变换-对数-反对数变换)转载请标明出处

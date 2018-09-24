@@ -13,7 +13,7 @@ date: 2018-06-06 19:53:12
 **Keywords:** 线程束洗牌指令
 
 <!--more-->
-## 开篇废话
+# 开篇废话
 赶紧写博客，少说废话。
 前面介绍了共享内存，常量内存，只读内存的使用，今天我们来研究一个比较特殊的机制，名字也很特殊，叫做线程束洗牌指令。
 支持线程束洗牌指令的设备最低也要3.0以上，
@@ -26,7 +26,7 @@ unsigned int warpID=threadIdx.x/32;
 ```
 根据上面的计算公式，一个线程块内的threadIdx.x=1,33,65等对应的laneID都是1
 
-## 线程束洗牌指令的不同形式
+# 线程束洗牌指令的不同形式
 线程束洗牌指令有两组：一组用于整形变量，另一种用于浮点型变量。一共有四种形式的洗牌指令。
 在线程束内交换整形变量，其基本函数如下：
 ```c++
@@ -90,13 +90,13 @@ xor是异或操作，这个指令如果学过硬件或者c语言学的比较扎�
 
 这就是4个线程束洗牌指令对整形的操作了。对应的浮点型不需要该函数名，而是只要把var改成float就行了，函数就会自动重载了。
 
-## 线程束内的共享内存数据
+# 线程束内的共享内存数据
 接下来我们用代码实现以下，看看每一个指令的作用效果，洗牌指令可以用于下面三种整数变量类型中：
 - 标量变量
 - 数组
 - 向量型变量
 
-### 跨线程束值的广播
+## 跨线程束值的广播
 这个就是 __shfl函数作用结果了，代码如下
 ```c++
 __global__ void test_shfl_broadcast(int *in,int*out,int const srcLans)
@@ -112,7 +112,7 @@ __global__ void test_shfl_broadcast(int *in,int*out,int const srcLans)
 
 ![re-1](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-5-6-线程束洗牌指令/re-1.png)
 
-### 线程束内上移
+## 线程束内上移
 这里使用__shfl_up指令进行上移。代码如下
 ```c++
 __global__ void test_shfl_up(int *in,int*out,int const delta)
@@ -128,7 +128,7 @@ __global__ void test_shfl_up(int *in,int*out,int const delta)
 
 ![re-2](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-5-6-线程束洗牌指令/re-2.png)
 
-### 线程束内下移
+## 线程束内下移
 这里使用__shfl_down指令进行上移。代码如下
 ```c++
 __global__ void test_shfl_down(int *in,int*out,int const delta)
@@ -144,7 +144,7 @@ __global__ void test_shfl_down(int *in,int*out,int const delta)
 
 ![re-3](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-5-6-线程束洗牌指令/re-3.png)
 
-### 线程束内环绕移动
+## 线程束内环绕移动
 然后是循环移动，我们修改__shfl中的参数，把静态的目标改成一个动态的目标，如下：
 ```c++
 __global__ void test_shfl_wrap(int *in,int*out,int const offset)
@@ -166,7 +166,7 @@ srcLane=srcLane%width;
 ```
 这样就说的过去了，同理我们通过将srclane设置成-2的话就能得到对应的向上的环绕移动。
 
-### 跨线程束的蝴蝶交换
+## 跨线程束的蝴蝶交换
 接着我们看看__shfl_xor像我说的这个操作非常之灵活，可以组合出任何你想要的到的变换，我们先来个简单的就是我们上面讲原理的时候得到的结论：
 ```c++
 __global__ void test_shfl_xor(int *in,int*out,int const mask)
@@ -183,7 +183,7 @@ mask我们设置成1，然后就能得到下面的结果：
 忍不住画了个叉，哈哈
 这些都是预料之中的，接着我们看点高级的。也解释下为什么说可以操作数组，好吧我之前也蒙了。
 
-### 跨线程束交换数组值
+## 跨线程束交换数组值
 我们要交换数组了，假如线程内有数组，然后我们交换数组的位置，我们可以用下面代码实现一个简单小数组的例子：
 ```c++
 __global__ void test_shfl_xor_array(int *in,int*out,int const mask)
@@ -219,7 +219,7 @@ __global__ void test_shfl_xor_array(int *in,int*out,int const mask)
 
 大蝴蝶~
 跨线程束不是跨越线程束，而是横跨当前线程束的意思，这个标题有点让人迷惑。
-### 跨线程束使用数组索引交换数值
+## 跨线程束使用数组索引交换数值
 接下来这个是个扩展了，交换了两个之间的一对值，并且这里是我们第一次写设备函数，也就是只能被核函数调用的函数：
 ```c++
 __inline__ __device__
@@ -269,7 +269,7 @@ __global__ void test_shfl_swap(int *in,int* out,int const mask,int firstIdx,int 
 对照代码每一步变换的过程都画了绿线，所以看起来还是好理解的，运行结果：
 
 ![re-6](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-5-6-线程束洗牌指令/re-6.png)
-## 使用线程束洗牌指令的并行规约
+# 使用线程束洗牌指令的并行规约
 前面我们已经很详细的介绍过归约算法了，从线程块之间到线程间的归约我们都进行了研究，包括使用共享内存以及各种展开方式，今天我们使用线程束洗牌指令完成归约，主要目标就是减少线程间数据传递的延迟，达到更快的效率：
 我们主要考虑三个层面的归约：
 
@@ -327,6 +327,12 @@ __global__ void reduceShfl(int * g_idata,int * g_odata,unsigned int n)
 
 其他几个核函数前面文章都介绍过，我们通过实践可以看出使用线程束洗牌指令进行的归约效率最高。主要原因是使用寄存器进行数据交换而不需要任何位置的内存介入。
 本文完整的代码在github:[https://github.com/Tony-Tan/CUDA_Freshman](https://github.com/Tony-Tan/CUDA_Freshman)（欢迎随手star😝 ）
-## 总结
+# 总结
 本文介绍线程束洗牌指令的一些用法，其吸引人的地方就是不需要通过内存进行线程间数据交换，具有非常高的性能。
 至此我们已经完成了第五章的学习，后面我们进入流和事件相关知识的学习。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/CUDA-F-5-6-线程束洗牌指令](https://www.face2ai.com/CUDA-F-5-6-线程束洗牌指令)转载请标明出处

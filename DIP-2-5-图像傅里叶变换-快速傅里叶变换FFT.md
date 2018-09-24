@@ -15,11 +15,11 @@ toc: true
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
 
-## 开篇废话
+# 开篇废话
 
 今天公司的网不知怎么了，死活打不开CSDN，公司有100多架客机，也有极限速度60kb/s的网速，还有3K的工资。
 
-## 图像FFT
+# 图像FFT
 
 上篇已经介绍了关于2D FFT的相关知识，这篇只介绍在图像中的应用，对于一幅图像，做二维FFT后，即可得到其傅里叶变换，傅里叶变换后是二维复数矩阵，因为二维数组，如果是实数，是可以通过变换到0~255通过灰度图像显示出来，而变换结果是复数，所以我们通过显示其幅度，即复数的模，来显示傅里叶谱（幅度谱），不废话，上图：
 原图:
@@ -176,3 +176,9 @@ void ImageIFFT(Complex *src,IplImage *dst,int size_w,int size_h){
 [SouthEast 8]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234450842.jpg
 [SouthEast 9]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234515864.jpg
 [SouthEast 10]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT/20141215234536394.jpg
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT](https://www.face2ai.com/DIP-2-5-图像傅里叶变换-快速傅里叶变换FFT)转载请标明出处

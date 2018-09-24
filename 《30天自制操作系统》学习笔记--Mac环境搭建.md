@@ -93,3 +93,9 @@ ld的相关问题：
 
 
 [Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/《30天自制操作系统》学习笔记--Mac环境搭建/20131213140747343.png
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/《30天自制操作系统》学习笔记--Mac环境搭建](https://www.face2ai.com/《30天自制操作系统》学习笔记--Mac环境搭建)转载请标明出处

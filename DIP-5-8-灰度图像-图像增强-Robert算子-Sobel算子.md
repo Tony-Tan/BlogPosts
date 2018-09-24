@@ -12,10 +12,10 @@ toc: true
 **Keywords:** Sobel算子,Robert算子,
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 继续废话，之前介绍了二阶微分，和非锐化掩蔽，按照顺序该说一阶微分了，一阶微分与二阶微分一样，是线性算子，线性算子的计算方法多半是生成模板，然后与图像卷积，一阶微分同样，几天简单的介绍两个一阶微分算子，Robert算子和Sobel算子，这两个算子应该算是大名鼎鼎了，因为这两个算子在后面的边缘检测中都是里程碑似的算法，在增强部分，他们也主要用在边缘增强，本文只简要介绍下两个算子的大概使用和增强效果，具体的数学原理推导和其他性质，将在图像分割部分完整介绍。
 
-## 图像梯度介绍
+# 图像梯度介绍
 首先介绍下梯度，梯度并非是一个数值，梯度严格意义上是一个向量，这个向量指向当前位置变化最快的方向，可以这么理解，当你站在一个山上，你有360°的方向可以选择，哪个方向下降速度最快（最陡峭），便是梯度方向，梯度的长度，表示为向量的长度，表示最大的变化速率。
 梯度的数学表达：
 
@@ -34,7 +34,7 @@ toc: true
 为了表达方便先重新来定义下模板位置，如下图
 ![Center 7][]
 其中z5表示模板中心。
-## Robert算子
+# Robert算子
 奇葩算子Robert，说它奇葩确实奇葩，因为不知道Robert哪来的勇气或者推导过程，使用一个2x2的模板，而且是对角线做差，其差分为：
 ![Center 8][]
 因为向量无法在图像中显示，我们要计算梯度向量的长度：
@@ -43,7 +43,7 @@ toc: true
 ![Center 10][]
 这个就是Robert交叉算子。模板：
 ![Center 11][]
-## Sobel算子
+# Sobel算子
 因为Robert算子是2x2的模板，不是对称的奇数模板，我们更喜欢3x3的模板，所以，要根据上面的Robert算子改造出来一个3x3模板，提出了下面这个计算方法：
 ![Center 12][]
 怎么来的？说实话我一开始也不知道，只是说根据上面Robert算子，搞出来一个等价的，其数字模板为：
@@ -55,7 +55,7 @@ toc: true
 到底是怎么来的，为什么中间会有2，以及为什么是隔行相减，下面的过程是我自己发明的，没有数学依据，只是自己的猜测，根据Robert算子的两个式子，横向划过3x3的所有位置，然后相加，就得到了Sobel算子：
 ![Center 15][]
 这个过程就用Robert产生了Sobel，同样的纵向移动就会产生x轴方向的算子。Sobel算子原理的论文不多，但都说这是个很好的边缘检测算子。
-## 代码
+# 代码
 Robert：
 ```c++
 
@@ -123,7 +123,7 @@ void SobelSharpen(double *src,double *dst,int width,int height,double c){
 
 
 
-## 结果
+# 结果
 原图：
 ![Center 16][]
 Robert：
@@ -148,7 +148,7 @@ Sobel局部放大图1，2，3：
 ![Center 27][]
 ![Center 28][] 
 ![Center 29][]
-## 总结
+# 总结
 Sobel和Robert都能对边缘有较强的响应，而且Sobel对边缘的响应较宽而且更加强烈，Robert算子对边缘响应较弱，而且对弯曲的边缘敏感度第（Robert1中圆形弧形部分亮度低）。
 待续。。。。
 
@@ -190,3 +190,9 @@ Sobel和Robert都能对边缘有较强的响应，而且Sobel对边缘的响应�
 [Center 27]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152218563.png
 [Center 28]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152225505.png
 [Center 29]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子/20150201152216992.png
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子](https://www.face2ai.com/DIP-5-8-灰度图像-图像增强-Robert算子-Sobel算子)转载请标明出处

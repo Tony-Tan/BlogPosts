@@ -18,12 +18,12 @@ date: 2017-09-25 15:20:42
 
 <!--more-->
 
-## 开篇废话
+# 开篇废话
 废话没啥好说的，成长总要经历痛苦，只有不断的让自己痛苦才能不断的提升能力，逐渐掌握自己的命运，一直生活在安逸快乐中是个好事，但有一天命运一旦降临将束手无措，也许一辈子的辛苦努力就是为了逃过某次致命一击，用一生的辛苦来扼住命运的喉咙，不也是精彩的一生么？别抱怨社会，别抱怨政府，也别抱怨不公平，如果认定不公平，那为什么不是获利一方？如果说自己的父亲不给力，那你有一天也是别人的父亲，原始财富一定要有人积累，这也对家族的责任。
-## $Ax=b$
+# $Ax=b$
 之前我们已经研究了 $Ax=0$的相关内容，值得说一下的是，列空间和nullspace是有些区别的，列空间指的是b所在的空间，而nullspace是x所在的空间，这个要区别一下，这些所有空间都是针对矩阵的。
 
-## One Particular Solution
+# One Particular Solution
 搞不懂Particular Solution和Sceptical Solution有啥区别的可以仔细看看了，之前我也没发现其有什么根本不同，Particular Solution是把所有的free variables设置为0，来一个完整的例子
 $$
 \begin{bmatrix}
@@ -88,7 +88,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-4/complete.png)
 
 为什么完整解是上看的式子呢，可以看下一节的详细介绍。
-## The Complete Solution
+# The Complete Solution
 前面我们确定了完整的解就是$x_p+x_n$，那么我们到底有多少个解呢？
 
 |序号| m&r | n&r |     Matrix Shape      | Ax=b |   Solution    |
@@ -128,5 +128,11 @@ $$
 
 自此，Ax=b 的所有解以及对应的情况都已经搞定了，***但是为啥complete solution是$x_p+x_n$呢？***这就是个悬案了，后面一定给出答案，现在就暂时记住就好了（回归课堂教育，先记住，就没有然后了）。
 
-## Conclusion
+# Conclusion
 这篇也比较凌乱，不像写算法那种博客很流畅，解释，代码，总结这种套路在这不太实用，因为知识错综复杂，本文上面的四种解的情况才是重点，包括什么时候没有解，什么时候无数个解，如果按照表和矩阵R的形式来看，就会豁然开朗，后面继续。。。
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/Math-Linear-Algebra-Chapter-3-4](https://www.face2ai.com/Math-Linear-Algebra-Chapter-3-4)转载请标明出处

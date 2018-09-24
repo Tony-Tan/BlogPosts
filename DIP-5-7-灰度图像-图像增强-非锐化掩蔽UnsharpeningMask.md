@@ -11,11 +11,11 @@ toc: true
 **Keywords:** 非锐化掩蔽(USM)
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-## 开篇废话
+# 开篇废话
 废话开始，今天写了两篇博客，为了加快学习进度，而且是周末，相当于给自己加个班，而且理论之前已经研究明白了，所以写起来也比较自如。有人在群里问，学习图像处理，要看书还是要写代码还是要作项目，我觉得，看书像是内功心法，写代码相当于招式练习，项目就像实战一样，所以如果只写代码或者一上来就去跟别人做项目而完全不看书研究基础算法就像空中楼阁，美丽但不牢固，更重要的是容易迷失自己，也就是走火入魔，个人观点，本人也在基础练习阶段，所以说这些没什么经验依据，只是自己的理解。
 非锐化掩蔽，一开始感觉这个词好难接受，不知道要干嘛，google之发现线索不多，经过一番研究发现这个词这么理解：非锐化--锐化的相反的操作是平滑，所以非锐化就是平滑操作；掩蔽--字面意思是隐藏，其实我们可以把它理解成为减去除去，所以这个过程就是减去平滑后的图像得到的结果。而实际算法的思路是，原图减去平滑后的图像，得到被削弱的边缘部分，然后按照一定比例和原图相加，如果比例为1，那么就是非锐化掩蔽，如果大于1就是高提升滤波，和前面频率域的高提升，高频强调思路一致，只是那部分用的是频率域方法。
 
-## 数学原理
+# 数学原理
 数学原理与前面的锐化原理基本保持一致，只是在确定细节的方法上有些不同：
 1. 生成模板，$\bar{f}$ 表示 $f$ 的平滑结果：
 ![Center][]
@@ -23,7 +23,7 @@ toc: true
 ![Center 1][]
 其中 $k=1$ 时为非锐化掩蔽。
 $k>1$时为高提升滤波。
-## 示意图
+# 示意图
 观察示意图：
 ![Center 2][]
 算法基本步骤：
@@ -35,7 +35,7 @@ $k>1$时为高提升滤波。
 ![Center 3][]
 
 
-## 代码
+# 代码
 
 ```c++
 void UnsharpMasking(double *src,double *dst,int width,int height,int smooth_type,int smooth_mask_width,int smooth_mask_height,double gaussian_deta,double k){
@@ -55,7 +55,7 @@ void UnsharpMasking(double *src,double *dst,int width,int height,int smooth_type
 }
 ```
 
-## 结果
+# 结果
 实验结果，分别采用高斯滤波和均值滤波，作为平滑算法。
 原图：
 ![Center 4][]
@@ -110,7 +110,7 @@ $7\times 7$ ，$\sigma=2$ ，$k=2$：
 锐化结果：
 ![Center 22][]
 
-## 总结
+# 总结
 观察上面结果，发现：
 1. k越大对细节增强越明显。
 2. 模板越大会导致增细节被增强的越宽，所以模板大小要适度。
@@ -143,3 +143,9 @@ $7\times 7$ ，$\sigma=2$ ，$k=2$：
 [Center 20]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194611438.jpg
 [Center 21]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194703562.jpg
 [Center 22]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask/20150131194721673.jpg
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask](https://www.face2ai.com/DIP-5-7-灰度图像-图像增强-非锐化掩蔽UnsharpeningMask)转载请标明出处

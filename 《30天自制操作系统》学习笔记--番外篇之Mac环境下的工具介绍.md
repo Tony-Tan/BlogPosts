@@ -47,3 +47,9 @@ qemu -fda xxxx.img                              
 
 [Center]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/《30天自制操作系统》学习笔记--番外篇之Mac环境下的工具介绍/20131209201250890.png
 [Center 1]: https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/《30天自制操作系统》学习笔记--番外篇之Mac环境下的工具介绍/20131209201546875.png
+
+
+
+
+
+原文地址1：[https://www.face2ai.com/《30天自制操作系统》学习笔记--番外篇之Mac环境下的工具介绍](https://www.face2ai.com/《30天自制操作系统》学习笔记--番外篇之Mac环境下的工具介绍)转载请标明出处
