@@ -1,5 +1,5 @@
 ---
-title: 【30天自制操作系统】 Mac环境搭建
+title: \[30天自制操作系统\] Mac环境搭建
 list_number: false
 date: 2013-12-13 14:20
 categories:

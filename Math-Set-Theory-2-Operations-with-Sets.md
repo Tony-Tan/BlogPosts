@@ -1,5 +1,5 @@
 ---
-title: 【集合论】2 Set Theory:Operation with sets
+title: \[集合论\]2 集合操作
 categories:
   - Mathematic
   - Set Theory
@@ -18,17 +18,17 @@ date: 2017-11-16 14:03:01
 **Keywords:** Complement，Union，Intersection，Commutative Law，Associative Law，Distributive laws
 
 <!--more-->
-# 开篇废话
+# 集合操作
 这两天写字写的有点多，吐血更新，尤其是线性代数已经接近高潮部分，所以看书时间少了一下，但是感觉看的数量反而没有减少，现在在看概率论的书籍，陈希孺先生的《概率与数理统计》 ，钟开莱先生的《初等概率论》 Morris H.Degroot的他《概率统计》 这三本书后两本是英文，陈希孺先生的是中文，读起来肯定要顺畅一些，但是根据“经验人士透露”这些书都各有长处，所以我决定从一本英文书来下手，陈希孺先生的概率论部分不多，我也先大概多少看了一遍了，接下来是精度了，包括推到里面的所有数学符号，同时在想是看Morris的英文呢？还是看钟开莱先生的英文呢？这两个真的很难选，都是第四版，说明都很畅销，所以我决定扔🎲，如果是小就是钟开莱先生，要是大就Morris，结果跟我想象的差不多，Morris
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/random.png)
 1到6 ，结果是5
 但是集合论这块还是继续用钟开莱先生的书，看完Morris回头再来钟先生
-# Operation
+## Operation
 我们之前学过很多数字的运算，以及运算法则，下面我们进行扩展，扩展到集合，数字的运算结果是数字，集合的运算结果也是集合，但是要换个名字，比如加法产生和，减法产生差，乘法产生积。
 
  注意：以下我们要讨论的所有集合的计算都是基于已知固定完整空间 $\Omega$
 
-## Complement
+### Complement
 集合 $A$ 的Complement被写成 $A^c$ 表示：
 $$
 A^c=\{\omega | \omega \notin A\}
@@ -40,21 +40,21 @@ $A^c$ 表示在空间 $\Omega$ 中不属于 $A$ 的元素的集合
 2. $\emptyset^c=\Omega$
 3. $(A^c)^c=A$
 
-## Union
+### Union
 并集，就是把两个集合合并到一起，重复元素只保留一份（避免出现重复出现的情况）
 
 $$A \cup B=\{\omega \in A \, or\, \omega \in B\}$$
 
 逻辑词汇or表示可以前面的也可以后面的也可以两个同时，C语言，C++,离散数学应该都有讲过
 
-## Intersection
+### Intersection
 交集，元素必须同时出现在两个集合中：
 $$A \cap B=\{\omega \in A \, and\, \omega \in B\}$$
 
 逻辑词汇and，必须满足前后两个条件，同时满足哦。
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/complement_intersection.png)
-## Commutative Law & Associative Law
+### Commutative Law & Associative Law
 $$
 A \cup B=B \cup A\\
 A \cap B=B \cap A
@@ -79,7 +79,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Set-Theory-2-Operations-with-Sets/neq.png)
 Venn图怎么画？画圈就行了，相交的地方是交集，合起来是并集，没圈到的地方是complement，这个我看五年级的小孩都在奥数题里面写这个。
 
-## Distributive Law
+### Distributive Law
 这个跟前面就有点不同了
 $$
 (A \cup B) \cap C=(A \cap C) \cup (B \cap C) \dots\dots (D_1)\\
@@ -130,7 +130,7 @@ then:\\
 $$
 Q.E.D
 
-# Conclusion
+## Conclusion
 今天已经写了两篇博客了，这篇还好比较短，集合作为最基础的数学框架，有很多是从没有文字就开始有了的，过于理论化的东西也不是我们研究的对象，我们要做的就是多画画多理解，好在后面看算法看其他过程的时候心里没有恐惧。
 待续。。。
 

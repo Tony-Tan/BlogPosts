@@ -1,5 +1,5 @@
 ---
-title: 【概率论】3-6:条件分布(Conditional Distributions Part II）
+title: \[概率论\]3-6:条件分布(Conditional Distributions Part II）
 categories:
   - Mathematic
   - Probability
@@ -18,9 +18,9 @@ date: 2018-03-12 09:06:00
 **Keywords:** 乘法法则，贝叶斯定理，随机变量的全概率公式
 
 <!--more-->
-# 开篇废话
+# 条件分布
 今天这篇是上一篇的后半部分，其实应该是一篇，但是上一篇由于长时间没写博客导致写作速度下降，所以不得已分成两篇，最近除了写概率的博客，还有数学分析的博客，CUDA系列的也在更新，所以有点要累吐血的感觉，同时还在学习数理统计，数理统计用的是陈希孺先生的概率论与数理统计的数理统计部分，看了二十几页，发现他说的90%我基本都能看懂，但是真的不知道为啥上大学的时候，有老师讲还一脸懵x，是我智商进化了？还是书本难度降低了？这个就不得而知了，除非把大学教材重新拿过来比较一下，那就有点浪费时间了，我的目标是学好数学去研究机器学习，而不是做教材点评，难道不是么？
-# 条件概率乘法法则 Multiplication Rule for Conditional Probability
+## 条件概率乘法法则 Multiplication Rule for Conditional Probability
 乘法法则我们在事件的概率部分学过了[传送到条件概率](https://face2ai.com/Math-Probability-2-1-Conditional-Probability/)，也是通过条件概率过度出来的，并且乘法法则相对于条件概率适用面更广，因为条件概率有除法计算，所以必然会对概率为0的分母有所忌惮，但是乘法法则无所谓，0可以随便来：
 $$
 Pr(A|B)=\frac{Pr(A,B)}{Pr(B)} \text{ for } Pr(B)\neq 0\\
@@ -107,7 +107,7 @@ $$
 $$
 g_2(p|1)=6p(1-p) \text{ for } 0\leq p \leq 1
 $$
-# 随机变量的贝叶斯定理，全概率计算 Bayes' Theorem and Law of Total Probability for Random Varibales
+## 随机变量的贝叶斯定理，全概率计算 Bayes' Theorem and Law of Total Probability for Random Varibales
 我们前面在事件条件概率之后提出之后也是提出了贝叶斯公式和全概率公式，那么我们还按照这个套路提出贝叶斯定理的分布形式，全概率公式的分布形式。
 我们从事件到随机变量一路走过来，套路基本相同，逻辑相似，但是我们必须进行区分，毕竟随机变量是事件的函数过程，这样的过程是会造成很多不同的。我们后面也要时刻注意，不要再用事件的方法思考问题了，因为我们已经把事件数学化了。
 
@@ -163,7 +163,7 @@ f_2(y)=\int^\infty_{-\infty} f(x,y)dx=\int^y_0\frac{1}{1-x}dx=-log(1-y)
 $$
 
 
-# 独立随机变量 Independent Random Varibales
+## 独立随机变量 Independent Random Varibales
 和事件独立套路依旧一致，随机变量的独立并不代表对立的你死我活，也不是说相交为空的互斥，而是相关的一种状态。
 > Theorem Independent Random Variables.Suppose that $X$ and $Y$ are two random variables having a joint p.f.,p.d.f.or p.f./p.d.f. $f$ Then  $X$ and $Y$ are independent if and only if for every value of $y$ such that $f_2(y)>0$  and every value of $x$ ,
 $$
@@ -175,7 +175,7 @@ $$
 
 前面在事件的条件概率过程我们说过所有概率都是条件概率，没有条件就没有概率，只是有些条件我们不列出，或者不考虑，那么当我们要考虑某些条件的时候就出现了我们的条件概率，条件分布，但是我们具体操作者写条件概率和条件分布和普通的概率分布是一样的，因为他们都是条件的，只是有人写出来了，有人隐藏了。
 
-# 总结
+## 总结
 这一节分两篇看来分的还是挺正确的，不然一篇就太长了，我们下一篇继续。。。
 
 

@@ -12,7 +12,7 @@ keywords:
 **Keywords:** 数据，预处理
 <!--more-->
 
-## 这篇短小的文章是这两个月血泪的结晶：
+# 训练数据选择血泪史
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/MachineLearning-训练数据选择血泪史/sample.png)
 这一幅图就能完整说明整个训练过程，说明

@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-5:负二项分布(The Negative Binomial Distribution)
+title: \[概率论\]5-5:负二项分布(The Negative Binomial Distribution)
 categories:
     - Mathematic
     - Probability
@@ -14,7 +14,7 @@ date: 2018-03-29 08:57:12
 **Keywords:** The Negative Binomial Distribution，The Geometric Distribution
 
 <!--more-->
-# 开篇废话
+# 负二项分布
 到目前为止，所有的分部都是从Bernoulli 分布衍生出来的：
 1. 二项分布，$n$ 次Bernoulli试验的结果中，每次试验的分布不变，结果为1的次数 $X$ 的分布
 2. 超几何分布，$n$ 次Bernoulli试验，每次试验分布发生改变，结果为1的次数 $X$ 的分布，当试验分布变化不大的时候和二项分布结果相同
@@ -23,7 +23,7 @@ date: 2018-03-29 08:57:12
 今天我们还是从二项分布出发，研究这样一个事实，对于Bernoulli过程，我们设定，当某个结果出现固定次数的时候，整个过程的数量，比如我们生产某个零件，假设每个零件的合格与否都是相互独立的，且分布相同，那么当我们生产出了五个不合格零件时，一共生产了多少合格的零件，这个数量就是一个负二项分布。
 为什么叫负二项分布而不是正二项分布？
 有两种说法，第一我们上面说到的例子，多半是失败到了固定次数时 $X$ 的分布，另一种是站在分布的系数上来观察的，在下面我们可以看得到。
-# 负二项分布的定义和含义 Definition and Interpretation
+## 负二项分布的定义和含义 Definition and Interpretation
 废话中给出的生产零件的例子就是引出定义的关键。我们来先看一个定理，描述上面过程的定理：
 >Theorem Sampling until a Fixed Number of Success.Suppose that an infinite sequence of Bernoulli trails with probability of success $p$ are available.The number $X$ of failures that occur before the $r$th success has the following p.d.f.
 $$
@@ -67,7 +67,7 @@ f(x|r,p)=
 $$
 这就是命名的由来（参考《统计推断第二版》）
 
-# 几何分布 The Geometric Distribution
+## 几何分布 The Geometric Distribution
 我们先学了超几何分布然后又跑回来学几何分布，难道我们跑错了？当然不是，因为几何分布跟负二项分布非常相关。
 当负二项分布 $r=1$ 的时候产生的分布叫做几何分布，文字解释就是当我们第一个不合格的产品出现时，我们就停止生产，这是生产的合格产品的数量为随机变量 $X$
 
@@ -87,9 +87,9 @@ $$
 证明过程也就是分析过程，首先我们假设我们有一个Bernoulli过程，那么如果只要有0发生就停止，这样产生的是几何分布，如果第一个几何分布 $X_i$ 产生以后，我们继续按照规则进行，那么接着会产生 $X_2,\dots,X_n$ 并且之间相互独立，而产生的到第 $n$ 个的时候，就产生了一个当0发生 $n$ 次的负二项分布。所以这 $n$ 个随机变量相加就是负二项分布。
 
 这个证明不太严谨。但是从逻辑的角度上是成立的。
-# 负二项分布和几何分布的性质 Properties of Negative Binomial and Geometric Distributions
+## 负二项分布和几何分布的性质 Properties of Negative Binomial and Geometric Distributions
 接下来我们看看性质
-## 距生成函数 m.g.f.
+### 距生成函数 m.g.f.
 >Theorem Moment Generating Function.If X has the negative binomial distribution with parameters r and p ,then the m.g.f. of X is as follow:
 $$
 \psi(t)=(\frac{p}{1-(1-p)e^t})^r\text{ for } t< log(\frac{1}{1-p})
@@ -124,7 +124,7 @@ $$
 \psi(t)=(\frac{p}{1-(1-p)e^t})^r\text{ for } t< log(\frac{1}{1-p})
 $$
 
-## 均值和方差 Mean and Variance
+### 均值和方差 Mean and Variance
 >Theorem if $X$ has the negative binomial distribution with parameters $r$ and $p$ the mean and the varance of $X$ must be
 $$
 E(X)=\frac{r(1-p)}{p} \text{ and }Var(X)\frac{r(1-p)}{p^2}
@@ -138,7 +138,7 @@ Var(X_i)=\psi''_i(0)-[\psi'_i(0)]^2=\frac{1-p}{p^2}
 $$
 然后就是把 $r$ 个 $X_i$ 求和就得到订立中的结果了。
 
-## 集合分布的无记忆性 Memorless Property of Geometric Distributions
+### 集合分布的无记忆性 Memorless Property of Geometric Distributions
 这条性质是第一次出现，所以值得注意
 >Theorem Memoryless Property of Geometric Distributions.Let $X$ have the geometric distribution with parameter $p$ ,and let $k\geq 0$ .Then for every integer $t\geq 0$ ,
 $$
@@ -150,7 +150,7 @@ $$
 <font color='ff000'>此处有坑，记得补上</font>
 
 
-# 总结
+## 总结
 本文介绍了离散分布中最后两个，负二项分布，和几何分布，下一篇开始连续分布。
 
 

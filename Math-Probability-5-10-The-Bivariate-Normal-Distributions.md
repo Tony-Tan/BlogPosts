@@ -1,5 +1,5 @@
 ---
-title: 【概率论】5-10:二维正态分布(The Bivariate Normal Distributions)
+title: \[概率论\]5-10:二维正态分布(The Bivariate Normal Distributions)
 categories:
     - Mathematic
     - Probability
@@ -13,13 +13,13 @@ date: 2018-04-05 22:03:55
 **Keywords:** The Bivariate Normal Distributions
 
 <!--more-->
-# 开篇废话
+# 二维正态分布
 今天的废话想说说我们周围会有各种各样的事，各种各样的诱惑，各种各样的理由来告诉我们读书学习很苦而不学习也可以活的很好，但是坚持还是放弃只能选择一次，所以要慎重，开弓没有回头箭，放弃学习，就相当于放弃了一条抗争的路。
 > 万般皆下品惟有读书高
 
 今天我们来研究双变量的正态分布，多变量，连续分布。
 对于某些研究者，可能用正态分布来非常好的描述某个随机变量，那么如果我们有两个随机变量，都可以用正态分布描述，而且他们之间存在关系，这时候我们就可以用一个双变量正态分布来描述了这两个变量之间的关系，并且这个二维分布的边缘分布，还是这两个随机变量单变量的分布。[5.6中](https://face2ai.com/Math-Probability-5-6-The-Normal-Distributions-P3/) 我们介绍了某些有正态分布的独立随机变量的线性组合还是正态分布。但是双变量正态分布（联合分布）可以是相关的。
-# 二维正态分布的定义和来源 Definition and Derivation of Bivariate Normal Distributions
+## 二维正态分布的定义和来源 Definition and Derivation of Bivariate Normal Distributions
 >Theorem Suppose that $Z_1$ and $Z_2$ are independent random variables,each of which has the standard normal distribution.Let $\mu_1,\mu_2,\sigma_1,\sigma_2$ ,and $\rho$ be constants such that $-\infty<\mu_i<\infty(i=1,2)$ , $\sigma_i>0(i=1,2)$  ,and $-1<\rho<1$ . Define two new random variables $X_1$ and $X_2$ as follows:
 $$
 X_1=\sigma_1Z_1+\mu_1\\
@@ -39,7 +39,7 @@ $$
 >Definition Bivariate Normal Distributions.When the joint p.d.f. of two random variables $X_1$ and $X_2$ is of the form in Eq(5.10.2),it is said that $X_1$ and $X_2$ have the bivariate normal distribution with mean $\mu_1$ and $\mu_2$ variance $\sigma_1^2$ and $\sigma_2^2$ ,and correlation $\rho$
 
 以上就是第一部分要讲的内容，两个没证明的定理，和一个定义，这篇文章看起来有点水，确实是这样，但是如果没有知识又不完全，算是个占位符，但是双变量正态分布这个用途确实太多了，举个最简单的例子，我们的身高体重，就经常用双变量的正态分布来建模。
-# 二维正态分布的性质 Properties of Bivariate Normal Distributions
+## 二维正态分布的性质 Properties of Bivariate Normal Distributions
 接下来我们来研究一下双变量正态分布的性质
 >Theorem Independence and Correlation.Two random variables $X_1$ and $X_2$ that have a bivariate normal distribution are independent if and only if they are uncorrelated.
 
@@ -86,7 +86,7 @@ $$
 
 ---------------
 
-# Linear Combination
+## Linear Combination
 线性组合我们只证明一个定理：
 >Theorem Linear Combination of Bivariate Normals.Suppose that two random variables $X_1$ and $X_2$ have a bivariate normal distribution ,for which the p.d.f is specified by Eq.(5.10.2).Let $Y=a_1X_1+a_2X_2+b$ ,where $a_1,a_2$ and $b$ are arbitrary given constants .Then $Y$ has the normal distribution with mean $a_1\mu_1+a_2\mu_2+b$ and variance
 $$
@@ -110,7 +110,7 @@ $$
 6. 证毕
 
 
-# 总结
+## 总结
 给出了两个变量的正态分布的定义（这个定理中给出了双变量正态分布的所有有用性质的根本），双变量正态分布的性质的证明主要用到这个定理（本篇第一个定理），所以本篇第一个定理是关键中的关键。
 
 

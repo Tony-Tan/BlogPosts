@@ -1,5 +1,5 @@
 ---
-title: 【转】How to do Research At the MIT AI Lab
+title: \[转\]How to do Research At the MIT AI Lab
 categories:
   - Other
 keywords:
@@ -12,6 +12,8 @@ date: 2018-05-10 12:51:29
 **Keywords:**
 
 <!--more-->
+# 如何在AI实验室做研究
+
 [https://dspace.mit.edu/bitstream/handle/1721.1/41487/AI_WP_316.pdf](https://dspace.mit.edu/bitstream/handle/1721.1/41487/AI_WP_316.pdf)
 >by
 a whole bunch of current, former, and honorary
@@ -19,20 +21,20 @@ MIT AI Lab graduate students David Chapman, Editor
 Version 1.3, September, 1988.
 
 
-# Abstract
+## Abstract
 
 This document presumptuously purports to explain how to do research. We give heuristics that may be useful in picking up the specific skills needed for research (reading, writing, programming) and for understanding and enjoying the process itself (methodology, topic and advisor selection, and emotional factors).
 Copyright 1987, 1988 by the authors.
 A. I. Laboratory Working Papers are produced for internal circulation, and may contain information that is, for example, too preliminary or too detailed for formal publication. It is not intended that they should be considered papers to which reference can be made in the literature.
 
-# Introduction
+## Introduction
 
-# What is this?
+## What is this?
 There's no guaranteed recipe for success at research. This document collects a lot of informal rules-of-thumb advice that may help.
-# Who's it for?
+## Who's it for?
 This document is written for new graduate students at the MIT AI Laboratory. However, it may be useful to many others doing research in AI at other institutions. People even in other fields have found parts of it useful.
 
-# How do I use it?
+## How do I use it?
 It's too long to read in one sitting. It's best to browse. Most people have found that it's useful to flip through the whole thing to see what's in it and then to refer back to sections when they are relevant to their current research problems.
 The document is divided roughly in halves. The first several sections talk about the concrete skills you need: reading, writing, programming, and so on. The later sections talk about the process of research: what it's like, how to go at it, how to choose an advisor and topic, and how to handle it emotionally. Most readers have reported that these later sections are in the long run more useful and interesting than the earlier ones.
 
@@ -60,7 +62,7 @@ The document is divided roughly in halves. The first several sections talk about
 
 This document is still in a state of development; we welcome contributions and comments. Some sections are very incomplete. \[Annotations in brackets and italics indicate some of the major incompletions\]. We appreciate contributions; send your ideas and comments to Zvona@ai.ai.mit.edu.
 
-# Reading AI
+## Reading AI
 Many researchers spend more than half their time reading. You can learn a lot more quickly from other people's work than from doing your own. This section talks about reading within AI; section covers reading about other subjects.
 
 The time to start reading is now. Once you start seriously working on your thesis you'll have less time, and your reading will have to be more focused on the topic area. During your first two years, you'll mostly be doing class work and getting up to speed on AI in general. For this it suffices to read textbooks and published journal articles. (Later, you may read mostly drafts; see section .)
@@ -84,7 +86,7 @@ Most AI labs are sadly inbred and insular; people often mostly read and cite wor
 Often someone will hand you a book or paper and exclaim that you should read it because it's (a) the most brilliant thing ever written and/or (b) precisely applicable to your own research. Usually when you actually read it, you will find it not particularly brilliant and only vaguely applicable. This can be perplexing. "Is there something wrong with me? Am I missing something?" The truth, most often, is that reading the book or paper in question has, more or less by chance, made your friend think something useful about your research topic by catalyzing a line of thought that was already forming in their head.
 
 
-# Getting connected
+## Getting connected
 After the first year or two, you'll have some idea of what subfield you are going to be working in. At this point-or even earlier-it's important to get plugged into the Secret Paper Passing Network. This informal organization is where all the action in AI really is. Trend-setting work eventually turns into published papers-but not until at least a year after the cool people know all about it. Which means that the cool people have a year's head start on working with new ideas.
 
 How do the cool people find out about a new idea? Maybe they hear about it at a conference; but much more likely, they got it through the Secret Paper Passing Network. Here's how it works. Jo Cool gets a good idea. She throws together a half-assed implementation and it sort of works, so she writes a draft paper about it. She wants to know whether the idea is any good, so she sends copies to ten friends and asks them for comments on it. They think it's cool, so as well as telling Jo what's wrong with it, they lend copies to their friends to Xerox. Their friends lend copies to their friends, and so on. Jo revises it a bunch a few months later and sends it to AAAI. Six months later, it first appears in print in a cut-down five-page version (all that the AAAI proceedings allow). Jo eventually gets around to cleaning up the program and writes a longer revised version (based on the feedback on the AAAI version) and sends it to the AI Journal. AIJ has almost two years turn-around time, what with reviews and revisions and publication delay, so Jo's idea finally appears in a journal form three years after she had it-and almost that long after the cool people first found out about it. So cool people hardly ever learn about their subfield from published journal articles; those come out too late.
@@ -120,7 +122,7 @@ You, too, can be a cool people. Here are some heuristics for getting connected:
 - Get summer jobs away at other labs. This gives you a whole new pool of people to get connected with who probably have a different way of looking at things. One good way to get summer jobs at other labs is to ask senior grad students how. They're likely to have been places that you'd want to go and can probably help you make the right connections.
 
 
-# Learning other fields
+## Learning other fields
 It used to be the case that you could do AI without knowing anything except AI, and some people still seem to do that. But increasingly, good research requires that you know a lot about several related fields. Computational feasibility by itself doesn't provide enough constraint on what intelligence is about. Other related fields give other forms of constraint, for example experimental data, which you can get from psychology. More importantly, other fields give you new tools for thinking and new ways of looking at what intelligence is about. Another reason for learning other fields is that AI does not have its own standards of research excellence, but has borrowed from other fields. Mathematics takes theorems as progress; engineering asks whether an object works reliably; psychology demands repeatable experiments; philosophy rigorous arguments; and so forth. All these criteria are sometimes applied to work in AI, and adeptness with them is valuable in evaluating other people's work and in deepening and defending your own.
 
 Over the course of the six or so years it takes to get a PhD at MIT, you can get a really solid grounding in one or two non-AI fields, read widely in several more, and have at least some understanding of the lot of them. Here are some ways to learn about a field you don't know much about:
@@ -165,7 +167,7 @@ Computer science is grounded in discrete mathematics: algebra, graph theory, and
 This all seems like a lot to know about, and it is. There's a trap here: thinking "if only I knew more X, this problem would be easy," for all X. There's always more to know that could be relevant. Eventually you have to sit down and solve the problem.
 
 
-# Notebooks
+## Notebooks
 Most scientists keep a research notebook. You should too. You've probably been told this in every science class since fifth grade, but it's true. Different systems work for different people; experiment. You might keep it online or in a spiral notebook or on legal pads. You might want one for the lab and one for home.
 
 Record in your notebook ideas as they come up. Nobody except you is going to read it, so you can be random. Put in speculations, current problems in your work, possible solutions. Work through possible solutions there. Summarize for future reference interesting things you read.
@@ -177,7 +179,7 @@ What you put in your notebook can often serve as the backbone of a paper. This m
 You may find useful Vera Johnson-Steiner's book Notebooks of the Mind, which, though mostly not literally about notebooks, describes the ways in which creative thought emerges from the accumulation of fragments of ideas.
 
 
-# Writing
+## Writing
 There's a lot of reasons to write.
 
 - You are required to write one or two theses during your graduate student career: a PhD and maybe an MS, depending on your department.
@@ -272,7 +274,7 @@ Getting your papers published counts. This can be easier than it seems. Basicall
 Like all else in research, paper writing always takes a lot longer than you expect. Papers for publication have a particularly insidious form of this disease, however. After you finally finish a paper, you send it in for publication. Many months later it comes back with comments, and you have to revise it. Then months after that the proofs come back for correction. If you publish several forms of the paper, like a short conference version and a long journal version, this may go through several rounds. The result is that you are still working on a paper years after you thought you were through with it and after the whole topic has become utterly boring. This suggests a heuristic: don't do some piece of research you don't care for passionately on the grounds that it won't be hard to get a publication out of it: the pain will be worse than you expect.
 
 
-# Talks
+## Talks
 Talks are another form of communication with your colleagues, and most of what we said about writing is true of talking also. An ability to stand in front of an audience and give a talk that doesn't make the audience fall asleep is crucial for success in terms of recognition, respect and eventually a job. Speaking ability is not innate-you can start out graduate life as a terrible public speaker and end up as a sparkling wit so long as you practice, practice, practice, by actually giving talks to groups of people.
 
 Some ways to learn and practice speaking:
@@ -312,7 +314,7 @@ Some key things to remember in planning and delivering a talk:
 - AI talks are usually accompanied by overhead transparencies, otherwise known as "slides". They should be kept simple. Use few words and big type. If you can't easily read your slides when you are standing and they are on the floor, they're too small. Draw pictures whenever possible. Don't stand in front of the screen. Don't point at the overhead if it is possible to point directly at the screen. If you must point at the overhead, don't actually touch the transparency since you will make it jerk around.
 
 
-# Programming
+## Programming
 Not every AI thesis involves code, and there are important people in AI who have never written a significant program, but to a first approximation you have to be able to program to do AI. Not only does most AI work involve writing programs, but learning to program gives you crucial intuitions into what is and isn't computationally feasible, which is the major source of constraint AI contributes to cognitive science.
 
 At MIT, essentially all AI programming is done in Common Lisp. If you don't know it, learn it. Learning a language is not learning to program, however; and AI programming involves some techniques quite different from those used for systems programming or for other applications. You can start by reading Abelson and Sussman's Structure and Interpretation of Computer Programs and doing some of the exercises. That book isn't about AI programming per se, but it teaches some of the same techniques. Then read the third edition of Winston and Horn's Lisp book; it's got a lot of neat AI programs in it. Ultimately, though, programming, not reading, is the best way to learn to program.
@@ -339,7 +341,7 @@ Unlike most other programmers, AI programmers rarely can borrow code from each o
 Like papers, programs can be over-polished. Rewriting code till it's perfect, making everything maximally abstract, writing macros and libraries, and playing with operating system internals has sucked many people out their theses and out of the field. (On the other hand, maybe that's what you really wanted to be doing for a living anyway.)
 
 
-# Advisors
+## Advisors
 At MIT there are two kinds of advisors, academic advisors and thesis advisors.
 
 Academic advisors are simple so we'll dispose of them first. Every graduate student is assigned a faculty member as academic advisor, generally in his or her area, though it depends on current advisor loads. The function of the academic advisor is to represent the department to you: to tell you what the official requirements are, to get on your case if you are late satisfying them, and to OK your class schedule. If all goes well, you only have to see your academic advisor in that capacity twice a year on registration day. On the other hand, if you are having difficulties, your academic advisor may be able to act as advocate for you, either in representing you to the department or in providing pointers to sources of assistance.
@@ -396,7 +398,7 @@ It is possible that you will encounter racist, sexist, heterosexist, or other ha
 
 Some students in the lab are only nominally supervised by a thesis advisor. This can work out well for people who are independent self-starters. It has the advantage that you have only your own neuroses to deal with, not your advisor's as well. But it's probably not a good idea to go this route until you've completed at least one supervised piece of work, and unless you are sure you can do without an advisor and have a solid support network.
 
-# The thesis
+## The thesis
 Your thesis, or theses, will occupy most of your time during most of your career as a graduate student. The bulk of that time will be devoted to research, or even to choosing a topic, rather than to the actual writing.
 
 The Master's thesis is designed as practice for the PhD thesis. PhD-level research is too hard to embark on without preparation. The essential requirement of a Master's thesis is that it literally demonstrate mastery: that you have fully understood the state of the art in your subfield and that you are capable of operating at that level. It is not a requirement that you extend the state of the art, nor that the Master's thesis be publishable. There is a substantial machismo about theses in our lab, however, so that many Master's theses do in fact contribute significantly to the field, and perhaps half are published. This is not necessarily a good thing. Many of us burn out on our Master's work, so that it is notorious that MIT Master's theses are often better than the PhD theses. This defeats the preparatory intent of the Master's. The other factor is that doing research that contributes to the field takes at least two years, and that makes the graduate student career take too damn long. You may not feel in a hurry now, but after you've been around the Lab for seven years you'll want out badly. The mean time from entrance to finishing the Master's is two and a half years. However, the CS department is strongly encouraging students to reduce this period. If a Master's topic turns out to be a blockbuster, it can be split into parts, one for the Master's and one for a PhD.
@@ -448,7 +450,7 @@ There are a number ways you can waste a lot of time during the thesis. Some acti
 There is a well-understood phenomenon known as "thesis avoidance," whereby you suddenly find fixing obscure bugs in an obsolete operating system to be utterly fascinating and of paramount importance. This is invariably a semiconscious way of getting out of working on one's thesis. Be aware that's what you are doing. (This document is itself an example of thesis avoidance on the part of its authors.)
 
 
-# Research methodology
+## Research methodology
 
 \[This section is weak. Please contribute!\]
 
@@ -462,7 +464,7 @@ Some work is like science. You look at how people learn arithmetic, how the brai
 
 Methodologies are social. Read how other people attacked similar problems, and talk to people about how they proceeded in specific cases.
 
-# Emotional factors
+## Emotional factors
 Research is hard. It is easy to burn out on it. An embarrassingly small fraction of students who start PhD programs in AI finish. AT MIT, almost all those who do not finish drop out voluntarily. Some leave because they can make more money in industry, or for personal reasons; the majority leave out of frustration with their theses. This section tries to explain how that can happen and to give some heuristics that may help. Forewarned is forearmed: mostly it's useful to know that the particular sorts of tragedies, aggravations, depressions and triumphs you go through in research are necessary parts of the process, and are shared with everyone else who does it.
 
 All research involves risk. If your project can't fail, it's development, not research. What's hard is dealing with project failures. It's easy to interpret your project failing as your failing; in fact, it proves that you had the courage to do something difficult.
@@ -516,7 +518,7 @@ In getting a feeling for what research is like, and as inspiration and consolati
 A month or two after you've completed a project such as a thesis, you will probably find that it looks utterly worthless. This backlash effect is the result of being bored and burned-out on the problem, and of being able to see in retrospect that it could have been done better-which is always the case. Don't take this feeling seriously. You'll find that when you look back at it a year or two later, after it is less familiar, you'll think "Hey! That's pretty clever! Nice piece of work!"
 
 
-# Endnote
+## Endnote
 This document incorporates ideas, text, and comments from Phil Agre, Jonathan Amsterdam, Jeff Anton, Alan Bawden, Danny Bobrow, Kaaren Bock, Jennifer Brooks, Rod Brooks, David Chapman, Jim Davis, Bruce Donald, Ken Forbus, Eric Grimson, Ken Haase, Dan Huttenlocher, Leslie Kaelbling, Mike Lowry, Patrick Sobalvarro, Jeff Shrager, Daniel Weise, and Ramin Zabih. We'd like to thank all the people who gave us the wisdom that we pass on in this document (and which, incidentally, got us through our theses), especially our advisors.
 
 Some of the ideas herein were lifted from "On Being a Researcher" by John Backus and "How to Get a PhD in AI," by Alan Bundy, Ben du Boulay, Jim Howe, and Gordon Plotkin.

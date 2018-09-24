@@ -15,25 +15,25 @@ date: 9999-12-31 23:59:59
 本站包含作者原创的关于人工智能的理论，算法等博客，目前包括：强化学习，深度学习，机器学习，线性代数，概率论，数理统计，Python，爬虫等在目前人工智能领域需要用到的基础知识，欢迎大家订阅关注。
 <!--more-->
 
-
+# 本站目录
 
 首先插入一下我的整体研究思路，也是人工智能的技能树，我们要顺着这个树找到自己的研究方向：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Other-Website-Contents/FrameWork.png)
 
 
-# 人工智能 - 数学理论：
-## 集合论
+## 人工智能 - 数学理论：
+### 集合论
 
 - [1 样本集](http://www.face2ai.com/Math-Set-Theory-1-Sample-Sets/)
 - [2 集合操作](http://www.face2ai.com/Math-Set-Theory-2-Operations-with-Sets/)
-## 数学分析
+### 数学分析
 - 微积分
 - 数学分析
 - 实分析
 - 复分析
 - 泛函分析
 - 测度论
-## 线性代数
+### 线性代数
 - 《Introduction to Linear Algebra》
 - [线性代数BigPicture](http://www.face2ai.com/Math-Linear_Algebra_big_picture/)
 - [1.0 向量](http://www.face2ai.com/Math-Linear-Algebra-Chapter-1-0/)
@@ -69,9 +69,9 @@ date: 9999-12-31 23:59:59
 - [7.1 线性变换思想](http://www.face2ai.com/Math-Linear-Algebra-Chapter-7-1/)
 - [7.2 线性变换的矩阵](http://www.face2ai.com/Math-Linear-Algebra-Chapter-7-2/)
 - [7.3 对角化和伪逆](http://www.face2ai.com/Math-Linear-Algebra-Chapter-7-3/)
-## 微分方程
-## 拓扑学
-## 概率论
+### 微分方程
+### 拓扑学
+### 概率论
 
 - [概率论BigPicture](http://www.face2ai.com/Math-Probability-Big-Picture/)
 - [1.0 概率介绍、试验、事件、公理化的概率](http://www.face2ai.com/Math-Probability-1-0-Introduction/)
@@ -120,7 +120,7 @@ date: 9999-12-31 23:59:59
 - [6.4 连续性修正](http://www.face2ai.com/Math-Probability-6-4-The-Correction-for-Continuity/)
 
 
-## 数理统计
+### 数理统计
 
 - 数理统计学基础
 - [0.0 Big Picture](http://www.face2ai.com/Math-Statistics-Basis-0-0-Big-Picture/)
@@ -141,13 +141,13 @@ date: 9999-12-31 23:59:59
 - [2.3 初步结果的改进，与斯特林的联系](http://www.face2ai.com/Math-Statistics-2-3-Communication-With-Stirling)
 
 
-## 随机过程
+### 随机过程
 
-## 信息论
+### 信息论
 
-## 凸优化
+### 凸优化
 
-## 数值分析
+### 数值分析
 - [课程介绍(Big Picture)](http://www.face2ai.com/Math-Numerical-Analysis-0-0-Introduction/)
 - [0.1 多项式求值](http://www.face2ai.com/Math-Numerical-Analysis-0-1-Polynomial-Evaluation/)
 - [0.2 二进制](http://www.face2ai.com/Math-Numerical-Analysis-0-2-Binary/)
@@ -155,18 +155,18 @@ date: 9999-12-31 23:59:59
 - [0.4 有效数字](http://www.face2ai.com/Math-Numerical-Analysis-0-4-Significant-Digit/)
 
 
-# 算法
-## 机器学习算法
+## 算法
+### 机器学习算法
 - [训练数据选择血泪史](http://www.face2ai.com/MachineLearning-训练数据选择血泪史/)
 - [人脸检测分析之 Haar-like，Adaboost，级联(Cascade)](http://www.face2ai.com/MachineLearning-Haar-like-Adaboost-cascade)
-## 统计学习算法
-## 深度学习算法
+### 统计学习算法
+### 深度学习算法
 - [FaceNet论文阅读](http://www.face2ai.com/Deep-Learning-FaceNet论文阅读/)
 - [可视化CNN](http://www.face2ai.com/Deep-Learning-Visualizing-and-Understanding-CNN/)
 - [LeNet](http://www.face2ai.com/Deep-Learning-LeNet/)
 - [Dropout](http://www.face2ai.com/Deep-Learning-阅读-Dropout-Prevent-NN-from-Overfitting/)
 - [CNN训练数据选择](http://www.face2ai.com/Deep-Learning-CNN训练数据讨论/)
-## 图像处理
+### 图像处理
 - [1.1 灰度级](http://www.face2ai.com/DIP-1-1-不同灰度级的图像/)
 - [1.2 灰度变换，gama变换，对数，反对数变换](http://www.face2ai.com/DIP-1-2-灰度变换-gama变换-对数-反对数变换/)
 - [2.1 一维DFT](http://www.face2ai.com/DIP-2-1-一维DFT/)
@@ -241,17 +241,17 @@ date: 9999-12-31 23:59:59
 - [10.3 彩色图像-图像增强 图像锐化](http://www.face2ai.com/DIP-10-3-彩色图像-图像增强-图像锐化/)
 - [10.4 彩色图像-图像分割 彩色空间分割](http://www.face2ai.com/DIP-10-4-彩色图像-图像分割-彩色空间分割/)
 
-## 遗传算法
+### 遗传算法
 
 
-# 人工智能 - 神经生物学
+## 人工智能 - 神经生物学
 
 ------------
 
 
 
-# 人工智能 - 编程语言
-## C/C++
+## 人工智能 - 编程语言
+### C/C++
 - 《30天自制操作系统》
 - [保护模式](https://face2ai.com/《30天自制操作系统》学习笔记--第2天/)
 - [IPL，BIOS](https://face2ai.com/《30天自制操作系统》学习笔记--第3天/)
@@ -274,8 +274,8 @@ date: 9999-12-31 23:59:59
 - [一个半成品](https://face2ai.com/《30天自制操作系统》学习笔记--第好多天/)
 
 
-## Python
-### 爬虫
+### Python
+#### 爬虫
 
 - [1.0 Introduction](http://www.face2ai.com/Crawler-1-0-Introduction/)
 - [2.0 分析目标网站](http://www.face2ai.com/Crawler-2-0-分析确定目标/)
@@ -283,7 +283,7 @@ date: 9999-12-31 23:59:59
 - [3.1 HTTP协议（一）](http://www.face2ai.com/Crawler-3-1-HTTP协议-1/)
 - [3.2 HTTP协议（二）](http://www.face2ai.com/Crawler-3-2-HTTP协议-2/)
 - [3.3 数据抓取](http://www.face2ai.com/Crawler-3-3-数据抓取/)
-## GPU编程（CUDA）
+### GPU编程（CUDA）
 - [0.0 腾讯云CUDA环境搭建](http://www.face2ai.com/CUDA-F-0-0-Tencent-GPU-Cloud/)
 - [1.0 并行计算与计算机架构](http://www.face2ai.com/CUDA-F-1-0-并行计算与计算机架构/)
 - [1.1 异构计算与CUDA](http://www.face2ai.com/CUDA-F-1-1-异构计算-CUDA/)
@@ -318,24 +318,24 @@ date: 9999-12-31 23:59:59
 - [6.3 重叠内核执行和数据传输](http://www.face2ai.com/CUDA-F-6-3-重叠内核执行和数据传输/)
 - [6.4 重叠GPU和CPU的执行](http://www.face2ai.com/CUDA-F-6-4-重叠GPU和CPU的执行/)
 - [6.5 流回调](http://www.face2ai.com/CUDA-F-6-5-流回调/)
-## 框架
+### 框架
 - OpenCV
 - [OpenCV矩阵计算分析](https://tony4ai.com/Other-OpenCV-Mat过程分析/)
 - TensorFlow .etc
-## 设计实现框架
+### 设计实现框架
 - PineNut
 
 
 -------------
 
 
-# 其他笔记
+## 其他笔记
 - [推荐读物](http://www.face2ai.com/other-Tony推荐读物/)
 - [学习](http://www.face2ai.com/other-Tony说学习/)
 - [Hexo博客搭建](http://www.face2ai.com/other-用atom-markdown-hexo-github写博客/)
 - [Hexo畅言评论PC和移动端同步](http://www.face2ai.com/other-Hexo-next-changyan/)
-- [【斯坦福大学】人工智能课程安排](http://www.face2ai.com/MachineLearning-Stanford-Artificial-Intelligence-Track/)
-- [【麻省理工学院】人工智能课程安排](http://www.face2ai.com/other-mit-undergraduate-programs-course-6-3/)
+- [\[斯坦福大学\]人工智能课程安排](http://www.face2ai.com/MachineLearning-Stanford-Artificial-Intelligence-Track/)
+- [\[麻省理工学院\]人工智能课程安排](http://www.face2ai.com/other-mit-undergraduate-programs-course-6-3/)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: 【数理统计学简史】2.1 狄莫弗研究的动因
+title: \[数理统计学简史\]2.1 狄莫弗研究的动因
 categories:
     - Mathematic
     - Statistics

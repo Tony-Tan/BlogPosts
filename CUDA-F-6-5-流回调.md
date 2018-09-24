@@ -1,5 +1,5 @@
 ---
-title: 【CUDA 基础】6.5 流回调
+title: \[CUDA 基础\]6.5 流回调
 categories:
     - CUDA
     - Freshman
@@ -92,7 +92,7 @@ int main(int argc,char **argv)
 ![re-6-5-2](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-6-5-流回调/re-6-5-2.png)
 
 
-# 总结
+## 总结
 本文介绍了本系列的最后一个小功能，流回调，下面部分就是中级提高篇了，要好好练习前面的，不然后面会懵逼哦！
 
 

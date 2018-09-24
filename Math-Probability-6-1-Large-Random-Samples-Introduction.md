@@ -1,5 +1,5 @@
 ---
-title: 【概率论】6-1:大样本介绍(Large Random Samples Introduction)
+title: \[概率论\]6-1:大样本介绍(Large Random Samples Introduction)
 categories:
     - Mathematic
     - Probability
@@ -13,10 +13,10 @@ date: 2018-04-07 14:43:51
 **Keywords:** Large Random Samples
 
 <!--more-->
-# 开篇废话
+# 大样本介绍
 身着简陋而举止优雅，身着华丽而举止粗俗，比选其一的话，我更愿意尊重第一种类型。
 本章我们介绍一些近似的结果，简化大量随机样本的分析。
-# 大样本介绍 Introduction
+## 大样本介绍 Introduction
 本文通过两个例子来举例两个不同的分析方向，并有不同的分析工具。
 
 --------------
@@ -56,7 +56,7 @@ $$
 中心极限定理来给出样本的均值来近似期望的概率。
 
 
-# 总结
+## 总结
 本文给出本章的研究方向，和基本研究背景。
 
 

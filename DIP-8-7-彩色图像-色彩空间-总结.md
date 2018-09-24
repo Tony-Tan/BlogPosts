@@ -1,5 +1,5 @@
 ---
-title: 【数字图像处理】8.7:彩色图像-色彩空间 总结
+title: \[数字图像处理\]8.7:彩色图像-色彩空间 总结
 date: 2015-03-15 17:33
 categories:
   - DIP
@@ -11,7 +11,7 @@ toc: true
 **Keywords:** 色彩空间
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-# 色彩空间总结
+# 彩色图像-色彩空间 总结
 现在把色彩空间进行简单总结，首先推荐一个博客
 [http://blog.ibireme.com/2013/08/12/color-model/](http://blog.ibireme.com/2013/08/12/color-model/)
 这篇博客对整个色彩空间总结的相当全面，而且有GIF图，直观。

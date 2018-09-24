@@ -1,5 +1,5 @@
 ---
-title: LeNet
+title: LeNet论文解读
 toc: true
 categories:
   - Deep Learning
@@ -13,18 +13,16 @@ keywords:
 **Abstract:** 学习LeNet的论文总结Stochastic Gradient 与 Batch Gradient 的比较 以及收敛速度
 **Keywords:** Stochastic Gradient,Batch Gradient，Faster Convergence
 <!--more-->
-# 开篇废话
-这也是从原来博客搬过来的，wordpress感觉太臃肿了，用wordpress写博客总是想去调wordpres是，而没办法把中心放在写作上，hexo给了我不错的感觉，为了防止服务器到期，我决定过每天慢慢的把所有blog都搬过来，也方便以后整理，改进。
-
-# Stochastic Gradient vs Batch Gradient
+# LeNet论文解读
+## Stochastic Gradient vs Batch Gradient
 基于梯度的算法可以使用两种中的一种来更新参数
 1. 第一种叫做Batch Gradient
 2. 另一种叫Stochastic Gradient
 
-## Batch Gradient(BG)
+### Batch Gradient(BG)
 这是最传统的一种梯度算法，梯度是通过对所有训练样本进行计算得出，然后更新所有参数。
 
-## Stochastic Gradient(SG)
+### Stochastic Gradient(SG)
 是一种局部的，包含噪声的梯度估计法，这种方法只计算一个或者一组较小数量的训练样本来估算梯度，之后更新所有参数。
 
 样本一般算计选取，或者先把样本随机排队，然后逐个（组）使用。
@@ -33,7 +31,7 @@ keywords:
 
 尤其是大数据量的时候，SG具有显著优势
 
-## BG vs SG
+### BG vs SG
 本文表示，截止到论文发表时，原理未知，但是可以通过简单的实验来测试得出一个直观上的认识，下面简单叙述一下实验：
 受限在一个完整的训练集里又完全一毛一样的两个子集组成，例如全集是A，子集 a={1，2，3，4} ，那么全集A就是{1，2，3，4，1，2，3，4}。
 
@@ -43,7 +41,7 @@ keywords:
 
 这种方式可以范化到所有包含重复Pattern的训练样本的情况。
 
-## 其他方法
+### 其他方法
 另外还有很多优化方法：
 
 二阶算法：
@@ -65,12 +63,12 @@ error surface就是：
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/1000579-20160812015100906-691589358.jpg)
 
-# Conditions for Faster Convergence
+## Conditions for Faster Convergence
 *"Gradient Based Learning Applied to Document Recognition "*
 *LeCun, Y Bottou, L Bengio, Y Haffner, P*
 学习LeNet，从附录开始，附录介绍了一些非常有用的基础知识，简单总结一下
 
-## 压缩函数
+### 压缩函数
 Squashing function，压缩函数，定义域的范围远远大于值域，这样的函数就是压缩函数，神经网络最常用的就双曲正切函数：
 
 $$f(a)=A tanh(Sa)$$
@@ -81,7 +79,7 @@ $$tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}$$
 
 本文指出：
 
-## 收敛速度
+### 收敛速度
 *对称函数能产生更快的收敛，当权重weights非常小的时候，收敛将变得及其的缓慢收敛变慢的原因：在权重空间，学习动力（learning dynamic）是一个固定点，或者，进入鞍点，各个方向都是下降方向。*
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-LeNet/20160817072812773.jpg)
 
@@ -107,7 +105,7 @@ tanh函数二阶导数
 
 
 
-## 参数初始化
+### 参数初始化
 
 *特别选择的参数只是能够方便一些，并不影响最终结果*
 
@@ -130,7 +128,7 @@ tanh函数二阶导数
 
 本系列还有后续，慢慢期待
 
-# 总结
+## 总结
 还是中期读论文的博客风格，有点说教的感觉，大家可以在看论文看不太懂的时候来这里找找看有没有你需要的知识。
 
 

@@ -1,5 +1,5 @@
 ---
-title: 【30天自制操作系统】Mac下工具的使用
+title: \[30天自制操作系统\]Mac下工具的使用
 list_number: false
 date: 2013-12-13 14:42
 categories:
@@ -24,7 +24,7 @@ project的内容可以修改，因为批处理可以下岗了：
 ```
     TOOLPATH = ../z_tools/
     INCPATH  = ../z_tools/haribote/
-    ##################################################     MAKE     = make
+    ###################################################     MAKE     = make
     NASK     = $(TOOLPATH)nask
     CC1      = $(TOOLPATH)gocc1 -I$(INCPATH) -Os -Wall -quiet
     GAS2NASK = $(TOOLPATH)gas2nask -a
@@ -35,12 +35,12 @@ project的内容可以修改，因为批处理可以下岗了：
     IMGTOL   = $(TOOLPATH)imgtol.com
     COPY     = cp
     DEL      = rm
-    ##################################################     # ÉfÉtÉHÉãÉgìÆçÏ
+    ###################################################     ## ÉfÉtÉHÉãÉgìÆçÏ
 
     default :
     	$(MAKE) img
 
-    # ÉtÉ@ÉCÉãê∂ê¨ãKë•
+    ## ÉtÉ@ÉCÉãê∂ê¨ãKë•
 
     ipl10.bin : ipl10.nas Makefile
     	$(NASK) ipl10.nas ipl10.bin ipl10.lst
@@ -60,26 +60,26 @@ project的内容可以修改，因为批处理可以下岗了：
     bootpack.bim : bootpack.obj Makefile
     	$(OBJ2BIM) @$(RULEFILE) out:bootpack.bim stack:3136k map:bootpack.map \
     		bootpack.obj
-    # 3MB+64KB=3136KB
+    ## 3MB+64KB=3136KB
 
     bootpack.hrb : bootpack.bim Makefile
     	$(BIM2HRB) bootpack.bim bootpack.hrb 0
-    #################################################     haribote.sys : asmhead.bin bootpack.hrb Makefile
+    ##################################################     haribote.sys : asmhead.bin bootpack.hrb Makefile
     	cat  asmhead.bin bootpack.hrb>haribote.sys
-    ##################################################     haribote.img : ipl10.bin haribote.sys Makefile
+    ###################################################     haribote.img : ipl10.bin haribote.sys Makefile
     	$(EDIMG)   imgin:../z_tools/fdimg0at.tek \
     		wbinimg src:ipl10.bin len:512 from:0 to:0 \
     		copy from:haribote.sys to:@: \
     		imgout:haribote.img
 
-    # ÉRÉ}ÉìÉh
+    ## ÉRÉ}ÉìÉh
 
     img :
     	$(MAKE) haribote.img
-    ################################################     run :
+    #################################################     run :
     	$(MAKE) img
     	qemu -fda haribote.img
-    ################################################## 
+    ###################################################
 
     clean :
     	-$(DEL) *.bin

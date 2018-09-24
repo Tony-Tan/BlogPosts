@@ -1,5 +1,5 @@
 ---
-title: 【概率论】2-2:独立事件(Independent Events)
+title: \[概率论\]2-2:独立事件(Independent Events)
 categories:
   - Mathematic
   - Probability
@@ -18,7 +18,7 @@ date: 2018-02-01 09:33:49
 **Keywords:** Independent Events，Independent of Several Events，Coditionally Independent Events
 
 <!--more-->
-# 开篇废话
+# 独立事件
 今天想说的废话就是，其实什么行业想做的好都要靠知识，做软件是这样，硬件也是，说相声是，其他行业也是，刚开始可能觉得经验丰富的人可以很顺利的做好任何我们觉得很难的事，过了三五年发现我们自己也可以很顺利的完成了，我们就变得优秀了么？其实不是，时间成本决定了你可以在不太努力的情况下成长，但是这种成长速度不足以让你成为行业顶级人物，当然不是所有人都想做顶级，想做顶级，必须强迫自己去做一些舒适区以外的事情。
 从根本上思考理解自己做的事，同时有计划的训练才是野蛮生长的最快途径。
 美国人Noel Tichy提出的理论，图里的3个区可以表示为你想学习的事物的等级:
@@ -27,7 +27,7 @@ date: 2018-02-01 09:33:49
 
 不要停留在舒适区，也不要好高骛远的直接去Panic Zone，那样会死的很惨，多去学习区，这样才能不断的进步。
 
-# 独立事件 Independent Events
+## 独立事件 Independent Events
 上一篇我们讲到条件概率，这一篇其实是和上一篇同样的研究两个事件间的关系的，条件概率最朴素的想法就是当一个事件发生了，其对我们关心的事件是否发生有没有影响，有影响与否这都是个条件概率，如果没有影响，我们进一步把这两个事件称之为独立的。
 独立与互斥，对立等意义都不相同，独立性是概率论的重要基础关系，在独立事件上建立的概率论理论已经很完备了，但是对于非独立事件相关的研究开在继续完善中，很多情况下我们都是假设，或者近似一些事件独立的，来是模型更加简单准确。
 我们上一篇中说的条件概率，假定我们已知事件B发生，那么事件A发生的概率在此条件下发生的概率是$Pr(A|B)$ 如果我们进一步说，B事件的发生与否对于A事件来说没有什么影响，那么我们就有$Pr(A|B)=Pr(A)$
@@ -42,7 +42,7 @@ Pr(A\cap B)=Pr(A)Pr(B)
 $$
 以上关系成立的充分必要条件是，事件A和事件B相互独立。
 
-## 两个事件独立 Independence of Two Events
+### 两个事件独立 Independence of Two Events
 
 >Definition Independent Events.Two events A and B are independent if
 $$
@@ -56,7 +56,7 @@ $$
 
 分析：甲乙之间独立，互不影响，所以从原理上满足组成复合事件时互相独立，那么$Pr(A\cap B)=Pr(A)Pr(B)=\frac{1}{4}\times \frac{1}{3}=\frac{1}{12}$
 
-## 互斥事件和独立事件 Exclusive Events and independent Events
+### 互斥事件和独立事件 Exclusive Events and independent Events
 <font color=#ff0000 >说一个我之前初学概率时的一个思维误区:</font>
 我一直以为独立在集合上的反映就是不想交，，像这样：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-2-2-Independent-Events/intersect.png)
@@ -78,7 +78,7 @@ $$
 
 
 
-## 补集之间的独立 Independence of Complements
+### 补集之间的独立 Independence of Complements
 如果我们说两个事件独立了，其相交的事件的概率和这两个事件的关系会被确定，同样我们能得到其补集间的关系：
 >Theorem If two events A and B are independent,then the events $A$ and $B^c$ are also independent.
 
@@ -95,7 +95,7 @@ Q.E.D
 根据上面的结论，当事件$A$ 和$B$ 独立的时候，那么$A$ 和$B^c$ 独立，继续推导$A^c$ 和$B^c$ 独立。
 
 
-# 多事件独立 Independent of Several Events
+## 多事件独立 Independent of Several Events
 把两个事件扩展到多个事件稍微有点复杂，从原理上讲，这些独立的事件里，某一个或者某几个发生并不影响其他事件发生的概率，那么他们就是独立的
 
 >Definition Mutually Independent Events The k events $A_1,\dots,A_k$ are independent or mutually independent if for every subset $A_{i_1},\dots,A_{i_j}$ of j of these events($j=2,3,\dots,k$)
@@ -154,7 +154,7 @@ $$
 
 上面例子也好定理也好，都是要强调完整的子集和的集合。
 
-## 独立和条件概率 Independence and Conditional Probability
+### 独立和条件概率 Independence and Conditional Probability
 补充个多事件独立的条件概率的定义：
 >Theorem Let $A_1,A_2,\dots,A_k$ be events such that $Pr(A_1\cap \dots \cap A_k)>0$ .Then $A_1\dots A_m$ and $A_1\dots A_l$ of$A_1\dots A_k$ we have
 $$
@@ -163,7 +163,7 @@ $$
 这个解释是两个事件的独立的条件理解的扩展，这里不再过多解释啦。
 
 
-# 条件独立事件 Coditionally Independent Events
+## 条件独立事件 Coditionally Independent Events
 
 条件概率上一篇就说到了，我们可以给任何事件的概率加上条件，只是有些可以不加，或者省略，而且条件概率的所有性质，定理，公理都与概率一致（因为所有概率都是条件的）。那我们就顺着这个思路，个独立事件加上条件，称之为条件独立。条件独立更加复杂，当然也更加通用。但其定义方法及其简单，我们直接对多个事件的定义下手，两个事件的条件独立被包含在其中：
 >Theorem Conditional Independence We say that event $A_1\dots A_k$ are conditional independent given B if,for every subcollection $A_{i_1},\dots ,A_{i_j}$ of $j$ of these events ($j=2,3,\dots,k$)
@@ -185,7 +185,7 @@ so: \quad Pr(A_1|B)Pr(A_2|B)=Pr(A_2|A_1\cap B)Pr(A_1|B)\\
 Pr(A_2|A_1\cap B)=Pr(A_2|B)
 $$
 
-# 总结
+## 总结
 总结就一句话，掌握了这一句就掌握了这一篇的所有，什么是独立，***互不影响就是独立***
 
 

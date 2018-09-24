@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-1-4 强化学习和人工智能
+title: \[强化学习\]1-1-4 强化学习和人工智能
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -20,7 +20,8 @@ date: 2018-08-29 23:54:34
 **Keywords:** modern Reinforcement Learning，现代强化学习，Psychology，心理学，Neuroscience，神经系统科学，mathematics，数学
 
 <!--more-->
-# Modern Reinforcement Learning
+# 强化学习和人工智能
+## 现代强化学习 Modern Reinforcement Learning
 
 现在的RL可以很有效的跟其他学科结合产生出一些特定领域非常客观的结果，尤其是在工程和自然科学领域。当然RL也可以在金融等方面有所作为，称为一个有力的工具。
 
@@ -39,7 +40,7 @@ RL在未来一段时间内，会成为AI或者机器学习中的主力，但需�
 Psychology和Neuroscience会在14和15章中介绍，而本书主要部分是介绍RL在工程和AI中的相关内容。
 
 
-# Weak or Strong Method
+## 弱方法和强方法(Weak or Strong Method)
 
 讲一段历史，1960's 那段时间，大家认为general principle是扯淡的，根本没这东西，所以没人研究这类算法，他们认为只要数据足够多，就能产生智慧，当然现在来看，他们的看法局限性很大，但是别忘了，后面二十年的结果会导致我们现在的热门研究也有局限性，所以，不要到处鼓吹某项技术能成为永远，包括RL可能就是未来AI中的一个小角色，或者一个雏形，至于CNN什么的，就是个SVM，玩来玩去，其实也就是在没有理论指导下的随机结果。
 
@@ -55,7 +56,7 @@ strong方法基于：
 
 
 
-# Conclusion
+## 总结(Conclusion)
 介绍了介绍RL的最后一部分，后面基本就开始深入各个分支进行介绍了。
 需要指出的是，RL在AI中作用目前不知道有多重要或多不重要,本书作者说：
 
@@ -65,7 +66,7 @@ strong方法基于：
 
 
 
-# References
+## References
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 

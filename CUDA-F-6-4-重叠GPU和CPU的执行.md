@@ -1,5 +1,5 @@
 ---
-title: 【CUDA 基础】6.4 重叠GPU和CPU的执行
+title: \[CUDA 基础\]6.4 重叠GPU和CPU的执行
 categories:
     - CUDA
     - Freshman
@@ -54,7 +54,7 @@ date: 2018-06-20 21:56:05
 cudaEventQuery(stop)
 ```
 是非阻塞的，否则，不能继续cpu的计算
-# 总结
+## 总结
 本文很短，但是，作为一个非常不错的例子，展示了GPU和CPU之间的并行。
 
 

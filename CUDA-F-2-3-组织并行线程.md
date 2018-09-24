@@ -1,5 +1,5 @@
 ---
-title: 【CUDA 基础】2.3 组织并行线程
+title: \[CUDA 基础\]2.3 组织并行线程
 categories:
   - CUDA
   - Freshman
@@ -15,7 +15,7 @@ date: 2018-03-09 21:00:38
 **Keywords:** Thread,Block,Grid
 
 <!--more-->
-# 开篇废话
+# 组织并行线程
 
 
 [2.0 CUDA编程模型](http://face2ai.com/CUDA-F-2-0-CUDA编程模型概述1/)中我们大概的介绍了CUDA编程的几个关键点，包括内存，kernel，以及今天我们要讲的线程组织形式，2.0中还介绍了每个线程的编号是依靠，块的坐标（blockIdx.x等），网格的大小（gridDim.x 等），线程编号（threadIdx.x等），线程的大小（tblockDim.x等）
@@ -25,7 +25,7 @@ date: 2018-03-09 21:00:38
 - 二维网格一维线程块
 
 
-# 使用块和线程建立矩阵索引
+## 使用块和线程建立矩阵索引
 多线程的优点就是每个线程处理不同的数据计算，那么怎么分配好每个线程处理不同的数据，而不至于多个不同的线程处理同一个数据，或者避免不同的线程没有组织的乱访问内存。如果多线程不能按照组织合理的干活，那么就相当于一群没训练过的哈士奇拉雪橇，往不同的方向跑，那么是没办法前进的，必须有组织，有规则的计算才有意义。
 我们的线程模型前面2.0中已经有个大概的介绍，但是下图可以非常形象的反应线程模型，不过注意硬件实际的执行和存储不是按照图中的模型来的，大家注意区分：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/cuda_thread.png)
@@ -102,7 +102,7 @@ int main(int argc,char** argv)
 这段代码输出了一组我们随机生成的矩阵，并且核函数打印自己的线程标号，注意，核函数能调用printf这个特性是CUDA后来加的，最早的版本里面不能printf，输出结果：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/printf.png)
 由于截图不完全，上面有一段打印信息没贴全，但是我们可以知道每一个线程已经对应到了不同的数据，接着我们就要用这个方法来进行计算了，最简单的当然就是二维矩阵加法啦。
-# 二维矩阵加法
+## 二维矩阵加法
 我们利用上面的线程与数据的对应完成了下面的核函数：
 ```c++
 __global__ void sumMatrix(float * MatA,float * MatB,float * MatC,int nx,int ny)
@@ -118,7 +118,7 @@ __global__ void sumMatrix(float * MatA,float * MatB,float * MatC,int nx,int ny)
 ```
 下面我们调整不同的线程组织形式，测试一下不同的效率并保证得到正确的结果，但是什么时候得到最好的效率是后面要考虑的，我们要做的就是用各种不同的相乘组织形式得到正确结果.
 
-# 二维网格和二维块
+## 二维网格和二维块
 首先来看二维网格二维模块的代码：
 ```c++
 // 2d block and 2d grid
@@ -136,7 +136,7 @@ checkResult(C_host,C_from_gpu,nxy);
 运行结果：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/2_2.png)
 红色框内是运行结果，用cpu写一个矩阵计算，然后比对结果，发现我们的运算结果是正确的，用时0.002152秒。
-# 一维网格和一维块
+## 一维网格和一维块
 接着我们使用一维网格一维块：
 ```c++
 // 1d block and 1d grid
@@ -155,7 +155,7 @@ checkResult(C_host,C_from_gpu,nxy);
 运行结果：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/1_1.png)
 同样运行结果是正确的。
-# 二维网格和一维块
+## 二维网格和一维块
 二维网格一维块：
 ```c++
 // 2d block and 1d grid
@@ -173,7 +173,7 @@ checkResult(C_host,C_from_gpu,nxy);
 ```
 运行结果：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-3-组织并行线程/2_1.png)
-# 总结
+## 总结
 用不同的线程组织形式会得到正确结果，但是效率有所区别：
 
 |     线程配置      | 执行时间 |

@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-1-0 强化学习介绍
+title: \[强化学习\]1-1-0 强化学习介绍
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -20,7 +20,7 @@ date: 2018-08-25 22:41:02
 **Keywords:** Reinforcement Learning，Situation，Action，Enviroment，Closed-loop，Optimal Control，Markov Decision Processes，MDPs
 
 <!--more-->
-# Reinforcement Learning
+## Reinforcement Learning
 中文翻译Reinforcement Learning为强化学习，不知道为啥这么翻译，也没想去了解给这个词命名的人是否非常了解这个领域的知识，既然这么叫了那就这样吧。
 上面谈到命名是为了介绍其内容，有些东西的命名，可以直接看出其内容，但是强化学习，显然不是这类的，而“土豆片”，“薯条”这种名字则可以。
 
@@ -54,7 +54,7 @@ input会影响这个agent的action，而这个action会改变这个agent，当in
 这里其实可以想象一下下棋，不管什么棋，学习下棋就是一个RL的过程，我这里不想提某狗的例子是因为，我觉得这只狗已经被一些俗人写的烂大街了（一条好狗被糟蹋了），蹭热度，蹭关键词与我无益，所以，想象一下象棋或者五子棋，每一步都是一个action，而最后的输赢才是唯一的结果，每个action没有一个确定结果与其对应，为了衡量action的好坏，给出一个Rewarding，然后action做出以后，当前situation已经和action之前的不一样了（比如棋局中的形式就是situation）
 简单的例子，漏洞百出，但是可以大概这么理解。
 
-# Reinforcement Learning Features
+## Reinforcement Learning Features
 
 上面大概介绍了一些内容，可能云里雾里，没关系，都是些名词而已，后面内容会详细描述每一个细节，我们要知道的是RL的一些特征，使其与众不同的特征：
 1. Closed-Loop是基本的学习方式
@@ -62,7 +62,7 @@ input会影响这个agent的action，而这个action会改变这个agent，当in
 3. Action的结果，Reward Signal并不是实时产生的，需要等待一些步骤后，才能知道。
 
 
-# Markov Decision Processes
+## Markov Decision Processes
 Markov Decision Processes是一个非常经典的全面的对RL中Optimal Control问题的理解，但是要等到第三章才会完整的描述，其中会详细介绍，Agent，Environment等具体的形式，以及如何达到我们的RL目的。其中的Environment非常主要，因为我们的Goal（目的，目标）就是environment的一个state（状态）。
 在第三章中，MDPs将会介绍：
 - Sensation
@@ -71,7 +71,7 @@ Markov Decision Processes是一个非常经典的全面的对RL中Optimal Contro
 
 等部分的具体内容，而且会明确的直接解决一个RL问题，而不是将原始问题转化为小问题，比如下棋就是要最后获胜而不是把棋局分成几种，分开解决，再合成最后的方案，RL要直接解决问题，而不是细分再整合这种硬套路。
 
-# 总结
+## 总结
 中英文穿插写，比较让人讨厌，但是没办法，我觉得如果不看原版书籍，就记住一些翻译版本的关键词是非常有害的。
 本文很多关键词和具体过程都没办法现在给出，所以，如果你觉得迷惑，没关系，看懂多少都无所谓，毕竟是个开头介绍，当你看完第一个例子就会豁然开朗，第一个例子在1.3中出现，敬请期待吧。
 

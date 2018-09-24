@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】3-5:独立性，基和维度(Independence,Basis and Dimension)
+title: \[线性代数\]3-5:独立性，基和维度(Independence,Basis and Dimension)
 categories:
   - Mathematic
   - Linear Algebra
@@ -17,10 +17,10 @@ date: 2017-09-25 15:20:46
 
 <!--more-->
 
-# 开篇废话
+# 独立性，基和维度
 在没有系统学习线性代数之前，对很多里面的名词有所畏惧，现在思考发现，很多听不懂的名词都是因为不明白背后的原理和知识才会产生畏惧，也有可能这个名词背后真的蕴藏的一个非常深奥的系统知识，但是如果我们慢慢的从头开始抽丝剥茧的把每一个知识点都掌握了，最后听到这个名词就会觉得这是个很平常的词汇而已，但是没有学习之前就会一头雾水，还有一个感觉就是，如果这些基础知识不掌握，论文种可能是个很简单的过程，作者略过了，如果基础不牢就会迷惑，或者自己瞎猜，其实迷惑不可怕，起码自己知道这里有问题，但是瞎猜就有问题了，而且还猜的理直气壮，觉得自己猜的都对，这种人是永远不会进步的。
 今天我们就逐个解释线性代数中比较常出现的几个非常重要的概念。
-# Linear Independence
+## 线性独立
 Linear Independence可以拆开看，Linear就是我们的基础关系，线性，满足线性组合的基本要求[1-1:Linear Combinations](http://face2ai.com/Math-Linear-Algebra-Chapter-1-1/)有详细说明，就是满足add 和scalar的组合；Independence表示独立，谁和谁也不相关，其实不相关的这个概念在概率论中让我记忆深刻的，而且一直也不懂到底是啥意思（现在也不懂），不相关就是没办法关联起来。
 现在抛弃上面的所有思路，从矩阵角度来看，矩阵角度也就是向量角度，因为Linear Independence是针对***向量***矩阵是向量合起来写的一种方式：
 
@@ -38,7 +38,7 @@ $x_1v_1+x_2v_2+\dots+x_nv_n=0$ only happens when all x's are zero
 如果向量sequence中包含0向量，那么这个他们不会Linear Independence。
 上面提到了rank和矩阵大小的关系对是否线性相关有影响，当$r=n\leq m$时，线性独立，但是当$r\leq m < n$时，必然线性相关。
 在另一本书上《Linear algebra done right》上说当一个向量sequence里其中一个可以被其他线性组合出来，那么他们线性相关，否则线性无关，这个和上面的nullspace的说法含以上是一致的，但是感觉更形象。
-# Vectors that Span a Subspace（Row Space）
+## 向量张成子空间（Row Space）
 本来想写span但是总记得已经写过了，回去一查果然有说明，span的概念比较好理解，就是若干个向量通过线性组合得到的一个向量空间（满足向量空间的所有要求），具体的说明可以复习下：[Span](http://face2ai.com/Math-Linear-Algebra-Chapter-3-1/).列向量是矩阵中所有的列span成的空间。
 举个🌰 ：
 $$
@@ -80,7 +80,7 @@ x_1
 \begin{bmatrix}3\\5\end{bmatrix}
 $$
 同样的矩阵，同样的数字，组合出来的空间却完全不同，列向量在 $\Re^m$中，行向量在 $\Re^n$
-# Basis（基）
+## 基(Basis)
 好的理解了span的概念我们对basis的概念就理解了一般，如果我们有五个向量可以span出来一个空间S，那么我们的一种想法是不是能不能用这五个向量中的其中几个span出等价的空间，答案是有可能的，其根本原因是***线性组合的计算性质***，如果五个向量中的一个可以用其他四个组合出来，就可以省去这个被组合出来的向量，这句话熟悉么？没错上面提到的线性独立和线性相关的概念。
 
 >Definition: A basis for a vector space is a sequence of vectors with two properties: The basis vectors are linearty independent and they span the space
@@ -111,7 +111,7 @@ Linear combination的性质是所有线性代数知识的合法性来源。
 
 对于一个确定的vector space其不同的基，具有相同的向量数量。
 
-# Dimension
+## 维度
 
 >If $v_1,\dots,v_m$ and $w_1,\dots,w_n$ are both basis for the same vector space ,then m=n.
 
@@ -122,13 +122,13 @@ Linear combination的性质是所有线性代数知识的合法性来源。
 一个空间的dimension，是其一组基向量内向量的个数。
 对于一个矩阵，他的column space的基是主列，主列的个数和pivot的个数相同，pivot的个数就是rank，哈哈，没错一个矩阵的列空间的dimension是rank，没错吧，所有知识点都是相互勾连在一起的，而这些相互关系的最终基础就是linear combination。
 
-# Matrix Space and Function Space
+## 矩阵空间和函数空间(Matrix Space and Function Space0
 前面说过矩阵和函数可以是向量的组成元素，那么矩阵向量的基和函数向量的基与上面实数向量的定义和性质完全一致：
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-3-5/matrixSpace.png)
 
 
-# Conclusion
+## Conclusion
 这几篇写的都很长，感觉写的力不从心，一边参考教材一边写，没办法把书扔掉直接码字，还是要继续努力，后面还要做些练习，非常感谢MIT做出的无私奉献，把所有课程相关的内容开放下载，大家继续加油。
 
 

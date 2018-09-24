@@ -1,5 +1,5 @@
 ---
-title: 【数字图像处理】6.7:灰度图像-图像分割 Sobel算子，Prewitt算子和Scharr算子平滑能力比较
+title: \[数字图像处理\]6.7:灰度图像-图像分割 Sobel算子，Prewitt算子和Scharr算子平滑能力比较
 date: 2015-02-13 11:49
 categories:
   - DIP
@@ -13,14 +13,14 @@ toc: true
 **Keywords:** Sobel算子,Scharr算子,Prewitt算子
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-# 开篇废话
+# 灰度图像-图像分割 Sobel算子，Prewitt算子和Scharr算子平滑能力比较
 依然是废话，这篇主要想对比下Sobel，Prewitt和Scharr算子的平滑能力，由于一阶微分对噪声响应强，进行微分之前进行降噪是非常必要的，这里我们进行的实验是，以lena图作为实验原图，取其中一行数据作为无噪声的原始信号，分别加上不同的强度的高斯白噪声，对噪声的分类和噪声具体性质的研究将在图像恢复中描述。但这里我们使用不同强度的高斯白噪声。
-# 数学原理
+## 数学原理
 数学原理主要介绍下衡量噪声强度的方法-均方根误差*root-mean-square error*，第 $i$ 个测量值与真实值差的平方 $d^2$ ，对 $d^2_i$ 进行求和后平均
 $$
 Re=\frac{1}{n}\sum_{i=1}^nd^2_i
 $$
-# 代码
+## 代码
 ```matlab
 %matlab代码
 clear all;clc;
@@ -73,7 +73,7 @@ $\frac{1}{4}\times[1,2,1]$，$\frac{1}{3}\times[1,1,1]$，$\frac{1}{16}\times[3,
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184624239.png)
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-6-7-灰度图像-图像分割-算子平滑能力比较/20150211184640975.png)
 
-# 总结
+## 总结
 当噪声强度超过标准差为信号的 $4\%$ 时，Sobel和Scharr的性能开始接近，超过 $5\%$ 的时候Prewitt，Sobel，Scharr性能基本相同，但小于 $3\%$ 时候Scharr的性能明显强于Sobel，并且其性能排名为$Scharr > Sobel > Prewitt$当噪声标准差为 $0.5\%$ 时，误差大概为1个像素左右，此时不进行平滑的结果更好，此时均值平滑的效果最差。
 自此简单的评估了下各算子的噪声平滑效果，在小噪声情况下，$3\times3$的算子Scharr算子性能强于Sobel。
 待续。。。。

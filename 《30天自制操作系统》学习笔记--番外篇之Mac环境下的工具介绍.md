@@ -1,5 +1,5 @@
 ---
-title: 【30天自制操作系统】 Mac环境下的工具介绍
+title: \[30天自制操作系统\] Mac环境下的工具介绍
 list_number: false
 date: 2013-12-09 20:20
 categories:

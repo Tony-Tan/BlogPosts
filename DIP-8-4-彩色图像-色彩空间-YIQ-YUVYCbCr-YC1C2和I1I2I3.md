@@ -1,5 +1,5 @@
 ---
-title: 【数字图像处理】8.4:彩色图像-色彩空间 YIQ 、YUV 、YCbCr 、YC1C2 和I1I2I3
+title: \[数字图像处理\]8.4:彩色图像-色彩空间 YIQ 、YUV 、YCbCr 、YC1C2 和I1I2I3
 date: 2015-03-13 15:29
 categories:
   - DIP
@@ -14,9 +14,9 @@ toc: true
 **Keywords:** 色彩空间,YIQ,YUV,YCbCr
 <!--more-->
 <font color="00FF00">本文最初发表于csdn，于2018年2月17日迁移至此</font>
-# 开篇废话
+# 彩色图像-色彩空间 YIQ 、YUV 、YCbCr 、YC1C2 和I1I2I3
 背后有人，今天不说废话。。。。
-# YIQ
+## YIQ
 NTSC电视系统指定的色彩空间，为了压缩RGB的传输带宽提高传输速度。
 YIQ中Y代表亮度信号（Luminance），IQ作为附加信息，I表示相位（In-phase）色彩从橙色到青色，Q表示正交（Quadrature-phase）色彩从紫色到黄绿色，故YIQ也叫做色差信号（Chrominance signal）。
 YIQ中Y信号可以直接用于黑白电视作为灰度信号，进行显示，彩色电视则加入IQ分量与Y一起产生颜色。
@@ -24,7 +24,7 @@ YIQ中Y信号可以直接用于黑白电视作为灰度信号，进行显示，�
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313143318884.png)
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313143634049.png)
 
-# YUV
+## YUV
 YUV在德国和法国发展的彩色电视系统PAL和SECAM中使用。
 Y分量与YIQ中Y相同。
 以下来自wiki：
@@ -38,7 +38,7 @@ Y分量与YIQ中Y相同。
 YIQ和YUV非常适合压缩，因为亮度和色度可以使用不同的比特来编码。
 文献中U表示红-蓝色差，V对应绿-品红色差。
 YUV可用于彩色图像的高光分析。
-# YCbCr
+## YCbCr
 YCbCr不是一种绝对色彩空间，是YUV压缩和偏移的版本。
 >YCbCr或Y'CbCr有的时候会被写作：YCBCR或是Y'CBCR，是色彩空间的一种，通常会用于影片中的影像连续处理，或是数字摄影系统中。Y'为颜色的亮度（luma）成分、而CB和CR则为蓝色和红色的浓度偏移量成份。Y'和Y是不同的，而Y就是所谓的流明（luminance），表示光的浓度且为非线性，使用伽马修正（gamma correction）编码处理。
 YCbCr的Y与YUV中的Y含义一致，Cb和Cr与UV同样都指色彩，Cb指蓝色色度，Cr指红色色度，在应用上很广泛，JPEG、MPEG、DVD、摄影机、数字电视等皆采此一格式。因此一般俗称的YUV大多是指YCbCr。
@@ -102,15 +102,15 @@ YCbCr 4:2:0 并不是没有Cr分量，而是采取上下左右分别抽样的方
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/DIP-8-4-彩色图像-色彩空间-YIQ-YUVYCbCr-YC1C2和I1I2I3/20150313151447503.png)
 
-# YC1C2
+## YC1C2
 YC1C2与YCbCr相近，知识YC1C2更接近胶片色阶，而YCbCr更接近荧光粉的色阶。
-# I1I2I3
+## I1I2I3
 此空间描述了一个特征模型而不是色彩空间I1I2I3可以对图像获得较好的分割结果。
 其中I1I2I3如下：
 $I_1=\frac{R+G+B}{3}$
 $I_2=\frac{R-B}{2}$
 $I_3=\frac{2G-R-B}{4}$
-# 总结
+## 总结
 简单介绍几个色彩空间，作为彩色图像的基础，色彩空间相对概念性较强，在后面处理中，如需更深入的知识会在后续介绍。
 待续。。。
 

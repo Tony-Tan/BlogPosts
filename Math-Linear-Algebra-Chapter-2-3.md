@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】2-3:消元与矩阵的关系(Elimination and Matrix)
+title: \[线性代数\]2-3:消元与矩阵的关系(Elimination and Matrix)
 toc: true
 categories:
   - Mathematic
@@ -17,9 +17,9 @@ keywords:
 
 
 
-# 开篇废话
+# 消元与矩阵的关系
 发现这个教材真的很有章法，从big picture 的角度来看，所有知识环环相扣，每一环单独看还都不难，组合起来发现整个知识体系就完整了，我至今不懂为啥我们伟大社会主义中国的学者们写书都是从行列式开始干，自学看书根本看不懂，当年线代上机考试之前三个小时还在玩魔兽世界🐶🐶🐶，这个故事告诉我们，出来混迟早要还的😂😂😂😂
-# Elimination Using Matrix
+## 用矩阵消元(Elimination Using Matrix)
 本节的主要目的就是告诉你，小子，矩阵是用来解方程的，你会算行列式只能考上研究生，哈哈哈（博主吃不到狐狸说葡萄酸）
 来个方程：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-3/formular.png)
@@ -42,7 +42,7 @@ $$
   \sum_{j=i}^{n}a_{ji}x_i
 $$
 各位注意啦，这步放在这里主要是为了后面算矩阵乘以矩阵的，虽然看起来有点啰嗦，但是这样下来整个思路是完整的，不会出现漏洞
-# Matrix form
+## 矩阵形式(Matrix form)
 还是刚才说的，这节就是把消元的所有动作集成在一个矩阵里，我们的目的是
 $$
 A\textbf{x}=\textbf{b}\\
@@ -70,7 +70,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-3/elimination.png)
 这个过程全靠自己领悟，如果这两种语言你都没明白，那就过几天再看一遍吧。
 
-# Matrix Multiplication
+## 矩阵乘法(Matrix Multiplication)
 我在考虑要不要新开篇，一想还是算了吧，新写一篇还要写开篇废话，麻烦死。
 我们学会了矩阵乘以向量，那么矩阵乘以矩阵就是要解决上面那个EA的问题，
 先说几个矩阵乘法的性质：
@@ -80,7 +80,7 @@ often\;AB\not=BA\\
 AB=A\begin{bmatrix}b_1&b_2&b_3\end{bmatrix}=\begin{bmatrix}Ab_1&Ab_2&Ab_3\end{bmatrix}
 $$
 这上面这个是乘法法则比较重要的一条，下一篇有详细介绍，包括乘法的具体算法，本篇只是大体观察一下乘法性质
-# Row Exchange
+## 交换行(Row Exchange)
 Permutation Matrix也是从$I$演变出来的一种矩阵，其主要作用是交换矩阵的两行
 eg：交换第二和第三行
 $$\begin{bmatrix}1&0&0\\0&0&1\\0&1&0\end{bmatrix}\begin{bmatrix}1&2&3\\2&3&4\\3&4&5\end{bmatrix}=\begin{bmatrix}1&2&3\\3&4&5\\2&3&4\end{bmatrix}$$
@@ -89,11 +89,11 @@ $$
 PEA=PEb
 $$
 这样就能得到一个可以back的upper triangular matrix了，或者更多的P和E。。。
-# Augmented Matrix
+## 增广矩阵(Augmented Matrix)
 把b也放到A里面，放最后一列，那么矩阵就不是方阵了：
 $$\begin{bmatrix}2&4&-2&2\\4&9&-3&8 \\{-2}&-3&7&10\end{bmatrix}$$
 
-# conclusion
+## conclusion
 所以消元可以通过在A矩阵前面乘以一些列的变换，换行矩阵，得到最后的上三角矩阵
 $$
 U=P_nE_m\cdots P_2E_2P_1E_1A

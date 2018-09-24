@@ -1,5 +1,5 @@
 ---
-title: 【Crawler】3.2 HTTP协议(二)
+title: \[爬虫\]3.2 HTTP协议(二)
 categories:
   - Crawler
 keywords:
@@ -13,17 +13,17 @@ date: 2018-03-05 20:56:25
 **Keywords:** http,uri/url
 
 <!--more-->
-# 开篇废话
+# 爬虫HTTP协议(二)
 回家的假期马上就要句号了，返程图中写于哈尔滨友谊路392号全集酒店
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/feihua.jpg)
 > I had been rejected,but I was still in love. --Steven Jobs
 
 还是需要强调的一点：**我不是爬虫专家或者前端后台专家，我的努力方向也不是这个方向，我只是想要运用这套技术，但是我又希望对整个过程有一个比较详细的了解，所以我在本系列只是简单介绍，有些东西可能含糊不清，需要详细学习的同学可以去查询相关资料**
-# HTTP用于客户端和服务端的通信
+## HTTP用于客户端和服务端的通信
 回忆一下上一篇，客户端和服务器的定义，请求访问文本或图像等资源的一端称为客户端，提供资源响应的一端称为服务器端
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/http_comunity.png)
 两台计算机之间通信，也必须有一端扮演服务器，一端扮演客户端，时候可以进行角色互换，但是在一条通信线路来说，服务器客户端的角色是确定的，用HTTP协议能够明确区分哪端是服务器端
-# 通过请求和响应的交换达成通信
+## 通过请求和响应的交换达成通信
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/request.png)
 HTTP协议规定，请求从客户端发出，服务器相应该请求并返回，所以，如果客户端不发送请求，服务器端是没有响应的，如果服务器乱响应说明bug了，那么可以得出一个结论，通信肯定是从客户端开始建立的。
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/request_eg.png)
@@ -56,12 +56,12 @@ HTTP协议规定，请求从客户端发出，服务器相应该请求并返回�
 响应报文基本上由上述四个模块组成
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/return_constructure.png)
 
-# HTTP是不保存状态的协议
+## HTTP是不保存状态的协议
 HTTP的另一个性质是不保存状态stateless协议，HTTP协议自身不对请求和响应之间的通信状态进行保存，也就是HTTP这个级别的协议对于发送过请求和相应都没有持久化处理（可以理解为：处理完就忘了）
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/stateless.png)
 不记忆之前处理的内容的一个好处就是处理大量的事物的时候会变得非常快，设计的这么简单的原因就是为了确保协议的可伸缩性。
 但是现在我们可以发现当我们登录某个网站以后怎么跳转都不需要重新登录（按照上面我们说的HTTP协议无记忆功能，这个变得不可行），我们实现这个功能的方法是Cookie，有关Cookie的介绍在后面。
-# 请求uri定位资源
+## 请求uri定位资源
 uri相当于一种地址格式，互联网上的所有可访问的资源都有一个这种地址，并且这种地址是唯一的：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/uri.png)
 使用uri的方法有两种，一种是直接写完整的uri：
@@ -73,7 +73,7 @@ uri相当于一种地址格式，互联网上的所有可访问的资源都有�
 OPTIONS * HTTP/1.1
 ```
 
-# 告知服务器意图的HTTP方法
+## 告知服务器意图的HTTP方法
 下面简单介绍HTTP/1.1中使用的方法（请求方法）
 1. GET 请求访问uri对应的资源，可以返回uri对应的文件，也可以是uri对应程序的结果
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/get.png)
@@ -96,13 +96,13 @@ OPTIONS * HTTP/1.1
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/connect2.png)
 
 
-# 使用方法下达命令
+## 使用方法下达命令
 方法是一种命令，给uri对应的资源的，在报文中传送这条命令，方法可以指定请求的资源按期望产生某种行为，方法中有GET、POST和HEAD等
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/command.png)
 
 下面我们列举一些方法，注意区分大小写：
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/command2.png)
-# 使用cookie的状态管理
+## 使用cookie的状态管理
 我们说过HTTP是无状态协议，他不会记住任何之前已经完成的请求和响应状态，如果一个网站不记录你的登录状态，你每次跳转都要重新登录，这是不现实的，假设要求登录认证的web本身无法进行状态管理，那么如果每次跳转不重新登录，就要每次请求报文中附加参数来管理登录状态。
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Crawler-3-2-HTTP协议-2/forgetthem.png)
 又要保留不需要记忆的这个特性，同时又要不每次跳转都重新登录，于是引入Cookie技术，当服务器响应报文中有set-Cookie 的首部字段信息，客户端就会保存Cookie，下次客户端再往该服务器发送请求时，就会自动在报文中加入Cookie，服务器会在收到Cookie后对比记录，得到之前的状态信息。
@@ -118,7 +118,7 @@ OPTIONS * HTTP/1.1
 有关响应报文内Cookie对应的首部字段，参考其他资料
 这里我就不再介绍了
 
-# 总结
+## 总结
 请求报文和响应报文在网络上传来传去，这些报文中的信息就是我们发送的和接受的，我们学习爬虫需要的也就是这部分内容，而具体的算法，实现，硬件部署，这些是网络工程师关心的问题，术业有专攻，我们就不深入的研究别人家的技术了，明天继续爬虫相关知识，待续。。
 哈尔滨晚安
 

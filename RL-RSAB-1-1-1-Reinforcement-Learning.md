@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-1-1 强化学习、监督学习和非监督学习
+title: \[强化学习\]1-1-1 强化学习、监督学习和非监督学习
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -15,7 +15,7 @@ date: 2018-08-26 22:34:32
 **Keywords:** Supervised Learning，Unsupervised Learning，Reinforcement Learning
 
 <!--more-->
-# Machine Learning（机器学习）
+## Machine Learning（机器学习）
 上文我们曾提到强化学习是机器学习的一种，而机器学习的定义是什么我也不记得了，而可以肯定的是下面这三类算法或者三个learning都属于机器学习，机器学习是个更大的概念：
 1. 监督学习
 2. 非监督学习
@@ -32,7 +32,7 @@ date: 2018-08-26 22:34:32
 
 下面我们介绍下RL对于监督学习和非监督学习的主要区别。
 
-# Reinforcement Learning v.s. Supervised Learning（强化学习和监督学习）
+## Reinforcement Learning v.s. Supervised Learning（强化学习和监督学习）
 
 首先我们要介绍一个概念，knowledge，这个单词是中学学的，表示知识，对于这两类算法，可以理解为在建立模型之前已知的所有条件，这些条件包括问题类型，已知的对于此类问题有效的方法，已知数据等等，所有我们知道的，与之相关的都是knowledge，而在这些knowledge中，RL和SL(监督学习的简称)的一个最最最显著的不同就是数据，SL的每一条数据都有明确的label，也就是模型应该对这条数据的反应，而RL没有。这就产生了巨大的差别，RL每次对input的action是不知道对错的，也不会产生什么loss或者残差，而监督学习可以，而且可以用数字精确衡量，而RL最多也就是自己估计一个好坏程度，摸着石头过河。
 
@@ -49,7 +49,7 @@ RL的另一个特点是，他学习的最终目的是对所有situation都有正
 RL从他之前的experience中产生action这个也是SL没有的，因为SL没有经验，所有信息都在模型本身里面，没有什么记忆可以谈。
 
 
-# Reinforcement Learning v.s. Unsupervised Learning （强化学习和非监督学习）
+## Reinforcement Learning v.s. Unsupervised Learning （强化学习和非监督学习）
 
 有人说RL不是监督学习，那就非监督学习喽，其实他们也有很大的不同，所以非监督学习并不是监督学习在机器学习领域内的补集。
 
@@ -62,12 +62,12 @@ RL不是监督学习，也不是非监督学习，RL的目标很单纯:
 > MAXIMUM REWARDING SINGAL
 
 
-# Conclusion
+## Conclusion
 本文主要介绍强化学习和监督学习，非监督学习的区别，并说明，机器学习不是简单的分成监督非监督学习两种。
 
 
 
-# References
+## References
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 2. Nasrabadi N M. Pattern recognition and machine learning[J]. Journal of electronic imaging, 2007, 16(4): 049901.
 

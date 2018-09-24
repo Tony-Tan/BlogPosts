@@ -1,5 +1,5 @@
 ---
-title: 【麻省理工学院】人工智能课程安排
+title: \[麻省理工学院\]人工智能课程安排
 categories:
   - Other
 keywords:
@@ -12,11 +12,11 @@ date: 2018-05-26 17:58:27
 **Keywords:**
 
 <!--more-->
-
+# 人工智能课程安排
 本文介绍麻省理工EECS学院，AI专业的本科课程安排，相比于斯坦福，MIT给出的更直接，所以直接原文搬过来，稍微解释下大家就清楚了。
-# Bachelor of Science in Computer Science and Engineering
+## 计算机科学工程学士学位 Bachelor of Science in Computer Science and Engineering
 
-## Departmental Program
+### Departmental Program
 
 忽略公共课程，直接来专业的，公共课程什么哲学或者艺术的，不在我们参考范围内。
 
@@ -24,7 +24,7 @@ date: 2018-05-26 17:58:27
 
 
 
-# Advanced Undergraduate Subjects
+## Advanced Undergraduate Subjects
 
 下面这些应该不是全部需要学习的，应该是根据自己的需要来选择，根据研究方向，选择你需要的课程
 
@@ -32,7 +32,7 @@ date: 2018-05-26 17:58:27
 
 
 
-# Independent Inquiry Subjects
+## Independent Inquiry Subjects
 
 
 
@@ -46,7 +46,7 @@ MIT很讲究的一点是把你的打怪升级图贴出来了
 
 ![1-2](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/other-mit-undergraduate-programs-course-6-3/1-2.png)
 
-# 总结
+## 总结
 本文只列出了MIT本科CS专业（包含AI的部分的相关课程，供自学人员参考）
 参考[http://catalog.mit.edu/degree-charts/computer-science-engineering-course-6-3/](http://catalog.mit.edu/degree-charts/computer-science-engineering-course-6-3/)
 

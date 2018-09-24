@@ -1,5 +1,5 @@
 ---
-title: 【数字图像处理】2.2:二维DFT
+title: \[数字图像处理\]2.2:二维DFT
 date: 2014-11-17 15:43
 categories:
   - DIP

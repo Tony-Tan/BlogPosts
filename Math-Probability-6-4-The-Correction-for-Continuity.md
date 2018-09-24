@@ -1,5 +1,5 @@
 ---
-title: 【概率论】6-4:分布连续性修正(The Correction for Continuity)
+title: \[概率论\]6-4:分布连续性修正(The Correction for Continuity)
 categories:
     - Mathematic
     - Probability
@@ -14,11 +14,11 @@ date: 2018-04-09 15:25:31
 **Keywords:** The Central Limit Theorem，Approximation
 
 <!--more-->
-# 开篇废话
+# 分布连续性修正
 本篇应该是初等概率论的最后一篇博客，一路写下来，激动过，怀疑过，痛苦过，沮丧过，但是看着满屏幕的文字，和一些以前不知道的知识，感觉还是有收获的，虽然有些知识不能变现，但是，收益终生。我怎么知道会收益终生？如果想确定这个观点，基本要去问死了的人，因为你有死前的一瞬间，才知道什么东西在你一生中有用。但是我这么说是基于古人的观点，因为那么多古人都死过，而且他们都说读书学习非常有用，所以我选择相信那些死了的人说的话，而不是活着的——那些看起来活的还不错的人（读书无用论的那些）。
 
 本文使用中心极限定理，通过这段区间 $[a,b]$ 上的某个正态分布的随机变量的概率，近似某区间上的离散随机变量，并且可以通过简单的调整 $Pr(X=a),Pr(X=b)$ 的近似程度，来提高整体近似度
-# 连续分布近似离散分布 Approximating a Discrete Distribution by a Continuous Distribution
+## 连续分布近似离散分布 Approximating a Discrete Distribution by a Continuous Distribution
 
 ------------------------
 🌰 ：
@@ -46,7 +46,7 @@ $$
 但是这个简单近似有很多不足，比如说对于离散分布经常会有 $Pr(X\geq a)\neq Pr(X>a)$ 而对于连续随机变量则有 $Pr(Y\geq a) = Pr(Y>a)$
 
 上面的近似有点黎曼积分的意思在里面，大家可以参考数学分析书籍进行理解，因为不能取极限，所以分析误差就变成了重要的一个环节。
-# 近似直方图 Approximating a Bar Chart
+## 近似直方图 Approximating a Bar Chart
 接着我们来看如何近似一个直方图，直方图的理论依据在大数定理中已经进行了证明，今天我们来看如何用连续分布的p.d.f.来近似一个直方图。
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Probability-6-4-The-Correction-for-Continuity/6_5.png)
 
@@ -66,7 +66,7 @@ $$
 
 ----------------
 
-# 总结
+## 总结
 
 一个只能取整数的离散随机变量，用正态分布来近似某个区间，如果按照整数进行分段（如 $[2,3)$），近似效果不如半个整数分段（比如 $[1.5,2.5)$ ）.
 

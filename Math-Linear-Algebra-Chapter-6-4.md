@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】6-4:对称矩阵(Symmetric Matrices)
+title: \[线性代数\]6-4:对称矩阵(Symmetric Matrices)
 categories:
   - Mathematic
   - Linear Algebra
@@ -18,10 +18,10 @@ date: 2017-11-22 15:18:03
 **Keywords:** Eigenvalues，Eigenvectors，Symmetric Matrices，Projection Matrices，Spectral Theorem，Principal Axis Theorem
 
 <!--more-->
-# 开篇废话
+# 对称矩阵
 这几篇在难度上确实要比前面的内容大很多，所以看书理解和总结都变得不那么流畅了，但是慢慢看下来收获还是有很大的，而且我发现不管学的多认真，还是会有遗漏，所以我觉得之前的想法就是一次性把什么什么学会是不可能的，只能学到自己觉得达到自己能发现的最大限度，等到应用之时还是要回来查阅，这样往往会有进一步的更大发现，
 
-# Symmetric Matrices
+## 对称矩阵 (Symmetric Matrices)
 对称矩阵我们在最早的知识里面就学过 $A^T=A$ 的矩阵叫做[对称矩阵](http://face2ai.com/Math-Linear-Algebra-Chapter-4-2/)，我们也学过[投影矩阵](http://face2ai.com/Math-Linear-Algebra-Chapter-4-2/),但是当时我们并没有强调过一点就是投影矩阵都是对称的，这个性质今天在这里会有很大的用途。
 我们继续说投影矩阵，所谓投影矩阵，就是在和向量 $\vec{c}$ 相乘的时候，投影到矩阵A的列空间内，那么其中，投影 $p$ 和 原向量 $\vec{c}$ 的差 $\vec{e} =\vec{c}-\vec{p}$ 与子空间正交。
 
@@ -170,7 +170,7 @@ $A=\lambda_1x_1x_1^T+\lambda_2x_2x_2^T$ 把A写成了两个rank=1的矩阵的线
 
 其实写到这我有点疑惑了，本来写博客一个是自己总结，另一个是给大家一个参考，但是当我写了上面那个头衔了以后，我发现，如果没有基础或者不从头看起，直接看本文可能会感到疑惑，这也是知识的一个性质，就是连续性和扩展性，那么没有基础，基本都是空中楼阁（这种大牛太多了，基础没用，直接上算法的比比皆是，我以前也是，我现在改邪归正了）
 
-# Complex Eigenvalues of Real Matrix
+## 实数矩阵的复特征值(Complex Eigenvalues of Real Matrix)
 本文主要说对称矩阵的特征值，特征向量，对称矩阵的特征值和特征向量一定是实数，我们上面基本都为证明这个结论，那么什么样的矩阵会产生复数特征值特征向量呢？
 如果一个矩阵包含一个复数特征值，那么一定是成对出现的，所谓成对就是如果 $\lambda=a+bi$ 是一个特征值，那么 $\bar{\lambda}=a-bi$ 也一定是A的一个特征值，证明：
 $$
@@ -180,7 +180,7 @@ $$
 上面的取共轭操作hexo渲染有点问题，在两个字母中间的$\bar{\lambda x}$ 其实是个长的,他画的有点短
 我们后面有一章专门介绍复数矩阵，所以这里有点迷糊的不要紧，放过自己，继续看下面。
 
-# Eigenvalues vs Pivots
+## Eigenvalues 和 Pivots
 Pivots是我们这章之前主要研究的对象，因为我们主要研究的是矩阵用于方程组的求解，而本章开始Eigenvalues的研究，那么我们的惯性思维就是，既然是一个体系下的知识重点，那么他们有联系么？
 > product of pivots = determinant = product of Eigenvalues
 
@@ -194,7 +194,7 @@ Pivots是我们这章之前主要研究的对象，因为我们主要研究的�
 
 这就是pivots和eigenvalues可以通过上述两个结论产生联系，不过联系应该也就这么多了。
 
-# All Symmetric Matrices are Diagonalizable
+## 所有对称矩阵可以对角化(All Symmetric Matrices are Diagonalizable)
 
 接下来我们要证明最后一个结论，就是在有重复特征值的情况下，对称矩阵依然可以被对角化，其实本文第一个例子中就包含相同的特征值，两个 $\lambda=1$ 虽然如此我们还是在平面中找到了两个相互正交的特征向量，一个特殊的例子没办法证明全部情况，下面我们系统证明一下：
 正式的证明之前有个小trick,就是给矩阵对角线上的每个元素加一个扰动 $nc$ 这样所有的特征值不同（***具体为啥我也没想明白,有明白人请指教一下***）所有有不同的特征向量，当 $c\to 0$ 得到原始特征值，和一组不同特征向量（这个思路是Prof. Strang写在书上的，他说这个有点不严谨，但是I am sure this is true）
@@ -261,7 +261,7 @@ $$
 T是上三角矩阵，得出结论，T是对角矩阵
 QED
 上面这一小段其实在证明Schur定理，因为Schur定理一旦得到证明，那么自然可以得到我们想要的结论，所有对称矩阵可以被对角化，Schur矩阵以复数形式给出，因为我们前面已经证明了对称矩阵的特征值都是实数，所以这里可以用实数表达，当然复数是对于非对称矩阵的，因为非对称实数矩阵可能得到复数特征值和特征向量。
-# Conclusion
+## Conclusion
 这篇文章扎扎实实写了24小时，而且中间确实有不太清楚的地方，至今没动，所以都高亮标注了，提醒读者也提醒自己要来填坑，schur定理的证明方法还有别的，这个是Prof. Strang 书上的方法，后面如果有新发现继续补充。
 
 

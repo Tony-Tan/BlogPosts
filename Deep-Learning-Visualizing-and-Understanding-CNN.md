@@ -11,12 +11,11 @@ keywords:
 **Abstract:** 研究卷积神经网络，把阅读到的一些文献经典的部分翻译一下
 **Keywords:** CNN Visualizing
 <!--more-->
-# 开篇废话
-以前翻译的论文，卷积神经网络的可视化
-# 前言
+# 卷积神经网络的可视化
+## 前言
 研究卷积神经网络，把阅读到的一些文献经典的部分翻译一下，写成博客，代码后续给出，不足之处还请大家指出。
 大型卷积神经网络在图片分类上很成功，然而我们不知道他为什么能表现的如此不错，或者如何提高。
-# Abstract：
+## Abstract：
 
 >In this paper we address both issues. We introduce a novel visualization technique that gives insight into the function of inter-mediate feature layers and the operation of the classifier
 >我们研究一个优秀的可视化技术，能够给出函数内部特征层以及分类层的信息
@@ -28,7 +27,7 @@ keywords:
 >我们展示了我们的 ImageNet 模型在其他数据集上获得优秀的表现：当我们重新训练SoftMax分类器。其结果信服的打败了当前SOTA结果，在Caltech-101和Caltech-256数据集上
 
 评论：作者要解决的是可视化深度学习模型，来给出内部的结构，工作原理，以及内在结构的相关性等。并且在这个基础上反向选择优化不同的深度架构（模型）来得到更好的模型，并给出了监督学习的Pre-training方法，在不同测试数据集上表现不俗。
-# Introduction
+## Introduction
 卷积神经网络很牛，在各种分类比赛上获得state-of-the-art的结果。
 
 >卷积神经网络在各大测试集上获得好结果的原因：
@@ -66,13 +65,13 @@ keywords:
 >监督学习的Pre-training来对比无监督的Pre-training方法（Hinton et al., 2006 Bengio et al., 2007; Vincent et al., 2008）
 
 评论：主要就是说，以前都是不知道为啥深度学习会工作，不知道如何优化，只是考实验观察，现在我们能牛x的知道为啥能工作了，虽然没有数学证明，但我们知道怎么调了，知道工作原理，知道怎么Pre-training。。。
-# Related Work
+## Related Work
 
 >Our approach, by contrast, provides a non-parametric view of invariance, showing which patterns from the training set activate the feature map.
 >我们的工作提出了一种无参数的不变性观点，来展示训练数据的哪些部分激活了特征映射
 
 评论：没有评论
-# Approach
+## Approach
 
 >We use standard fully supervised convnet models throughout the paper, as defined by (LeCun et al., 1989) and (Krizhevsky et al., 2012).
 >我们在整篇文章使用标准完全监督卷积网络模型，在 (LeCun et al., 1989) and (Krizhevsky et al., 2012)定义的。
@@ -89,7 +88,7 @@ keywords:
 >networks and the final layer is a softmax classifie
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913190123281.png)
-## Visualization with a Deconvnet
+### Visualization with a Deconvnet
 
 >We present a novel way to map these activities back to the input pixel space, showing what input pattern originally caused a given activation in the feature maps.
 >我们提出了一个高级的方法来映射激活反向到输入像素空间，来展示在特征空间哪一部分输入引起了这个给定的激活
@@ -100,24 +99,24 @@ keywords:
 >Then we successively (i) unpool, (ii) rectify and (iii) filter to reconstruct the activity in the layer beneath that gave rise to the chosen activation. This is then repeated until input pixel space is>reached.
 >在激活选定特征的神经元后Unpool，rectify，filter来重建本层的激活。
 
-### Unpooling：
+#### Unpooling：
 
 >In the convnet, the max pooling operation is non-invertible, however we can obtain an approximate inverse by recording the locations of the maxima within each pooling region in a set of switch variables. In the>deconvnet, the unpooling operation uses these switches to place the reconstructions from the layer above into appropriate locations, preserving the structure of the stimulus. See Fig. 1(bottom) for an illustration of the procedure
 >最大池化不可逆，我们通过记录位置来进行近似，记录被称为一组switch值，在deconvnet中，逆池化使用这些switch值来定位重建上一层，保留激活分布。在Fig1中说明
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913191649067.png)
-### Rectification：
+#### Rectification：
 
 >The convnet uses relu non-linearities, which rectify the feature maps
 >thus ensuring the feature maps are always positive. To obtain valid feature reconstructions at each layer (which also should be positive),we pass the reconstructed signal through a relu non-linearity.
 >Convnet使用ReLu非线性函数，保证激活值非负；为保证每层特征可重建，我们让所有重建信号经过ReLu层。
 
-### Filtering：
+#### Filtering：
 
 >The convnet uses learned filters to convolve the feature maps from the previous layer. To invert this, the deconvnet uses transposed versions of the same filters, but applied to the rectified maps, not>the output of the layer beneath.
 >Convnet使用学习到的Filters从前一层来获取特征映射。相反，deconvnet使用同一filter的转置，但是操作的对象是整流结果(Rectification)，而不是之前的层。
 
-### 总结：
+#### 总结：
 
 >Since the model is trained discriminatively, they implicitly show which parts of the input image are discriminative
 >由于模型是训练成有区别的，因此他们理所应当的展示输入图片的那些部分是有区别的。
@@ -125,7 +124,7 @@ keywords:
 >注意这些映射不是从模型中采样，因为没有范化处理涉及。
 
 评论：此段描述了具体如何反向将特征映射到像素空间。
-# Training Details
+## Training Details
 
 >The architecture, shown in Fig. 3, is similar to that used by (Krizhevsky et al., 2012) for ImageNet classification
 >结构在Fig 3中（本文第一张图）。。。
@@ -140,7 +139,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-Visualizing-and-Understanding-CNN/20160913221329283.png)
 评论：详细的训练过程
-# Convnet Visualization
+## Convnet Visualization
 关于特征：
 
 >Feature Visualization: Fig. 2 shows feature visualizations from our model once training is complete. However, instead of showing the single strongest activation for a given feature map, we show the top 9 activations.
@@ -175,7 +174,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >然而，输出对于旋转变换不稳定，除非是对齐式的旋转。
 
 评论：训练过程中的特征是怎么来的。
-## Architecture Selection
+### Architecture Selection
 
 >While visualization of a trained model gives insight into its operation, it can also assist with selecting good architectures in the first place.
 >当可视化一个训练好的模型给出了其内部的操作，也能帮助我们选取更好的架构。
@@ -191,7 +190,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >This new architecture retains much more information in>the 1st and 2nd layer fea- tures, as shown in Fig. 6(c) &amp; (e). More importantly, it also improves the classification performance as shown in Section 5.1.
 
 评论：本段讲如何选取架构，说明步长在其中的影响
-## Occlusion Sensitivity
+### Occlusion Sensitivity
 
 >With image classification approaches, a natural question is if themodel is truly identifying the location of the object in the image, or just using the surrounding context.
 >对于图像分类的应用，一个自然的问题是模型是否只利用图片中的物体，还是使用周围的上下文信息
@@ -205,7 +204,7 @@ with a learning rate of 10−2, in conjunction with a momentum term of 0.9. We a
 >Fig. 4 and Fig. 2. 图4和图2
 
 评论：遮挡不同区域的影响，不同区域敏感度不同。
-## Correspondence Analysis
+### Correspondence Analysis
 一致性分析
 
 >Deep models differ from many existing recognition approaches in that there is no explicit mechanism for establishing correspondence between>specific object parts in different images (e.g. faces have a particular spatial configuration of the eyes and nose)
@@ -231,7 +230,7 @@ Table 1
 评论：不同特征的独立性验证，如果你有鼻子眼睛嘴的脸部特征，遮住鼻子对最后的特征向量影响不大，说明他们之间的相关性比较强，类似于一张图如果有鼻子，基本也有眼睛，所以你遮住眼睛也会得到差不多的特征向量。
 总结：简单的学习了一下这篇文章，后面第五部分讲的是经验，关于如何训练高质量的网络，会在下一篇推出，欢迎收看。
 
-# 总结
+## 总结
 又是一片翻译文，哈哈哈哈，有需要的可以读读，营养还是有的，只是我现在不太喜欢这种文章
 
 

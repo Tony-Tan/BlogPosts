@@ -17,7 +17,7 @@ date: 2017-10-13 09:17:36
 **Keywords:** 人脸识别,FaceNet,GoogleNet
 
 <!--more-->
-# 开篇废话(2017年10月13日)
+# FaceNet论文阅读
 从老的wordpress转移过来，之前一年一直在做人脸识别算法研究，现在回头看看too young too simple，但是这些经历也算对自己的有很多帮助，认清自己的水平，知道自己什么方面比较差，这样也算是有所帮助
 >Our method uses a deep convolutional network trained to directly optimize the embedding itself, rather than an intermediate bottleneck layer as in previous deep learning approaches.
 
@@ -34,7 +34,7 @@ date: 2017-10-13 09:17:36
 
 每个人脸使用128维向量表征
 
-# Introduction
+## Introduction
 
 >The network is trained such that the squared L2 distances in the embedding space directly correspond to face similarity: faces of the same person have small distances and faces of distinct people have large distances.
 
@@ -59,7 +59,7 @@ date: 2017-10-13 09:17:36
 >FaceNet directly trains its output to be a compact 128-D embedding using a triplet-based loss function based on LMNN [19].
 
 
-FaceNet直接训练他的输出使其达到紧凑的128维embedding，使用基于LMNN 【19】的triplet 损失函数
+FaceNet直接训练他的输出使其达到紧凑的128维embedding，使用基于LMNN \[19\]的triplet 损失函数
 
 >Our triplets consist of two matching face thumbnails and a non-matching face thumbnail and the loss aims to separate the positive pair from the negative by a distance margin
 
@@ -79,7 +79,7 @@ triplet包含两张匹配的人脸，和一张非匹配的人脸，目的是用�
 >inspired by curriculum learning [1], we present a novel online negative exemplar mining strategy which ensures consistently increasing difficulty of triplets as the network trains.
 
 
-受到【1】的启发，我们提出了一个新奇的在线负样本挖掘策略，来确保在网络训练过程中持续增加triplets的难度
+受到\[1\]的启发，我们提出了一个新奇的在线负样本挖掘策略，来确保在网络训练过程中持续增加triplets的难度
 
 To improve clustering accuracy, we also explore hard-positive mining techniques which encourage spherical clusters for the embeddings of a single person.
 >
@@ -91,7 +91,7 @@ To improve clustering accuracy, we also explore hard-positive mining techniques 
 
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Deep-Learning-FaceNet论文阅读/12.png)
 
-# RelatedWork
+## RelatedWork
 
 >Similarly to other recent works which employ deep networks [15, 17], our approach is a purely data driven method which learns its representation directly from the pixels of the face. Rather than using engineered features, we use a large dataset of labelled faces to attain the appropriate invariances to pose, illumination, and other variational conditions.
 
@@ -132,7 +132,7 @@ To improve clustering accuracy, we also explore hard-positive mining techniques 
 
 Verification loss 类似于triplet loss 我们引用自12，19的方法，最小化L2距离，在同一个人之间和不同人之间的margin。
 
-# Method
+## Method
 
 two different core architectures:
 1. The Zeiler&amp;Fergus [22] style networks
@@ -157,7 +157,7 @@ The triplet loss, however, tries to enforce a margin between each pair of faces 
 
 Triplet loss 试图去注意在正样本对和负样本对之间的margin，这使得同一类的人脸存在于多种情况，同时也关注其间的距离，因此对于其他类可分辨。
 
-# Triplet Loss
+## Triplet Loss
 
 Here we want to ensure that an image
 我们要确保对于一张图：
@@ -192,7 +192,7 @@ $$\sum_i^N[||f(x_i^a)-f(x_i^p)||^2_2-||f(x_i^a)-f(x_i^n)||^2_2+\alpha]_{+}$$
 
 计算所有可能的triplet容易导致其中很多对于网络是无用的（网络可以轻易使其满足公式1），这些triplet对于训练和结果收敛速度没有贡献，选择难以分类的是重要的，这些是有吸引力的，而且可以帮助提高模型
 
-# Triplet Selection
+## Triplet Selection
 
 In order to ensure fast convergence it is crucial to select triplets that violate the triplet constraint in Eq. (1)
 
@@ -285,7 +285,7 @@ Batch size 的主要的约束是我们从mini-batches选择hard triplet的方式
 
 Batch size大约1800个样例
 
-# Deep Convolutional Networks
+## Deep Convolutional Networks
 
 >In all our experiments we train the CNN using Stochastic Gradient Descent (SGD) with standard backprop [8, 11] and AdaGrad [5]. In most experiments we start with a learning rate of 0.05 which we lower to finalize the model. The models are initialized from random, similar to [16], and trained on a CPU cluster for 1,000 to 2,000 hours. The decrease in the loss (and increase in accuracy) slows down drastically after 500h of training, but additional training can still significantly improve performance. The margin α is set to 0.2.
 

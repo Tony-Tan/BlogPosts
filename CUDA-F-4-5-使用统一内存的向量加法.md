@@ -1,5 +1,5 @@
 ---
-title: 【CUDA 基础】4.5 使用统一内存的向量加法
+title: \[CUDA 基础\]4.5 使用统一内存的向量加法
 categories:
     - CUDA
     - Freshman
@@ -14,11 +14,11 @@ date: 2018-05-14 17:24:55
 **Keywords:** 统一内存，Uniform Memory
 
 <!--more-->
-# 开篇废话
-本文太短，不说废话。
+# 使用统一内存的向量加法
+
 本文是前面关于统一内存的补充
 参考：[https://face2ai.com/CUDA-F-4-2-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/](https://face2ai.com/CUDA-F-4-2-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/)
-# 统一内存矩阵加法
+## 统一内存矩阵加法
 统一内存的基本思路就是减少指向同一个地址的指针，比如我们经常见到的，在本地分配内存，然后传输到设备，然后在从设备传输回来，使用统一内存，就没有这些显式的需求了，而是驱动程序帮我们完成。
 具体的做法就是:
 ```c++
@@ -112,7 +112,7 @@ nvprof --unified-memory-profiling per-process-device ./sum_arrays_uniform_memory
 
 ![1-2](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-4-5-使用统一内存的向量加法/1-2.png)
 也可以使用 nvvp来查看，效果类似。
-# 总结
+## 总结
 虽然统一内存管理给我们写代码带来了方便而且速度也很快，但是实验表明，手动控制还是要优于统一内存管理，换句话说，人脑的控制比编译器和目前的设备更有效，所以，为了效率，大家还是手动控制内存吧，把命运掌握在自己手里。
 
 

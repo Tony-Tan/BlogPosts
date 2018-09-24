@@ -1,5 +1,5 @@
 ---
-title: 【PRML】Introduction 介绍
+title: \[PRML\]Introduction 介绍
 categories:
   - Machine Learning
   - PRML

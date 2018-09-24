@@ -1,5 +1,5 @@
 ---
-title: 【线性代数】6-2:对角化(Diagonalizing a Matrix)
+title: \[线性代数\]6-2:对角化(Diagonalizing a Matrix)
 categories:
   - Mathematic
   - Linear Algebra
@@ -18,10 +18,8 @@ date: 2017-11-21 11:48:42
 **Keywords:** Eigenvalues,Eigenvectors,Diagonalizing,Fibonacci Numbers, $A^k$ ,Nondiagonalizable Matrix
 
 <!--more-->
-# 开篇废话
-这几天没写博客，也没干正事，原因有很多，内心极度崩溃的状态，有些好转，所以继续写博客，算是在乱世中寻得一片宁静的天地。
-很多事是不以意志而转移的，说白了就是你可能极力的不去惹事而希望能专心去做一件事，但是突然发现条件根本不允许，各种事情会来找到你，其实这些事都是你之前做的事的后续连续效果，也可以说成蝴蝶效应，没办法，这些事情你躲不开的，只能一件件自己处理好，“出来混迟早要还的”。
-# Diagonalizing a Matrix
+# 对角化
+## 对角化
 对角化一个矩阵，和之前个种各样的分解有一个同样的思路，当矩阵从原始形态通过各种计算性质变形成为各种有规则的，或者在数值上有特殊的性质，这些特殊的形状都可以用在不同问题上，比如LDR分解可以直接求出pivot值，求解方程，QR分解可以是通过变换向量空间的基来使向量某些方面的性质凸显出来。
 今天说的对角化就是利用了特征值特征向量的计算性质，通过对 $Ax=\lambda x$ 进行变形引申得到的。而这个diagonalizing后的矩阵对于矩阵求幂有非常简单的计算。
 假设 $n \times n$ 的矩阵 $A$ 有n个特征向量，那么我们把每个特征向量按照每列一个特征向量的组合方式形成一个矩阵，那么这个矩阵我们称之为 $S$
@@ -118,7 +116,7 @@ $$
 通过对角化的方法可以轻松得出markov矩阵的性质，一个特征值为1，那么它对应的特征向量在k次幂后是稳定的，另一个小于1的将会被消灭。
 那么什么时候$A^k$会自我毁灭，没错，如果矩阵的所有特征值都小于1，那么就毁灭了 $|\lambda|<1$
 
-# Fibonacci Numbers
+## 斐波那契数列(Fibonacci Numbers)
 斐波那契数列，高中的时候学的生兔子什么的，之前新闻上还说有个女博士用这玩意炒股，赚到翻，然后，C语言刚学了一个月的时候，老师说能把这个做出来说明学的不错了，不过好像确实不太好写，我们来段代码，我们用python来写一下试试：
 ```
 N=10
@@ -192,7 +190,7 @@ $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-6-2/python.png)
 基本一致
 
-# Matrix Powers $A^k$
+## 矩阵求幂 $A^k$
 Fibonnaci Numbers是一个典型的差分方程 $u_{k+1}=Au_k$ Solution is $u_k=A^ku_0$ 这就是一个典型的解过程，关键环节就是 $A^k$ ,过程和上面解决问题的关键步骤一般分为三步：
 1. 分解成以特征向量为基的线性组合 $u_0=Sc$
 2. Multiplies $\Lambda^k$
@@ -209,7 +207,7 @@ $$
 所以我们的对于这种迭代关系是线性的差分方程，解法就是通过将初始条件分解成特征向量的线性组成，然后通过特征值的幂和特征向量矩阵的组合，得到解。
 transforming to an eigenvector basis 是一种非常经典的做法，比如傅里叶级数都是典型应用。
 
-# Nondiagonalizable Matrices
+## 非对角化矩阵
 并不是所有的矩阵都能对角化的，前面也说了，有些特征值重复或者有些解不存在的时候，那么如何判断是否可以对角化呢？（就像判断是否可逆的那种方法）
 我们可以考察两种指标来确定是否能对角化
 
@@ -219,7 +217,7 @@ transforming to an eigenvector basis 是一种非常经典的做法，比如傅�
 GM和AM保持关系 $GM \leq AM$
 当$GM < AM$ 时 矩阵不可对角化
 
-# Eigenvalues of $AB$ and $A+B$
+##  $AB$ 和 $A+B$ 的特征值
 特征值是否满足线性呢？不满足，笨方法也能看出来这根本不是一路的：
 $$
 ABx=A\beta x=\beta Ax=\beta \lambda x\\
@@ -241,7 +239,7 @@ $$
 对于A+B同理，只有当A和B的特征向量一致的时候，才能完成加法。
 另外一个重要应用可以参考量子力学，Heisenberg's uncertainty principle
 
-# Conclusion
+## Conclusion
 本文主要讲解矩阵对角化，对角化的应用，对角化应该是在应用中最长用到的矩阵处理方法，所以用了一天的时间写了这一篇文章，希望能帮助理解。
 
 

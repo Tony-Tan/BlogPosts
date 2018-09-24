@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-2 强化学习举例说明
+title: \[强化学习\]1-2 强化学习举例
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -19,7 +19,8 @@ date: 2018-08-30 23:27:59
 **Keywords:** 强化学习，强化学习举例，Agent，Environment，环境，Reaction，反应
 
 <!--more-->
-# Examples
+# 强化学习举例
+## 强化学习例子(Examples)
 这几个例子都是实际自然界或者生活的例子，并不是RL的具体应用，所以不要理解错了，我们通过观察自然，观察生物智能的形成和遗传，是我们了解智能的有效方法，个人愚见，没准这也是唯一突破当前理解障碍的方法，生物通过数万年的演化，遗传，庞大的种群保证了其有大量的样本，来完成筛选和淘汰，每个个体的基因，神经系统，数量大到可能无法想象。所以如果连这些都没考虑过，没深入研究过，应该是对问题没有深刻理解的。
 陶哲轩说过，如果你对问题的来源内容背景都不是很了解的话就想去解决问题，那么这个非常困难的。
 我们来看几个例子：
@@ -31,7 +32,7 @@ date: 2018-08-30 23:27:59
 
 
 
-# Features of Examples and RL
+## 强化学习的特征(Features of Examples and RL)
 
 上面5个都是我们生活中自然界的例子，所有例子经过分析都可以得出以下结论：
 - 所有例子都包含interaction（作用，反应）
@@ -47,7 +48,7 @@ Agent的Actions会影响未来Environment的State，以及Agent后面的选择�
 所有这些action的结果都会在若干步后体现，而不是马上反映出来，所以目前agent能做的就是预测和计划（prediction and planning）
 
 
-# Effects of Actions
+## 有效性(Effects of Actions)
 上面这些例子，所有action的结果全部无法完全预测，所以agent只能自己随时注意environment的变化，随时做出反应。
 比如在Phile做饭的过程中，他要仔细盯着要拿出来多少材料，加多少牛奶，而且不能溢出来。
 所有例子中的目标在某种意义上说都是非常明确地，agent通过直观的感受来判断是否向着目标前进。比如：
@@ -57,7 +58,7 @@ Agent的Actions会影响未来Environment的State，以及Agent后面的选择�
 - Phil知道自己吃没吃饱
 
 
-# Experience of Agent
+## Agent的经验(Experience of Agent)
 所有例子，agent都能根据经验提高他们的表现：
 - 棋手反复训练能提高技艺
 - 羚羊通过反复的尝试知道怎么能站稳，能奔跑
@@ -70,11 +71,11 @@ Agent的Actions会影响未来Environment的State，以及Agent后面的选择�
 
 所有这些都是agent初始化的内容，但是agent最终表现，都是要靠和environment之间的interaction完成的，这个过程逐渐修正agent的行为，执行在当前环境特异化的操作。
 
-# Conclusion
+## Conclusion
 前面的高谈阔论，不过就是做早饭的一个过程，可见，我们获得了如此行动能力，和智慧是多么的复杂和令人惊叹的
 
 
-## References
+### References
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 原文来自：[https://face2ai.com/RL-RSAB-1-2-Examples/](https://face2ai.com/RL-RSAB-1-2-Examples/)转载标明出处

@@ -1,5 +1,5 @@
 ---
-title: 【数字图像处理】2.4:二维FFT,IFFT,c语言实现
+title: \[数字图像处理\]2.4:二维FFT,IFFT,c语言实现
 
 date: 2014-11-25 19:38
 categories:
