@@ -13,6 +13,7 @@ date: 9999-12-31 23:59:59
 ---
 
 本站包含作者原创的关于人工智能的理论，算法等博客，目前包括：强化学习，深度学习，机器学习，线性代数，概率论，数理统计，Python，爬虫等在目前人工智能领域需要用到的基础知识，欢迎大家订阅关注。
+
 <!--more-->
 
 # 本站目录
@@ -144,7 +145,8 @@ date: 9999-12-31 23:59:59
 ### 随机过程
 
 ### 信息论
-
+- 信息论、推理与学习算法
+    - [介绍](https://face2ai.com/ITILA-Introduction-to-This-Series/)
 ### 凸优化
 
 ### 数值分析
@@ -156,6 +158,21 @@ date: 9999-12-31 23:59:59
 
 
 ## 算法
+### 强化学习
+- [1.0 强化学习介绍](https://face2ai.com/RL-RSAB-1-0-Introduction/)
+- [1.1.0 强化学习](https://face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning/)
+- [1.1.1 强化学习、监督学习和非监督学习](https://face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning/)
+- [1.1.2 “探索”(Exploration)还是“ 利用”(Exploitation)都要“面向目标”(Goal-Direct)](https://face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning/)
+- [1.1.3 强化学习基本框架](https://face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning/)
+- [1.1.4 强化学习和人工智能](https://face2ai.com/RL-RSAB-1-1-4-Reinforcement-Learning/)
+- [1.2 强化学习举例](https://face2ai.com/RL-RSAB-1-2-Examples/)
+- [1.3 强化学习基础元素](https://face2ai.com/RL-RSAB-1-3-Elements-of-RL/)
+- [1.4.0 “进化方法”（Evolutionary Method）和 “决策梯度方法” (Policy Gradient Methods) 概论](https://face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope/)
+- [1.4.1 强化学习与优化方法](https://face2ai.com/RL-RSAB-1-4-1-Connection-to-Optimization-Method/)
+
+
+
+
 ### 机器学习算法
 - [训练数据选择血泪史](http://www.face2ai.com/MachineLearning-训练数据选择血泪史/)
 - [人脸检测分析之 Haar-like，Adaboost，级联(Cascade)](http://www.face2ai.com/MachineLearning-Haar-like-Adaboost-cascade)
@@ -246,11 +263,11 @@ date: 9999-12-31 23:59:59
 
 ## 人工智能 - 神经生物学
 
-------------
-
-
 
 ## 人工智能 - 编程语言
+### Julia
+- Julia基础
+    - [Julia编程语言介绍](https://face2ai.com/Julia-Lang-0-Introduction/)
 ### C/C++
 - 《30天自制操作系统》
 - [保护模式](https://face2ai.com/《30天自制操作系统》学习笔记--第2天/)
@@ -276,7 +293,6 @@ date: 9999-12-31 23:59:59
 
 ### Python
 #### 爬虫
-
 - [1.0 Introduction](http://www.face2ai.com/Crawler-1-0-Introduction/)
 - [2.0 分析目标网站](http://www.face2ai.com/Crawler-2-0-分析确定目标/)
 - [3.0 三只虫](http://www.face2ai.com/Crawler-3-0-第一个爬虫/)
@@ -324,9 +340,6 @@ date: 9999-12-31 23:59:59
 - TensorFlow .etc
 ### 设计实现框架
 - PineNut
-
-
--------------
 
 
 ## 其他笔记
