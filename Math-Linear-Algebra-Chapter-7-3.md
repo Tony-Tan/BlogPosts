@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]7-3:对角化和伪逆(Diagonalization and the Pseudoinverse)
+title: 【线性代数】7-3:对角化和伪逆(Diagonalization and the Pseudoinverse)
 categories:
   - Mathematic
   - Linear Algebra

@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]6-5:正定矩阵(Positive Definite Matrices)
+title: 【线性代数】6-5:正定矩阵(Positive Definite Matrices)
 categories:
   - Mathematic
   - Linear Algebra

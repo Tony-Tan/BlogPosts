@@ -1,5 +1,5 @@
 ---
-title: \[数字图像处理\]8.4:彩色图像-色彩空间 YIQ 、YUV 、YCbCr 、YC1C2 和I1I2I3
+title: 【数字图像处理】8.4:彩色图像-色彩空间 YIQ 、YUV 、YCbCr 、YC1C2 和I1I2I3
 date: 2015-03-13 15:29
 categories:
   - DIP

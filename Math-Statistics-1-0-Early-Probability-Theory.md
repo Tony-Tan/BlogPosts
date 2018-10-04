@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]1.0 早期概率论——从萌芽到《推测术》
+title: 【数理统计学简史】1.0 早期概率论——从萌芽到《推测术》
 categories:
   - Mathematic
   - Statistics

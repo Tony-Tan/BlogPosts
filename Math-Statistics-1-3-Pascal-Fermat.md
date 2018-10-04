@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]1.3 帕斯卡和费马的通信
+title: 【数理统计学简史】1.3 帕斯卡和费马的通信
 categories:
     - Mathematic
     - Statistics

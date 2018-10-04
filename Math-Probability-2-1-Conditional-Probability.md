@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]2-1:条件概率(Conditional Probability)
+title: 【概率论】2-1:条件概率(Conditional Probability)
 categories:
   - Mathematic
   - Probability

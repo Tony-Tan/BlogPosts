@@ -1,5 +1,5 @@
 ---
-title: \[集合论\] 样本集合
+title: 【集合论】 样本集合
 categories:
   - Mathematic
   - Set Theory

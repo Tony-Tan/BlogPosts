@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]4.2 内存管理
+title: 【CUDA 基础】4.2 内存管理
 categories:
     - CUDA
     - Freshman

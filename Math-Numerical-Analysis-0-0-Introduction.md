@@ -1,20 +1,20 @@
 ---
-title: \[数值分析\]课程介绍(Big Picture)
+title: 【数值分析】数值分析介绍(Big Picture)
 categories:
     - Mathematic
     - Numerical Analysis
-sticky: 10
+sticky: 9
 keywords:
     - Numerical Analysis Introduction
 toc: true
-date: 9999-09-30 23:00:00
+date: 2018-05-30 06:10:16
 ---
 
-**Abstract:** 数值分析课程介绍（2018-05-30 06:10:16）
+**Abstract:** 数值分析课程介绍
 **Keywords:** 数值分析
 
 <!--more-->
-# 数值分析课程介绍
+# 数值分析介绍
 数值分析并没有在我们那张人工智能基础数学地图上
 ![](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/Mathematic.png)
 但是根据MIT和Stanford人工智能课程安排，数值分析这门课都是在大一或者大二的必修课，换句话说，学完线性代数和微积分，就要学数值分析，为什么数值分析没在我们的数学地图上，但却被这些大学如此之重视呢？当然我上大学也是大二就开了这么课。

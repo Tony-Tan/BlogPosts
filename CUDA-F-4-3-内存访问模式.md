@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]4.3 内存访问模式
+title: 【CUDA 基础】4.3 内存访问模式
 categories:
     - CUDA
     - Freshman

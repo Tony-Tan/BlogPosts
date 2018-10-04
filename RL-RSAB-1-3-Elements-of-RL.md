@@ -1,8 +1,10 @@
 ---
-title: \[强化学习\]1-3 强化学习的基础元素
+title: 【强化学习】1-3 强化学习的基础元素
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
 keywords:
     - Policy
     - 策略

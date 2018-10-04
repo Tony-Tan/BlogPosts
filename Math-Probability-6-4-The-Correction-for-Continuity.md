@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]6-4:分布连续性修正(The Correction for Continuity)
+title: 【概率论】6-4:分布连续性修正(The Correction for Continuity)
 categories:
     - Mathematic
     - Probability

@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]2.3 狄莫弗初步结果的改进，与斯特林的联系
+title: 【数理统计学简史】2.3 狄莫弗初步结果的改进，与斯特林的联系
 categories:
     - Mathematic
     - Statistics

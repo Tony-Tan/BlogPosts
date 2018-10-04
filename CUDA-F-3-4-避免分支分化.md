@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]3.4 避免分支分化
+title: 【CUDA 基础】3.4 避免分支分化
 categories:
     - CUDA
     - Freshman

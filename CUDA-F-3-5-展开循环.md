@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]3.5 展开循环
+title: 【CUDA 基础】3.5 展开循环
 categories:
     - CUDA
     - Freshman

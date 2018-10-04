@@ -1,5 +1,5 @@
 ---
-title: \[转\]How to do Research At the MIT AI Lab
+title: 【转】How to do Research At the MIT AI Lab
 categories:
   - Other
 keywords:
@@ -60,7 +60,7 @@ The document is divided roughly in halves. The first several sections talk about
 
 - 13 is perhaps the most important section: it's about emotional factors in the process of research. It tells how to deal with failure, how to set goals, how to get unstuck, how to avoid insecurity, maintain self-esteem, and have fun in the process.
 
-This document is still in a state of development; we welcome contributions and comments. Some sections are very incomplete. \[Annotations in brackets and italics indicate some of the major incompletions\]. We appreciate contributions; send your ideas and comments to Zvona@ai.ai.mit.edu.
+This document is still in a state of development; we welcome contributions and comments. Some sections are very incomplete. 【Annotations in brackets and italics indicate some of the major incompletions】. We appreciate contributions; send your ideas and comments to Zvona@ai.ai.mit.edu.
 
 ## Reading AI
 Many researchers spend more than half their time reading. You can learn a lot more quickly from other people's work than from doing your own. This section talks about reading within AI; section covers reading about other subjects.
@@ -452,7 +452,7 @@ There is a well-understood phenomenon known as "thesis avoidance," whereby you s
 
 ## Research methodology
 
-\[This section is weak. Please contribute!\]
+【This section is weak. Please contribute!】
 
 A research methodology defines what the activity of research is, how to proceed, how to measure progress, and what constitutes success. AI methodology is a jumbled mess. Different methodologies define distinct schools which wage religious wars against each other.
 

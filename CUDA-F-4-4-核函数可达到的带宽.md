@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]4.4 核函数可达到的带宽
+title: 【CUDA 基础】4.4 核函数可达到的带宽
 categories:
     - CUDA
     - Freshman

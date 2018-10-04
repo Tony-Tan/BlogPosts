@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]3-5:独立性，基和维度(Independence,Basis and Dimension)
+title: 【线性代数】3-5:独立性，基和维度(Independence,Basis and Dimension)
 categories:
   - Mathematic
   - Linear Algebra

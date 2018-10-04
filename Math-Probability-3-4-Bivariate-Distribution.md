@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]3-4:二维分布(Bivariate Distribution)
+title: 【概率论】3-4:二维分布(Bivariate Distribution)
 categories:
   - Mathematic
   - Probability

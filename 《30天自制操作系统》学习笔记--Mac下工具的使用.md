@@ -1,5 +1,5 @@
 ---
-title: \[30天自制操作系统\]Mac下工具的使用
+title: 【30天自制操作系统】Mac下工具的使用
 list_number: false
 date: 2013-12-13 14:42
 categories:

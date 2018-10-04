@@ -1,5 +1,5 @@
 ---
-title: \[数字图像处理\]6.10:灰度图像-图像分割 霍夫变换(Hough Transform)--直线"
+title: 【数字图像处理】6.10:灰度图像-图像分割 霍夫变换(Hough Transform)--直线"
 date: 2015-02-16 09:12
 categories:
   - DIP

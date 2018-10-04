@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]1-1:线性组合(Linear Combinations)
+title: 【线性代数】1-1:线性组合(Linear Combinations)
 toc: true
 categories:
   - Mathematic

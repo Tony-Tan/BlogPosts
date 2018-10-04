@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]1-3:组合(Combinatorial Methods)
+title: 【概率论】1-3:组合(Combinatorial Methods)
 categories:
   - Mathematic
   - Probability

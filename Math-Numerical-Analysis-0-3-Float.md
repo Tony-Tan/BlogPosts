@@ -1,10 +1,12 @@
 ---
-title: \[数值分析\]0.3 实数的浮点表示
+title: 【数值分析】0.3 实数的浮点表示
 categories:
     - Mathematic
     - Numerical Analysis
+tags:
+    - 浮点型数字
 keywords:
-    - 浮点表示
+    - 浮点数字
     - IEEE754
 toc: true
 date: 2018-06-07 06:19:13

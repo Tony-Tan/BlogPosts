@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]4-3:方差(Variance)
+title: 【概率论】4-3:方差(Variance)
 categories:
     - Mathematic
     - Probability
@@ -87,7 +87,7 @@ $$
 
 2. 反过来假设 $Var(X)=0$
      - 那么就有 $Pr[(X-\mu)^2\geq 0]=1$ 。
-     - 但是又因为 $E[(X-\mu)^2]=0$ 也就是 $0=\int^{\infty}_{-\infty}Pr\[(x-\mu)^2\](x-\mu)^2dx$
+     - 但是又因为 $E[(X-\mu)^2]=0$ 也就是 $0=\int^{\infty}_{-\infty}Pr【(x-\mu)^2】(x-\mu)^2dx$
      - 根据定理（ Theorem Suppose that  $E(x)=a$ and that either $Pr(X\geq a)=1$ or $Pr(X\leq a)=1$ Then $Pr(X=a)=1$）
      - 可以得到
 $$

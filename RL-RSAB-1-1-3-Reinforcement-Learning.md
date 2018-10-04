@@ -1,8 +1,10 @@
 ---
-title: \[强化学习\]1-1-3 强化学习基本框架
+title: 【强化学习】1-1-3 强化学习基本框架
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
 keywords:
     - agent
     - real-time

@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]2.0 狄莫弗的二项概率逼近
+title: 【数理统计学简史】2.0 狄莫弗的二项概率逼近
 categories:
     - Mathematic
     - Statistics

@@ -1,8 +1,11 @@
 ---
-title: \[强化学习\]1-1-2 “探索”(Exploration)还是“ 利用”(Exploitation)都要“面向目标”(Goal-Direct)
+title: 【强化学习】1-1-2 “探索”(Exploration)还是“ 利用”(Exploitation)都要“面向目标”(Goal-Direct)
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
+    - Exploration or Exploitation
 keywords:
     - Trade-Off
     - Exploration

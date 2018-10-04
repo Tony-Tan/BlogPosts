@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]6.2 并发内核执行
+title: 【CUDA 基础】6.2 并发内核执行
 categories:
     - CUDA
     - Freshman

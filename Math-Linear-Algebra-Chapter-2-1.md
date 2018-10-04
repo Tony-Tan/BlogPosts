@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]2-1:解方程组(Ax=b)
+title: 【线性代数】2-1:解方程组(Ax=b)
 toc: true
 categories:
   - Mathematic

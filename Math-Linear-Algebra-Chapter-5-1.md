@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]5-1:行列式性质(The Properties of Determinants)
+title: 【线性代数】5-1:行列式性质(The Properties of Determinants)
 categories:
   - Mathematic
   - Linear Algebra

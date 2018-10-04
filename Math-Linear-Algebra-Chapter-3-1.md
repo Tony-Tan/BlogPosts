@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]3-1:向量空间(Space of Vectors)
+title: 【线性代数】3-1:向量空间(Space of Vectors)
 categories:
   - Mathematic
   - Linear Algebra

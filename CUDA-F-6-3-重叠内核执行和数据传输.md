@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]6.3 重叠内核执行和数据传输
+title: 【CUDA 基础】6.3 重叠内核执行和数据传输
 categories:
     - CUDA
     - Freshman

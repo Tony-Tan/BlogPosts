@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\] 介绍
+title: 【数理统计学简史】 介绍
 categories:
   - Mathematic
   - Statistics

@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]3-7:多变量分布(Multivariate Distributions Part I）
+title: 【概率论】3-7:多变量分布(Multivariate Distributions Part I）
 categories:
   - Mathematic
   - Probability

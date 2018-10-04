@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]2-2:独立事件(Independent Events)
+title: 【概率论】2-2:独立事件(Independent Events)
 categories:
   - Mathematic
   - Probability

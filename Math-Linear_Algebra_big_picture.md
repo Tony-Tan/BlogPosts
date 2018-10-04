@@ -1,15 +1,15 @@
 ---
-title: \[线性代数\]线性代数总览
-sticky: 10
+title: 【线性代数】线性代数总览
+sticky: 9
 toc: true
 categories:
   - Mathematic
   - Linear Algebra
-date: 9999-11-30 23:59:59
+date: 2017-08-18 16:28:36
 keywords:
   - 线性代数总览
 ---
-**Abstract:** 通过学习MIT 18.06课程，总结出的线性代数的知识点相互依赖关系，后续博客将会按照相应的依赖关系进行介绍。(2017-08-18 16:28:36)
+**Abstract:** 通过学习MIT 18.06课程，总结出的线性代数的知识点相互依赖关系，后续博客将会按照相应的依赖关系进行介绍。
 **Keywords:** Linear Algebra,Big Picture
 <!--more-->
 

@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]3-3:秩(Rank)
+title: 【线性代数】3-3:秩(Rank)
 categories:
   - Mathematic
   - Linear Algebra

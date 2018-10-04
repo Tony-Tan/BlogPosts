@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]2.0 CUDA编程模型概述（一）
+title: 【CUDA 基础】2.0 CUDA编程模型概述（一）
 categories:
   - CUDA
   - Freshman

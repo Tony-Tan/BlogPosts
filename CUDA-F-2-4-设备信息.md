@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]2.4 GPU设备信息
+title: 【CUDA 基础】2.4 GPU设备信息
 categories:
   - CUDA
   - Freshman

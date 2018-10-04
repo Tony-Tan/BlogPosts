@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]3-8:随机变量函数(Functions of a Random Variable)
+title: 【概率论】3-8:随机变量函数(Functions of a Random Variable)
 categories:
   - Mathematic
   - Probability

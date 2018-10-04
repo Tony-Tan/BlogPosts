@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]3-6:四个子空间的维度(Dimensions of the Four Subspaces)
+title: 【线性代数】3-6:四个子空间的维度(Dimensions of the Four Subspaces)
 categories:
   - Mathematic
   - Linear Algebra

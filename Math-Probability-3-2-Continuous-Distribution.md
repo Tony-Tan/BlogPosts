@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]3-2:连续分布(Continuous Distributions)
+title: 【概率论】3-2:连续分布(Continuous Distributions)
 categories:
   - Mathematic
   - Probability

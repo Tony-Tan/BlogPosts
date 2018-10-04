@@ -1,8 +1,10 @@
 ---
-title: \[强化学习\]1-2 强化学习举例
+title: 【强化学习】1-2 强化学习举例
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
 keywords:
     - 强化学习
     - 强化学习举例

@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]2-3:消元与矩阵的关系(Elimination and Matrix)
+title: 【线性代数】2-3:消元与矩阵的关系(Elimination and Matrix)
 toc: true
 categories:
   - Mathematic

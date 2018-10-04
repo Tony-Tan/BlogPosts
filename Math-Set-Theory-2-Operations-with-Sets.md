@@ -1,5 +1,5 @@
 ---
-title: \[集合论\]2 集合操作
+title: 【集合论】2 集合操作
 categories:
   - Mathematic
   - Set Theory

@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]3.1 CUDA执行模型概述
+title: 【CUDA 基础】3.1 CUDA执行模型概述
 categories:
   - CUDA
   - Freshman

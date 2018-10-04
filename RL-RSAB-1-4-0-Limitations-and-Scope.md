@@ -1,8 +1,11 @@
 ---
-title: \[强化学习\] 1.4.0 “进化方法”（Evolutionary Method）和 “决策梯度方法” (Policy Gradient Methods) 概论
+title: 【强化学习】 1.4.0 “进化方法”和 “决策梯度方法”  概论
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
+    - 进化方法
 keywords:
     - Evolutionary Method
     - 进化方法

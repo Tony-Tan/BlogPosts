@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]1-1:概率定义(Definition of Probability)
+title: 【概率论】1-1:概率定义(Definition of Probability)
 categories:
   - Mathematic
   - Probability

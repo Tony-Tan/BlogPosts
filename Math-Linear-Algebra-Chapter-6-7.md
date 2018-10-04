@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]6-7:SVD分解(Singular Value Decomposition-SVD)
+title: 【线性代数】6-7:SVD分解(Singular Value Decomposition-SVD)
 categories:
   - Mathematic
   - Linear Algebra

@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]1.6 关于概率的几点看法
+title: 【数理统计学简史】1.6 关于概率的几点看法
 categories:
     - Mathematic
     - Statistics

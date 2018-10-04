@@ -1,15 +1,17 @@
 ---
-title: \[强化学习\]1-0 强化学习介绍
+title: 【强化学习】1-0 强化学习介绍
 categories:
-  - Reinforcement Learning
-  - RL-An Introduction
+    - Reinforcement Learning
+    - RL-An Introduction
+tags:
+    - 强化学习
 keywords:
-  - 学习的本质
-  - 引发
-  - 结果
-  - 计算近似
-  - 直接建模
-  - 强化学习
+    - 学习的本质
+    - 引发
+    - 结果
+    - 计算近似
+    - 直接建模
+    - 强化学习
 toc: true
 date: 2018-08-22 23:35:56
 ---

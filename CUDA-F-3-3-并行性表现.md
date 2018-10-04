@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]3.3 并行性表现
+title: 【CUDA 基础】3.3 并行性表现
 categories:
     - CUDA
     - Freshman

@@ -1,8 +1,11 @@
 ---
-title: \[强化学习\]1-1-4 强化学习和人工智能
+title: 【强化学习】1-1-4 强化学习和人工智能
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
+    - 人工智能
 keywords:
     - modern Reinforcement Learning
     - 现代强化学习

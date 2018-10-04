@@ -94,9 +94,12 @@ python研究处于初级阶段，c++也是，但是c研究的比较多，感觉�
 对于想深入学习研究机器学习人工智能的同学，数学书必须要看，还要学的好，如果你想找个公司混口饭吃，上面那些已经能够让你在你的圈子“大放异彩”了。
 目前我总结了一下数学学习的过程，针对机器学习的战友们，不一定要从头学一遍，但是对应的补充学习还是需要的.
 知识结构如下
+![](https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/Mathematic.png)
 
 [https://github.com/Tony-Tan/MachineLearningMath](https://github.com/Tony-Tan/MachineLearningMath)
-![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/https://raw.githubusercontent.com/Tony-Tan/MachineLearningMath/master/mathRelation.png)
+
+
+
 
 相关书籍推荐
 

@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-9:多项式分布(The Multinomial Distributions)
+title: 【概率论】5-9:多项式分布(The Multinomial Distributions)
 categories:
     - Mathematic
     - Probability

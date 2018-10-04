@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]3-6:条件分布(Conditional Distributions Part I）
+title: 【概率论】3-6:条件分布(Conditional Distributions Part I）
 categories:
   - Mathematic
   - Probability

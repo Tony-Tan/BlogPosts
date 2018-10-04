@@ -1,5 +1,5 @@
 ---
-title: \[数字图像处理\]8.0:彩色模型，CIE XYZ，CIE RGB
+title: 【数字图像处理】8.0:彩色模型，CIE XYZ，CIE RGB
 date: 2015-03-11 14:03
 categories:
   - DIP

@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-2:伯努利和二项分布(The Bernoulli and Binomial Distributions)
+title: 【概率论】5-2:伯努利和二项分布(The Bernoulli and Binomial Distributions)
 categories:
     - Mathematic
     - Probability

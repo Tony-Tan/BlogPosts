@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]4-1:随机变量的期望(The Expectation of a Random Variable Part I)
+title: 【概率论】4-1:随机变量的期望(The Expectation of a Random Variable Part I)
 categories:
     - Mathematic
     - Probability

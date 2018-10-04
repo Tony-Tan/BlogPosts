@@ -1,4 +1,4 @@
-title: \[CUDA 基础\]5.5 常量内存
+title: 【CUDA 基础】5.5 常量内存
 categories:
     - CUDA
     - Freshman

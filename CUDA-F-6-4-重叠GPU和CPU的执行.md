@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]6.4 重叠GPU和CPU的执行
+title: 【CUDA 基础】6.4 重叠GPU和CPU的执行
 categories:
     - CUDA
     - Freshman

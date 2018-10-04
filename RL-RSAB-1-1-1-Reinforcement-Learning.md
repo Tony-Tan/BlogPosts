@@ -1,8 +1,12 @@
 ---
-title: \[强化学习\]1-1-1 强化学习、监督学习和非监督学习
+title: 【强化学习】1-1-1 强化学习、监督学习和非监督学习
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
+    - 监督学习
+    - 非监督学习
 keywords:
     - Supervised Learning
     - Unsupervised Learning

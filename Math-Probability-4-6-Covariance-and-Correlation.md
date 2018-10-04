@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]4-6:协方差和相关性(Covariance and Correlation)
+title: 【概率论】4-6:协方差和相关性(Covariance and Correlation)
 categories:
     - Mathematic
     - Probability

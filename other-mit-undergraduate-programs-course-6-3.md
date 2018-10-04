@@ -1,5 +1,5 @@
 ---
-title: \[麻省理工学院\]人工智能课程安排
+title: 【麻省理工学院】人工智能课程安排
 categories:
   - Other
 keywords:

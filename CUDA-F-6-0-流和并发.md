@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]6.0 流和并发
+title: 【CUDA 基础】6.0 流和并发
 categories:
     - CUDA
     - Freshman

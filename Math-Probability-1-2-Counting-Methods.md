@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]1-2:计数方法(Counting Methods)
+title: 【概率论】1-2:计数方法(Counting Methods)
 categories:
   - Mathematic
   - Probability

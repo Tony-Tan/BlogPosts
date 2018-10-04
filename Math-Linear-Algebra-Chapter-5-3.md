@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]5-3:克莱姆法则，逆和体积(Cramer's Rule,Inverses,and Volumes)
+title: 【线性代数】5-3:克莱姆法则，逆和体积(Cramer's Rule,Inverses,and Volumes)
 categories:
   - Mathematic
   - Linear Algebra

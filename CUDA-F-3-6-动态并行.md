@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]3.6 动态并行
+title: 【CUDA 基础】3.6 动态并行
 categories:
     - CUDA
     - Freshman

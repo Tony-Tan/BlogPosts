@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]1-2:点乘和长度(Dot Products and Length)
+title: 【线性代数】1-2:点乘和长度(Dot Products and Length)
 toc: true
 categories:
   - Mathematic

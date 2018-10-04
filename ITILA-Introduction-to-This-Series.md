@@ -1,5 +1,5 @@
 ---
-title: \[信息论、推理与学习算法\]本系列博客介绍
+title: 【信息论、推理与学习算法】本系列博客介绍
 categories:
   - Information Theory
 keywords:

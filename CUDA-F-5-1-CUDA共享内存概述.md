@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]5.1 CUDA共享内存概述
+title: 【CUDA 基础】5.1 CUDA共享内存概述
 categories:
     - CUDA
     - Freshman

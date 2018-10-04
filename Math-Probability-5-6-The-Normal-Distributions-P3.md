@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-6:正态分布(The Normal Distributions Part III)
+title: 【概率论】5-6:正态分布(The Normal Distributions Part III)
 categories:
     - Mathematic
     - Probability

@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]1.0 并行计算与计算机架构
+title: 【CUDA 基础】1.0 并行计算与计算机架构
 categories:
   - CUDA
   - Freshman

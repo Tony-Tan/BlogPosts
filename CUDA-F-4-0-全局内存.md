@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]4.0 全局内存
+title: 【CUDA 基础】4.0 全局内存
 categories:
     - CUDA
     - Freshman

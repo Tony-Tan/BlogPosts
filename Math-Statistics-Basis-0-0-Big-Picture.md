@@ -1,6 +1,6 @@
 ---
-title: \[数理统计理论基础\] 概览
-sticky: 10
+title: 【数理统计理论基础】 概览
+sticky: 9
 categories:
     - Mathematic
     - Statistics
@@ -8,10 +8,10 @@ keywords:
     - Statistics Basis
     - Big Picture
 toc: true
-date: 9999-1-30 23:59:59
+date: 2018-05-24 13:58:55
 ---
 
-**Abstract:** 本文为数理统计理论基础的第一篇，作为概览，从总体介绍数理统计系列的学习线路和相关博客写作的大体思路（2018-05-24 13:58:55）
+**Abstract:** 本文为数理统计理论基础的第一篇，作为概览，从总体介绍数理统计系列的学习线路和相关博客写作的大体思路
 **Keywords:** 统计学基础，数理统计学基础
 
 <!--more-->

@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-10:二维正态分布(The Bivariate Normal Distributions)
+title: 【概率论】5-10:二维正态分布(The Bivariate Normal Distributions)
 categories:
     - Mathematic
     - Probability

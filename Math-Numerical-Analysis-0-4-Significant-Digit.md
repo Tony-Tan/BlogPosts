@@ -1,5 +1,5 @@
 ---
-title: \[数值分析\]0.4 有效数字缺失
+title: 【数值分析】0.4 有效数字缺失
 categories:
     - Mathematic
     - Numerical Analysis

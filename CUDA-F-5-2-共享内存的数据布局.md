@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]5.2 共享内存的数据布局
+title: 【CUDA 基础】5.2 共享内存的数据布局
 categories:
     - CUDA
     - Freshman
@@ -100,9 +100,9 @@ __global__ void setRowReadRow(int * out)
 ```
 - 定义一个共享内存，大小为 $32\times 32$
 - 计算当前线程的全局位置的值idx
-- 将idx这个无符号整数值写入二维共享内存tile\[threadIdx.y\]\[threadIdx.x\]中
+- 将idx这个无符号整数值写入二维共享内存tile【threadIdx.y】【threadIdx.x】中
 - 同步
-- 将共享内存tile\[threadIdx.y\]\[threadIdx.x\]中的值写入全局内存对应的idx位置处
+- 将共享内存tile【threadIdx.y】【threadIdx.x】中的值写入全局内存对应的idx位置处
 
 核函数的内存工作：
 1. 共享内存的写入

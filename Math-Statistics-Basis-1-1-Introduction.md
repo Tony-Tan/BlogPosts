@@ -1,5 +1,5 @@
 ---
-title: \[数理统计理论基础\] 1.1 导言
+title: 【数理统计理论基础】 1.1 导言
 categories:
     - Mathematic
     - Statistics

@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]6.5 流回调
+title: 【CUDA 基础】6.5 流回调
 categories:
     - CUDA
     - Freshman

@@ -59,7 +59,7 @@ date: 2017-10-13 09:17:36
 >FaceNet directly trains its output to be a compact 128-D embedding using a triplet-based loss function based on LMNN [19].
 
 
-FaceNet直接训练他的输出使其达到紧凑的128维embedding，使用基于LMNN \[19\]的triplet 损失函数
+FaceNet直接训练他的输出使其达到紧凑的128维embedding，使用基于LMNN 【19】的triplet 损失函数
 
 >Our triplets consist of two matching face thumbnails and a non-matching face thumbnail and the loss aims to separate the positive pair from the negative by a distance margin
 
@@ -79,7 +79,7 @@ triplet包含两张匹配的人脸，和一张非匹配的人脸，目的是用�
 >inspired by curriculum learning [1], we present a novel online negative exemplar mining strategy which ensures consistently increasing difficulty of triplets as the network trains.
 
 
-受到\[1\]的启发，我们提出了一个新奇的在线负样本挖掘策略，来确保在网络训练过程中持续增加triplets的难度
+受到【1】的启发，我们提出了一个新奇的在线负样本挖掘策略，来确保在网络训练过程中持续增加triplets的难度
 
 To improve clustering accuracy, we also explore hard-positive mining techniques which encourage spherical clusters for the embeddings of a single person.
 >

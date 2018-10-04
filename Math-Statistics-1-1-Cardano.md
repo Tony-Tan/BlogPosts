@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]1.1 卡丹诺的著作
+title: 【数理统计学简史】1.1 卡丹诺的著作
 categories:
     - Mathematic
     - Statistics

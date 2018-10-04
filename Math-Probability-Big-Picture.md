@@ -1,16 +1,16 @@
 ---
-title: \[概率论\] 概率论总览
-sticky: 10
+title: 【概率论】 概率论总览
+sticky: 9
 categories:
   - Mathematic
   - Probability
 keywords:
   - tag
 toc: true
-date: 9999-10-30 23:59:59
+date: 2017-11-13 15:57:45
 ---
 
-**Abstract:** 关于概率论的整体框架(2017-11-13 15:57:45)
+**Abstract:** 关于概率论的整体框架
 **Keywords:** 概率论
 
 <!--more-->

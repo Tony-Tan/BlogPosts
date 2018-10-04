@@ -1,5 +1,5 @@
 ---
-title: \[数值分析\]0.1 多项式求值
+title: 【数值分析】0.1 多项式求值
 categories:
     - Mathematic
     - Numerical Analysis

@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]4-2:投影(Porjections)
+title: 【线性代数】4-2:投影(Porjections)
 categories:
   - Mathematic
   - Linear Algebra

@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]6-3:中心极限定理(The Central Limit Theorem)
+title: 【概率论】6-3:中心极限定理(The Central Limit Theorem)
 categories:
     - Mathematic
     - Probability

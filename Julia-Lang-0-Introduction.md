@@ -1,12 +1,14 @@
 ---
-title: \[Julia\] Julia编程语言介绍
+title: 【Julia】Julia编程语言介绍
 categories:
-  - Julia
-  - Freshman
+    - Julia
+    - Freshman
+tags:
+    - Julia
 keywords:
-  - Julia编程语言
-  - Julia简介
-  - Julia特点
+    - Julia编程语言
+    - Julia简介
+    - Julia特点
 toc: true
 date: 2018-09-25 12:04:01
 ---

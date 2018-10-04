@@ -1,5 +1,5 @@
 ---
-title: \[数字图像处理\]6.3:灰度图像-图像分割 Robert算子
+title: 【数字图像处理】6.3:灰度图像-图像分割 Robert算子
 date: 2015-02-09 15:07
 categories:
   - DIP

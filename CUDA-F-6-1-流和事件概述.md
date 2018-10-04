@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]6.1 流和事件概述
+title: 【CUDA 基础】6.1 流和事件概述
 categories:
     - CUDA
     - Freshman

@@ -1,8 +1,10 @@
 ---
-title: \[强化学习\]1-1-0 强化学习介绍
+title: 【强化学习】1-1-0 强化学习介绍
 categories:
     - Reinforcement Learning
     - RL-An Introduction
+tags:
+    - 强化学习
 keywords:
     - Reinforcement Learning
     - Situation

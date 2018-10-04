@@ -1,5 +1,5 @@
 ---
-title: \[数字图像处理\]5.3:灰度图像-图像增强 双边滤波 Bilateral Filtering
+title: 【数字图像处理】5.3:灰度图像-图像增强 双边滤波 Bilateral Filtering
 date: 2015-01-29 15:46
 categories:
   - DIP

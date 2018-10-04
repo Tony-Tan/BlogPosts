@@ -1,5 +1,5 @@
 ---
-title: \[数字图像处理\]6.8:灰度图像-图像分割 Canny边缘检测
+title: 【数字图像处理】6.8:灰度图像-图像分割 Canny边缘检测
 date: 2015-02-13 11:55
 categories:
   - DIP
@@ -22,7 +22,7 @@ Canny算法的另一个显著特征是它有完整的数学推导过程，能够
 
 
 ## 算法原理
-算法原理，Canny首先提出了三种基本条件，来定义一个边缘。来看原文\[Canny1986\]：
+算法原理，Canny首先提出了三种基本条件，来定义一个边缘。来看原文【Canny1986】：
 >1) Good detection. There should be a low probability of failing to mark real edge points, and low probability of falsely marking nonedge points. Since both these probabilities are monotonically decreasing functions of the output signal-to-noise ratio, this criterion corresponds to maximizing signal-to-noise ratio.
 >2) Good localization. The points marked as edge points by the operator should be as close as possible to the center of the true edge.
 >3) Only one response to a single edge. This is implicitly captured in the first criterion since when there are two responses to the same edge, one of them must be considered false. However, the mathematical form of the first criterion did not capture the multiple response requirement and it had to be made explicit.

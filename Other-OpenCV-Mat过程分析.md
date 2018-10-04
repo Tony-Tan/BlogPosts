@@ -1,5 +1,5 @@
 ---
-title: \[OpenCV源代码分析\]矩阵计算过程
+title: 【OpenCV源代码分析】矩阵计算过程
 categories:
   - Other
 keywords:

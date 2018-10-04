@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]6-3:微分方程的应用(Applications to Differential Equations)
+title: 【线性代数】6-3:微分方程的应用(Applications to Differential Equations)
 categories:
   - Mathematic
   - Linear Algebra

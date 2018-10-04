@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-3:超几何分布(The Hypergeomtric Distribution)
+title: 【概率论】5-3:超几何分布(The Hypergeomtric Distribution)
 categories:
     - Mathematic
     - Probability

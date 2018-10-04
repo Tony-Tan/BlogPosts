@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]4.5 使用统一内存的向量加法
+title: 【CUDA 基础】4.5 使用统一内存的向量加法
 categories:
     - CUDA
     - Freshman

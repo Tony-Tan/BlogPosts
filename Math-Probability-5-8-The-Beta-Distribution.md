@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-8:Beta分布(The Beta Distributions)
+title: 【概率论】5-8:Beta分布(The Beta Distributions)
 categories:
     - Mathematic
     - Probability

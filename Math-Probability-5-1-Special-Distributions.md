@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]5-1:各分布介绍(Special Distribution Introduction)
+title: 【概率论】5-1:各分布介绍(Special Distribution Introduction)
 categories:
     - Mathematic
     - Probability

@@ -1,5 +1,5 @@
 ---
-title: \[CUDA 基础\]3.2 理解线程束执行的本质(Part II)
+title: 【CUDA 基础】3.2 理解线程束执行的本质(Part II)
 categories:
   - CUDA
   - Freshman

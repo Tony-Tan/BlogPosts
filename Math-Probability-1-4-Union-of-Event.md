@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]1-4:事件的的并集(Union of Events and Statical Swindles)
+title: 【概率论】1-4:事件的的并集(Union of Events and Statical Swindles)
 categories:
   - Mathematic
   - Probability

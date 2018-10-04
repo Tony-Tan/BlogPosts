@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]6-6:相似矩阵(Similar Matrices)
+title: 【线性代数】6-6:相似矩阵(Similar Matrices)
 categories:
   - Mathematic
   - Linear Algebra
@@ -148,7 +148,7 @@ $$
 ## 乔丹形式(The Jordan Form)
 接下来详细的介绍下Jorda Form也就是Jordan形式，没有详细的推到过程，因为对Jordan形式的严格证明书中就没有，也不是线性代数初级部分的内容，我们要知道的就是Jordan的具体形式，以及部分用途，Jordan存在的最大意义就是解决不能对角化的矩阵在需要对角化的时候的引发的问题，也就是Jordan Form 是更广义的对角化，而之前我们讲的拥有足够特征向量的方阵的对角化只是Jordan Form的一种特例而已，Jordan是更广泛的方式。
 
-\[宏观\]Jordan Form：
+【宏观】Jordan Form：
 $$
 M^{-1}AM=\begin{bmatrix}
 J_1&&\\
@@ -156,7 +156,7 @@ J_1&&\\
 &&J_s
 \end{bmatrix}=J
 $$
-\[微观\]其中$J_i$ 是一个块：
+【微观】其中$J_i$ 是一个块：
 $$
 J_i=\begin{bmatrix}
 \lambda_i&1&&&\\

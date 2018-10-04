@@ -1,5 +1,5 @@
 ---
-title: \[线性代数\]5-2:置换和余因子(Permutations and Cofactors)
+title: 【线性代数】5-2:置换和余因子(Permutations and Cofactors)
 categories:
   - Mathematic
   - Linear Algebra

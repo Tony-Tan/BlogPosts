@@ -1,5 +1,5 @@
 ---
-title: \[数理统计学简史\]1.7 伯努利大数定律
+title: 【数理统计学简史】1.7 伯努利大数定律
 categories:
     - Mathematic
     - Statistics

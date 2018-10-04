@@ -1,5 +1,5 @@
 ---
-title: \[概率论\]3-1:随机变量和分布(Random Variables and Discrete Distributions)
+title: 【概率论】3-1:随机变量和分布(Random Variables and Discrete Distributions)
 categories:
   - Mathematic
   - Probability
