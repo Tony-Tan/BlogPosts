@@ -3,10 +3,8 @@ title: 【概率论】3-6:条件分布(Conditional Distributions Part I）
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Discrete Conditional Distributions
+tags:
   - 离散条件分布
-  - Continuous Conditional Distributions
   - 连续条件分布
 
 toc: true

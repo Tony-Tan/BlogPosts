@@ -5,11 +5,11 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 16:14:14
-keywords:
-  - Eliminate
-  - Pivot
-  - Row Exchange
-  - Upper Triangular
+tags:
+  - 消元
+  - 主值
+  - 行变换
+  - 上三角矩阵
 ---
 **Abstract:** 从小学解方程的消元开始，推导出线性代数的知识，包括先关矩阵计算
 **Keywords:** Eliminate 消元，Pivot 主元，Row Exchange 行交换，Upper Triangular 上三角矩阵

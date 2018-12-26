@@ -3,7 +3,7 @@ title: 【数字图像处理】5.0:灰度图像-空域滤波 基础：卷积和�
 date: 2015-01-24 14:27
 categories:
   - DIP
-keywords:
+tags:
   - 卷积
   - 相关
   - 空域滤波

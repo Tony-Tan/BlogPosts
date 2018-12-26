@@ -5,8 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-28 10:01:20
-keywords:
-  - Vector
+tags:
   - 向量
 ---
 **Abstract:** 本文主要介绍向量和线性组合的相关知识

@@ -3,11 +3,11 @@ title: 【线性代数】3-1:向量空间(Space of Vectors)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Vectors Space
-  - Subspace
-  - Column Space
-  - Span
+tags:
+  - 向量空间
+  - 子空间
+  - 列空间
+  - 张成
 toc: true
 date: 2017-09-19 17:40:30
 ---

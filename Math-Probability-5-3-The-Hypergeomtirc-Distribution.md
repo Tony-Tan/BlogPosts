@@ -3,9 +3,8 @@ title: 【概率论】5-3:超几何分布(The Hypergeomtric Distribution)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Hypergeomtirc Distribution
-    - Finite Population Correction
+tags:
+    - 超几何分布
 toc: true
 date: 2018-03-28 09:27:39
 ---

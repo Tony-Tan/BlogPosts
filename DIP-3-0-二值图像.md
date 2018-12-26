@@ -3,7 +3,7 @@ title: 【数字图像处理】3.0:二值图像
 date: 2014-12-24 14:57
 categories:
   - DIP
-keywords:
+tags:
   - 二值图像
   - 形态学
   - 邻域

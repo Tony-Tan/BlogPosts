@@ -55,4 +55,4 @@ date: 2018-09-26 08:50:41
 ## References
 Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
-[完整文章访问原文地址](https://face2ai.com/RL-RSAB-1-4-1-Connection-to-Optimization-Method)
+原文地址：[https://face2ai.com/RL-RSAB-1-4-1-Connection-to-Optimization-Method](https://face2ai.com/RL-RSAB-1-4-1-Connection-to-Optimization-Method)

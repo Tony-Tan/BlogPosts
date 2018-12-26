@@ -3,16 +3,11 @@ title: 【概率论】1-2:计数方法(Counting Methods)
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Counting Methods
+tags:
   - 技术方法
-  - Combinatorial Methods
   - 组合方法
-  - Multiplication
   - 乘法法则
-  - Permutations
   - 排列
-  - Stirling's Formula
   - 斯特林公式
 toc: true
 date: 2018-01-25 10:35:46

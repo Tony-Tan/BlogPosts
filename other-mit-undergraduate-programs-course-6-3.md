@@ -2,7 +2,7 @@
 title: 【麻省理工学院】人工智能课程安排
 categories:
   - Other
-keywords:
+tags:
   - other-mit-undergraduate-programs-course-6-3
 toc: true
 date: 2018-05-26 17:58:27

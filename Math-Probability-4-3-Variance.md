@@ -3,9 +3,9 @@ title: 【概率论】4-3:方差(Variance)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Variance
-    - Standard Deviation
+tags:
+    - 方差
+    - 标准差
 toc: true
 date: 2018-03-23 22:22:11
 ---

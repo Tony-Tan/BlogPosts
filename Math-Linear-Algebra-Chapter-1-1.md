@@ -5,8 +5,7 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-28 10:44:28
-keywords:
-  - Linear Combinations
+tags:
   - 线性组合
 ---
 **Abstract:** 线性组合详细说明

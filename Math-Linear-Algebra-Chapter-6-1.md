@@ -3,13 +3,13 @@ title: 【线性代数】6-1:特征值介绍(Introduction to Eigenvalues)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Eigenvalues
-  - Eigenvectors
-  - Sigular
-  - Markov matrix
-  - Trace
-  - Imaginary Eigenvalues
+tags:
+  - 特征值
+  - 特征向量
+  - 奇异
+  - 马尔科夫矩阵
+  - 迹
+  - 复特征向量
 toc: true
 date: 2017-11-14 18:13:04
 ---

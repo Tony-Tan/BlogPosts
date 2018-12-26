@@ -3,16 +3,14 @@ title: 【线性代数】7-2:线性变化的矩阵(The Matrix of a Linear Transf
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Matrix
-  - Matrix for the Derivate
-  - Matrix for the Integral
-  - Construction of the Matrix
-  - $AB$ Match $TS$
-  - Multiplication
-  - Change of Basis Matrix
-  - Wavelet Transform
-  - Fourier Transform(DFT)
+tags:
+  - 矩阵
+  - 矩阵微分
+  - 矩阵积分
+  - 构建矩阵
+  - 矩阵换基
+  - 小波变换
+  - 傅里叶变换
 toc: true
 date: 2017-12-04 12:52:03
 ---

@@ -4,7 +4,7 @@ sticky: 9
 categories:
   - Mathematic
   - Probability
-keywords:
+tags:
   - tag
 toc: true
 date: 2017-11-13 15:57:45

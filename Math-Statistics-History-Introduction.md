@@ -3,7 +3,7 @@ title: 【数理统计学简史】 介绍
 categories:
   - Mathematic
   - Statistics
-keywords:
+tags:
   - 数理统计学简史
 toc: true
 date: 2018-04-20 15:03:01
@@ -77,4 +77,4 @@ date: 2018-04-20 15:03:01
 
 
 
-原文地址1：[https://www.face2ai.com/Math-Statistics-History-Introduction](https://www.face2ai.com/Math-Statistics-History-Introduction)转载请标明出处
+原文地址：[https://www.face2ai.com/Math-Statistics-History-Introduction](https://www.face2ai.com/Math-Statistics-History-Introduction)转载请标明出处

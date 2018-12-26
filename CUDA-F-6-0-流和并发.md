@@ -3,7 +3,7 @@ title: 【CUDA 基础】6.0 流和并发
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 流
     - 事件
     - 网格级并行

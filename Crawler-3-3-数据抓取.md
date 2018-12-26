@@ -2,7 +2,7 @@
 title: 【爬虫】3.3 数据抓取
 categories:
   - Crawler
-keywords:
+tags:
   - 正则表达式
   - Beautiful Soup
   - Lxml
@@ -167,7 +167,7 @@ html是服务器返回的响应，这里的类型就是字符串：
     var ajax_error_500 = 'An error occured, please <a href="/places/default/index">reload</a> the page'
     //--></script>
 
-<meta name="keywords" content="web2py, python, web scraping" />
+<meta name="tags" content="web2py, python, web scraping" />
 <meta name="generator" content="Web2py Web Framework" />
 <meta name="author" content="Richard Penman" />
 <script src="/places/static/js/jquery.js" type="text/javascript"></script><link href="/places/static/css/calendar.css" rel="stylesheet" type="text/css" /><script src="/places/static/js/calendar.js" type="text/javascript"></script><script src="/places/static/js/web2py.js" type="text/javascript"></script><link href="/places/static/css/web2py.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/style.css" rel="stylesheet" type="text/css" /><link href="/places/static/css/web2py_bootstrap.css" rel="stylesheet" type="text/css" />

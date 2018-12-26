@@ -3,10 +3,9 @@ title: 【线性代数】4-4:正交基和Gram算法(Orthogonal Bases and Gram-Sc
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Orthogonal Matrix Q
-  - Gram-Schmidt Algorithm
-  - QR
+tags:
+  - QR分解
+  - 正交矩阵
 toc: true
 date: 2017-10-19 16:28:54
 ---

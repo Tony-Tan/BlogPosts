@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-0 强化学习介绍
+title: 【强化学习】1.0 强化学习介绍
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -66,4 +66,4 @@ action的结果是我们从自然环境中获得反馈，所以，我可以负�
 
 
 
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-0-Introduction](https://www.face2ai.com/RL-RSAB-1-0-Introduction)转载请标明出处
+原文地址：[https://www.face2ai.com/RL-RSAB-1-0-Introduction](https://www.face2ai.com/RL-RSAB-1-0-Introduction)转载请标明出处

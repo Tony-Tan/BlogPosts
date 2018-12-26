@@ -3,7 +3,7 @@ title: 【CUDA 基础】6.4 重叠GPU和CPU的执行
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 重叠GPU和CPU的执行
 toc: true
 date: 2018-06-20 21:56:05

@@ -3,9 +3,9 @@ title: 【线性代数】5-1:行列式性质(The Properties of Determinants)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Determinants
-  - Properties of the Determinants
+tags:
+  - 行列式
+  - 行列式性质
 toc: true
 date: 2017-11-02 10:34:30
 ---

@@ -5,11 +5,11 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-31 17:55:10
-keywords:
-  - Elimination Matrix
-  - Matrix Multiplication
-  - Row Exchange
-  - Augmented Matrix
+tags:
+  - 消元矩阵
+  - 矩阵乘法
+  - 行变换
+  - 曾广矩阵
 ---
 **Abstract:** 用大学的方法消元，也就是整个消元过程矩阵化，引出矩阵乘法
 **Keywords:** Elimination Matrix，Matrix Multiplication，Augmented Matrix
@@ -50,22 +50,43 @@ EA\textbf{x}=E\textbf{b}\\
 U\textbf{x}=E\textbf{b}\\
 $$
 U是上三角矩阵
-目标明确以后，对于上面的图片中的矩阵，我们开始消元，第一步，第二个方程-2*第一个方程
+目标明确以后，对于上面的图片中的矩阵，我们开始消元，第一步， $(第二个方程)-2\times (第一个方程)$
 得到的右侧b：
+
 $$
 b_{new}=\begin{bmatrix}2\\4\\10\end{bmatrix}\\
-b_{new}=Eb\\
+b_{new}=Eb
 $$
+
 没错我们关系E是个啥，先给出E，求解E的过程看后面。
+
 $$
-E=\begin{bmatrix}1&0&0\\{-2}&1&0\\0&0&1\end{bmatrix}\\
+E=\begin{bmatrix}1& 0 & 0\\
+-2 & 1& 0\\
+0&0&1\end{bmatrix}
 $$
-算下Eb的结果，row picture或col picture给出的答案都是$b_{new}$
+
+算下Eb的结果，row picture或col picture给出的答案都是 $b_{new}$
 不错，起码这个E是我们要找的变换矩阵。观察一下E，发现E是从$I$变形来的，把其中一个改成要乘以的那个系数的负数，比如我们要减去2倍的第一行，就把某个位置改成-2。但是具体改哪个位置是个关键：改的位置就是被减去的那一行的减去那一行的行的那一列，怎么样，迷糊没，迷糊就对了
 E的第2行第1列是-2：我们要消去的是原矩阵A的第二行，的第一列元素
+
 $$
 Eb=b_{new}\\
-\begin{bmatrix}1&0&0\\{-2}&1&0\\0&0&1\end{bmatrix}\begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix}=\begin{bmatrix}b_1\\b_2-2b_1\\b_3\end{bmatrix}
+\begin{bmatrix}
+1&0&0\\
+{-2}&1&0\\
+0&0&1
+\end{bmatrix}
+\begin{bmatrix}
+b_1\\
+b_2\\
+b_3
+\end{bmatrix}
+=\begin{bmatrix}
+b_1\\
+b_2-2b_1\\
+b_3
+\end{bmatrix}
 $$
 ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/Math-Linear-Algebra-Chapter-2-3/elimination.png)
 这个过程全靠自己领悟，如果这两种语言你都没明白，那就过几天再看一遍吧。

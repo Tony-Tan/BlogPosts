@@ -3,7 +3,7 @@ title: 【数字图像处理】5.2:灰度图像-图像增强 平滑之均值滤�
 date: 2015-01-28 12:09
 categories:
   - DIP
-keywords:
+tags:
   - 平滑
   - 均值滤波
   - 高斯平滑

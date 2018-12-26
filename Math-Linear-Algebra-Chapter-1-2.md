@@ -5,10 +5,8 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-08-28 12:12:18
-keywords:
-  - Length
+tags:
   - 长度
-  - Dot Product
   - 点乘
 ---
 **Abstract:** 介绍点乘，length

@@ -1,8 +1,9 @@
+---
 title: 【CUDA 基础】5.5 常量内存
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - CUDA常量内存
     - CUDA只读缓存
 toc: true

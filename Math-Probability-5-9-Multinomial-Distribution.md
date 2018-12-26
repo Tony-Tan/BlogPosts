@@ -3,8 +3,8 @@ title: 【概率论】5-9:多项式分布(The Multinomial Distributions)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - The Multinomial Distributions
+tags:
+    - 多项式分布
 toc: true
 date: 2018-04-04 22:17:23
 ---

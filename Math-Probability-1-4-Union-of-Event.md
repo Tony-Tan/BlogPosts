@@ -3,12 +3,9 @@ title: 【概率论】1-4:事件的的并集(Union of Events and Statical Swindl
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Union of two Events
+tags:
   - 两个事件的并
-  - Union of Finite Number of Events
   - 有限个事件的并
-  - Statical Swindles
   - 概率欺骗
 toc: true
 date: 2018-01-30 09:22:40

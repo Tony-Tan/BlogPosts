@@ -3,7 +3,7 @@ title: 【数值分析】0.4 有效数字缺失
 categories:
     - Mathematic
     - Numerical Analysis
-keywords:
+tags:
     - 有效数字缺失
 toc: true
 date: 2018-06-13 19:16:27

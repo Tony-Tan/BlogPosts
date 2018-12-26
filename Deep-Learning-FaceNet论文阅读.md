@@ -2,7 +2,7 @@
 title: FaceNet论文阅读
 categories:
   - Deep Learning
-keywords:
+tags:
   - Face Recognition
   - FaceNet
   - GoogleNet

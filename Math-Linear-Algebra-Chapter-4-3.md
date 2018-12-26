@@ -3,10 +3,8 @@ title: 【线性代数】4-3:最小二乘近似(Least Squares Approximations)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Least Squares Approximations
-  - Minimizing the Error
-  - Fitting a Straight Linear
+tags:
+  - 最小二乘
 toc: true
 date: 2017-10-17 09:28:50
 ---

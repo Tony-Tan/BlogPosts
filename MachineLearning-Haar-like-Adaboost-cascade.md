@@ -3,7 +3,7 @@ title: 人脸检测分析之 Haar-like，Adaboost，级联(Cascade)
 date: 2014-12-12 12:16
 toc: true
 categories: Machine Learning
-keywords:
+tags:
     - Adaboost
     - Haar-like
     - 人脸检测

@@ -3,11 +3,11 @@ title: 【概率论】4-5:均值和中值(The Mean and the Median)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Mean
-    - Median
-    - Mean Squared Error
-    - Mean Absolute Error
+tags:
+    - 均值
+    - 中值
+    - 最小均值误差
+    - 最小绝对误差
 toc: true
 date: 2018-03-25 21:01:04
 ---

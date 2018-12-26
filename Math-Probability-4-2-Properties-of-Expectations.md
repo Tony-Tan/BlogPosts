@@ -3,8 +3,9 @@ title: 【概率论】4-2:期望的性质(Properties of Expectation)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Properties of Expectation
+tags:
+    - 期望
+    - 期望的性质
 toc: true
 date: 2018-03-23 10:24:47
 ---

@@ -3,7 +3,7 @@ title: 【数字图像处理】2.1:一维DFT
 date: 2014-11-16 21:19
 categories:
   - DIP
-keywords:
+tags:
   - DFT
 toc: true
 ---

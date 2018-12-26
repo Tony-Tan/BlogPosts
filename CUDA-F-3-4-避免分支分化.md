@@ -3,7 +3,7 @@ title: 【CUDA 基础】3.4 避免分支分化
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 规约问题
     - 分支分化
 toc: true

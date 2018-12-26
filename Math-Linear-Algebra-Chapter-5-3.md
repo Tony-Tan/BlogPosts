@@ -3,12 +3,11 @@ title: 【线性代数】5-3:克莱姆法则，逆和体积(Cramer's Rule,Invers
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Inverses
-  - Cramer's Rule
-  - Volumes
-  - Determinant
-  - Cross Product
+tags:
+  - 逆
+  - 体积
+  - 行列式
+  - 叉乘
 toc: true
 date: 2017-11-05 10:09:53
 ---

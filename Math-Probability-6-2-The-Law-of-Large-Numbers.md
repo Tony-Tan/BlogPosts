@@ -3,11 +3,11 @@ title: 【概率论】6-2:大数定理(The Law of Large Numbers)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Markov Inequality
-    - Chebyshev Inequality
-    - Sample Mean
-    - The Law of Large Numbers
+tags:
+    - 马尔科夫不等式
+    - 切比雪夫不等式
+    - 样本均值
+    - 大数定理
 toc: true
 date: 2018-04-07 21:07:42
 ---

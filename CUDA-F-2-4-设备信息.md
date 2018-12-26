@@ -3,8 +3,8 @@ title: 【CUDA 基础】2.4 GPU设备信息
 categories:
   - CUDA
   - Freshman
-keywords:
-  - CUDA Device Information
+tags:
+  - CUDA设备信息
 toc: true
 date: 2018-03-10 23:16:11
 ---

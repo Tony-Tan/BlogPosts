@@ -3,7 +3,7 @@ title: 【CUDA 基础】5.3 减少全局内存访问
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 共享内存
     - 归约
 toc: true

@@ -4,7 +4,7 @@ title: 【数字图像处理】4.1：灰度图像-形态学处理
 date: 2015-01-05 19:45
 categories:
   - DIP
-keywords:
+tags:
   - 形态学
   - 腐蚀
   - 膨胀

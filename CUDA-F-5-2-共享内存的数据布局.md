@@ -3,7 +3,7 @@ title: 【CUDA 基础】5.2 共享内存的数据布局
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 行主序
     - 列主序
 toc: true

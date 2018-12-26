@@ -3,14 +3,10 @@ title: 【概率论】3-7:多变量分布(Multivariate Distributions Part I）
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Joint Distributions
+tags:
   - 联合分布
-  - Mixed Distributions
   - 混合分布
-  - Marginal Distributions
   - 边缘分布
-  - Independent Random Variable
   - 独立随机变量
 toc: true
 date: 2018-03-14 09:55:14

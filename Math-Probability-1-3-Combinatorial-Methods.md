@@ -3,12 +3,9 @@ title: 【概率论】1-3:组合(Combinatorial Methods)
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Combination
+tags:
   - 组合
-  - Binormial Coeffcient
   - 二项式系数
-  - Multinormial Coeffcient
   - 多项式系数
 toc: true
 date: 2018-01-26 9:20:58

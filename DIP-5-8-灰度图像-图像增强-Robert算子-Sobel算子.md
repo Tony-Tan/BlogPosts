@@ -3,7 +3,7 @@ title: 【数字图像处理】5.8:灰度图像-图像增强 Robert算子、Sobe
 date: 2015-02-01 15:28
 categories:
   - DIP
-keywords:
+tags:
   - Sobel算子
   - Robert算子
 toc: true

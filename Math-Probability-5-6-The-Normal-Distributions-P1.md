@@ -3,8 +3,9 @@ title: 【概率论】5-6:正态分布(The Normal Distributions Part I)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - The Normal Distributions
+tags:
+    - 正态分布
+    - 高斯分布
 toc: true
 date: 2018-03-29 14:15:47
 ---

@@ -4,7 +4,7 @@ toc: true
 categories:
   - Deep Learning
 date: 2017-09-07 10:06:13
-keywords:
+tags:
   - 数据预处理
   - CNN
   - 训练数据

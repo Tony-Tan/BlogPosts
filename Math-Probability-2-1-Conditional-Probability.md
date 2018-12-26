@@ -3,13 +3,9 @@ title: 【概率论】2-1:条件概率(Conditional Probability)
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Conditional Probability
+tags:
   - 条件概率
-  - Multiplication Rule
   - 乘法原理
-  - Partitions
-  - Law of total Probability
   - 全概率公式
 toc: true
 date: 2018-01-31 10:34:36

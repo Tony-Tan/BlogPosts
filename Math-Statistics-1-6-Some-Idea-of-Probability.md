@@ -3,16 +3,16 @@ title: 【数理统计学简史】1.6 关于概率的几点看法
 categories:
     - Mathematic
     - Statistics
-keywords:
+tags:
     - 主观概率
     - 客观概率
     - 《推测术》
-    - 先验
-    - 后验
+    - 先验概率
+    - 后验概率
     - 因果律
     - 道德确定性
     - 小概率事件原理
-    - 贝叶斯
+    - 贝叶斯定理
 toc: true
 date: 2018-04-28 13:36:06
 ---

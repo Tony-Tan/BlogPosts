@@ -3,14 +3,10 @@ title: 【概率论】3-2:连续分布(Continuous Distributions)
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Continuous Random Variable
+tags:
   - 连续随机变量
-  - Continuous Distributions
   - 连续分布
-  - Probability Desity Function
   - 概率密度函数
-  - Uniform Distributions on Intervals
   - 均匀分布
 toc: true
 date: 2018-02-05 09:23:02

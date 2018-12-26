@@ -3,7 +3,7 @@ title: 【CUDA 基础】2.2 给核函数计时
 categories:
   - CUDA
   - Freshman
-keywords:
+tags:
   - gettimeofday
   - nvprof
 toc: true
@@ -94,7 +94,7 @@ cudaDeviceSynchronize();
   ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-2-核函数计时/512_0.png)
   - 每个块1024个线程
   ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-2-核函数计时/1024.png)
-- 2的非幂次数据量 1<<24+1，16兆加一个数据：
+- 2的非幂次数据量 (1<<24)+1，16兆加一个数据：
   - 每个块256个线程
   ![](https://tony4ai-1251394096.cos.ap-hongkong.myqcloud.com/blog_images/CUDA-F-2-2-核函数计时/256_1.png)
   - 每个块512个线程

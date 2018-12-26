@@ -1,10 +1,10 @@
 ---
-title: Hexo下next主题畅言评论同步问题的解决方案
+title: 【Hexo】Hexo下next主题畅言评论同步问题的解决方案
 categories:
   - Other
-keywords:
+tags:
   - Hexo
-  - next
+  - Next
   - 畅言
 toc: true
 date: 2018-04-02 20:36:17
@@ -46,4 +46,4 @@ date: 2018-04-02 20:36:17
 
 
 
-原文地址1：[https://www.face2ai.com/other-Hexo-next-changyan](https://www.face2ai.com/other-Hexo-next-changyan)转载请标明出处
+原文地址：[https://www.face2ai.com/other-Hexo-next-changyan](https://www.face2ai.com/other-Hexo-next-changyan)转载请标明出处

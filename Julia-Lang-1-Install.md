@@ -5,7 +5,6 @@ categories:
     - Freshman
 tags:
     - Julia
-keywords:
     - Julia环境搭建
     - Julia Mac
     - Julia Windows

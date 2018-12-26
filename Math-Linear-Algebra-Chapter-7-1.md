@@ -3,11 +3,10 @@ title: 【线性代数】7-1:线性变换思想(The Idea of a Linear Transformat
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Linear Transformation
-  - Linear Combination
-  - Kernel
-  - Range
+tags:
+  - 线性变换
+  - 线性组合
+  - 核
 toc: true
 date: 2017-12-04 09:04:18
 ---

@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-1-0 强化学习介绍
+title: 【强化学习】1.1.0 强化学习介绍
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -83,9 +83,3 @@ Markov Decision Processes是一个非常经典的全面的对RL中Optimal Contro
 
 
 原文来自：[https://face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning](https://face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning)转载标明出处
-
-
-
-
-
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning](https://www.face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning)转载请标明出处

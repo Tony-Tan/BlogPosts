@@ -3,7 +3,7 @@ title: 【CUDA 基础】6.3 重叠内核执行和数据传输
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 深度优先
     - 广度优先
 toc: true

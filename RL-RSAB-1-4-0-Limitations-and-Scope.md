@@ -82,4 +82,4 @@ Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 
 
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope](https://www.face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope)转载请标明出处
+原文地址：[https://www.face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope](https://www.face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope)转载请标明出处

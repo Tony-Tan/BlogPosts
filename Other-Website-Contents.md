@@ -4,7 +4,7 @@ categories:
   - Other
 sticky: 10
 toc: true
-keywords:
+tags:
     - 机器学习基础
     - 深度学习基础
     - 人工智能数学知识
@@ -172,19 +172,23 @@ date: 2015-07-18 16:28:36
 
 ## 算法
 ### 强化学习
-- [1.0 强化学习介绍](https://face2ai.com/RL-RSAB-1-0-Introduction/)
-- [1.1.0 强化学习](https://face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning/)
-- [1.1.1 强化学习、监督学习和非监督学习](https://face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning/)
-- [1.1.2 “探索”(Exploration)还是“ 利用”(Exploitation)都要“面向目标”(Goal-Direct)](https://face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning/)
-- [1.1.3 强化学习基本框架](https://face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning/)
-- [1.1.4 强化学习和人工智能](https://face2ai.com/RL-RSAB-1-1-4-Reinforcement-Learning/)
-- [1.2 强化学习举例](https://face2ai.com/RL-RSAB-1-2-Examples/)
-- [1.3 强化学习基础元素](https://face2ai.com/RL-RSAB-1-3-Elements-of-RL/)
-- [1.4.0 “进化方法”（Evolutionary Method）和 “决策梯度方法” (Policy Gradient Methods) 概论](https://face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope/)
-- [1.4.1 强化学习与优化方法](https://face2ai.com/RL-RSAB-1-4-1-Connection-to-Optimization-Method/)
-- [1.5 强化学习的一个扩展举例](https://face2ai.com/RL-RSAB-1-5-An-Extended-Example/)
-- [1.6 本章总结、强化学习历史简述](https://www.face2ai.com/RL-RSAB-1-6-Summary-History/)
 
+- Reinforcement Learning: An Introduction
+    - [1.0 强化学习介绍](https://face2ai.com/RL-RSAB-1-0-Introduction/)
+    - [1.1.0 强化学习](https://face2ai.com/RL-RSAB-1-1-0-Reinforcement-Learning/)
+    - [1.1.1 强化学习、监督学习和非监督学习](https://face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning/)
+    - [1.1.2 “探索”(Exploration)还是“ 利用”(Exploitation)都要“面向目标”(Goal-Direct)](https://face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning/)
+    - [1.1.3 强化学习基本框架](https://face2ai.com/RL-RSAB-1-1-3-Reinforcement-Learning/)
+    - [1.1.4 强化学习和人工智能](https://face2ai.com/RL-RSAB-1-1-4-Reinforcement-Learning/)
+    - [1.2 强化学习举例](https://face2ai.com/RL-RSAB-1-2-Examples/)
+    - [1.3 强化学习基础元素](https://face2ai.com/RL-RSAB-1-3-Elements-of-RL/)
+    - [1.4.0 “进化方法”（Evolutionary Method）和 “决策梯度方法” (Policy Gradient Methods) 概论](https://face2ai.com/RL-RSAB-1-4-0-Limitations-and-Scope/)
+    - [1.4.1 强化学习与优化方法](https://face2ai.com/RL-RSAB-1-4-1-Connection-to-Optimization-Method/)
+    - [1.5 强化学习的一个扩展举例](https://face2ai.com/RL-RSAB-1-5-An-Extended-Example/)
+    - [1.6 本章总结、强化学习历史简述](https://www.face2ai.com/RL-RSAB-1-6-Summary-History/)
+    - [2.0 多臂赌博机](https://face2ai.com/RL-RSAB-2-0-Multi-Armed-Bandits)
+    - [2.1 k臂赌博机问题](https://face2ai.com/RL-RSAB-2-1-A-k-armed-Bandit-Problem/)
+    - [2.2 行为评价方法(Action-value Methods)](https://face2ai.com/RL-RSAB-2-2-Action-value-Methods)
 
 ### 机器学习算法
 
@@ -373,6 +377,7 @@ date: 2015-07-18 16:28:36
 - [学习](http://www.face2ai.com/other-Tony说学习/)
 - [Hexo博客搭建](http://www.face2ai.com/other-用atom-markdown-hexo-github写博客/)
 - [Hexo畅言评论PC和移动端同步](http://www.face2ai.com/other-Hexo-next-changyan/)
+- [Hexo下next主题valine强化版本的改造](https://face2ai.com/other-Hexo-next-valine-leancloud)
 - [【斯坦福大学】人工智能课程安排](http://www.face2ai.com/MachineLearning-Stanford-Artificial-Intelligence-Track/)
 - [【麻省理工学院】人工智能课程安排](http://www.face2ai.com/other-mit-undergraduate-programs-course-6-3/)
 
@@ -380,4 +385,4 @@ date: 2015-07-18 16:28:36
 
 
 
-原文地址1：[https://www.face2ai.com/Other-Website-Contents](https://www.face2ai.com/Other-Website-Contents)转载请标明出处
+原文地址：[https://www.face2ai.com/Other-Website-Contents](https://www.face2ai.com/Other-Website-Contents)转载请标明出处

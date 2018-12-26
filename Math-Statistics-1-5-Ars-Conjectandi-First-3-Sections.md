@@ -3,7 +3,7 @@ title: 【数理统计学简史】1.5 《推测术》前三部分内容提要
 categories:
     - Mathematic
     - Statistics
-keywords:
+tags:
     - 推测术
     - 猜度术
     - 排列

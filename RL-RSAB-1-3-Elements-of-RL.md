@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-3 强化学习的基础元素
+title: 【强化学习】1.3 强化学习的基础元素
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -85,9 +85,3 @@ agent不断学习新的知识来提高自己的得分，其工作方法是改变
 
 
 原文来自：[https://face2ai.com/RL-RSAB-1-3-Elements-of-RL](https://face2ai.com/RL-RSAB-1-3-Elements-of-RL)转载标明出处
-
-
-
-
-
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-3-Elements-of-RL](https://www.face2ai.com/RL-RSAB-1-3-Elements-of-RL)转载请标明出处

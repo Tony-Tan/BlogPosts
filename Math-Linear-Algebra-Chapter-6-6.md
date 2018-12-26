@@ -3,11 +3,10 @@ title: 【线性代数】6-6:相似矩阵(Similar Matrices)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Similar Matrices
-  - Jordan Form
-  - Eigenvalues
-  - Eigenvectors
+tags:
+  - 相似矩阵
+  - 特征值
+  - 特征向量
 toc: true
 date: 2017-11-29 09:08:12
 ---

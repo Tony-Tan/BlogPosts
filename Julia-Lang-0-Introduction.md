@@ -5,7 +5,6 @@ categories:
     - Freshman
 tags:
     - Julia
-keywords:
     - Julia编程语言
     - Julia简介
     - Julia特点

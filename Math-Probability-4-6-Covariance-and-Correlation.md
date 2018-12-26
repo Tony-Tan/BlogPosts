@@ -3,10 +3,9 @@ title: 【概率论】4-6:协方差和相关性(Covariance and Correlation)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Covariance
-    - Correlation
-    - Properties of Covariance and Correlation
+tags:
+    - 协方差
+    - 相关性
 toc: true
 date: 2018-03-26 10:44:07
 ---
@@ -15,7 +14,7 @@ date: 2018-03-26 10:44:07
 **Keywords:** Covariance,Correlation,Properties of Covariance and Correlation
 
 <!--more-->
-# 协方差和相关性 
+# 协方差和相关性
 概率论基础知识，基础工具已经进入到后半部分了，接下来后面就是对特定分布的研究和分析了，使用的工具就是我们已经介绍过的这些知识，融汇贯通是所有知识学习的唯一考量，掌握的知识点如果不能融入体系，一个月后就相当于没学过，但是成体系的知识不同，只要有一个根节点，就能联系到整个一颗知识树。
 
 > 一杯敬朝阳，一杯敬月光

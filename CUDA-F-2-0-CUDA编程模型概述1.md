@@ -3,7 +3,7 @@ title: 【CUDA 基础】2.0 CUDA编程模型概述（一）
 categories:
   - CUDA
   - Freshman
-keywords:
+tags:
   - CUDA编程模型
   - CUDA编程结构
   - 内存管理

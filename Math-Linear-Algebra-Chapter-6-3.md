@@ -3,10 +3,10 @@ title: 【线性代数】6-3:微分方程的应用(Applications to Differential 
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Eigenvalues
-  - Eigenvectors
-  - Differential Equations
+tags:
+  - 特征值
+  - 特征向量
+  - 微分方程
 toc: true
 date: 2017-11-22 15:09:04
 ---

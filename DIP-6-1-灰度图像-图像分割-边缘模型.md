@@ -3,7 +3,7 @@ title: 【数字图像处理】6.1:灰度图像-图像分割 边缘模型
 date: 2015-02-05 16:33
 categories:
   - DIP
-keywords:
+tags:
   - 边缘模型
 toc: true
 ---

@@ -3,8 +3,8 @@ title: 【概率论】5-1:各分布介绍(Special Distribution Introduction)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Distribution
+tags:
+    - 分布
 toc: true
 date: 2018-03-27 20:35:20
 ---

@@ -3,9 +3,9 @@ title: 【概率论】4-4:距(Moments)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Moments
-    - Moments Generating Function
+tags:
+    - 距
+    - 距生成函数
 toc: true
 date: 2018-03-25 10:58:47
 ---

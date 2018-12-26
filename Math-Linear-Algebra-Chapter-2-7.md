@@ -5,12 +5,12 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-12 16:47:01
-keywords:
-  - Transposes
-  - Permutation
-  - Symmetric
-  - Inner Products
+tags:
   - R'R
+  - 内乘
+  - 对称
+  - 行变换
+  - 转置
 ---
 **Abstract:** 矩阵的转置和行变换（permutation），包含一些运算的转置，以及对称概念的提出和相关性质
 **Keywords:** Transposes,Permutation,Symmetric,Inner Products,R'R

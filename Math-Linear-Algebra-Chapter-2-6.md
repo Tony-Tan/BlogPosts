@@ -5,10 +5,10 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-12 15:41:12
-keywords:
+tags:
   - A=LU
   - A=LDU
-  - Factorization
+  - 因数分解
 ---
 **Abstract:** 如何将矩阵分解成三角矩阵
 **Keywords:** A=LU,A=LDU,Factorization

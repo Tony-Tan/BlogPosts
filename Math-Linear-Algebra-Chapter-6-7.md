@@ -3,11 +3,11 @@ title: 【线性代数】6-7:SVD分解(Singular Value Decomposition-SVD)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Singular Value Decomposition
+tags:
   - JPEG
-  - Eigenvalues
-  - Eigenvectors
+  - 奇异值分解
+  - 特征值
+  - 特征向量
 toc: true
 date: 2017-11-30 09:02:19
 ---

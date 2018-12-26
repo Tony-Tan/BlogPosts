@@ -5,7 +5,6 @@ categories:
     - Freshman
 tags:
     - Julia
-keywords:
     - Julia
     - Julia使用
     - Julia命令行

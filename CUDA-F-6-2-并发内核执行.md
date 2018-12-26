@@ -3,7 +3,7 @@ title: 【CUDA 基础】6.2 并发内核执行
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 流
     - 事件
     - 深度优先

@@ -2,7 +2,7 @@
 title: 【数字图像处理】1.1:灰度级
 date: 2014-11-06 10:58
 categories: DIP
-keywords:
+tags:
   - 灰度级数
 ---
 **Abstract:** 数字图像处理：第1天

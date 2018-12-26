@@ -3,10 +3,11 @@ title: 【概率论】5-6:正态分布(The Normal Distributions Part III)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - The Normal Distributions
-    - The Standard Normal Distribution
-    - The Lognormal Distributions
+tags:
+    - 正态分布
+    - 高斯分布
+    - 标准正态分布
+    - 对数正态分布
 toc: true
 date: 2018-03-30 08:58:10
 ---

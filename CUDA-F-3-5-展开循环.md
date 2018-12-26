@@ -3,7 +3,7 @@ title: 【CUDA 基础】3.5 展开循环
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 展开归约
     - 归约
     - 模板函数

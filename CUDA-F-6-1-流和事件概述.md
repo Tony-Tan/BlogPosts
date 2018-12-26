@@ -3,7 +3,7 @@ title: 【CUDA 基础】6.1 流和事件概述
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 流
     - 事件
 toc: true

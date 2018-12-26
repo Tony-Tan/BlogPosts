@@ -3,9 +3,9 @@ title: 【概率论】5-5:负二项分布(The Negative Binomial Distribution)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - The Negative Binomial Distribution
-    - The Geometric Distribution
+tags:
+    - 负二项分布
+    - 几何分布
 toc: true
 date: 2018-03-29 08:57:12
 ---

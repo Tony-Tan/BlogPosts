@@ -3,7 +3,7 @@ title: 【CUDA 基础】5.6 线程束洗牌指令
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 线程束洗牌指令
 toc: true
 date: 2018-06-06 19:53:12

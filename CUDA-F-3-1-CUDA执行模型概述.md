@@ -3,12 +3,12 @@ title: 【CUDA 基础】3.1 CUDA执行模型概述
 categories:
   - CUDA
   - Freshman
-keywords:
+tags:
   - CUDA SM
   - SIMT
   - SIMD
-  - Fermi
-  - Kepler
+  - Fermi架构
+  - Kepler结构
 toc: true
 date: 2018-03-12 23:20:41
 ---

@@ -2,7 +2,7 @@
 title: 【OpenCV源代码分析】矩阵计算过程
 categories:
   - Other
-keywords:
+tags:
   - OpenCV
   - 矩阵计算
 toc: true
@@ -316,4 +316,4 @@ void vBinOp(const T* src1, size_t step1, const T* src2, size_t step2, T* dst, si
 
 
 
-原文地址1：[https://www.face2ai.com/Other-OpenCV-Mat过程分析](https://www.face2ai.com/Other-OpenCV-Mat过程分析)转载请标明出处
+原文地址：[https://www.face2ai.com/Other-OpenCV-Mat过程分析](https://www.face2ai.com/Other-OpenCV-Mat过程分析)转载请标明出处

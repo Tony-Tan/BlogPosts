@@ -5,7 +5,6 @@ categories:
     - Freshman
 tags:
     - Julia
-keywords:
     - Julia变量
     - Julia变量名
     - Julia命名一般规则

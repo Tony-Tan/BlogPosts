@@ -3,7 +3,7 @@ title: 【数字图像处理】2.3:FFT算法理解与c语言的实现
 date: 2014-11-21 15:12
 categories:
   - DIP
-keywords:
+tags:
   - FFT
 toc: true
 ---
@@ -41,19 +41,8 @@ FFT的数学基础其实就是：
 
 
 
-### 2-FFT
 
-观察：一个只有两个值的离散信号，假设N=2，利用性质2-对称性可以得到
-
-![Image 1][]
-
-### 4-FFT
-
-与上面2点的一样，推广到4点，将会是这样，其中方框内的操作为上述2-FFT：
-
-![Image 1][]
-
-最终算法：
+### 最终算法
 
 ![Center 6][]
 
@@ -379,4 +368,4 @@ int main(int argc, const char * argv[]) {
 
 
 
-原文地址1：[https://www.face2ai.com/DIP-2-3-FFT算法理解与c语言的实现](https://www.face2ai.com/DIP-2-3-FFT算法理解与c语言的实现)转载请标明出处
+原文地址：[https://www.face2ai.com/DIP-2-3-FFT算法理解与c语言的实现](https://www.face2ai.com/DIP-2-3-FFT算法理解与c语言的实现)转载请标明出处

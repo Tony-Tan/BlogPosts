@@ -3,13 +3,12 @@ title: 【线性代数】6-4:对称矩阵(Symmetric Matrices)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Eigenvalues
-  - Eigenvectors
-  - Symmetric Matrices
-  - Projection Matrices
-  - Spectral Theorem
-  - Principal Axis Theorem
+tags:
+  - 特征值
+  - 特征向量
+  - 对称矩阵
+  - 投影矩阵
+  - 谱定理
 toc: true
 date: 2017-11-22 15:18:03
 ---

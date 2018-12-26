@@ -3,11 +3,11 @@ title: 【线性代数】6-5:正定矩阵(Positive Definite Matrices)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Positive Definite Matrices
-  - Symmetric Matrices
-  - Eigenvalues
-  - Eigenvectors
+tags:
+  - 正定矩阵
+  - 对称矩阵
+  - 特征值
+  - 特征向量
 toc: true
 date: 2017-11-24 11:24:21
 ---

@@ -3,7 +3,7 @@ title: 【CUDA 基础】1.0 并行计算与计算机架构
 categories:
   - CUDA
   - Freshman
-keywords:
+tags:
   - 并行计算
   - 串行编程
   - 并行编程

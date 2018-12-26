@@ -5,14 +5,13 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-11 20:00:16
-keywords:
-  - Inverse
-  - Singular
-  - Pivot
-  - Inverse of AB
-  - Gauss-Jordan
-  - Left-Inverse
-  - Right-Inverse
+tags:
+  - 矩阵逆
+  - 奇异矩阵
+  - 主值
+  - 高斯-乔丹
+  - 左逆
+  - 右逆
 ---
 **Abstract:** 矩阵的“逆”，以及相关计算
 **Keywords:** Inverse，Singular，Gauss-Jordan
@@ -69,7 +68,7 @@ Ax=b
 $$
 Then:
 $$
-x=A^{-1}Ax=A^{-1}b\\
+x=A^{-1}Ax=A^{-1}b\\\\
 x=A^{-1}b
 $$
 
@@ -87,7 +86,9 @@ $$
 >Note5:
 >A 2x2 matrix is invertible if and only if $ad-bc$ is not zero:
 $$
-\begin{bmatrix}a&b\\c&d\end{bmatrix}^{-1} =  \frac{1}{ad-bc}\begin{bmatrix}d&-b\\{-c}&a\end{bmatrix}
+\begin{bmatrix}
+a&b\newline
+c&d\end{bmatrix}^{-1} =  \frac{1}{ad-bc}\begin{bmatrix}d&-b\newline{-c}&a\end{bmatrix}
 $$
 本note的解释就是，后面讲到行列式的时候就会有详细的证明了
 

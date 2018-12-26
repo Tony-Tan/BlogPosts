@@ -4,7 +4,7 @@ sticky: 9
 categories:
     - Mathematic
     - Statistics
-keywords:
+tags:
     - Statistics Basis
     - Big Picture
 toc: true

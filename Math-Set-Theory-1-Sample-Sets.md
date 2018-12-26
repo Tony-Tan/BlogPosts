@@ -3,9 +3,9 @@ title: 【集合论】 样本集合
 categories:
   - Mathematic
   - Set Theory
-keywords:
-  - set theory
-  - Sample sets
+tags:
+  - 集合论
+  - 样本集合
 toc: true
 date: 2017-11-14 12:30:14
 ---

@@ -1,5 +1,5 @@
 ---
-title: 【强化学习】1-1-1 强化学习、监督学习和非监督学习
+title: 【强化学习】1.1.1 强化学习、监督学习和非监督学习
 categories:
     - Reinforcement Learning
     - RL-An Introduction
@@ -77,9 +77,3 @@ RL不是监督学习，也不是非监督学习，RL的目标很单纯:
 
 
 原文来自：[https://face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning](https://face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning)转载标明出处
-
-
-
-
-
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning](https://www.face2ai.com/RL-RSAB-1-1-1-Reinforcement-Learning)转载请标明出处

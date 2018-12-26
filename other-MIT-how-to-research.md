@@ -2,7 +2,7 @@
 title: 【转】How to do Research At the MIT AI Lab
 categories:
   - Other
-keywords:
+tags:
   - 如何做研究
 toc: true
 date: 2018-05-10 12:51:29

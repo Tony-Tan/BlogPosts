@@ -3,7 +3,7 @@ title: 【数字图像处理】7.5:灰度图像-图像分割 阈值处理之OTSU
 date: 2015-03-08 12:35
 categories:
   - DIP
-keywords:
+tags:
   - OTSU算法
 toc: true
 ---

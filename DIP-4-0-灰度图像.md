@@ -3,7 +3,7 @@ title: 【数字图像处理】4.0:灰度图像
 date: 2014-12-31 10:58
 categories:
   - DIP
-keywords:
+tags:
   - 灰度图像
 toc: true
 ---

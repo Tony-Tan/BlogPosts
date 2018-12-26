@@ -3,12 +3,12 @@ title: 【线性代数】3-4:方程组的完整解( $Ax=b$ )
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
+tags:
   - Ax=b
-  - Special Solution
-  - Full Column Rank
-  - Full Row Rank
-  - Complete Solution
+  - 特解
+  - 列满秩
+  - 行满秩
+  - 全解
 toc: true
 date: 2017-09-25 15:20:42
 ---

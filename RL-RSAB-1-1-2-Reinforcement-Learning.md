@@ -47,9 +47,3 @@ date: 2018-08-27 22:55:15
 
 
 原文来自：[https://face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning/](https://face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning/)转载标明出处
-
-
-
-
-
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning](https://www.face2ai.com/RL-RSAB-1-1-2-Reinforcement-Learning)转载请标明出处

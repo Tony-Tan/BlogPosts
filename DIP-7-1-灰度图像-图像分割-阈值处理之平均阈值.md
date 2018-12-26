@@ -3,7 +3,7 @@ title: 【数字图像处理】7.1:灰度图像-图像分割 阈值处理之平�
 date: 2015-03-06 15:55
 categories:
   - DIP
-keywords:
+tags:
   - 阈值处理
   - 平均阈值
 toc: true

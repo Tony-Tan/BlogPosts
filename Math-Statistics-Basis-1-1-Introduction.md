@@ -3,7 +3,7 @@ title: 【数理统计理论基础】 1.1 导言
 categories:
     - Mathematic
     - Statistics
-keywords:
+tags:
     - 数理统计
     - 数理统计应用
 toc: true
@@ -81,4 +81,4 @@ date: 2018-05-30 14:15:45
 
 
 
-原文地址1：[https://www.face2ai.com/Math-Statistics-Basis-1-1-Introduction](https://www.face2ai.com/Math-Statistics-Basis-1-1-Introduction)转载请标明出处
+原文地址：[https://www.face2ai.com/Math-Statistics-Basis-1-1-Introduction](https://www.face2ai.com/Math-Statistics-Basis-1-1-Introduction)转载请标明出处

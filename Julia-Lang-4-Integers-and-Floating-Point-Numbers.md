@@ -7,10 +7,6 @@ tags:
     - Julia
     - 整型数字
     - 浮点型数字
-keywords:
-    - Julia
-    - 整型数字
-    - 浮点型数字
 toc: true
 date: 2018-10-03 18:04:56
 ---
@@ -254,11 +250,11 @@ Stacktrace:
  [1] rem(::Int64, ::Int64) at ./Int.jl:233
  [2] top-level scope at none:0
 
-julia>
-
-</code></pre>
+julia></code></pre>
 
 这里面唯一有问题的就是为什么最小的数字除以<code>-1</code>会出现错误，原因很简单，我们假设我们操作4-bit的有符号数字，那么符号位占一位，我们就有如下表格：
+
+
 |十进制数|符号位+ 二进制绝对值的表示方式|ones' complement|two's complement|
 | --- | --- | --- | --- |
 |+7|0111|表示方式不变|表示方式不变|
@@ -285,6 +281,373 @@ julia>
 。由于零只有一种表达方式，所以，可以比别的方式多表达一个-8.
 (上表来自百度百科：https://baike.baidu.com/item/补码)
 由于在操作系统中以补码形式存储有符号数，所以，最小的负数值的绝对值比相应的最大的正数值大1，所以，当他除以-1的时候，结果溢出，故除法抛出错误。
+## 浮点数
+整型表示的数字都是整数，现在我们该研究一下小数了，带小数的字面值，用浮点型表示
+### 常用浮点类型
+#### Float64
+
+正常输入不加任何修饰、转化的小数字面值都用 <code>Float64</code> 类型存储
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">1.0</span>
+</span>1.0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">1.</span>
+</span>1.0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">0.5</span>
+</span>0.5
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">.5</span>
+</span>0.5
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> -<span class="hljs-number">1.23</span>
+</span>-1.23
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">1e10</span>
+</span>1.0e10
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">2.5e-4</span>
+</span>0.00025</code></pre>
+
+
+#### Float32
+以上这些数字以<code>Float64</code> 形式存储，<code>e</code>就是数学中的科学计数法，如果想用单精度浮点数表示，那么就要在数字中加<code>f0</code> 或者如果已经是科学计数法的数字，用<code>f</code>来来替代<code>e</code>，对于单精度双精度不太了解的同学，可以参考：[ 数值分析-浮点数](https://www.face2ai.com/Math-Numerical-Analysis-0-3-Float/)或者google查询更详细的关于浮点数的介绍，Julia中的用法如下：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">0.5f0</span>
+</span>0.5f0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> typeof(ans)
+</span>Float32
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">2.5f-4</span>
+</span>0.00025f0</code></pre>
+
+转化成<code>Float32</code>的方式如下：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-built_in">Float32</span>(-<span class="hljs-number">1.5</span>)
+</span>-1.5f0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> typeof(ans)
+</span>Float32</code></pre>
+
+#### Float16
+<code>Float16</code>当然也是支持的，虽然可能使用不多，但是有时候在要在更小的内存设备上使用一些数字16位类型就派上用场了，但是注意，在计算的时候，16位的浮点数会被补全成32位的Float32进行计算，这是因为硬件上的浮点数加法器，乘法器，一般都是32位或者更高的，16位已经退出历史舞台了
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> sizeof(<span class="hljs-built_in">Float16</span>(<span class="hljs-number">4.</span>))
+</span>2
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">2</span>*<span class="hljs-built_in">Float16</span>(<span class="hljs-number">4.</span>)
+</span>Float16(8.0)</code></pre>
+
+
+16 位的<code>Float16</code>占两个字节，共16位
+<code>sizeof()</code> 函数用来计算变量在内存中使用的空间，等效于c/c++ 中的 sizeof()。
+
+
+#### 下划线 '_'
+在数字中，下划线在数字中间以分隔符的作用出现，就像我们平时写论文或者写其他比较正式的文章的时候，超过三位的数字，会没三位加逗号，这个逗号在程序里被改成了下划线
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">10_000</span>, <span class="hljs-number">0.000_000_005</span>, <span class="hljs-number">0xdead_beef</span>, <span class="hljs-number">0b1011_0010</span>
+</span>(10000, 5.0e-9, 0xdeadbeef, 0xb2)</code></pre>
+
+### 0的浮点数
+浮点数的0有两种表示方法：
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">0.0</span> == -<span class="hljs-number">0.0</span>
+</span>true
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> bitstring(<span class="hljs-number">0.0</span>)
+</span>"0000000000000000000000000000000000000000000000000000000000000000"
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> bitstring(-<span class="hljs-number">0.0</span>)
+</span>"1000000000000000000000000000000000000000000000000000000000000000"</code></pre>
+
+正负0相等，但是浮点的二进制形式差一个符号位。
+<code>bitstring</code> 函数的作用是将变量在内存中的二进制形式按位形成一个字符串。
+### 特殊的浮点数
+有三个特殊的标准浮点值，这三个值在实数轴上没有对应点，可能大家已经猜到了， $\pm \infty$ 还有就是 "not a number"
+
+<table><tbody><tr><th><code>Float16</code></th><th><code>Float32</code></th><th><code>Float64</code></th><th>Name</th><th>Description</th></tr><tr><td><code>Inf16</code></td><td><code>Inf32</code></td><td><code>Inf</code></td><td>正无穷</td><td>大于所有能表示出来的浮点数值</td></tr><tr><td><code>-Inf16</code></td><td><code>-Inf32</code></td><td><code>-Inf</code></td><td>负无穷</td><td>小于所有能表示出来的浮点数值</td></tr><tr><td><code>NaN16</code></td><td><code>NaN32</code></td><td><code>NaN</code></td><td>不是一个数字</td><td>结果不等于任何一个浮点数字</td></tr></tbody></table>
+
+上表就是<code>Float16</code>、<code>Float64</code>、<code>Float32</code> 对应的无穷和Nan的表格，这三个非标准浮点数会经常出现在编程中，尤其是有bug的地方。
+更多相关内容我们会在后面 "Numeric Comparisons" 中介绍。
+IEEE 754 标准规定包含特殊浮点数的计算结果如下：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">1</span>/<span class="hljs-literal">Inf</span>
+</span>0.0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">1</span>/<span class="hljs-number">0</span>
+</span>Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> -<span class="hljs-number">5</span>/<span class="hljs-number">0</span>
+</span>-Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">0.000001</span>/<span class="hljs-number">0</span>
+</span>Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">0</span>/<span class="hljs-number">0</span>
+</span>NaN
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">500</span> + <span class="hljs-literal">Inf</span>
+</span>Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">500</span> - <span class="hljs-literal">Inf</span>
+</span>-Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-literal">Inf</span> + <span class="hljs-literal">Inf</span>
+</span>Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-literal">Inf</span> - <span class="hljs-literal">Inf</span>
+</span>NaN
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-literal">Inf</span> * <span class="hljs-literal">Inf</span>
+</span>Inf
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-literal">Inf</span> / <span class="hljs-literal">Inf</span>
+</span>NaN
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">0</span> * <span class="hljs-literal">Inf</span>
+</span>NaN</code></pre>
+
+<code>typemin()</code> 和 <code>typemax()</code> 函数可以用于浮点类型，结果如下：
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> (typemin(<span class="hljs-built_in">Float16</span>),typemax(<span class="hljs-built_in">Float16</span>))
+</span>(-Inf16, Inf16)
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> (typemin(<span class="hljs-built_in">Float32</span>),typemax(<span class="hljs-built_in">Float32</span>))
+</span>(-Inf32, Inf32)
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> (typemin(<span class="hljs-built_in">Float64</span>),typemax(<span class="hljs-built_in">Float64</span>))
+</span>(-Inf, Inf)</code></pre>
+
+### 机器精度（<code>eps</code> 函数）
+大多数实数是不能用机器数准确表达的，所以这就涉及到精度问题，本站[数值分析](https://www.face2ai.com/categories/Mathematic/Numerical-Analysis/)主要研究这方面内容，而每种浮点类型的误差已经在其设计时就已经被确定了，当我们要用到相关的准确度的时候，只需要查询语言内置的函数就可以，这属于系统误差，一直都在，如果这个误差影响了程序，那么就要通过数值分析来找办法，<code>eps</code> 函数就是语言内置的查询精度值的函数。
+#### <code>eps(Float)</code>
+其参数是浮点类型时，结果如下：
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> eps(<span class="hljs-built_in">Float32</span>)
+</span>1.1920929f-7
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> eps(<span class="hljs-built_in">Float64</span>)
+</span>2.220446049250313e-16
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> eps() <span class="hljs-comment"># same as eps(Float64)</span>
+</span>2.220446049250313e-16</code></pre>
+[ 数值分析-浮点数](https://www.face2ai.com/Math-Numerical-Analysis-0-3-Float/)文中有介绍这个精确度是怎么计算出来的。这个精度的字面定义是 浮点数 1.0和与他最近的另一个该类型的浮点数之间的差。
+
+#### <code>eps(100.0)</code>
+<code>eps</code> 函数也能接受浮点数作为参数：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> eps(<span class="hljs-number">1.0</span>)
+</span>2.220446049250313e-16
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> eps(<span class="hljs-number">1000.</span>)
+</span>1.1368683772161603e-13
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> eps(<span class="hljs-number">1e-27</span>)
+</span>1.793662034335766e-43
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> eps(<span class="hljs-number">0.0</span>)
+</span>5.0e-324</code></pre>
+
+当<code>eps</code> 函数以浮点数作为输入的时候，结果是输入的浮点数与最接近的他的浮点数之间的差。
+
+#### <code>prevfolat()</code>和<code>nextfloat()</code>函数
+
+使用上面<code>eps</code> 函数的结果可以计算出当前浮点数的最近的上一个浮点数和下一个浮点数：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> x = <span class="hljs-number">1.25f0</span>
+</span>1.25f0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> nextfloat(x)
+</span>1.2500001f0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> prevfloat(x)
+</span>1.2499999f0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> bitstring(prevfloat(x))
+</span>"00111111100111111111111111111111"
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> bitstring(x)
+</span>"00111111101000000000000000000000"
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> bitstring(nextfloat(x))
+</span>"00111111101000000000000000000001"</code></pre>
+
+相邻的浮点数的背后是相邻的二进制机器数，二进制的特性导致了浮点数误差的性质，而我们经常忽视这些误差，这明显是不对的，这么小小的误差就会导致火箭会坠毁。
+
+
+#### “近似” 模型
+当我们的字面值没有对应的准确浮点表达的时候，我们就要进行近似了 —— 向上取近似还是向下取近似。IEEE 754标准有明确的相关的操作。
+<code>RoundNearest</code>对这个过程进行操作，在进阶部分我们会对其过程进行剖析。
+#### 背景知识和引用
+<ul><li>The definitive guide to floating point arithmetic is the <a href="http://standards.ieee.org/findstds/standard/754-2008.html">IEEE 754-2008 Standard</a>; however, it is not available for free online.</li><li>For a brief but lucid presentation of how floating-point numbers are represented, see John D. Cook's <a href="https://www.johndcook.com/blog/2009/04/06/anatomy-of-a-floating-point-number/">article</a> on the subject as well as his <a href="https://www.johndcook.com/blog/2009/04/06/numbers-are-a-leaky-abstraction/">introduction</a> to some of the issues arising from how this representation differs in behavior from the idealized abstraction of real numbers.</li><li>Also recommended is Bruce Dawson's <a href="https://randomascii.wordpress.com/2012/05/20/thats-not-normalthe-performance-of-odd-floats/">series of blog posts on floating-point numbers</a>.</li><li>For an excellent, in-depth discussion of floating-point numbers and issues of numerical accuracy encountered when computing with them, see David Goldberg's paper <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.22.6768&amp;rep=rep1&amp;type=pdf">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a>.</li><li>For even more extensive documentation of the history of, rationale for, and issues with floating-point numbers, as well as discussion of many other topics in numerical computing, see the <a href="https://people.eecs.berkeley.edu/~wkahan/">collected writings</a> of <a href="https://en.wikipedia.org/wiki/William_Kahan">William Kahan</a>, commonly known as the "Father of Floating-Point". Of particular interest may be <a href="https://people.eecs.berkeley.edu/~wkahan/ieee754status/754story.html">An Interview with the Old Man of Floating-Point</a>.</li></ul>
+
+
+
+## 任意准确度数字
+以上我们研究的数字都受到设计时的精度限制，Julia提供一种不限制大小的数字表达方式，换句话说，这种精度是自定义的，和你输入的数字永远一致，听起来更像把数字字符串化，看起来类似，但是这些字符串是可以进行计算的，Julia打包了GMP(GNU Multiple Precision Arithmetic Library)协议和GNU MPER Library 开发出了 <code>BigInt</code>和<code>BigFloat</code>类型，这两个类型可以表示任意精度的整数或浮点数。
+<code>parse</code>函数提供了将字符串转化成<code>BigInt</code>和<code>BigFloat</code>类型的一种方式，为什么要用这个函数，因为你没办法用其他数值类型保存任意长度的数字，这样操作，一旦<code>BigInt</code>和<code>BigFloat</code>类型的数字完成定义就可以和任意类型的数字进行计算了，这要归功于Julia的内部类型转换机制（后面进阶部分会介绍）
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-built_in">BigInt</span>(typemax(<span class="hljs-built_in">Int64</span>)) + <span class="hljs-number">1</span>
+</span>9223372036854775808
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> parse(<span class="hljs-built_in">BigInt</span>, <span class="hljs-string">"123456789012345678901234567890"</span>) + <span class="hljs-number">1</span>
+</span>123456789012345678901234567891
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> parse(<span class="hljs-built_in">BigFloat</span>, <span class="hljs-string">"1.23456789012345678901"</span>)
+</span>1.234567890123456789010000000000000000000000000000000000000000000000000000000004
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-built_in">BigFloat</span>(<span class="hljs-number">2.0</span>^<span class="hljs-number">66</span>) / <span class="hljs-number">3</span>
+</span>2.459565876494606882133333333333333333333333333333333333333333333333333333333344e+19
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> factorial(<span class="hljs-built_in">BigInt</span>(<span class="hljs-number">40</span>))
+</span>815915283247897734345611269596115894272000000000</code></pre>
+
+虽然可以进行<code>BigInt</code>和<code>BigFloat</code>类型和常规类型的数值计算的时候，Julia会自己进行类型转换，但是如果操作中没有<code>BigInt</code>和<code>BigFloat</code>类型则还是会产生溢出，即当计算式中没有<code>BigInt</code>或<code>BigFloat</code>类型Julia不会自动的调整数值到<code>BigInt</code>或<code>BigFloat</code>类型：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> x = typemin(<span class="hljs-built_in">Int64</span>)
+</span>-9223372036854775808
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> x = x - <span class="hljs-number">1</span>
+</span>9223372036854775807
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> typeof(x)
+</span>Int64
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> y = <span class="hljs-built_in">BigInt</span>(typemin(<span class="hljs-built_in">Int64</span>))
+</span>-9223372036854775808
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> y = y - <span class="hljs-number">1</span>
+</span>-9223372036854775809
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> typeof(y)
+</span>BigInt</code></pre>
+常规类型的数字计算还是会溢出。
+
+前面提到的近似模型，在</span>BigFloat</code>中将会被改变，其可以被手工指定，利用<code>setprecision</code> 和 <code>setrounding</code> 函数可以进行全局设置。或者如果只想在某个代码块内改变近似模型，则可以使用<code>do</code> 代码块：
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> setrounding(<span class="hljs-built_in">BigFloat</span>, <span class="hljs-literal">RoundUp</span>) <span class="hljs-keyword">do</span>
+           <span class="hljs-built_in">BigFloat</span>(<span class="hljs-number">1</span>) + parse(<span class="hljs-built_in">BigFloat</span>, <span class="hljs-string">"0.1"</span>)
+       <span class="hljs-keyword">end</span>
+</span>1.100000000000000000000000000000000000000000000000000000000000000000000000000003
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> setrounding(<span class="hljs-built_in">BigFloat</span>, <span class="hljs-literal">RoundDown</span>) <span class="hljs-keyword">do</span>
+           <span class="hljs-built_in">BigFloat</span>(<span class="hljs-number">1</span>) + parse(<span class="hljs-built_in">BigFloat</span>, <span class="hljs-string">"0.1"</span>)
+       <span class="hljs-keyword">end</span>
+</span>1.099999999999999999999999999999999999999999999999999999999999999999999999999986
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> setprecision(<span class="hljs-number">40</span>) <span class="hljs-keyword">do</span>
+           <span class="hljs-built_in">BigFloat</span>(<span class="hljs-number">1</span>) + parse(<span class="hljs-built_in">BigFloat</span>, <span class="hljs-string">"0.1"</span>)
+       <span class="hljs-keyword">end</span>
+</span>1.1000000000004</code></pre>
+
+
+
+## 数字系数
+### 数值作为系数
+在其他编程语言中，数字变量就是一个操作数，当他作为式子的参数的时候，必须要用操作符连接，比如在c++或者python中我们想表达 $y=2x+1$ 这个表达式的时候一定是:
+```c++
+y=2*x+1
+```
+但是在Julia中数字参数可以用另一种形式表示，回归到其参数的地位，而不是c++或者python中的操作数的身份，在Julia中，数字参数可以这么写：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> x = <span class="hljs-number">3</span>
+</span>3
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">2</span>x^<span class="hljs-number">2</span> - <span class="hljs-number">3</span>x + <span class="hljs-number">1</span>
+</span>10
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> <span class="hljs-number">1.5</span>x^<span class="hljs-number">2</span> - <span class="hljs-number">.5</span>x + <span class="hljs-number">1</span>
+</span>13.0</code></pre>
+
+虽然就差一个操作符号，但是这种系数形式更加贴近原始公式，当然这里交换律不行，不能把数字放到后面，那样就成了一个新的变量了：
+
+<pre><code>
+julia> x=2
+2
+
+julia> y=2x+1
+5
+
+julia> y=x2+1
+<B><font color="ff0000">ERROR: UndefVarError: x2 not defined</B></font>
+Stacktrace:
+ [1] top-level scope at none:0
+
+julia>
+</code></pre>
+以下形式表示 $2^{2x}$ 而不是 $2^2x$
+<pre><code class="language-julia-repl hljs">
+julia> x=3
+3
+
+julia> 2^2x
+64</code></pre>
+
+这种表达的一个问题就是我们将会对结合顺序产生疑惑，比如：
+- <code>-2x</code> 表示<code>(-2)x</code>
+- <code>√2x</code>是表示 <code>(√2)x</code>
+- <code>2x^3</code>是表示 <code>2*(x^3)</code>
+
+前两个比较好理解，对于幂，系数的结合方式类似于一元操作符，比如 <code>-x^2</code>大家都会理解为<code> -(x^2)</code> 这里的符号和系数的语法上的解释是一样的
+
+{% note info%}
+注意：数值系数操作(乘法)优先级高于其他二元操作，比如乘法或者除法：
+- <code>1 / 2im == -0.5im</code> 而不是<code>0.5im</code>
+- <code>6 // 2(2 + 1) == 1 // 1</code> 而不是 <code>(6 // 2)*3 = 9</code>
+{% endnote %}
+
+
+
+### 加了括号的表达式也可以作为系数
+
+加了括号的表达式可以作为系数，比如：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> (x-<span class="hljs-number">1</span>)x
+</span>6</code></pre>
+
+但是没有加括号的表达式，或者两个操作数都有括号，就不可以这么写了：
+
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> (x-<span class="hljs-number">1</span>)(x+<span class="hljs-number">1</span>)
+</span>ERROR: MethodError: objects of type Int64 are not callable
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> x(x+<span class="hljs-number">1</span>)
+</span>ERROR: MethodError: objects of type Int64 are not callable</code></pre>
+
+
+上面这两种写法报错的原因是，这两种写法和函数的写法撞车了，所以不可能允许这种计算。
+
+上面这两种写法给我们写公式的时候带来了很大的方便，注意不要在系数后面加空格，也不要在括号系数后加空格。
+
+### 句法争议
+上面的参数写法不被其他语言采纳的原因是会造成其他句法混淆，比如十六进制和科学计数法：
+- 十六进制数字 <code>0xff</code> 将会被解释成：参数 <code>0</code> 乘以变量 <code>xff</code>.
+- 浮点数 <code>1e10</code>会被解释成：参数 <code>1</code> 乘以变量 <code>e10</code>， <code>E</code>形式类似
+- 32位浮点数 <code>1.5f22</code> 被解释为：参数<code>1.5</code> 乘以变量<code>f22</code>.
+
+对于上述争端，Julia给出的解释是：
+- <code>0x</code>被解释为16进制字符，不会被理解成别的
+- 一个数字后面跟了 <code>e</code> 或者 <code>E</code> 将会被解释为浮点数
+- 一个数字后面跟了 <code>f</code>将会被解释为32-bit浮点数，**但是F不会被解释为32-bit浮点数，而是按照系数解释**
+
+
+
+## “清零” 和 “归一”
+
+Julia提供了一个函数来产生0，和1，这个作用听起来有点费解，这不就是赋值么？为什么还要函数，因为不同的数值类型对应着不同的0的表示法，比如不同长度的浮点数的0就有很多种，所以一个函数搞定还是方便的：
+<table><tbody><tr><th>Function</th><th>Description</th></tr><tr><td><a href="../../base/numbers/#Base.zero"><code>zero(x)</code></a></td><td>Literal zero of type <code>x</code> or type of variable <code>x</code></td></tr><tr><td><a href="../../base/numbers/#Base.one"><code>one(x)</code></a></td><td>Literal one of type <code>x</code> or type of variable <code>x</code></td></tr></tbody></table>
+
+其操作结果：
+<pre><code class="language-julia-repl hljs"><span class="hljs-meta">julia&gt;</span><span class="julia"> zero(<span class="hljs-built_in">Float32</span>)
+</span>0.0f0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> zero(<span class="hljs-number">1.0</span>)
+</span>0.0
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> one(<span class="hljs-built_in">Int32</span>)
+</span>1
+
+<span class="hljs-meta">julia&gt;</span><span class="julia"> one(<span class="hljs-built_in">BigFloat</span>)
+</span>1.0</code></pre>
+
+
+
+## Reference
+1. https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/
 
 
 --------------------------

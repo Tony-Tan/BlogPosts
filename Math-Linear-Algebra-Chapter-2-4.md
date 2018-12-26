@@ -5,12 +5,12 @@ categories:
   - Mathematic
   - Linear Algebra
 date: 2017-09-05 17:15:19
-keywords:
-  - addition
-  - subtraction
-  - multiplication
-  - inner product
-  - outer product
+tags:
+  - 矩阵加法
+  - 矩阵减法
+  - 矩阵乘法
+  - 内乘
+  - 外乘
 ---
 **Abstract:** 矩阵基本计算，包括加减乘法，主要是乘法的几种不同的理解
 

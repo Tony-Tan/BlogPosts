@@ -3,7 +3,7 @@ title: 【数字图像处理】9.2:彩色图像-彩色变换 补色处理
 date: 2015-03-16 14:20
 categories:
   - DIP
-keywords:
+tags:
   - 色彩变换
   - 补色
   - 色环

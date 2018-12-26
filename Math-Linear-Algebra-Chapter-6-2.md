@@ -3,13 +3,12 @@ title: 【线性代数】6-2:对角化(Diagonalizing a Matrix)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Eigenvalues
-  - Eigenvectors
-  - Diagonalizing
-  - Fibonacci Numbers
-  - $A^k$
-  - Nondiagonalizable Matrix
+tags:
+  - 特征值
+  - 特征向量
+  - 对角化
+  - 斐波那契数列
+  - 非对角化矩阵
 toc: true
 date: 2017-11-21 11:48:42
 ---

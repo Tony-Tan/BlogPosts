@@ -124,4 +124,4 @@ Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 
 --------------------------
-[原文地址: https://face2ai.com/RL-RSAB-1-5-An-Extended-Example](https://face2ai.com/RL-RSAB-1-5-An-Extended-Example)
+原文地址:[https://face2ai.com/RL-RSAB-1-5-An-Extended-Example](https://face2ai.com/RL-RSAB-1-5-An-Extended-Example)

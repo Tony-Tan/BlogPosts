@@ -3,7 +3,7 @@ title: 【CUDA 基础】6.5 流回调
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - 流回调
 toc: true
 date: 2018-06-20 21:56:18

@@ -81,9 +81,3 @@ Agent的Actions会影响未来Environment的State，以及Agent后面的选择�
 1. Sutton R S, Barto A G. Reinforcement learning: An introduction[J]. 2011.
 
 原文来自：[https://face2ai.com/RL-RSAB-1-2-Examples/](https://face2ai.com/RL-RSAB-1-2-Examples/)转载标明出处
-
-
-
-
-
-原文地址1：[https://www.face2ai.com/RL-RSAB-1-2-Examples](https://www.face2ai.com/RL-RSAB-1-2-Examples)转载请标明出处

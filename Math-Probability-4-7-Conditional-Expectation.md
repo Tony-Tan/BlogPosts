@@ -3,10 +3,10 @@ title: 【概率论】4-7:条件期望(Conditional Expectation)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Expectation
-    - Prediction
-    - Law of total Probability
+tags:
+    - 期望
+    - 预测
+    - 全概率公式
 toc: true
 date: 2018-03-27 10:53:24
 ---

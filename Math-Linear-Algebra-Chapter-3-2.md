@@ -3,13 +3,13 @@ title: 【线性代数】3-2:零空间(Nullspace)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Nullspace
-  - Pivot Columns
-  - Free Columns
-  - Special Solutions
+tags:
   - Ux=0
   - Rx=0
+  - 0空间
+  - 主列
+  - 自由列
+  - 特解
 toc: true
 date: 2017-09-19 17:40:36
 ---

@@ -3,11 +3,11 @@ title: 【线性代数】3-5:独立性，基和维度(Independence,Basis and Dim
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Independence
-  - Basis
-  - Dimension
-  - Span
+tags:
+  - 独立
+  - 变差
+  - 维度
+  - 张成
 toc: true
 date: 2017-09-25 15:20:46
 ---

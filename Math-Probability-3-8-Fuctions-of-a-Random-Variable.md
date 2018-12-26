@@ -3,14 +3,10 @@ title: 【概率论】3-8:随机变量函数(Functions of a Random Variable)
 categories:
   - Mathematic
   - Probability
-keywords:
-  - The Probability Integral Transformation
+tags:
   - 概率积分变换
-  - Simulation
   - 仿真
-  - Pseudo-Random Numbers
   - 伪随机数
-  - General Function
 toc: true
 date: 2018-03-16 09:49:24
 ---

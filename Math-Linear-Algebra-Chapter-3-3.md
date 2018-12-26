@@ -3,12 +3,11 @@ title: 【线性代数】3-3:秩(Rank)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Rank
-  - Row Reduced form
-  - Pivot Columns
-  - Free Columns
-  - Special Solutions
+tags:
+  - 秩
+  - 主列
+  - 自由列
+  - 特解
 toc: true
 date: 2017-09-25 15:20:38
 ---

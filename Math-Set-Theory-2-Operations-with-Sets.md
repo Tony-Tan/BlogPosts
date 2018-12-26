@@ -3,13 +3,11 @@ title: 【集合论】2 集合操作
 categories:
   - Mathematic
   - Set Theory
-keywords:
-  - Complement
-  - Union
-  - Intersection
-  - Commutative Law
-  - Associative Law
-  - Distributive Laws
+tags:
+  - 补集
+  - 并集
+  - 交集
+
 toc: true
 date: 2017-11-16 14:03:01
 ---

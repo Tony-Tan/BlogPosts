@@ -3,7 +3,7 @@ title: 【PRML】Introduction 介绍
 categories:
   - Machine Learning
   - PRML
-keywords:
+tags:
   - "Pattern Recognition and Machine Learning"
   - Introduction
   - Machine Learning

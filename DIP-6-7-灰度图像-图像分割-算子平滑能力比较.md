@@ -3,7 +3,7 @@ title: 【数字图像处理】6.7:灰度图像-图像分割 Sobel算子，Prewi
 date: 2015-02-13 11:49
 categories:
   - DIP
-keywords:
+tags:
   - Sobel算子
   - Scharr算子
   - Prewitt算子

@@ -4,7 +4,7 @@ toc: true
 categories:
   - Other
 date: 2017-09-07 09:30:32
-keywords:
+tags:
   - 读书
 ---
 **Abstract:** tony 推荐读物
@@ -152,4 +152,4 @@ python研究处于初级阶段，c++也是，但是c研究的比较多，感觉�
 
 
 
-原文地址1：[https://www.face2ai.com/other-Tony推荐读物](https://www.face2ai.com/other-Tony推荐读物)转载请标明出处
+原文地址：[https://www.face2ai.com/other-Tony推荐读物](https://www.face2ai.com/other-Tony推荐读物)转载请标明出处

@@ -3,14 +3,10 @@ title: 【概率论】3-7:多变量分布(Multivariate Distributions Part II）
 categories:
   - Mathematic
   - Probability
-keywords:
-  - Conditional Distributions
+tags:
   - 条件分布
-  - Bayes' Theorem
   - 贝叶斯理论
-  - Histograms
   - 直方图
-  - Law of total Probability
   - 全概率公式
 toc: true
 date: 2018-03-15 09:20:38

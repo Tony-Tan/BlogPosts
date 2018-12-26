@@ -3,7 +3,7 @@ title: 【CUDA 基础】5.1 CUDA共享内存概述
 categories:
     - CUDA
     - Freshman
-keywords:
+tags:
     - CUDA共享内存模型
     - CUDA共享内存分配
     - CUDA共享内存访问

@@ -3,7 +3,7 @@ title: 【数理统计学简史】2.3 狄莫弗初步结果的改进，与斯特
 categories:
     - Mathematic
     - Statistics
-keywords:
+tags:
     - 二项分布
     - 斯特林公式
 toc: true

@@ -3,10 +3,10 @@ title: 【概率论】6-3:中心极限定理(The Central Limit Theorem)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - The Central Limit Theorem
-    - The Normal distribution
-    - The Delta Method
+tags:
+    - 中心极限定理
+    - 正态分布
+    - Delta方法
 toc: true
 date: 2018-04-09 09:21:44
 ---

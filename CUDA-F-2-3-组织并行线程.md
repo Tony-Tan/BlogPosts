@@ -3,10 +3,10 @@ title: 【CUDA 基础】2.3 组织并行线程
 categories:
   - CUDA
   - Freshman
-keywords:
-  - Thread
-  - Block
-  - Grid
+tags:
+  - 线程
+  - 线程块
+  - 线程网格
 toc: true
 date: 2018-03-09 21:00:38
 ---

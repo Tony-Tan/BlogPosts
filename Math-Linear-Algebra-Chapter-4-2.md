@@ -3,9 +3,9 @@ title: 【线性代数】4-2:投影(Porjections)
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Projections
-  - Projection Onto a Subspace
+tags:
+  - 映射
+  - 映射到子空间
 toc: true
 date: 2017-10-17 09:28:46
 ---

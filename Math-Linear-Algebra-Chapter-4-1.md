@@ -3,13 +3,12 @@ title: 【线性代数】4-1:四个正交子空间(Orthogonality of the Four Sub
 categories:
   - Mathematic
   - Linear Algebra
-keywords:
-  - Orthogonality
-  - Four Subspace
-  - Orthogonal Complements
-  - Fundamental Theorem of Linear Algebra
-  - Combining Bases from Subspaces
+tags:
   - Split
+  - 正交
+  - 四个子空间
+  - 线性代数基本定理
+
 toc: true
 date: 2017-10-17 09:28:42
 ---

@@ -3,8 +3,8 @@ title: 【概率论】6-1:大样本介绍(Large Random Samples Introduction)
 categories:
     - Mathematic
     - Probability
-keywords:
-    - Large Random Samples
+tags:
+    - 大样本
 toc: true
 date: 2018-04-07 14:43:51
 ---
